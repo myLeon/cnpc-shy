@@ -1,0 +1,64 @@
+
+{{date | amTimeAgo}}
+<br />
+<md2-datepicker
+placeholder="Select Date"
+[(ngModel)]="date"
+[required]="isRequired"
+[disabled]="isDisabled"
+[openOnFocus]="isOpenOnFocus"
+[isOpen]="isOpen"
+[type]="type"
+[min]="minDate"
+[max]="maxDate"
+[format]="'yyyy-MM-dd'"
+#dateControl="ngModel">
+</md2-datepicker>
+<br />
+fa图标： <i class="fa fa-address-book" aria-hidden="true"></i>
+<br />
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+  <i class="material-icons">add</i>
+</button>
+<br />
+
+<!-- Textfield with Floating Label -->
+
+
+
+ <mdl-textfield type="text" label="名称关键字" [(ngModel)]="search" floating-label></mdl-textfield>
+
+
+<kendo-grid
+
+          [data]="gridView | dataPipe : search"
+
+        >
+        <kendo-grid-column field="ProductID" title="ID" [width]="80"></kendo-grid-column>
+        <kendo-grid-column field="ProductName" title="Name" [width]="300"></kendo-grid-column>
+        <kendo-grid-column field="UnitPrice" title="Unit Price" [width]="120"></kendo-grid-column>
+        <kendo-grid-column field="Category.CategoryName" title="Category">
+        </kendo-grid-column>
+         <kendo-grid-messages noRecords="无数据显示.">
+        </kendo-grid-messages>
+      </kendo-grid>
+
+<h1>Angular2 Ticker Directive</h1>
+
+<h3>Starts on Mouse Enter (defaults only)</h3>
+<div class="tickerContainer myStyles">
+  <div ticker></div>
+</div>
+<hr>
+
+<h3>Starts on Click</h3>
+<div class="tickerContainer myStyles">
+  <div ticker [trigger]="'onClick'" [text]="myText" [speed]="15" [padding-right]="0" [size]="40"></div>
+</div>
+<hr>
+
+<h3>Auto Start</h3>
+<div class="tickerContainer myStyles">
+  <div ticker [trigger]="'auto'" [text]="'A statically-typed, long string'" [speed]="50" [padding-right]="40" [size]="20"></div>
+</div>
+<div id="ghost"></div>

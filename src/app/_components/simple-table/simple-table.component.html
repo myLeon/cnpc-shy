@@ -1,0 +1,14 @@
+<table class="table " style="width: 100%;">
+  <thead>
+  <tr class="black-muted-bg">
+    <th *ngFor="let col of columns">
+      {{getColumnDisplayName(col)}}
+    </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of rows" class="no-top-border">
+    <td *ngFor="let it of columns">{{item[it.field]}}</td>
+  </tr>
+  </tbody>
+</table>
