@@ -12,6 +12,7 @@ import { ActivatedRoute, Router } from "@angular/router";
 export class HomeComponent implements OnInit {
 
 
+  urlParas:any={"id":""};
 
   //最近15天分析数据 图表区域 配置
   last15DaysAnalysisTaskOptinos;
@@ -131,6 +132,8 @@ export class HomeComponent implements OnInit {
     // let a = 123
     // console.log($.isNumeric(a));
 
+
+
     this.service.getJqTask().subscribe(res => this.setJQTASK(res));
     this.service.getUserLoginCount().subscribe(res => this.setUserLoginCount(res));
     this.service.getLast15DaysAnalysisTask().subscribe(res => this.setLast15DaysAnalysisTask(res));
@@ -143,9 +146,11 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
      //this.route.parent.parent.data.subscribe(x => { console.log(x) });
     this.route.params
-	    .map(params => params['filter'] || 'None')
+	    //.map(params => params['id'] || 'None')
 	    .subscribe(res=>{
-	          //console.log("参数",res);
+	          
+            //this.urlParas.id=res;
+            // console.log("参数",res['id']);
 	   });
 
   }

@@ -68,9 +68,16 @@
     </div>
   </nav>
 </div>
-
-
 <router-outlet></router-outlet>
+
+<div class="container"  >
+   <router-outlet></router-outlet>
+</div>
+<footer class="bd-footer text-muted">
+  <div class="container ">
+    <p>石油化工研究院 &copy; {{ currentDate | date:'yyyy'}}</p>
+  </div>
+</footer>
 
 
 <footer class="bd-footer text-muted">

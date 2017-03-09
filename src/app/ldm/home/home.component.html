@@ -4,47 +4,47 @@
     <div class="list-content" on-mouseleave="shwoPanl=0">
       <ul class="nav flex-column " id="myTab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/first', par, 'organization']" on-mouseenter="shwoPanl=1">
+          <a class="nav-link" [routerLink]="['/ldm', urlParas.id, 'organization']" on-mouseenter="shwoPanl=1">
             <i class="fa fa-bath fa-fw "></i> 组织机构{{par}} <i class="fa fa-angle-right float-right mt-1"></i>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink='/first/shy/analyze' on-mouseenter="shwoPanl=2">
+          <a class="nav-link" routerLink='/ldm/shy/analyze' on-mouseenter="shwoPanl=2">
             <i class="fa fa-wpforms fa-fw"></i> 分析任务 <i class="fa fa-angle-right float-right mt-1"></i>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink='/first/shy/evaluate' role="tab" on-mouseenter="shwoPanl=3">
+          <a class="nav-link" routerLink='/ldm/shy/evaluate' role="tab" on-mouseenter="shwoPanl=3">
             <i class="fa fa-wpforms fa-fw"></i> 评价任务<i class="fa fa-angle-right float-right mt-1"></i>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink='/first/shy/equipment' on-mouseenter="shwoPanl=4">
+          <a class="nav-link" routerLink='/ldm/shy/equipment' on-mouseenter="shwoPanl=4">
             <i class="fa fa-microchip fa-fw"></i> 中试装置<i class="fa fa-angle-right float-right mt-1"></i>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink='/first/shy/device' on-mouseenter="shwoPanl=5">
+          <a class="nav-link" routerLink='/ldm/shy/device' on-mouseenter="shwoPanl=5">
             <i class="fa fa-cube fa-fw"></i> 仪器设备<i class="fa fa-angle-right float-right mt-1"></i>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink='/first/shy/scientific' on-mouseenter="shwoPanl=0">
+          <a class="nav-link" routerLink='/ldm/shy/scientific' on-mouseenter="shwoPanl=0">
             <i class="fa fa-list-ul fa-fw"></i> 科研课题
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink='/first/shy/personnel' on-mouseenter="shwoPanl=0">
+          <a class="nav-link" routerLink='/ldm/shy/personnel' on-mouseenter="shwoPanl=0">
             <i class="fa fa-user-circle fa-fw"></i> 人员管理
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink='/first/shy/method' on-mouseenter="shwoPanl=0">
+          <a class="nav-link" routerLink='/ldm/shy/method' on-mouseenter="shwoPanl=0">
             <i class="fa fa-leanpub fa-fw"></i> 方法标准
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink='/first/shy/charges' on-mouseenter="shwoPanl=0">
+          <a class="nav-link" routerLink='/ldm/shy/charges' on-mouseenter="shwoPanl=0">
             <i class="fa fa-jpy fa-fw"></i> 工时费用
           </a>
         </li>
@@ -125,7 +125,6 @@
     <!-- 图表 end -->
   </div>
 <div class="row mx-0 mt-3">
-
   <div class="col-md-9">
     <div class="row">
       <div class="col-md-4 px-0">
@@ -217,8 +216,8 @@
       </div>
       <div class="card-block p-0" style=" background-color: #fff;" [ngSwitch]="userLoginCount.status">
         <div *ngSwitchCase="'before'" style="padding: 20px;">loading....</div>
-        <app-simple-table *ngSwitchCase="'success'" [rows]="userLoginCount.rows" [columns]="userLoginCount.columns"></app-simple-table>
-        <div *ngSwitchCase="'message'" style="padding: 20px;">{{userLoginCount.message}}</div>
+        <!--<app-simple-table *ngSwitchCase="'success'" [rows]="userLoginCount.rows" [columns]="userLoginCount.columns"><app-simple-table/>-->
+        <div *ngSwitchCase="'message'" style="padding: 20px;"> {{userLoginCount.message}} </div>
       </div>
     </div>
   </div>

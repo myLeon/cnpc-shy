@@ -9,8 +9,7 @@ import { SimpleTableModule } from '../_components/simple-table/simple-table.modu
 import {UserService } from '../_core/user.service';
 import { HomeService } from './home/home.service'
 import { Ng2TableModule } from 'ng2-table';
-import { EChartModule } from 'ng2-echarts-d3'
-
+import { EChartModule } from 'ng2-echarts-d3';
 
 @NgModule({
   imports: [

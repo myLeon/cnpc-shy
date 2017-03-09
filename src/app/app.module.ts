@@ -10,12 +10,14 @@ import { MomentModule } from 'angular2-moment';
 import { Routing } from './app-routing.module';
 import { LoaderService } from './_services/loader.service';
 import * as moment from 'moment';
+// import { PersonnelComponent } from './personnel/personnel.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    // PersonnelComponent
   ],
   imports: [
     BrowserModule,
