@@ -12,7 +12,7 @@ import { ActivatedRoute, Router } from "@angular/router";
 export class HomeComponent implements OnInit {
 
 
-  urlParas:any={"id":""};
+  urlParas:any={"id":"shy"};
 
   //最近15天分析数据 图表区域 配置
   last15DaysAnalysisTaskOptinos;
@@ -145,14 +145,14 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
      //this.route.parent.parent.data.subscribe(x => { console.log(x) });
-    this.route.params
-	    //.map(params => params['id'] || 'None')
+    this.route.parent.params
+	    .map(params => params['id'] || 'None')
 	    .subscribe(res=>{
-	          
-            //this.urlParas.id=res;
-            // console.log("参数",res['id']);
+            this.urlParas.id=res;
 	   });
-
+    //  this.route.queryParams.subscribe(res=>{
+    //    console.log(res);
+    //  });
   }
 
   //设置最近15天分析任务数据
