@@ -15,8 +15,8 @@ export class SimpleTableComponent implements OnInit {
   }
 
   ngOnInit() {
-     console.log(this.rows);
-     console.log(this.columns);
+    //  console.log(this.rows);
+    //  console.log(this.columns);
   }
 
   getColumnDisplayName(col:ColumnEntity){

@@ -1,9 +1,9 @@
-
+@import '~material-design-lite/dist/material.indigo-pink.min.css';
 @import "~tether/dist/css/tether.min.css";
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.min.css";
 @import "~@progress/kendo-theme-default/scss/all.scss";
-@import '~material-design-lite/dist/material.indigo-pink.min.css';
+
 
 $primary: #209e91 !default;
 $info: #2dacd1 !default;
@@ -102,12 +102,11 @@ $danger: #e85656 !default;
 body{font-size: 0.875rem;}
 nav{font-size: 1rem;}
 
-.bd-footer{ padding-top: 30px;padding-bottom: 30px; font-size: 0.875rem; margin-top: 0px;}
+.bd-footer{ padding-top: 30px;padding-bottom: 30px; font-size: 0.875rem; margin-top: 0px; border-top: solid 1px #eee;}
 
-.card-block table { margin: 0px; border: 0px; font-size: 0.75rem;}
+.card-block table { margin: 0px; border: 0px; font-size: 0.875rem;}
 .card .card-block{ background-color: #fff; color: #333;}
 .card .card-header{ border: solid 1px #fff; border-radius: 0px; }
-
 .card .card-header i{font-size:0.75rem;}
 
 table thead tr th.w120{ width: 120px;}

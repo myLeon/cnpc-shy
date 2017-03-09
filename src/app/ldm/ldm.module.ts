@@ -9,6 +9,7 @@ import { SimpleTableModule } from '../_components/simple-table/simple-table.modu
 import {UserService } from '../_core/user.service';
 import { HomeService } from './home/home.service'
 import { Ng2TableModule } from 'ng2-table';
+import { EChartModule } from 'ng2-echarts-d3'
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { Ng2TableModule } from 'ng2-table';
     TickerModule,
     EchartsModule,
     Ng2TableModule,
-    SimpleTableModule
+    SimpleTableModule,
+    EChartModule
   ],
   declarations: [LdmComponent, HomeComponent],
     providers: [{ provide: 'HomeService', useClass: HomeService },UserService],

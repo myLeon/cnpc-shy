@@ -20,7 +20,7 @@ export class EchartsDirective implements OnChanges, OnInit, OnDestroy {
   @Input('echarts') options: EChartOption;
 
   @HostBinding('style.height.px') elHeight: number;
-
+  @HostBinding('style.Width.px') elWidth: number;
   constructor(private el: ElementRef, private http: Http) {
     this.chart = echarts.init(this.el.nativeElement, 'vintage');
   }
@@ -32,17 +32,26 @@ export class EchartsDirective implements OnChanges, OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.sizeCheckInterval = setInterval(() => {
-      this.reSize$.next(`${this.el.nativeElement.offsetWidth}:${this.el.nativeElement.offsetHeight}`)
-    }, 100);
-    this.onResize = this.reSize$
-      .distinctUntilChanged()
-      .subscribe((_) => this.chart.resize());
 
-    this.elHeight = this.el.nativeElement.offsetHeight;
-    if (this.elHeight < 300) {
-      this.elHeight = 300;
-    }
+
+    // this.sizeCheckInterval = setInterval(() => {
+    //   this.reSize$.next(`${this.el.nativeElement.offsetWidth}:${this.el.nativeElement.offsetHeight}`)
+    // }, 100);
+    // this.onResize = this.reSize$
+    //   .distinctUntilChanged()
+    //   .subscribe((_) => this.chart.resize());
+
+     //this.reSize$.next(`${this.el.nativeElement.offsetWidth}:${this.el.nativeElement.offsetHeight}`);
+
+     //this.elHeight = this.el.nativeElement.offsetHeight;
+     //console.log(this.el.nativeElement.offsetWidth);
+     //this.elWidth=300;
+     this.elWidth=this.el.nativeElement.offsetWidth;
+
+
+    // if (this.elHeight < 300) {
+    //   this.elHeight = 300;
+    // }
   }
 
 

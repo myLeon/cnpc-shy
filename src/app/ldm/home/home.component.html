@@ -4,8 +4,6 @@
     <div class="list-content" on-mouseleave="shwoPanl=0">
       <ul class="nav flex-column " id="myTab" role="tablist">
         <li class="nav-item">
-          <!--<a class="nav-link" routerLink='/first/shy/organization' on-mouseenter="shwoPanl=1">-->
-          <!--<a [routerLink]="['/todo/detail']" [queryParams]="{id: item.id, type: 'important'}">-->
           <a class="nav-link" [routerLink]="['/first', par, 'organization']" on-mouseenter="shwoPanl=1">
             <i class="fa fa-bath fa-fw "></i> 组织机构{{par}} <i class="fa fa-angle-right float-right mt-1"></i>
           </a>
@@ -60,8 +58,6 @@
             <a href="#" class="list-group-item list-group-item-action">大庆</a>
             <a href="#" class="list-group-item list-group-item-action">兰州</a>
           </div>
-
-
         </div>
 
         <div class="tab-pane" *ngSwitchCase="2">
@@ -101,20 +97,18 @@
 
     </div>
     <!-- 图表 -->
-
     <div class="charts-content">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active" style="width: 920px; height: 380px;">
-            <div [echarts]="Last15DaysAnalysisTaskOptinos" style="width: 920px; height: 369px"></div>
+            <div [echartOption]="last15DaysAnalysisTaskOptinos" style="width: 920px; height: 369px"></div>
           </div>
           <div class="carousel-item" style="width: 920px; height: 380px">
-            <div [echarts]="Last15DaysAssessmentTaskOptions" style="width: 920px; height: 369px"></div>
+             <div [echartOption]="last15DaysAssessmentTaskOptions" style="width: 920px; height: 369px"></div>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -128,45 +122,46 @@
       </div>
 
     </div>
+    <!-- 图表 end -->
   </div>
 <div class="row mx-0 mt-3">
 
   <div class="col-md-9">
     <div class="row">
-      <div class="col px-0">
+      <div class="col-md-4 px-0">
         <div class="card " style="border-radius:0px;">
           <div class="card-header">
             课题进展情况
           </div>
-          <div class="card-block p-0" style="height: 239px;" [ngSwitch]="subjectProgressInfo.status">
+          <div class="card-block p-0" style="height: 231px;" [ngSwitch]="subjectProgressInfo.status">
             <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
-            <div *ngSwitchCase="'success'" [echarts]="subjectProgressInfo.option" style="height: 239px;"></div>
+            <div *ngSwitchCase="'success'" [echartOption]="subjectProgressInfo.option" style="height: 231px;"></div>
             <div *ngSwitchCase="'message'" style="padding: 10px;">{{subjectProgressInfo.message}}</div>
           </div>
         </div>
       </div>
-      <div class="col px-0">
+      <div class="col-md-4 px-0">
         <div class="card" style="border-radius:0px; border-left:0px; ">
           <div class="card-header">
             装置运行情况<i>(30天内)</i>
           </div>
-          <div class="card-block p-0" style="height: 239px;" [ngSwitch]="deviceRunInfo.status">
+          <div class="card-block p-0" style="height: 231px;" [ngSwitch]="deviceRunInfo.status">
             <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
-            <div *ngSwitchCase="'success'" [echarts]="deviceRunInfo.option" style="height: 239px;"></div>
+            <div *ngSwitchCase="'success'" [echartOption]="deviceRunInfo.option" style="height: 231px;"></div>
             <div *ngSwitchCase="'message'" style="padding: 10px;">{{deviceRunInfo.message}}</div>
           </div>
         </div>
 
       </div>
-      <div class="col px-0">
+      <div class="col-md-4 px-0">
 
         <div class="card" style="border-radius:0px; border-left:0px; ">
           <div class="card-header">
             设备应用情况<i>(30天内)</i>
           </div>
-          <div class="card-block p-0" style="height: 239px;" [ngSwitch]="deviceBaseRunInfo.status">
+          <div class="card-block p-0" style="height: 231px;" [ngSwitch]="deviceBaseRunInfo.status">
             <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
-            <div *ngSwitchCase="'success'" [echarts]="deviceBaseRunInfo.option" style="height: 239px;"></div>
+            <div *ngSwitchCase="'success'" [echartOption]="deviceBaseRunInfo.option" style="height: 231px;"></div>
             <div *ngSwitchCase="'message'" style="padding: 10px;">{{deviceBaseRunInfo.message}}</div>
           </div>
         </div>

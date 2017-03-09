@@ -11,13 +11,13 @@ import { ActivatedRoute, Router } from "@angular/router";
 
 export class HomeComponent implements OnInit {
 
-  
+
 
   //最近15天分析数据 图表区域 配置
-  Last15DaysAnalysisTaskOptinos;
+  last15DaysAnalysisTaskOptinos;
 
   //最近15天评价数据 图表区域 配置
-  Last15DaysAssessmentTaskOptions;
+  last15DaysAssessmentTaskOptions;
 
   //用户登录次数统计区域 参数配置
   userLoginCount: any = { rows: [], columns: [], status: "before", message: "" };
@@ -111,7 +111,7 @@ export class HomeComponent implements OnInit {
     }
   }
   //  constructor(private route: ActivatedRoute, private router: Router) {}
-	
+
 	//   ngOnInit() {
 	//   this.route.params
 	//     .map(params => params['filter'] || 'None')
@@ -120,7 +120,8 @@ export class HomeComponent implements OnInit {
 	//    });
   //   }
 
-  private par:string = "sky";
+  //private par:string = "sky";
+
   //构造
   constructor(
     @Inject('HomeService') private service: HomeService,
@@ -144,20 +145,20 @@ export class HomeComponent implements OnInit {
     this.route.params
 	    .map(params => params['filter'] || 'None')
 	    .subscribe(res=>{
-	          console.log("参数",res);
-            
-	   });      
+	          //console.log("参数",res);
+	   });
 
   }
 
   //设置最近15天分析任务数据
   setLast15DaysAnalysisTask(res: any) {
-    this.Last15DaysAnalysisTaskOptinos = res;
+    this.last15DaysAnalysisTaskOptinos = res;
   }
 
   //设置最近15天评价任务数据
   setLast15DaysAssessmentTask(res: any) {
-    this.Last15DaysAssessmentTaskOptions = res;
+
+    this.last15DaysAssessmentTaskOptions = res;
   }
 
   //设置用户统计区域数据
@@ -265,10 +266,10 @@ export class HomeComponent implements OnInit {
     else {
       this.deviceBaseRunInfo = { status: "message", message: "无数据展示！" };
     }
-  } 
-    
+  }
 
-    
+
+
 
 
 }
