@@ -1,0 +1,38 @@
+{
+  
+  "users": {
+    "success": true,
+    "data": {
+      "id": "1",
+      "userName": "lilin",
+      "displayName": "李林",
+      "token": "111111",
+      "groupId": "zb",
+      "module": "first",
+      "whiteList": [
+        {
+          "id": "1",
+          "shortName": "总部",
+          "name": "石化院展示平台",
+          "parentId": "0",
+          "SMGroupId": "SHY",
+          "module": "first",
+          "urlCode": "shy",
+          "isDataGroup": false
+        },
+        {
+          "id": "1-1",
+          "shortName": "北京",
+          "name": "北京院部",
+          "parentId": "1",
+          "SMGroupId": "SHY",
+          "module": "first",
+          "urlCode": "beijing",
+          "isDataGroup": false
+        }
+      ],
+      "backlist": []
+    }
+  }
+  
+}

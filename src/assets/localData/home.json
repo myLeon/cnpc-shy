@@ -1,0 +1,318 @@
+{
+  "home_UserLoginCount": {
+    "success": true,
+    "data": [
+      {
+        "IDENTITY": "BJSY_LHB",
+        "NAME": "李海波",
+        "TOTAL": "60"
+      },
+      {
+        "IDENTITY": "BJSY_GZ",
+        "NAME": "郭喆",
+        "TOTAL": "50"
+      },
+      {
+        "IDENTITY": "BJSY_CHS",
+        "NAME": "曹海松",
+        "TOTAL": "50"
+      },
+      {
+        "IDENTITY": "BJSY_XFZ",
+        "NAME": "邢凤忠",
+        "TOTAL": "50"
+      },
+      {
+        "IDENTITY": "BJSY_XFZ",
+        "NAME": "邢凤忠",
+        "TOTAL": "50"
+      },
+      {
+        "IDENTITY": "BJSY_XFZ",
+        "NAME": "邢凤忠",
+        "TOTAL": "50"
+      },
+      {
+        "IDENTITY": "BJSY_XFZ",
+        "NAME": "邢凤忠",
+        "TOTAL": "50"
+      },
+      {
+        "IDENTITY": "BJSY_XFZ",
+        "NAME": "邢凤忠",
+        "TOTAL": "50"
+      },
+      {
+        "IDENTITY": "BJSY_XFZ",
+        "NAME": "邢凤忠",
+        "TOTAL": "50"
+      },
+      {
+        "IDENTITY": "BJSY_XFZ",
+        "NAME": "邢凤忠",
+        "TOTAL": "50"
+      }
+    ]
+  },
+  "home_JqTask": {
+    "success": true,
+    "data": [
+      {
+        "identity": "JQ.20170702.111",
+        "name": "测试测试测试测试1",
+        "tasktype": "加氢任务",
+        "process": "1/8"
+      },
+      {
+        "identity": "JQ.20170702.112",
+        "name": "测试测试测试测试测试测试测试2",
+        "tasktype": "加氢任务",
+        "process": "1/8"
+      },
+      {
+        "identity": "JQ.20170702.113",
+        "name": "测试测试测试测试测试测试测试3",
+        "tasktype": "加氢任务",
+        "process": "2/8"
+      },
+      {
+        "identity": "JQ.20170702.114",
+        "name": "测试测试测试测试测试测试测试4",
+        "tasktype": "加氢任务",
+        "process": "5/8"
+      },
+      {
+        "identity": "JQ.20170702.115",
+        "name": "测试测试测试测试测试测试测试5",
+        "tasktype": "加氢任务",
+        "process": "7/8"
+      },
+      {
+        "identity": "JQ.20170702.116",
+        "name": "测试测试测试测试测试测试测试6",
+        "tasktype": "加氢任务",
+        "process": "4/8"
+      },
+      {
+        "identity": "JQ.20170702.117",
+        "name": "测试测试测试测试测试测试测试7",
+        "tasktype": "加氢任务",
+        "process": "3/8"
+      },
+      {
+        "identity": "JQ.20170702.118",
+        "name": "测试测试测试测试测试测试测试8",
+        "tasktype": "加氢任务",
+        "process": "1/8"
+      },
+      {
+        "identity": "JQ.20170702.119",
+        "name": "测试测试测试测试测试测试测试9",
+        "tasktype": "加氢任务",
+        "process": "1/8"
+      },
+      {
+        "identity": "JQ.20170702.120",
+        "name": "测试测试测试测试测试测试测试10",
+        "tasktype": "加氢任务",
+        "process": "1/8"
+      },
+      {
+        "identity": "JQ.20170702.121",
+        "name": "测试测试测试测试测试测试测试11",
+        "tasktype": "加氢任务",
+        "process": "1/8"
+      },
+      {
+        "identity": "JQ.20170702.123",
+        "name": "测试测试测试测试测试测试测试12",
+        "tasktype": "加氢任务",
+        "process": "1/8"
+      },
+      {
+        "identity": "JQ.20170702.124",
+        "name": "测试测试测试测试测试测试测试13",
+        "tasktype": "加氢任务",
+        "process": "1/8"
+      },
+      {
+        "identity": "JQ.20170702.125",
+        "name": "测试测试测试测试测试测试测试14",
+        "tasktype": "加氢任务",
+        "process": "1/8"
+      },
+      {
+        "identity": "JQ.20170702.119",
+        "name": "测试测试测试测试测试测试测试15",
+        "tasktype": "加氢任务",
+        "process": "1/8"
+      },
+      {
+        "identity": "JQ.20170702.120",
+        "name": "测试测试测试测试测试测试测试16",
+        "tasktype": "加氢任务",
+        "process": "1/8"
+      },
+      {
+        "identity": "JQ.20170702.121",
+        "name": "测试测试测试测试测试测试测试17",
+        "tasktype": "加氢任务",
+        "process": "1/8"
+      },
+      {
+        "identity": "JQ.20170702.123",
+        "name": "测试测试测试测试测试测试测试18",
+        "tasktype": "加氢任务",
+        "process": "1/8"
+      },
+      {
+        "identity": "JQ.20170702.124",
+        "name": "测试测试测试测试测试测试测试19",
+        "tasktype": "加氢任务",
+        "process": "1/8"
+      },
+      {
+        "identity": "JQ.20170702.125",
+        "name": "测试测试测试测试测试测试测试20",
+        "tasktype": "加氢任务",
+        "process": "1/8"
+      }
+    ]
+  },
+  "roleGroups": {
+    "success": true,
+    "data": [
+      {
+        "id": "1",
+        "shortName": "总部",
+        "name": "石化院展示平台",
+        "parentId": "0",
+        "SMGroupId": "SHY",
+        "module": "first",
+        "urlCode": "shy",
+        "isDataGroup": false
+      },
+      {
+        "id": "1-1",
+        "shortName": "北京",
+        "name": "北京院部",
+        "parentId": "1",
+        "SMGroupId": "SHY",
+        "module": "first",
+        "urlCode": "beijing",
+        "isDataGroup": false
+      },
+      {
+        "id": "1-2",
+        "shortName": "大庆",
+        "name": "大庆中心",
+        "parentId": "1",
+        "SMGroupId": "SHY",
+        "module": "first",
+        "urlCode": "daqing",
+        "isDataGroup": false
+      },
+      {
+        "id": "1-3",
+        "shortName": "兰州",
+        "name": "兰州中心",
+        "parentId": "1",
+        "SMGroupId": "SHY",
+        "module": "first",
+        "urlCode": "lanzhou",
+        "isDataGroup": false
+      },
+      {
+        "id": "1-2-1",
+        "shortName": "仪器所",
+        "name": "大庆仪器所",
+        "parentId": "1-2",
+        "SMGroupId": "SHY",
+        "module": "first",
+        "urlCode": "dq_yqs",
+        "isDataGroup": true
+      },
+      {
+        "id": "1-2-2",
+        "shortName": "化工所",
+        "name": "大庆化工所",
+        "parentId": "1-2",
+        "SMGroupId": "SHY",
+        "module": "first",
+        "urlCode": "da_hgs",
+        "isDataGroup": true
+      }
+    ]
+  },
+  "subject": {
+    "success": true,
+    "data": [
+      {
+        "typeName": "完成",
+        "total": 50
+      },
+      {
+        "typeName": "取消",
+        "total": 10
+      },
+      {
+        "typeName": "在研",
+        "total": 30
+      },
+      {
+        "typeName": "暂停",
+        "total": 5
+      }
+    ]
+  },
+  "device": {
+    "success": true,
+    "data": [
+      {
+        "typeName": "占用",
+        "total": 10
+      },
+      {
+        "typeName": "报废",
+        "total": 2
+      },
+      {
+        "typeName": "运行中",
+        "total": 30
+      },
+      {
+        "typeName": "暂停",
+        "total": 2
+      }
+    ]
+  },
+  "deviceBase": {
+    "success": true,
+    "data": [
+      {
+        "baseName": "大庆加氢",
+        "total": 50
+      },
+      {
+        "baseName": "聚丙烯",
+        "total": 20
+      },
+      {
+        "baseName": "合成橡胶",
+        "total": 15
+      },
+      {
+        "baseName": "兰州加氢",
+        "total": 5
+      },
+      {
+        "baseName": "聚乙烯",
+        "total": 35
+      },
+      {
+        "baseName": "催化裂化",
+        "total": 70
+      }
+    ]
+  }
+}

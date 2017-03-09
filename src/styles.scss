@@ -99,3 +99,19 @@ $danger: #e85656 !default;
   }
 }
 
+body{font-size: 0.875rem;}
+nav{font-size: 1rem;}
+
+.bd-footer{ padding-top: 30px;padding-bottom: 30px; font-size: 0.875rem; margin-top: 0px;}
+
+.card-block table { margin: 0px; border: 0px; font-size: 0.75rem;}
+.card .card-block{ background-color: #fff; color: #333;}
+.card .card-header{ border: solid 1px #fff; border-radius: 0px; }
+
+.card .card-header i{font-size:0.75rem;}
+
+table thead tr th.w120{ width: 120px;}
+table thead tr th.w40{ width: 40px;}
+table thead tr th.w60{ width: 60px;}
+table thead tr th.w80{ width: 80px;}
+table thead tr th.w150{ width: 150px;}

@@ -1,0 +1,114 @@
+/* 首页快速入口 start */
+.data-entry{
+  position:relative;
+  background:#eee;
+  width:190px;
+  height: 369px;
+}
+
+.data-entry .list-content
+{
+  /*width: 160px;*/
+  background:#eee;
+  font-size: 0.875rem;
+}
+
+.data-entry .list-content .panl-content{
+    position:absolute;
+    top:0px;
+    left:190px;
+    z-index:100;
+    height:369px;
+}
+.data-entry .list-content .panl-content .tab-pane{
+      border:1px solid #476ba3;
+      padding: 10px;
+      background:#fff;
+      width: 100%;
+}
+
+.data-entry .list-content ul li a
+{
+  padding: 10px; text-decoration: none;
+}
+
+.data-entry .charts-content{
+  width: 920px;
+  height: 369px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 190px;
+  border: solid 1px #ccc;
+  background-color: #fff;
+}
+/* 首页快速入口 end */
+
+/* charts滚动区下方切换按钮 */
+.carousel-indicators li{ background-color: #ccc;}
+.carousel-indicators li.active{ background-color: #333}
+
+/*tools */
+.tools-key {padding: 8px; font-size: 14px;}
+.tools{ background-color: #f8f8f8; border-top: solid 1px #eee ;padding: 4px; }
+.tools button {padding: 8px 0 8px 0;font-size: 14px;background-color: #fff; color: #333;}
+.tools button:last-child {padding-right: 1px;}
+
+
+/* 首页快速入口 start */
+.data-entry{
+  position:relative;
+  background:#eee;
+  width:190px;
+  height: 369px;
+}
+
+.data-entry .list-content
+{
+  /*width: 160px;*/
+  background:#eee;
+  font-size: 0.875rem;
+}
+
+.data-entry .list-content .panl-content{
+    position:absolute;
+    top:0px;
+    left:190px;
+    z-index:100;
+    height:369px;
+}
+.data-entry .list-content .panl-content .tab-pane{
+      border:1px solid #476ba3;
+      padding: 10px;
+      background:#fff;
+      width: 100%;
+}
+
+.data-entry .list-content ul li a
+{
+  padding: 10px; text-decoration: none;
+}
+
+.data-entry .charts-content{
+  width: 920px;
+  height: 369px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 190px;
+  border: solid 1px #ccc;
+  background-color: #fff;
+}
+/* 首页快速入口 end */
+
+/* charts滚动区下方切换按钮 */
+.carousel-indicators li{ background-color: #ccc;}
+.carousel-indicators li.active{ background-color: #333}
+
+/*tools */
+.tools-key {padding: 8px; font-size: 14px;}
+.tools{ background-color: #f8f8f8; border-top: solid 1px #eee ;padding: 4px; }
+.tools button {padding: 8px 0 8px 0;font-size: 14px;background-color: #fff; color: #333;}
+.tools button:last-child {padding-right: 1px;}
+
+

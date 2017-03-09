@@ -32,23 +32,42 @@
       </ul>
     </div>
 </nav>
-
-<!--<div class="container mt-3">
-
-<div class="alert alert-success" role="alert">
-   <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="margin-top: -2px;"  >
-    <span aria-hidden="true">&times;</span>
-  </button>
-
-
-  <div class="tickerContainer myStyles">
-    <div ticker [trigger]="'auto'" [text]="'● 2017-03-09 大庆中心LIMS系统正式上线&nbsp;&nbsp;&nbsp;&nbsp;● 2017-03-09 大庆中心LIMS系统正式上线 ● 2017-03-09 大庆中心LIMS系统正式上线 ● 2017-03-09 大庆中心LIMS系统正式上线 ● 2017-03-09 大庆中心LIMS系统正式上线'" [speed]="50" [padding-right]="40" [size]="14"></div>
-  </div>
-  <div id="ghost"></div>
+<div class="container my-3">
+  <nav class="navbar navbar-toggleable-md navbar-light p-0" >
+    <!--<a class="navbar-brand" href="#">首页</a>-->
+    <!--<img src='./assets/images/logo.png' style="width: 50px; height: 50px;">-->
+    <div class="collapse navbar-collapse" >
+      <ul class="nav nav-pills mr-auto ml-0" style="margin-left: 20px; ">
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><span class="fa fa-home"></span> 首页</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/first/shy/statistics'  >数据统计</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/first/shy/everyday'  >日常报表</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-md-0">
+        <input class="form-control mr-2" type="text" placeholder="关键字">
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary">搜索</button>
+          <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">分析任务</a>
+              <a class="dropdown-item" href="#">评价任务</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">人员</a>
+              <a class="dropdown-item" href="#">课题</a>
+            </div>
+        </div>
+      </form>
+    </div>
+  </nav>
 </div>
-
-
-</div>-->
 <router-outlet></router-outlet>
 
 

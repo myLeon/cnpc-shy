@@ -1,10 +1,233 @@
-<div class="container mt-3">
-ddd
-<i class="fa fa-home fa-fw" aria-hidden="true"></i>
+<div class="container">
+  <div class="data-entry">
+    <!-- 快速入口 -->
+    <div class="list-content" on-mouseleave="shwoPanl=0">
+      <ul class="nav flex-column " id="myTab" role="tablist">
+        <li class="nav-item">
+          <!--<a class="nav-link" routerLink='/first/shy/organization' on-mouseenter="shwoPanl=1">-->
+          <!--<a [routerLink]="['/todo/detail']" [queryParams]="{id: item.id, type: 'important'}">-->
+          <a class="nav-link" [routerLink]="['/first', par, 'organization']" on-mouseenter="shwoPanl=1">
+            <i class="fa fa-bath fa-fw "></i> 组织机构{{par}} <i class="fa fa-angle-right float-right mt-1"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/first/shy/analyze' on-mouseenter="shwoPanl=2">
+            <i class="fa fa-wpforms fa-fw"></i> 分析任务 <i class="fa fa-angle-right float-right mt-1"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/first/shy/evaluate' role="tab" on-mouseenter="shwoPanl=3">
+            <i class="fa fa-wpforms fa-fw"></i> 评价任务<i class="fa fa-angle-right float-right mt-1"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/first/shy/equipment' on-mouseenter="shwoPanl=4">
+            <i class="fa fa-microchip fa-fw"></i> 中试装置<i class="fa fa-angle-right float-right mt-1"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/first/shy/device' on-mouseenter="shwoPanl=5">
+            <i class="fa fa-cube fa-fw"></i> 仪器设备<i class="fa fa-angle-right float-right mt-1"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/first/shy/scientific' on-mouseenter="shwoPanl=0">
+            <i class="fa fa-list-ul fa-fw"></i> 科研课题
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/first/shy/personnel' on-mouseenter="shwoPanl=0">
+            <i class="fa fa-user-circle fa-fw"></i> 人员管理
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/first/shy/method' on-mouseenter="shwoPanl=0">
+            <i class="fa fa-leanpub fa-fw"></i> 方法标准
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/first/shy/charges' on-mouseenter="shwoPanl=0">
+            <i class="fa fa-jpy fa-fw"></i> 工时费用
+          </a>
+        </li>
+      </ul>
 
-<app-simple-table [rows]='personnel.rows' [columns]='personnel.columns'>  </app-simple-table>
+      <div class="panl-content" [ngSwitch]="shwoPanl">
+
+        <div class="tab-pane" *ngSwitchCase="1">
+          <div class="list-group" style="width: 200px;">
+            <a href="#" class="list-group-item list-group-item-action">院部</a>
+            <a href="#" class="list-group-item list-group-item-action">大庆</a>
+            <a href="#" class="list-group-item list-group-item-action">兰州</a>
+          </div>
+
+
+        </div>
+
+        <div class="tab-pane" *ngSwitchCase="2">
+          <div class="list-group" style="width: 200px;">
+            <a href="#" class="list-group-item list-group-item-action">所内任务</a>
+            <a href="#" class="list-group-item list-group-item-action">所间</a>
+            <a href="#" class="list-group-item list-group-item-action">院外</a>
+            <a href="#" class="list-group-item list-group-item-action">兰州所内</a>
+          </div>
+        </div>
+
+        <div class="tab-pane" *ngSwitchCase="3">
+          <div class="list-group" style="width: 200px;">
+            <a href="#" class="list-group-item list-group-item-action">加氢基地内部申请</a>
+            <a href="#" class="list-group-item list-group-item-action">加氢基地外部申请</a>
+            <a href="#" class="list-group-item list-group-item-action">加氢基地兰州院申请</a>
+            <a href="#" class="list-group-item list-group-item-action">兰州所内</a>
+          </div>
+        </div>
+
+        <div class="tab-pane" *ngSwitchCase="4">
+          <div class="list-group" style="width: 200px;">
+            <a href="#" class="list-group-item list-group-item-action">加氢</a>
+            <a href="#" class="list-group-item list-group-item-action">聚乙烯</a>
+            <a href="#" class="list-group-item list-group-item-action">聚丙烯</a>
+          </div>
+        </div>
+
+        <div class="tab-pane" *ngSwitchCase="5">
+          <div class="list-group" style="width: 200px;">
+            <a href="#" class="list-group-item list-group-item-action">色谱</a>
+            <a href="#" class="list-group-item list-group-item-action">光谱</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- 图表 -->
+
+    <div class="charts-content">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active" style="width: 920px; height: 380px;">
+            <div [echarts]="Last15DaysAnalysisTaskOptinos" style="width: 920px; height: 369px"></div>
+          </div>
+          <div class="carousel-item" style="width: 920px; height: 380px">
+            <div [echarts]="Last15DaysAssessmentTaskOptions" style="width: 920px; height: 369px"></div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+<div class="row mx-0 mt-3">
+
+  <div class="col-md-9">
+    <div class="row">
+      <div class="col px-0">
+        <div class="card " style="border-radius:0px;">
+          <div class="card-header">
+            课题进展情况
+          </div>
+          <div class="card-block p-0" style="height: 239px;" [ngSwitch]="subjectProgressInfo.status">
+            <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
+            <div *ngSwitchCase="'success'" [echarts]="subjectProgressInfo.option" style="height: 239px;"></div>
+            <div *ngSwitchCase="'message'" style="padding: 10px;">{{subjectProgressInfo.message}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="col px-0">
+        <div class="card" style="border-radius:0px; border-left:0px; ">
+          <div class="card-header">
+            装置运行情况<i>(30天内)</i>
+          </div>
+          <div class="card-block p-0" style="height: 239px;" [ngSwitch]="deviceRunInfo.status">
+            <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
+            <div *ngSwitchCase="'success'" [echarts]="deviceRunInfo.option" style="height: 239px;"></div>
+            <div *ngSwitchCase="'message'" style="padding: 10px;">{{deviceRunInfo.message}}</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col px-0">
+
+        <div class="card" style="border-radius:0px; border-left:0px; ">
+          <div class="card-header">
+            设备应用情况<i>(30天内)</i>
+          </div>
+          <div class="card-block p-0" style="height: 239px;" [ngSwitch]="deviceBaseRunInfo.status">
+            <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
+            <div *ngSwitchCase="'success'" [echarts]="deviceBaseRunInfo.option" style="height: 239px;"></div>
+            <div *ngSwitchCase="'message'" style="padding: 10px;">{{deviceBaseRunInfo.message}}</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row my-3">
+      <div class="card  card-inverse card-primary" style="border-radius:0px; width: 100%;">
+        <div class="card-header">
+          加氢基地任务<i>(最近20个任务)</i>
+        </div>
+        <div class="card-block p-0" [ngSwitch]="jqTask.status">
+          <div *ngSwitchCase="'before'" style="padding: 20px;">loading....</div>
+          <ng-table *ngSwitchCase="'success'" [config]="jqTask.config" [rows]="jqTask.rows" [columns]="jqTask.columns"></ng-table>
+          <div *ngSwitchCase="'message'" style="padding: 20px;">{{userLoginCount.message}}</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="col-md-3 pr-0 ">
+    <div class="card  card-inverse card-primary" style="border-radius:0px; ">
+      <div class="card-header">
+        便捷工具
+      </div>
+      <div class="card-block p-1" style="background-color: #fff;">
+        <input type="text" class="form-control tools-key" id="txtSampleId" placeholder="样品号" />
+      </div>
+      <div class="btn-group tools" role="group">
+        <button type="button" class="btn btn-outline-secondary  form-control">原始记录</button>
+        <button type="button" class="btn btn-outline-secondary  form-control">报告单</button>
+        <button type="button" class="btn btn-outline-secondary  form-control">样品明细</button>
+      </div>
+    </div>
+
+    <div class="card card-inverse card-primary mt-3" style="border-radius:0px;">
+      <div class="card-header">
+        报告查询码
+      </div>
+      <div class="card-block p-1" style="background-color: #fff;">
+        <input type="text" class=" form-control tools-key" id="txtSampleId" placeholder="报告查询码" />
+      </div>
+      <div class="btn-group tools" role="group">
+        <button type="button" class="btn btn-outline-secondary  form-control">报告查询</button>
+      </div>
+    </div>
+
+    <div class="card card-inverse card-primary mt-3" style="border-radius:0px; ">
+      <div class="card-header">
+        登录次数统计排名前十<i>(30天内)</i>
+      </div>
+      <div class="card-block p-0" style=" background-color: #fff;" [ngSwitch]="userLoginCount.status">
+        <div *ngSwitchCase="'before'" style="padding: 20px;">loading....</div>
+        <app-simple-table *ngSwitchCase="'success'" [rows]="userLoginCount.rows" [columns]="userLoginCount.columns"></app-simple-table>
+        <div *ngSwitchCase="'message'" style="padding: 20px;">{{userLoginCount.message}}</div>
+      </div>
+    </div>
+  </div>
+
 
 </div>
-
-
-
+</div>
