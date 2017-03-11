@@ -148,7 +148,9 @@ export class HomeComponent implements OnInit {
     this.route.parent.params
 	    .map(params => params['id'] || 'None')
 	    .subscribe(res=>{
+
             this.urlParas.id=res;
+
 	   });
     //  this.route.queryParams.subscribe(res=>{
     //    console.log(res);

@@ -55,7 +55,8 @@ export class EchartsMapDirective implements OnChanges, OnInit, OnDestroy {
     this.reSize$.complete();
     if (this.onResize) {
       this.onResize.unsubscribe();
-    }
+    
+  }
   }
 
 }

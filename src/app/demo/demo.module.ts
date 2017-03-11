@@ -18,7 +18,7 @@ import { TickerModule } from '../_directives/ticker/ticker.module';
     MdlModule,
     Routing,
     GridModule,
-TickerModule
+    TickerModule
   ],
   declarations: [DemoComponent,DataTablePipe],
   providers: [

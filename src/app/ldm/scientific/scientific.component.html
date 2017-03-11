@@ -1,0 +1,30 @@
+<div class="container" >
+
+
+<!--<md2-datepicker
+placeholder="Select Date"
+[(ngModel)]="date"
+[required]="isRequired"
+[disabled]="isDisabled"
+[openOnFocus]="isOpenOnFocus"
+[isOpen]="isOpen"
+[type]="type"
+[min]="minDate"
+[max]="maxDate"
+[format]="'yyyy-MM-dd'"
+#dateControl="ngModel">
+</md2-datepicker>
+<br/>-->
+<!--<ng-table [config]="jqTask.config"  [rows]="jqTask.rows" [columns]="jqTask.columns"></ng-table>-->
+<mdl-textfield type="text" label="名称关键字" [(ngModel)]="search" floating-label></mdl-textfield>
+
+<kendo-grid [data]="gridView | Scientific : search">
+  <kendo-grid-column field="ProductID" title="ID" [width]="80"></kendo-grid-column>
+  <kendo-grid-column field="ProductName" title="Name" [width]="300"></kendo-grid-column>
+  <kendo-grid-column field="UnitPrice" title="Unit Price" [width]="120"></kendo-grid-column>
+  <kendo-grid-column field="Category.CategoryName" title="Category">
+  </kendo-grid-column>
+  <kendo-grid-messages noRecords="无数据显示.">
+  </kendo-grid-messages>
+</kendo-grid>
+</div>

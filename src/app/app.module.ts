@@ -10,6 +10,8 @@ import { MomentModule } from 'angular2-moment';
 import { Routing } from './app-routing.module';
 import { LoaderService } from './_services/loader.service';
 import * as moment from 'moment';
+// import { AnalyzeComponent } from './analyze/analyze.component';
+
 // import { PersonnelComponent } from './personnel/personnel.component';
 
 
@@ -17,6 +19,8 @@ import * as moment from 'moment';
   declarations: [
     AppComponent,
     LoginComponent,
+    // AnalyzeComponent,
+    // ScientificComponent,
     // PersonnelComponent
   ],
   imports: [

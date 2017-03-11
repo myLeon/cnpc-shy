@@ -4,7 +4,7 @@
     <div class="list-content" on-mouseleave="shwoPanl=0">
       <ul class="nav flex-column " id="myTab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/ldm', urlParas.id, 'organization']" on-mouseenter="shwoPanl=1">
+          <a class="nav-link" [routerLink]="['/ldm','shy','group']" on-mouseenter="shwoPanl=1">
             <i class="fa fa-bath fa-fw "></i> 组织机构{{par}} <i class="fa fa-angle-right float-right mt-1"></i>
           </a>
         </li>
@@ -54,9 +54,9 @@
 
         <div class="tab-pane" *ngSwitchCase="1">
           <div class="list-group" style="width: 200px;">
-            <a href="#" class="list-group-item list-group-item-action">院部</a>
-            <a href="#" class="list-group-item list-group-item-action">大庆</a>
-            <a href="#" class="list-group-item list-group-item-action">兰州</a>
+            <a href="#" class="list-group-item list-group-item-action" *ngIf="urlParas.id=='shy'||urlParas.id=='beijing'">院部</a>
+            <a href="#" class="list-group-item list-group-item-action" *ngIf="urlParas.id=='shy'||urlParas.id=='daqing'">大庆</a>
+            <a href="#" class="list-group-item list-group-item-action" *ngIf="urlParas.id=='shy'||urlParas.id=='lanzhou'">兰州</a>
           </div>
         </div>
 
@@ -216,7 +216,7 @@
       </div>
       <div class="card-block p-0" style=" background-color: #fff;" [ngSwitch]="userLoginCount.status">
         <div *ngSwitchCase="'before'" style="padding: 20px;">loading....</div>
-        <!--<app-simple-table *ngSwitchCase="'success'" [rows]="userLoginCount.rows" [columns]="userLoginCount.columns"><app-simple-table/>-->
+        <app-simple-table *ngSwitchCase="'success'" [rows]="userLoginCount.rows" [columns]="userLoginCount.columns"></app-simple-table>
         <div *ngSwitchCase="'message'" style="padding: 20px;"> {{userLoginCount.message}} </div>
       </div>
     </div>

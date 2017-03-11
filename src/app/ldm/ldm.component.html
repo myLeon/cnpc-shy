@@ -3,7 +3,7 @@
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">业务系统</a>
+          <a class="nav-link"  >业务系统</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">LIMS论坛</a>
@@ -22,9 +22,9 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">石化院</a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button"><i class="fa fa-ravelry" aria-hidden="true"></i> 石化院</button>
+            <button class="dropdown-item" type="button" [routerLink]="['/ldm', 'shy' , 'home']"  ><i class="fa fa-ravelry" aria-hidden="true"></i> 石化院</button>
             <div class="dropdown-divider"></div>
-            <button class="dropdown-item" type="button"><i class="fa fa-ravelry" aria-hidden="true"></i> 北京院部</button>
+            <button class="dropdown-item" type="button" [routerLink]="['/ldm', 'beijing' , 'home']" ><i class="fa fa-ravelry" aria-hidden="true"></i> 北京院部</button>
             <button class="dropdown-item" type="button"><i class="fa fa-ravelry" aria-hidden="true"></i> 大庆中心</button>
             <button class="dropdown-item" type="button"><i class="fa fa-ravelry" aria-hidden="true"></i> 兰州中心</button>
           </div>
@@ -42,10 +42,10 @@
           <a class="nav-link active" href="#"><span class="fa fa-home"></span> 首页</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink='/first/shy/statistics'  >数据统计</a>
+          <a class="nav-link" routerLink='/ldm/shy/statistics'  >数据统计</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink='/first/shy/everyday'  >日常报表</a>
+          <a class="nav-link" routerLink='/ldm/shy/everyday'  >日常报表</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-md-0">

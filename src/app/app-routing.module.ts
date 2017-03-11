@@ -6,7 +6,7 @@ const routes: Routes = [
   //{ path: '', component:LoginComponent  },
   { path: '', redirectTo: 'ldm/shy', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
-  { path: 'ldm/:id', redirectTo: 'ldm' },
+  { path: 'ldm', redirectTo: 'ldm' },
   { path: 'demo', loadChildren: 'app/demo/demo.module#DemoModule' }
 ];
 
