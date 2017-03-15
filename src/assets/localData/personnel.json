@@ -1,0 +1,1749 @@
+//分析任务
+{
+    //个人分析样品量排名(（根据排版看能否做成根据时间查询）前10或20)
+    "staffAnalysisCount": {
+        "success": true,
+        "data": [
+            {
+                "staffId": "SUNSHENGBO",
+                "staffName": "孙生波",
+                "total": 40
+            },
+            {
+                "staffId": "WANGXIUWEN",
+                "staffName": "王秀文",
+                "total": 80
+            },
+            {
+                "staffId": "CUIJIANHUI",
+                "staffName": "崔建慧",
+                "total":90
+            },
+            {
+                "staffId": "BAOSHIXING",
+                "staffName": "包世星",
+                "total": 60
+            },
+            {
+                "staffId": "LIANGJINGCHENG",
+                "staffName": "梁景程",
+                "total": 45
+            },
+            {
+                "staffId": "YANGHUIJUAN",
+                "staffName": "杨慧娟",
+                "total": 39
+            }
+        ]
+    },
+    //个人分析项目量排名(（根据排版看能否做成根据时间查询）前10或前20)
+    "staffTestCount": {
+        "success": true,
+        "data": [
+            {
+                "staffId": "SUNSHENGBO",
+                "staffName": "孙生波",
+                "total": 133
+            },
+            {
+                "staffId": "WANGXIUWEN",
+                "staffName": "王秀文",
+                "total": 180
+            },
+            {
+                "staffId": "CUIJIANHUI",
+                "staffName": "崔建慧",
+                "total":100
+            },
+            {
+                "staffId": "BAOSHIXING",
+                "staffName": "包世星",
+                "total": 160
+            },
+            {
+                "staffId": "LIANGJINGCHENG",
+                "staffName": "梁景程",
+                "total": 245
+            },
+            {
+                "staffId": "YANGHUIJUAN",
+                "staffName": "杨慧娟",
+                "total": 239
+            }
+        ]
+    },
+    //分析人员占比
+    "analysisStaffRatio":{
+        "success":true,
+        "data":[
+            {
+                "unitName":"大庆中心",
+                "analysis":120,     //分析人员
+                "total":266         //总人数
+            },
+            {
+                "unitName":"兰州中心",
+                "analysis":90,
+                "total":263
+            },
+            {
+                "unitName":"北京院部",
+                "analysis":50,
+                "total":197
+            }
+        ]
+    },
+    //系统使用次数排名(（根据排版看能否做成根据时间查询）前10或前20)
+    "staffUseLims":{
+        "success":true,
+        "data":[
+            {
+                "staffId": "SUNSHENGBO",
+                "staffName": "孙生波",
+                "total": 60
+            },
+            {
+                "staffId": "WANGXIUWEN",
+                "staffName": "王秀文",
+                "total": 80
+            },
+            {
+                "staffId": "CUIJIANHUI",
+                "staffName": "崔建慧",
+                "total":10
+            },
+            {
+                "staffId": "BAOSHIXING",
+                "staffName": "包世星",
+                "total": 50
+            },
+            {
+                "staffId": "LIANGJINGCHENG",
+                "staffName": "梁景程",
+                "total": 45
+            },
+            {
+                "staffId": "YANGHUIJUAN",
+                "staffName": "杨慧娟",
+                "total": 39
+            }
+        ]
+    },
+    //各单位LIMS系统有效使用率排名
+    "limsValidUse":{
+        "success":true,
+        "data":[
+            {
+                "unitName":"大庆中心",
+                "total":266,    //总人数
+                "useCount":120  //有效登录人数
+            },
+            {
+                "unitName":"兰州中心",
+                "total":263,
+                "useCount":90
+            },
+            {
+                "unitName":"北京院部",
+                "total":197,
+                "useCount":50
+            }
+        ]
+    },
+    //人员列表台账
+    "staffList": {
+        "success": true,
+        "data": [
+            {
+                "limsId": "YIXUEFEI",
+                "limsName": "衣学飞",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1970/8/29 0:00:00",
+                "limsDeparment": "大庆中心\n仪器分析所气相色谱组",
+                "limsWorkDate": "1992/7/1 0:00:00",
+                "limsCertificateNo": "S116032187",
+                "limsJob": "色谱岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "WANGYANPING",
+                "limsName": "王艳萍",
+                "limsSex": "女",
+                "limsEducation": "专科",
+                "limsNational": "汉",
+                "limsBirthday": "1974/5/21 0:00:00",
+                "limsDeparment": "大庆中心\n仪器分析所气相色谱组",
+                "limsWorkDate": "1995/7/1 0:00:00",
+                "limsCertificateNo": "S116032189",
+                "limsJob": "色谱岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "BAIXIAOHONG",
+                "limsName": "柏晓红",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1967/11/23 0:00:00",
+                "limsDeparment": "大庆中心\n仪器分析所气相色谱组",
+                "limsWorkDate": "1989/7/1 0:00:00",
+                "limsCertificateNo": "S116032191",
+                "limsJob": "质谱岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "FENGXIUFANG",
+                "limsName": "冯秀芳",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1979/5/1 0:00:00",
+                "limsDeparment": "大庆中心\n仪器分析所气相色谱组",
+                "limsWorkDate": "2000/7/1 0:00:00",
+                "limsCertificateNo": "S116032190",
+                "limsJob": "色谱岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "LIULIJUN",
+                "limsName": "刘丽军",
+                "limsSex": "女",
+                "limsEducation": "硕士",
+                "limsNational": "汉",
+                "limsBirthday": "1982/1/3 0:00:00",
+                "limsDeparment": "大庆中心\n仪器分析所气相色谱组",
+                "limsWorkDate": "2007/4/6 0:00:00",
+                "limsCertificateNo": "S116032192",
+                "limsJob": "色谱岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "ZHAOJINA",
+                "limsName": "赵吉娜",
+                "limsSex": "女",
+                "limsEducation": "硕士",
+                "limsNational": "汉",
+                "limsBirthday": "1982/5/24 0:00:00",
+                "limsDeparment": "大庆中心\n仪器分析所气相色谱组",
+                "limsWorkDate": "2007/4/1 0:00:00",
+                "limsCertificateNo": "S116032188",
+                "limsJob": "质谱岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "LIANGLIWEI",
+                "limsName": "梁立伟",
+                "limsSex": "男",
+                "limsEducation": "硕士",
+                "limsNational": "汉",
+                "limsBirthday": "1980/4/19 0:00:00",
+                "limsDeparment": "大庆中心\n仪器分析所气相色谱组",
+                "limsWorkDate": "2004/7/1 0:00:00",
+                "limsCertificateNo": "S116032194",
+                "limsJob": "凝胶岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "YANGSICHENG",
+                "limsName": "杨世成",
+                "limsSex": "男",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1966/2/21 0:00:00",
+                "limsDeparment": "大庆中心\n仪器分析所气相色谱组",
+                "limsWorkDate": "1987/7/1 0:00:00",
+                "limsCertificateNo": "S116032193",
+                "limsJob": "凝胶岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "TIANBINGQUAN",
+                "limsName": "田炳全",
+                "limsSex": "男",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1968/8/25 0:00:00",
+                "limsDeparment": "大庆中心仪器分析研究所液相组",
+                "limsWorkDate": "1992/7/1 0:00:00",
+                "limsCertificateNo": "s116032195",
+                "limsJob": "核磁岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "ZHANGYANLI",
+                "limsName": "张艳丽",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1973/7/21 0:00:00",
+                "limsDeparment": "大庆中心仪器分析研究所液相组",
+                "limsWorkDate": "1997/7/1 0:00:00",
+                "limsCertificateNo": "s116032199",
+                "limsJob": "化学吸附岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "CHENHUIYING",
+                "limsName": "陈慧颖",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1962/12/14 0:00:00",
+                "limsDeparment": "大庆中心仪器分析研究所液相组",
+                "limsWorkDate": "1985/12/1 0:00:00",
+                "limsCertificateNo": "s116032200",
+                "limsJob": "化学吸附岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "GOUAIXIAN",
+                "limsName": "苟爱仙",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1965/9/29 0:00:00",
+                "limsDeparment": "大庆中心仪器分析研究所液相组",
+                "limsWorkDate": "1988/7/6 0:00:00",
+                "limsCertificateNo": "s116032196",
+                "limsJob": "液相岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "SHAOWEI",
+                "limsName": "邵伟",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1975/6/6 0:00:00",
+                "limsDeparment": "大庆中心仪器分析研究所液相组",
+                "limsWorkDate": "1997/7/1 0:00:00",
+                "limsCertificateNo": "s116032203",
+                "limsJob": "氯分析岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "DUANYALI",
+                "limsName": "段亚丽",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1965/10/10 0:00:00",
+                "limsDeparment": "大庆中心仪器分析研究所液相组",
+                "limsWorkDate": "1989/7/14 0:00:00",
+                "limsCertificateNo": "s116032197",
+                "limsJob": "液相岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "JINXIANGLAN",
+                "limsName": "金香兰",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1967/4/18 0:00:00",
+                "limsDeparment": "大庆中心仪器分析研究所液相组",
+                "limsWorkDate": "1989/7/1 0:00:00",
+                "limsCertificateNo": "s116032202",
+                "limsJob": "红外岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "TANGQINGYU",
+                "limsName": "唐庆余",
+                "limsSex": "女",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1963/3/28 0:00:00",
+                "limsDeparment": "大庆中心仪器分析研究所液相组",
+                "limsWorkDate": "1982/9/1 0:00:00",
+                "limsCertificateNo": "s116032201",
+                "limsJob": "红外岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "DONGBAOJUN",
+                "limsName": "董宝钧",
+                "limsSex": "男",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1963/11/29 0:00:00",
+                "limsDeparment": "大庆中心仪器分析研究所液相组",
+                "limsWorkDate": "1984/4/1 0:00:00",
+                "limsCertificateNo": "s116032198",
+                "limsJob": "水分析岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "ZHANGYAN",
+                "limsName": "张岩",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1971/11/12 0:00:00",
+                "limsDeparment": "大庆中心仪器分析所",
+                "limsWorkDate": "1992/7/1 0:00:00",
+                "limsCertificateNo": "S116032182",
+                "limsJob": "光谱组",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "RONGLILI",
+                "limsName": "荣丽丽",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1978/12/6 0:00:00",
+                "limsDeparment": "大庆中心仪器分析所",
+                "limsWorkDate": "2004/7/1 0:00:00",
+                "limsCertificateNo": "S116032184",
+                "limsJob": "光谱组",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "LIULIYING",
+                "limsName": "刘丽莹",
+                "limsSex": "女",
+                "limsEducation": "硕士",
+                "limsNational": "汉",
+                "limsBirthday": "1975/7/2 0:00:00",
+                "limsDeparment": "大庆中心仪器分析所",
+                "limsWorkDate": "2006/7/5 0:00:00",
+                "limsCertificateNo": "S116032183",
+                "limsJob": "光谱组",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "WANGLEI",
+                "limsName": "王磊",
+                "limsSex": "女",
+                "limsEducation": null,
+                "limsNational": "汉",
+                "limsBirthday": "1988/11/10 0:00:00",
+                "limsDeparment": "大庆中心仪器分析所",
+                "limsWorkDate": "2013/7/8 0:00:00",
+                "limsCertificateNo": "S116032186",
+                "limsJob": "光谱组",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "YUJING",
+                "limsName": "于静",
+                "limsSex": "女",
+                "limsEducation": "硕士",
+                "limsNational": "汉",
+                "limsBirthday": "1974/1/20 0:00:00",
+                "limsDeparment": "大庆中心仪器分析研究所表征组",
+                "limsWorkDate": "1996/7/1 0:00:00",
+                "limsCertificateNo": "S116032204",
+                "limsJob": "SEM岗",
+                "limsTrainEndDate": ""
+            },
+            {
+                "limsId": null,
+                "limsName": "沈刚",
+                "limsSex": "男",
+                "limsEducation": "专科",
+                "limsNational": "汉",
+                "limsBirthday": "1975/3/2 0:00:00",
+                "limsDeparment": "大庆中心仪器分析研究所表征组",
+                "limsWorkDate": "1993/12/1 0:00:00",
+                "limsCertificateNo": "S116032207",
+                "limsJob": "BET岗",
+                "limsTrainEndDate": ""
+            },
+            {
+                "limsId": "BINGSUQIU",
+                "limsName": "邴淑秋",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1976/8/4 0:00:00",
+                "limsDeparment": "大庆中心仪器分析研究所表征组",
+                "limsWorkDate": "2003/6/1 0:00:00",
+                "limsCertificateNo": "S116032206",
+                "limsJob": "SEM岗",
+                "limsTrainEndDate": ""
+            },
+            {
+                "limsId": "LIRUIFENG-1",
+                "limsName": "李瑞峰",
+                "limsSex": "男",
+                "limsEducation": "专科",
+                "limsNational": "汉",
+                "limsBirthday": "1963/12/26 0:00:00",
+                "limsDeparment": "大庆中心仪器所表征组",
+                "limsWorkDate": "1984/7/1 0:00:00",
+                "limsCertificateNo": "S116032211",
+                "limsJob": "XRD岗",
+                "limsTrainEndDate": ""
+            },
+            {
+                "limsId": "BAOJINGYAN",
+                "limsName": "包静严",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1976/7/28 0:00:00",
+                "limsDeparment": "大庆中心仪器分析所",
+                "limsWorkDate": "1997/7/1 0:00:00",
+                "limsCertificateNo": "S116032210",
+                "limsJob": "热分析岗",
+                "limsTrainEndDate": ""
+            },
+            {
+                "limsId": "ZHAOPING",
+                "limsName": "赵萍",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1968/12/30 0:00:00",
+                "limsDeparment": "大庆中心仪器分析所",
+                "limsWorkDate": "1990/7/1 0:00:00",
+                "limsCertificateNo": "S116032205",
+                "limsJob": "BET岗",
+                "limsTrainEndDate": ""
+            },
+            {
+                "limsId": "ZHANGLIJUN",
+                "limsName": "张立军",
+                "limsSex": "男",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1965/7/23 0:00:00",
+                "limsDeparment": "大庆中心仪器分析研究所",
+                "limsWorkDate": "1989/7/1 0:00:00",
+                "limsCertificateNo": "S116032209",
+                "limsJob": "热分析岗",
+                "limsTrainEndDate": ""
+            },
+            {
+                "limsId": "BAOSHIXING",
+                "limsName": "包世星",
+                "limsSex": "男",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1963/5/4 0:00:00",
+                "limsDeparment": "大庆化工研究中心仪器分析所元素组",
+                "limsWorkDate": "1984/7/29 0:00:00",
+                "limsCertificateNo": "S116032217",
+                "limsJob": "X射线荧光光谱岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "LIQWEIDONG",
+                "limsName": "刘卫东",
+                "limsSex": "男",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1967/6/18 0:00:00",
+                "limsDeparment": "大庆化工研究中心仪器分析所元素组",
+                "limsWorkDate": "1985/10/1 0:00:00",
+                "limsCertificateNo": "S116032218",
+                "limsJob": "X射线荧光光谱岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "YANGHUIJUAN",
+                "limsName": "杨慧娟",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1973/4/15 0:00:00",
+                "limsDeparment": "大庆化工研究中心仪器分析所元素组",
+                "limsWorkDate": "1993/7/1 0:00:00",
+                "limsCertificateNo": "S116032215",
+                "limsJob": "硫分析岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "XUDONGMEI",
+                "limsName": "徐冬梅",
+                "limsSex": "女",
+                "limsEducation": "专科",
+                "limsNational": "汉",
+                "limsBirthday": "1965/3/2 0:00:00",
+                "limsDeparment": "大庆化工研究中心仪器分析所元素组",
+                "limsWorkDate": "1984/7/1 0:00:00",
+                "limsCertificateNo": "S116032214",
+                "limsJob": "硫分析岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "ZHANGYUAN",
+                "limsName": "张媛",
+                "limsSex": "女",
+                "limsEducation": "专科",
+                "limsNational": "汉",
+                "limsBirthday": "1968/4/20 0:00:00",
+                "limsDeparment": "大庆化工研究中心仪器分析所元素组",
+                "limsWorkDate": "1986/12/1 0:00:00",
+                "limsCertificateNo": "S116032213",
+                "limsJob": "氮分析岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "CUIJIANHUI",
+                "limsName": "崔建慧",
+                "limsSex": "女",
+                "limsEducation": "专科",
+                "limsNational": "汉",
+                "limsBirthday": "1988/4/20 0:00:00",
+                "limsDeparment": "大庆化工研究中心仪器分析所元素组",
+                "limsWorkDate": "2013/6/13 0:00:00",
+                "limsCertificateNo": "S116032216",
+                "limsJob": "硫分析岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "LIANGJINGCHENG",
+                "limsName": "梁景程",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1966/10/21 0:00:00",
+                "limsDeparment": "大庆化工研究中心仪器分析所元素组",
+                "limsWorkDate": "1988/12/1 0:00:00",
+                "limsCertificateNo": "S116032212",
+                "limsJob": "氮分析岗",
+                "limsTrainEndDate": "1988/7/1 0:00:00"
+            },
+            {
+                "limsId": "ZHANGHUAIZHI",
+                "limsName": "张怀志",
+                "limsSex": "男",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1966/1/24 0:00:00",
+                "limsDeparment": "大庆化工研究中心\n树脂所测试分析组",
+                "limsWorkDate": "1987/7/1 0:00:00",
+                "limsCertificateNo": "S116032121",
+                "limsJob": "组长",
+                "limsTrainEndDate": "2013/8/30 0:00:00"
+            },
+            {
+                "limsId": "WANGTAO",
+                "limsName": "王涛",
+                "limsSex": "男",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1968/9/12 0:00:00",
+                "limsDeparment": "大庆化工研究中心\n树脂所测试分析组",
+                "limsWorkDate": "1989/7/1 0:00:00",
+                "limsCertificateNo": "S116032122",
+                "limsJob": "测试分析岗",
+                "limsTrainEndDate": "2013/8/30 0:00:00"
+            },
+            {
+                "limsId": "YANJINRONG",
+                "limsName": "严金荣",
+                "limsSex": "女",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1963/6/10 0:00:00",
+                "limsDeparment": "大庆化工研究中心\n树脂所测试分析组",
+                "limsWorkDate": "1984/8/1 0:00:00",
+                "limsCertificateNo": "S116032124",
+                "limsJob": "测试分析岗",
+                "limsTrainEndDate": "2013/8/30 0:00:00"
+            },
+            {
+                "limsId": "HOUYALI",
+                "limsName": "侯雅丽",
+                "limsSex": "女",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1964/5/18 0:00:00",
+                "limsDeparment": "大庆化工研究中心\n树脂所测试分析组",
+                "limsWorkDate": "1984/7/1 0:00:00",
+                "limsCertificateNo": "S116032123",
+                "limsJob": "测试分析岗",
+                "limsTrainEndDate": "2013/8/30 0:00:00"
+            },
+            {
+                "limsId": "JINGLIRONG",
+                "limsName": "景丽荣",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1968/11/28 0:00:00",
+                "limsDeparment": "大庆化工研究中心\n树脂所测试分析组",
+                "limsWorkDate": "1990/7/1 0:00:00",
+                "limsCertificateNo": "S116032125",
+                "limsJob": "测试分析岗",
+                "limsTrainEndDate": "2013/8/30 0:00:00"
+            },
+            {
+                "limsId": "LIBO",
+                "limsName": "李波",
+                "limsSex": "男",
+                "limsEducation": "硕士",
+                "limsNational": "汉",
+                "limsBirthday": "1981/8/4 0:00:00",
+                "limsDeparment": "大庆化工研究中心\n树脂所测试分析组",
+                "limsWorkDate": "2007/7/3 0:00:00",
+                "limsCertificateNo": "S116032137",
+                "limsJob": "测试分析岗",
+                "limsTrainEndDate": "2013/8/30 0:00:00"
+            },
+            {
+                "limsId": "MALI",
+                "limsName": "马丽",
+                "limsSex": "女",
+                "limsEducation": "硕士",
+                "limsNational": "汉",
+                "limsBirthday": "1982/10/16 0:00:00",
+                "limsDeparment": "大庆化工研究中心\n树脂所测试分析组",
+                "limsWorkDate": "2008/4/1 0:00:00",
+                "limsCertificateNo": "S116032181",
+                "limsJob": "测试分析岗",
+                "limsTrainEndDate": "2013/8/30 0:00:00"
+            },
+            {
+                "limsId": "LIUYUCHUN",
+                "limsName": "刘玉春",
+                "limsSex": "男",
+                "limsEducation": "技校",
+                "limsNational": "汉",
+                "limsBirthday": "1960/4/14 0:00:00",
+                "limsDeparment": "大庆化工研究中心\n树脂所测试分析组",
+                "limsWorkDate": "1978/7/1 0:00:00",
+                "limsCertificateNo": "S116032161",
+                "limsJob": "测试分析岗",
+                "limsTrainEndDate": "2013/8/30 0:00:00"
+            },
+            {
+                "limsId": "YUJUN",
+                "limsName": "于军",
+                "limsSex": "女",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1970/2/19 0:00:00",
+                "limsDeparment": "大庆化工研究中心\n树脂所测试分析组",
+                "limsWorkDate": "1990/7/1 0:00:00",
+                "limsCertificateNo": "S116032126",
+                "limsJob": "测试分析岗",
+                "limsTrainEndDate": "2013/8/30 0:00:00"
+            },
+            {
+                "limsId": "LILI",
+                "limsName": "李莉",
+                "limsSex": "女",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1970/7/2 0:00:00",
+                "limsDeparment": "大庆化工研究中心\n树脂所测试分析组",
+                "limsWorkDate": "1990/7/1 0:00:00",
+                "limsCertificateNo": "S116032127",
+                "limsJob": "测试分析岗",
+                "limsTrainEndDate": "2013/8/30 0:00:00"
+            },
+            {
+                "limsId": "LIUBAITING",
+                "limsName": "刘柏亭",
+                "limsSex": "女",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1970/7/27 0:00:00",
+                "limsDeparment": "大庆化工研究中心\n树脂所测试分析组",
+                "limsWorkDate": "1990/7/1 0:00:00",
+                "limsCertificateNo": "S116032128",
+                "limsJob": "测试分析岗",
+                "limsTrainEndDate": "2013/8/30 0:00:00"
+            },
+            {
+                "limsId": null,
+                "limsName": "施杨",
+                "limsSex": "女",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1991/4/23 0:00:00",
+                "limsDeparment": "大庆化工研究中心\n树脂所测试分析组",
+                "limsWorkDate": "2014/2/15 0:00:00",
+                "limsCertificateNo": null,
+                "limsJob": "测试分析岗",
+                "limsTrainEndDate": "2014/1/15 0:00:00"
+            },
+            {
+                "limsId": null,
+                "limsName": "王曦萌",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1990/2/20 0:00:00",
+                "limsDeparment": "大庆化工研究中心\n树脂所测试分析组",
+                "limsWorkDate": "2014/2/15 0:00:00",
+                "limsCertificateNo": null,
+                "limsJob": "测试分析岗",
+                "limsTrainEndDate": "2014/1/15 0:00:00"
+            },
+            {
+                "limsId": "CONGLIRU",
+                "limsName": "丛丽茹",
+                "limsSex": "女",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1966/12/17 0:00:00",
+                "limsDeparment": "大庆中心\n炼油研究所\n106组",
+                "limsWorkDate": "1905/6/9 16:48:00",
+                "limsCertificateNo": "S116032040",
+                "limsJob": "油品分析",
+                "limsTrainEndDate": "2013/9/17 0:00:00"
+            },
+            {
+                "limsId": "LISHUJIE",
+                "limsName": "李淑杰",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1969/4/23 0:00:00",
+                "limsDeparment": "大庆中心\n炼油研究所\n107组",
+                "limsWorkDate": "1905/6/12 16:48:00",
+                "limsCertificateNo": "S116032041",
+                "limsJob": "油品分析",
+                "limsTrainEndDate": "2013/9/17 0:00:00"
+            },
+            {
+                "limsId": "HANYAOHUI",
+                "limsName": "韩耀辉",
+                "limsSex": "女",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1962/9/30 0:00:00",
+                "limsDeparment": "大庆中心\n炼油研究所\n108组",
+                "limsWorkDate": "1979/7/1 0:00:00",
+                "limsCertificateNo": "S116032042",
+                "limsJob": "油品分析",
+                "limsTrainEndDate": "2013/9/17 0:00:00"
+            },
+            {
+                "limsId": "GUANXU",
+                "limsName": "关旭",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1979/12/26 0:00:00",
+                "limsDeparment": "大庆中心\n炼油研究所\n109组",
+                "limsWorkDate": "2003/7/1 0:00:00",
+                "limsCertificateNo": "S116032043",
+                "limsJob": "油品分析",
+                "limsTrainEndDate": "2013/9/17 0:00:00"
+            },
+            {
+                "limsId": "LIULI",
+                "limsName": "刘莉",
+                "limsSex": "女",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1965/6/14 0:00:00",
+                "limsDeparment": "大庆中心\n炼油研究所\n110组",
+                "limsWorkDate": "1987/7/1 0:00:00",
+                "limsCertificateNo": "S116032044",
+                "limsJob": "油品分析",
+                "limsTrainEndDate": "2013/9/17 0:00:00"
+            },
+            {
+                "limsId": "HONGMEI",
+                "limsName": "洪梅",
+                "limsSex": "女",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1965/11/23 0:00:00",
+                "limsDeparment": "大庆中心\n炼油研究所\n111组",
+                "limsWorkDate": "1986/7/1 0:00:00",
+                "limsCertificateNo": "S116032045",
+                "limsJob": "油品分析",
+                "limsTrainEndDate": "2013/9/17 0:00:00"                
+            },
+            {
+                "limsId": "JIEHONG",
+                "limsName": "揭宏",
+                "limsSex": "女",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1969/3/13 0:00:00",
+                "limsDeparment": "大庆中心\n炼油研究所\n112组",
+                "limsWorkDate": "1987/11/1 0:00:00",
+                "limsCertificateNo": "S116032046",
+                "limsJob": "油品分析",
+                "limsTrainEndDate": "2013/9/17 0:00:00"
+            },
+            {
+                "limsId": "TONGSHUQIU",
+                "limsName": "佟淑秋",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1970/5/7 0:00:00",
+                "limsDeparment": "大庆中心\n炼油研究所\n113组",
+                "limsWorkDate": "1990/7/1 0:00:00",
+                "limsCertificateNo": "S116032048",
+                "limsJob": "油品分析",
+                "limsTrainEndDate": "2013/9/17 0:00:00"
+            },
+            {
+                "limsId": "SHIYAJUAN",
+                "limsName": "史亚娟",
+                "limsSex": "女",
+                "limsEducation": "高中",
+                "limsNational": "汉",
+                "limsBirthday": "1905/5/18 12:00:00",
+                "limsDeparment": "大庆中心\n炼油研究所\n114组",
+                "limsWorkDate": "1985/5/1 0:00:00",
+                "limsCertificateNo": "S116032049",
+                "limsJob": "油品分析",
+                "limsTrainEndDate": "2013/9/17 0:00:00"
+            },
+            {
+                "limsId": "LINYANNAN",
+                "limsName": "林雁南",
+                "limsSex": "女",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1969/10/21 0:00:00",
+                "limsDeparment": "大庆中心\n炼油研究所\n115组",
+                "limsWorkDate": "1990/7/1 0:00:00",
+                "limsCertificateNo": "S116032050",
+                "limsJob": "油品分析",
+                "limsTrainEndDate": "2013/9/17 0:00:00"
+            },
+            {
+                "limsId": "HUPING",
+                "limsName": "胡萍",
+                "limsSex": "女",
+                "limsEducation": "高中",
+                "limsNational": "汉",
+                "limsBirthday": "1967/9/18 0:00:00",
+                "limsDeparment": "兰州中心化工催化剂研究所分析检测组",
+                "limsWorkDate": "1986/12/6 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "分析limsJob",
+                "limsTrainEndDate": "2013/12/1 0:00:00"
+            },
+            {
+                "limsId": "QUZHAOXIA",
+                "limsName": "瞿朝霞",
+                "limsSex": "女",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1970/9/14 0:00:00",
+                "limsDeparment": "兰州中心化工催化剂研究所分析检测组",
+                "limsWorkDate": "1986/12/17 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "分析limsJob",
+                "limsTrainEndDate": "2013/12/1 0:00:00"
+            },
+            {
+                "limsId": "GUQING",
+                "limsName": "顾青",
+                "limsSex": "女",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1964/6/23 0:00:00",
+                "limsDeparment": "兰州中心化工催化剂研究所分析检测组",
+                "limsWorkDate": "1987/7/15 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "分析limsJob",
+                "limsTrainEndDate": "2013/12/1 0:00:00"
+            },
+            {
+                "limsId": "YINLINGLING",
+                "limsName": "尹玲玲",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1969/9/12 0:00:00",
+                "limsDeparment": "兰州中心化工催化剂研究所分析检测组",
+                "limsWorkDate": "1990/9/30 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "分析limsJob",
+                "limsTrainEndDate": "2013/12/1 0:00:00"
+            },
+            {
+                "limsId": "LIYAN",
+                "limsName": "李燕",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1969/10/31 0:00:00",
+                "limsDeparment": "兰州中心化工催化剂研究所分析检测组",
+                "limsWorkDate": "1990/7/11 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "分析limsJob",
+                "limsTrainEndDate": "2013/12/1 0:00:00"
+            },
+            {
+                "limsId": "JIANGCAILAN",
+                "limsName": "蒋彩兰",
+                "limsSex": "女",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1970/5/5 0:00:00",
+                "limsDeparment": "兰州中心化工催化剂研究所分析检测组",
+                "limsWorkDate": "1989/7/1 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "分析limsJob",
+                "limsTrainEndDate": "2013/12/1 0:00:00"
+            },
+            {
+                "limsId": "MURUIJUAN",
+                "limsName": "穆蕊娟",
+                "limsSex": "女",
+                "limsEducation": "硕士",
+                "limsNational": "汉",
+                "limsBirthday": "1985/1/1 0:00:00",
+                "limsDeparment": "兰州中心\n聚烯烃所分析组",
+                "limsWorkDate": "2012/7/1 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "催化剂",
+                "limsTrainEndDate": "2013/12/31 0:00:00"
+            },
+            {
+                "limsId": "HAOPING",
+                "limsName": "郝萍",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1975/8/16 0:00:00",
+                "limsDeparment": "兰州中心\n聚烯烃所分析组",
+                "limsWorkDate": "1994/7/21 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "催化剂",
+                "limsTrainEndDate": "2013/12/31 0:00:00"
+            },
+            {
+                "limsId": "FANJIE",
+                "limsName": "樊洁",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1984/8/13 0:00:00",
+                "limsDeparment": "兰州中心\n聚烯烃所分析组",
+                "limsWorkDate": "2007/7/23 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "物性测试",
+                "limsTrainEndDate": "2013/12/31 0:00:00"
+            },
+            {
+                "limsId": "GUOYI",
+                "limsName": "郭义",
+                "limsSex": "男",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1970/5/26 0:00:00",
+                "limsDeparment": "兰州中心\n聚烯烃所分析组",
+                "limsWorkDate": "1996/7/5 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "物性测试",
+                "limsTrainEndDate": "2013/12/31 0:00:00"
+            },
+            {
+                "limsId": "ZHOUCHAOYING",
+                "limsName": "周超英",
+                "limsSex": "男",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1958/8/13 0:00:00",
+                "limsDeparment": "兰州中心\n聚烯烃所分析组",
+                "limsWorkDate": "1975/4/1 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "物性测试",
+                "limsTrainEndDate": "2013/12/31 0:00:00"
+            },
+            {
+                "limsId": "SHAOYUEJUN",
+                "limsName": "邵月君",
+                "limsSex": "女",
+                "limsEducation": "中专",
+                "limsNational": "汉",
+                "limsBirthday": "1962/9/26 0:00:00",
+                "limsDeparment": "兰州中心\n聚烯烃所分析组",
+                "limsWorkDate": "1981/8/1 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "物性测试",
+                "limsTrainEndDate": "2013/12/31 0:00:00"
+            },
+            {
+                "limsId": "XUMINGHUI",
+                "limsName": "徐明辉",
+                "limsSex": "男",
+                "limsEducation": "高中",
+                "limsNational": "汉",
+                "limsBirthday": "1955/3/9 0:00:00",
+                "limsDeparment": "兰州中心\n聚烯烃所分析组",
+                "limsWorkDate": "1973/11/1 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "物性测试",
+                "limsTrainEndDate": "2013/12/31 0:00:00"
+            },
+            {
+                "limsId": "NIUJINLONG",
+                "limsName": "牛进龙",
+                "limsSex": "男",
+                "limsEducation": "研究生",
+                "limsNational": "汉",
+                "limsBirthday": "1974/4/29 0:00:00",
+                "limsDeparment": "兰州中心\n环化所分析检测组",
+                "limsWorkDate": "1998/7/15 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "仪器分析",
+                "limsTrainEndDate": "2013/12/31 0:00:00"
+            },
+            {
+                "limsId": "CHANGGUIZU",
+                "limsName": "常桂祖",
+                "limsSex": "女",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1965/9/19 0:00:00",
+                "limsDeparment": "兰州中心\n炼化所分析组",
+                "limsWorkDate": "1987/7/6 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "分析",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "RENHAIOU",
+                "limsName": "任海鸥",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1982/7/6 0:00:00",
+                "limsDeparment": "兰州中心\n炼化所分析组",
+                "limsWorkDate": "2006/7/20 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "分析",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "ZHANGDUNHUA",
+                "limsName": "张敦花",
+                "limsSex": "女",
+                "limsEducation": "中专",
+                "limsNational": "汉",
+                "limsBirthday": "1961/7/27 0:00:00",
+                "limsDeparment": "兰州中心\n炼化所分析组",
+                "limsWorkDate": "1978/10/1 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "分析",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "TANGYINGCHUN",
+                "limsName": "唐迎春",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1967/1/30 0:00:00",
+                "limsDeparment": "兰州中心\n炼化所分析组",
+                "limsWorkDate": "1988/7/6 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "分析",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "CHENGLIANGLIANG",
+                "limsName": "程亮亮",
+                "limsSex": "女",
+                "limsEducation": "硕士研究生",
+                "limsNational": "满",
+                "limsBirthday": "1980/1/3 0:00:00",
+                "limsDeparment": "兰州中心\n炼化所分析组",
+                "limsWorkDate": "2005/7/20 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "分析",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
+            },
+            {
+                "limsId": "CHENGENPING",
+                "limsName": "陈跟平",
+                "limsSex": "男",
+                "limsEducation": "硕士研究生",
+                "limsNational": "汉",
+                "limsBirthday": "1976/11/1 0:00:00",
+                "limsDeparment": "兰州中心\n标检所仪器分析组",
+                "limsWorkDate": "2001/7/20 0:00:00",
+                "limsCertificateNo": "030",
+                "limsJob": "电镜岗",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "ZHAOJIALIN",
+                "limsName": "赵家琳",
+                "limsSex": "男",
+                "limsEducation": "硕士研究生",
+                "limsNational": "汉 ",
+                "limsBirthday": "1975/1/25 0:00:00",
+                "limsDeparment": "兰州中心\n标检所仪器分析组",
+                "limsWorkDate": "1999/7/23 0:00:00",
+                "limsCertificateNo": "042",
+                "limsJob": "红外岗",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "QINPENG",
+                "limsName": "秦鹏",
+                "limsSex": "男",
+                "limsEducation": "硕士研究生",
+                "limsNational": "汉",
+                "limsBirthday": "1976/10/4 0:00:00",
+                "limsDeparment": "兰州中心\n标检所仪器分析组",
+                "limsWorkDate": "2000/7/7 0:00:00",
+                "limsCertificateNo": "031",
+                "limsJob": "色谱岗",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "YANGFANG",
+                "limsName": "杨芳",
+                "limsSex": "女",
+                "limsEducation": "硕士研究生",
+                "limsNational": "汉 ",
+                "limsBirthday": "1975/12/26 0:00:00",
+                "limsDeparment": "兰州中心\n标检所仪器分析组",
+                "limsWorkDate": "1999/7/1 0:00:00",
+                "limsCertificateNo": "037",
+                "limsJob": "凝胶色谱热分析",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "WANGFANG",
+                "limsName": "王芳",
+                "limsSex": "女",
+                "limsEducation": "硕士研究生",
+                "limsNational": "汉",
+                "limsBirthday": "1976/5/24 0:00:00",
+                "limsDeparment": "兰州中心\n标检所仪器分析组",
+                "limsWorkDate": "2005/7/2 0:00:00",
+                "limsCertificateNo": "035",
+                "limsJob": "色谱岗",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "FANGUONING",
+                "limsName": "范国宁",
+                "limsSex": "男",
+                "limsEducation": "硕士研究生",
+                "limsNational": "汉 ",
+                "limsBirthday": "1980/2/13 0:00:00",
+                "limsDeparment": "兰州中心\n标检所仪器分析组",
+                "limsWorkDate": "2006/7/20 0:00:00",
+                "limsCertificateNo": "41",
+                "limsJob": "XRD-ICP-EA",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "JIAHUIQING",
+                "limsName": "贾慧青",
+                "limsSex": "女",
+                "limsEducation": "硕士研究生",
+                "limsNational": "汉 ",
+                "limsBirthday": "1979/11/10 0:00:00",
+                "limsDeparment": "兰州中心\n标检所仪器分析组",
+                "limsWorkDate": "2006/7/20 0:00:00",
+                "limsCertificateNo": "038",
+                "limsJob": "凝胶色谱 热分析",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "GENGZHANJIE",
+                "limsName": "耿占杰",
+                "limsSex": "男",
+                "limsEducation": "硕士研究生",
+                "limsNational": "汉",
+                "limsBirthday": "1981/6/15 0:00:00",
+                "limsDeparment": "兰州中心\n标检所仪器分析组",
+                "limsWorkDate": "2007/7/24 0:00:00",
+                "limsCertificateNo": "034",
+                "limsJob": "色谱岗",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "GAODUJUAN",
+                "limsName": "高杜娟",
+                "limsSex": "女",
+                "limsEducation": "硕士研究生",
+                "limsNational": "汉 ",
+                "limsBirthday": "1981/4/29 0:00:00",
+                "limsDeparment": "兰州中心\n标检所仪器分析组",
+                "limsWorkDate": "2009/8/31 0:00:00",
+                "limsCertificateNo": "043",
+                "limsJob": "红外岗",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "HANPING",
+                "limsName": "韩萍",
+                "limsSex": "女",
+                "limsEducation": "理学学士",
+                "limsNational": "汉 ",
+                "limsBirthday": "1965/10/23 0:00:00",
+                "limsDeparment": "兰州中心\n标检所仪器分析组",
+                "limsWorkDate": "1987/7/3 0:00:00",
+                "limsCertificateNo": "039",
+                "limsJob": "XRD-ICP-EA",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "ZHANGCUILAN",
+                "limsName": "张翠兰",
+                "limsSex": "女",
+                "limsEducation": "理学学士",
+                "limsNational": "汉",
+                "limsBirthday": "1971/12/12 0:00:00",
+                "limsDeparment": "兰州中心\n标检所仪器分析组",
+                "limsWorkDate": "1994/6/24 0:00:00",
+                "limsCertificateNo": "032",
+                "limsJob": "电镜岗",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "ZHANGSHIYU",
+                "limsName": "张士玉",
+                "limsSex": "女",
+                "limsEducation": "理学学士",
+                "limsNational": "汉 ",
+                "limsBirthday": "1971/6/28 0:00:00",
+                "limsDeparment": "兰州中心\n标检所仪器分析组",
+                "limsWorkDate": "2007/6/18 0:00:00",
+                "limsCertificateNo": "033",
+                "limsJob": "电镜岗",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "GAODONGMEI",
+                "limsName": "高冬梅",
+                "limsSex": "女",
+                "limsEducation": "硕士研究生",
+                "limsNational": "汉",
+                "limsBirthday": "1980/12/8 0:00:00",
+                "limsDeparment": "兰州中心\n标检所仪器分析组",
+                "limsWorkDate": "2010/7/28 0:00:00",
+                "limsCertificateNo": "044",
+                "limsJob": "色谱岗",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "HUANGSHIYING",
+                "limsName": "黄世英",
+                "limsSex": "女",
+                "limsEducation": "硕士研究生",
+                "limsNational": "汉 ",
+                "limsBirthday": "1979/9/2 0:00:00",
+                "limsDeparment": "兰州中心标检所分析检测组",
+                "limsWorkDate": "2006/6/28 0:00:00",
+                "limsCertificateNo": "046",
+                "limsJob": "检测岗",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "ZHAOHUIHUI",
+                "limsName": "赵慧晖",
+                "limsSex": "女",
+                "limsEducation": "硕士研究生",
+                "limsNational": "汉",
+                "limsBirthday": "1987/1/21 0:00:00",
+                "limsDeparment": "兰州中心标检所分析检测组",
+                "limsWorkDate": "2012/7/26 0:00:00",
+                "limsCertificateNo": "048",
+                "limsJob": "检测岗",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "ZHAOYOUMU",
+                "limsName": "赵又穆",
+                "limsSex": "女",
+                "limsEducation": "理学学士",
+                "limsNational": "汉 ",
+                "limsBirthday": "1981/10/8 0:00:00",
+                "limsDeparment": "兰州中心标检所分析检测组",
+                "limsWorkDate": "2001/9/1 0:00:00",
+                "limsCertificateNo": "049",
+                "limsJob": "检测岗",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "YANGYUQIONG",
+                "limsName": "杨玉琼",
+                "limsSex": "女",
+                "limsEducation": "理学学士",
+                "limsNational": "汉",
+                "limsBirthday": "1985/5/24 0:00:00",
+                "limsDeparment": "兰州中心标检所分析检测组",
+                "limsWorkDate": "2013/7/1 0:00:00",
+                "limsCertificateNo": "050",
+                "limsJob": "检测岗",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "SHENHAILONG",
+                "limsName": "沈海陇",
+                "limsSex": "男",
+                "limsEducation": "大专",
+                "limsNational": "汉 ",
+                "limsBirthday": "1963/9/11 0:00:00",
+                "limsDeparment": "兰州中心标检所分析检测组",
+                "limsWorkDate": "1984/7/1 0:00:00",
+                "limsCertificateNo": "008",
+                "limsJob": "检测岗",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "WANGHONGBIN",
+                "limsName": "王宏斌",
+                "limsSex": "男",
+                "limsEducation": "技校",
+                "limsNational": "汉",
+                "limsBirthday": "1969/9/19 0:00:00",
+                "limsDeparment": "兰州中心标检所分析检测组",
+                "limsWorkDate": "1989/7/1 0:00:00",
+                "limsCertificateNo": "010",
+                "limsJob": "检测岗",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "LISHUPING",
+                "limsName": "李淑萍",
+                "limsSex": "女",
+                "limsEducation": "理学学士",
+                "limsNational": "汉 ",
+                "limsBirthday": "1973/1/16 0:00:00",
+                "limsDeparment": "兰州中心标检所分析检测组",
+                "limsWorkDate": "1993/3/8 0:00:00",
+                "limsCertificateNo": "006",
+                "limsJob": "检测岗",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "DAMINFENG",
+                "limsName": "笪敏峰",
+                "limsSex": "女",
+                "limsEducation": "理学学士",
+                "limsNational": "汉",
+                "limsBirthday": "1977/6/1 0:00:00",
+                "limsDeparment": "兰州中心标检所分析检测组",
+                "limsWorkDate": "2001/7/20 0:00:00",
+                "limsCertificateNo": "003",
+                "limsJob": "检测岗",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "WANGCHUNLONG",
+                "limsName": "王春龙",
+                "limsSex": "男",
+                "limsEducation": "硕士研究生",
+                "limsNational": "汉 ",
+                "limsBirthday": "1976/2/17 0:00:00",
+                "limsDeparment": "兰州中心标检所分析检测组",
+                "limsWorkDate": "2005/7/1 0:00:00",
+                "limsCertificateNo": "007",
+                "limsJob": "检测岗",
+                "limsTrainEndDate": "2013/12/25 0:00:00"
+            },
+            {
+                "limsId": "YANGYIQING",
+                "limsName": "杨一青",
+                "limsSex": "女",
+                "limsEducation": "博士研究生 ",
+                "limsNational": "汉",
+                "limsBirthday": "1974/6/10 0:00:00",
+                "limsDeparment": "兰州中心\n炼制所分析评价组",
+                "limsWorkDate": "2004/6/20 0:00:00",
+                "limsCertificateNo": "00044457",
+                "limsJob": "孔结构表征",
+                "limsTrainEndDate": "2013/12/27 0:00:00"
+            },
+            {
+                "limsId": "WANGYAHONG",
+                "limsName": "王亚红",
+                "limsSex": "女",
+                "limsEducation": "大学学士",
+                "limsNational": "汉",
+                "limsBirthday": "1966/2/9 0:00:00",
+                "limsDeparment": "兰州中心\n炼制所分析评价组",
+                "limsWorkDate": "1988/8/11 0:00:00",
+                "limsCertificateNo": "00044429",
+                "limsJob": "X-荧光",
+                "limsTrainEndDate": "2013/12/27 0:00:00"
+            },
+            {
+                "limsId": "YANGZHOUXIA",
+                "limsName": "杨周侠",
+                "limsSex": "女",
+                "limsEducation": "高中",
+                "limsNational": "汉",
+                "limsBirthday": "1967/11/2 0:00:00",
+                "limsDeparment": "兰州中心\n炼制所分析评价组",
+                "limsWorkDate": "1989/4/10 0:00:00",
+                "limsCertificateNo": "00052473",
+                "limsJob": "元素分析",
+                "limsTrainEndDate": "2013/12/27 0:00:00"
+            },
+            {
+                "limsId": "CAOGENGZHEN",
+                "limsName": "曹庚振",
+                "limsSex": "男",
+                "limsEducation": "硕士研究生",
+                "limsNational": "汉",
+                "limsBirthday": "1980/12/5 0:00:00",
+                "limsDeparment": "兰州中心\n炼制所分析评价组",
+                "limsWorkDate": "2006/7/20 0:00:00",
+                "limsCertificateNo": "00055758",
+                "limsJob": "X-衍射",
+                "limsTrainEndDate": "2013/12/27 0:00:00"
+            },
+            {
+                "limsId": "ZHANGYANHUI",
+                "limsName": "张艳惠",
+                "limsSex": "女",
+                "limsEducation": "中专",
+                "limsNational": "汉",
+                "limsBirthday": "1965/7/5 0:00:00",
+                "limsDeparment": "兰州中心\n炼制所分析评价组",
+                "limsWorkDate": "1986/7/14 0:00:00",
+                "limsCertificateNo": "00044428",
+                "limsJob": "强度粒度",
+                "limsTrainEndDate": "2013/12/27 0:00:00"
+            },
+            {
+                "limsId": "ZHANGAIPING",
+                "limsName": "张爱萍",
+                "limsSex": "女",
+                "limsEducation": "大专函",
+                "limsNational": "汉",
+                "limsBirthday": "1969/10/10 0:00:00",
+                "limsDeparment": "兰州中心\n炼制所分析评价组",
+                "limsWorkDate": "1992/8/1 0:00:00",
+                "limsCertificateNo": "00052479",
+                "limsJob": "微反活性",
+                "limsTrainEndDate": "2013/12/27 0:00:00"
+            },
+            {
+                "limsId": "LIULANHUA",
+                "limsName": "刘兰华",
+                "limsSex": "女",
+                "limsEducation": "大专",
+                "limsNational": "汉",
+                "limsBirthday": "1966/3/22 0:00:00",
+                "limsDeparment": "兰州中心\n炼制所分析评价组",
+                "limsWorkDate": "1985/8/1 0:00:00",
+                "limsCertificateNo": "00044451",
+                "limsJob": "色谱",
+                "limsTrainEndDate": "2013/12/27 0:00:00"
+            },
+            {
+                "limsId": "SUYI",
+                "limsName": "苏怡",
+                "limsSex": "女",
+                "limsEducation": "大学学士",
+                "limsNational": "汉",
+                "limsBirthday": "1982/6/7 0:00:00",
+                "limsDeparment": "兰州中心\n炼制所分析评价组",
+                "limsWorkDate": "2005/7/20 0:00:00",
+                "limsCertificateNo": "00044458",
+                "limsJob": "红外,氨-TPD",
+                "limsTrainEndDate": "2013/12/27 0:00:00"
+            },
+            {
+                "limsId": "TENGQIUXIA",
+                "limsName": "滕秋霞",
+                "limsSex": "女",
+                "limsEducation": "大专夜",
+                "limsNational": "汉",
+                "limsBirthday": "1974/11/11 0:00:00",
+                "limsDeparment": "兰州中心\n炼制所分析评价组",
+                "limsWorkDate": "1995/8/1 0:00:00",
+                "limsCertificateNo": "00052483",
+                "limsJob": "强度粒度",
+                "limsTrainEndDate": "2013/12/27 0:00:00"
+            },
+            {
+                "limsId": "SUNXUEQIN",
+                "limsName": "孙雪芹",
+                "limsSex": "女",
+                "limsEducation": "硕士研究生",
+                "limsNational": "汉",
+                "limsBirthday": "1981/6/5 0:00:00",
+                "limsDeparment": "兰州中心\n炼制所分析评价组",
+                "limsWorkDate": "2006/7/20 0:00:00",
+                "limsCertificateNo": "00055757",
+                "limsJob": "色谱",
+                "limsTrainEndDate": "2013/12/27 0:00:00"
+            },
+            {
+                "limsId": "LIUJUANJUAN",
+                "limsName": "刘娟娟",
+                "limsSex": "女",
+                "limsEducation": "大学学士",
+                "limsNational": "汉",
+                "limsBirthday": "1976/6/15 0:00:00",
+                "limsDeparment": "兰州中心\n炼制所分析评价组",
+                "limsWorkDate": "1998/7/13 0:00:00",
+                "limsCertificateNo": "00044425",
+                "limsJob": "微反活性",
+                "limsTrainEndDate": "2013/12/27 0:00:00"
+            },
+            {
+                "limsId": "LIUMINGXIA",
+                "limsName": "刘明霞",
+                "limsSex": "女",
+                "limsEducation": "硕士研究生",
+                "limsNational": "汉",
+                "limsBirthday": "1985/3/7 0:00:00",
+                "limsDeparment": "兰州中心\n炼制所分析评价组",
+                "limsWorkDate": "2010/7/28 0:00:00",
+                "limsCertificateNo": "50236476",
+                "limsJob": "孔结构表征",
+                "limsTrainEndDate": "2013/12/27 0:00:00"
+            },
+            {
+                "limsId": "WANGLIN",
+                "limsName": "王林",
+                "limsSex": "女",
+                "limsEducation": "硕士研究生",
+                "limsNational": "汉",
+                "limsBirthday": "1982/3/11 0:00:00",
+                "limsDeparment": "兰州中心\n炼制所分析评价组",
+                "limsWorkDate": "2007/7/23 0:00:00",
+                "limsCertificateNo": "50005570",
+                "limsJob": "X-衍射",
+                "limsTrainEndDate": "2013/12/27 0:00:00"
+            },
+            {
+                "limsId": "YEHONGWEI",
+                "limsName": "叶红卫",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1966/11/12 0:00:00",
+                "limsDeparment": "兰州中心\n聚丙烯中试所分析组",
+                "limsWorkDate": "1988/7/6 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "物性分析",
+                "limsTrainEndDate": "2013/12/26 0:00:00"
+            },
+            {
+                "limsId": "ZHOUJING",
+                "limsName": "周静",
+                "limsSex": "女",
+                "limsEducation": "高中",
+                "limsNational": "汉",
+                "limsBirthday": "1968/2/12 0:00:00",
+                "limsDeparment": "兰州中心\n聚丙烯中试所分析组",
+                "limsWorkDate": "1986/12/4 0:00:00",
+                "limsCertificateNo": "",
+                "limsJob": "物性分析",
+                "limsTrainEndDate": "2013/12/26 0:00:00"
+            }
+        ]
+    },
+    //人员详情
+    "staffModel":{
+        "success":true,
+        "data":[
+            {
+                "staffId":"YIXUEFEI",
+                "staffName":"衣学飞",
+                "staffSex":"女"
+            }
+        ]
+    },
+    //一段时间内分析的样品、项目量
+    "analysisAmount":{
+        "suceescc":true,
+        "data":[
+            {
+                "sampleAmount":50,
+                "testAmount":90
+            }
+        ]
+    },
+    //课题授权
+    "subjectRole":{
+        "success":true,
+        "data":[
+            {
+                "subjectId":"11-08-02-02/03",
+                "subjectName":"炼厂制氢技术开发与应用研究-11-08-02-02/03",
+                "status":"在研"
+            },
+            {
+                "subjectId":"14-01-05-09",
+                "subjectName":"劣质柴油加氢改质技术小试研究及提高劣质柴油十六烷值加氢催化剂中试开发",
+                "status":"可用"
+            },
+            {
+                "subjectId":"15-09-05-01",
+                "subjectName":"无溶剂过程合成ZSM-5分子筛小试技术研究",
+                "status":"可用"
+            },
+            {
+                "subjectId":"15-09-01-02",
+                "subjectName":"梯级孔无定形硅铝载体和氧化铝材料的制备与应用小试研究",
+                "status":"可用"
+            },
+            {
+                "subjectId":"2016E-0707",
+                "subjectName":"炼油催化剂关键催化材料研究开发与工业应用",
+                "status":"完成"
+            },
+            {
+                "subjectId":"2015E-2903",
+                "subjectName":"航空生物燃料原料加氢处理催化剂及工艺技术开发",
+                "status":"结题"
+            }
+        ]
+    },
+    //所申请评价任务
+    "applyTask":{
+        "success":true,
+        "data":[
+            {
+                "taskId":"HYD·IN·20161221·2",
+                "taskName":"测试加氢评价业务中心内部委托任务1221-1号",
+                "subjectId":"14-01-02-10-1",
+                "subjectName":"加氢法生产生物柴油技术小试研究开发",
+                "deviceId":"U116",
+                "deviceName":"U116_200ml双反氢气一次通过加氢试验装置（重油）",
+                "taskProgress":"8/8"
+            },
+            {
+                "taskId":"HYD·IN·20161221·2",
+                "taskName":"测试加氢评价业务中心内部委托任务1221-1号",
+                "subjectId":"14-01-02-10-1",
+                "subjectName":"加氢法生产生物柴油技术小试研究开发",
+                "deviceId":"U116",
+                "deviceName":"U116_200ml双反氢气一次通过加氢试验装置（重油）",
+                "taskProgress":"8/8"
+            },
+            {
+                "taskId":"HYD·IN·20161221·2",
+                "taskName":"测试加氢评价业务中心内部委托任务1221-1号",
+                "subjectId":"14-01-02-10-1",
+                "subjectName":"加氢法生产生物柴油技术小试研究开发",
+                "deviceId":"U116",
+                "deviceName":"U116_200ml双反氢气一次通过加氢试验装置（重油）",
+                "taskProgress":"8/8"
+            },
+            {
+                "taskId":"HYD·IN·20161221·2",
+                "taskName":"测试加氢评价业务中心内部委托任务1221-1号",
+                "subjectId":"14-01-02-10-1",
+                "subjectName":"加氢法生产生物柴油技术小试研究开发",
+                "deviceId":"U116",
+                "deviceName":"U116_200ml双反氢气一次通过加氢试验装置（重油）",
+                "taskProgress":"8/8"
+            },
+            {
+                "taskId":"HYD·IN·20161221·2",
+                "taskName":"测试加氢评价业务中心内部委托任务1221-1号",
+                "subjectId":"14-01-02-10-1",
+                "subjectName":"加氢法生产生物柴油技术小试研究开发",
+                "deviceId":"U116",
+                "deviceName":"U116_200ml双反氢气一次通过加氢试验装置（重油）",
+                "taskProgress":"8/8"
+            }
+        ]
+    }
+}

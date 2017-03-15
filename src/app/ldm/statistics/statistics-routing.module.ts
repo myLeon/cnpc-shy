@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { StatisticsComponent} from './statistics.component';
 import { ListComponent} from './list/list.component'
 
+
 const routes: Routes = [
     {
     path:'',
@@ -10,7 +11,7 @@ const routes: Routes = [
     children:[
       {path:'',redirectTo:'list',pathMatch:'full'},
       {path:'list',component:ListComponent},
-      {path:'list',loadChildren:'app/ldm/statistics/list/list.module#ListModule'}
+      {path:'detail',loadChildren:'app/ldm/statistics/detail/detail.module#DetailModule'}
     ]
 }
 

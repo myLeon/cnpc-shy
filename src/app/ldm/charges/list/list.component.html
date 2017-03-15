@@ -1,0 +1,23 @@
+<div class="container" >
+<p>
+   <a routerLink="../detail" >list works!</a>
+</p>
+<!--<ng-table [config]="jqTask.config"  [rows]="jqTask.rows" [columns]="jqTask.columns"></ng-table>-->
+<mdl-textfield type="text" label="名称关键字" [(ngModel)]="search" floating-label></mdl-textfield>
+
+<kendo-grid [data]="gridView | chargesFilter : search">
+  <kendo-grid-column field="ProductName" title="姓名" [width]="80"></kendo-grid-column>
+  <kendo-grid-column field="ProductDate" title="生日" [width]="300"></kendo-grid-column>
+  <kendo-grid-column field="工作年限" title="工作年限" [width]="120"></kendo-grid-column>
+  <kendo-grid-column field="毕业学校" title="毕业学校" [width]="120"></kendo-grid-column>
+  <kendo-grid-column field="任职岗位" title="任职岗位" [width]="80"></kendo-grid-column>
+  <kendo-grid-column field="入职时间" title="入职时间" [width]="300"></kendo-grid-column>
+  <kendo-grid-column field="是否已婚" title="是否已婚" [width]="120"></kendo-grid-column>
+  <kendo-grid-column field="毕业学校" title="专业" [width]="120"></kendo-grid-column>
+  <kendo-grid-column field="Category.CategoryName" title="Category">
+  </kendo-grid-column>
+  <kendo-grid-messages noRecords="无数据显示.">
+  </kendo-grid-messages>
+</kendo-grid>
+</div>
+

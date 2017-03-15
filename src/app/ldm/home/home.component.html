@@ -5,27 +5,27 @@
       <ul class="nav flex-column " id="myTab" role="tablist">
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/ldm','shy','group']" on-mouseenter="shwoPanl=1">
-            <i class="fa fa-bath fa-fw "></i> 组织机构{{par}} <i class="fa fa-angle-right float-right mt-1"></i>
+            <i class="fa fa-bath fa-fw "></i> 组织机构 <i class="fa fa-angle-right float-right mt-1"></i>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink='/ldm/shy/analyze' on-mouseenter="shwoPanl=2">
-            <i class="fa fa-wpforms fa-fw"></i> 分析任务 <i class="fa fa-angle-right float-right mt-1"></i>
+          <a class="nav-link" routerLink='/ldm/shy/sample' on-mouseenter="shwoPanl=2">
+            <i class="fa fa-wpforms fa-fw"></i> 样品分析 <i class="fa fa-angle-right float-right mt-1"></i>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink='/ldm/shy/evaluate' role="tab" on-mouseenter="shwoPanl=3">
-            <i class="fa fa-wpforms fa-fw"></i> 评价任务<i class="fa fa-angle-right float-right mt-1"></i>
+          <a class="nav-link" routerLink='/ldm/shy/task' role="tab" on-mouseenter="shwoPanl=3">
+            <i class="fa fa-wpforms fa-fw"></i> 评价数据 <i class="fa fa-angle-right float-right mt-1"></i>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink='/ldm/shy/equipment' on-mouseenter="shwoPanl=4">
-            <i class="fa fa-microchip fa-fw"></i> 中试装置<i class="fa fa-angle-right float-right mt-1"></i>
+          <a class="nav-link" routerLink='/ldm/shy/instrument' on-mouseenter="shwoPanl=4">
+            <i class="fa fa-microchip fa-fw"></i>仪器设备 <i class="fa fa-angle-right float-right mt-1"></i>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink='/ldm/shy/device' on-mouseenter="shwoPanl=5">
-            <i class="fa fa-cube fa-fw"></i> 仪器设备<i class="fa fa-angle-right float-right mt-1"></i>
+            <i class="fa fa-cube fa-fw"></i>中试装置 <i class="fa fa-angle-right float-right mt-1"></i>
           </a>
         </li>
         <li class="nav-item">
@@ -210,7 +210,7 @@
       </div>
     </div>
 
-    <div class="card card-inverse card-primary mt-3" style="border-radius:0px; ">
+    <div class="card card-inverse card-primary mt-3" style="border-radius:0px;">
       <div class="card-header">
         登录次数统计排名前十<i>(30天内)</i>
       </div>

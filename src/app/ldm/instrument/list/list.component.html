@@ -1,0 +1,128 @@
+<!--<div class="container" >
+<p>
+   <a routerLink="../detail" >list works!</a>
+</p>
+<ng-table [config]="jqTask.config"  [rows]="jqTask.rows" [columns]="jqTask.columns"></ng-table>-->
+<!--<mdl-textfield type="text" label="名称关键字" [(ngModel)]="search" floating-label></mdl-textfield>
+<kendo-grid [data]="gridView | deviceFilter : search">
+  <kendo-grid-column field="ProductName" title="姓名" [width]="80"></kendo-grid-column>
+  <kendo-grid-column field="ProductDate" title="生日" [width]="300"></kendo-grid-column>
+  <kendo-grid-column field="工作年限" title="工作年限" [width]="120"></kendo-grid-column>
+  <kendo-grid-column field="毕业学校" title="毕业学校" [width]="120"></kendo-grid-column>
+  <kendo-grid-column field="任职岗位" title="任职岗位" [width]="80"></kendo-grid-column>
+  <kendo-grid-column field="入职时间" title="入职时间" [width]="300"></kendo-grid-column>
+  <kendo-grid-column field="是否已婚" title="是否已婚" [width]="120"></kendo-grid-column>
+  <kendo-grid-column field="毕业学校" title="专业" [width]="120"></kendo-grid-column>
+  <kendo-grid-column field="Category.CategoryName" title="Category">
+  </kendo-grid-column>
+  <kendo-grid-messages noRecords="无数据显示.">
+  </kendo-grid-messages>
+</kendo-grid>-->
+<div class="container">
+  <!--<div class="charts-content">-->
+
+  <div class="row">
+
+    <div class="col-md-4 pl-0">
+    
+        <div class="card " style="border-radius:0px;">
+          <div class="card-header">
+            各装置类型统计
+          </div>
+          <div class="card-block p-0" style="height: 231px;width: 100%;" [ngSwitch]="subjectProgressInfo.status">
+            <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
+            <div *ngSwitchCase="'success'" [echartOption]="subjectProgressInfo.option" style="height: 231px;"></div>
+            <div *ngSwitchCase="'message'" style="padding: 10px;">{{subjectProgressInfo.message}}</div>
+          </div>
+        </div>
+
+        <div class="card" style="border-radius:0px;  ">
+          <div class="card-header">
+            各装置状态统计
+          </div>
+          <div class="card-block p-0" style="height: 231px;width: 100%;" [ngSwitch]="deviceRunInfo.status">
+            <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
+            <div *ngSwitchCase="'success'" [echartOption]="deviceRunInfo.option" style="height: 231px;width: 400px"></div>
+            <div *ngSwitchCase="'message'" style="padding: 10px;">{{deviceRunInfo.message}}</div>
+          </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="col-md-8 px-0">
+
+      <div class="card" style="border-radius:0px; width: 100%;">
+        <div class="card-header">
+          各单位装置数量统计
+        </div>
+        <div class="card-block p-0" style="height: 505px;" [ngSwitch]="deviceBaseRunInfo.status">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active" style="width: 920px; height: ç;">
+              <div [echartOption]="last15DaysAnalysisTaskOptinos" style="width: 920px; height: 505px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="row my-3" style="clear: both;">
+    <!--<div class="card  card-inverse card-primary" style="border-radius:0px; width: 100%;">
+      <div class="card-header">
+        加氢装置列表
+      </div>
+      <div class="card-block p-0" [ngSwitch]="jqTask.status">
+        <div *ngSwitchCase="'before'" style="padding: 20px;">loading....</div>
+        <ng-table *ngSwitchCase="'success'" [config]="jqTask.config" [rows]="jqTask.rows" [columns]="jqTask.columns"></ng-table>
+        <div *ngSwitchCase="'message'" style="padding: 20px;">{{userLoginCount.message}}</div>
+      </div>
+    </div>-->
+    <table [md2Data]="jqTask.rows | instrumentFilter : search" #md2="md2DataTable" [rowsPerPage]="10" >
+      <thead>
+        <tr>
+          <td colspan="4">
+            <input placeholder="Filter By Name" class="md2-input"  />
+          </td>
+          
+        </tr>
+        <tr>
+          <th style="width: 20%" md2SortBy="name">装置编号</th>
+          <th style="width: 20%" md2SortBy="email">装置名称</th>
+          <th style="width: 50%" md2SortBy="age">装置详情</th>
+          <th style="width: 20%;border-right: 1px solid #bbc" md2SortBy="city">装置类型</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of md2.data">
+          <td>{{i.identity}}</td>
+          <td>{{i.name}}</td>
+          <td><a routerLink="../detail" style="text-decoration: none">{{i.description}}</a></td>
+          <td style="border-right: 1px solid #bbc">{{i.locationType}}</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="10">
+            <md2-pagination [rowsPerPageSet]="[5,10,15]"></md2-pagination>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  <style>
+    table { display: table; border: 1px solid rgba(0, 0, 0, 0.12); border-spacing: 0; border-collapse: collapse; font-size: 14px; box-sizing: border-box; width: 100%; }
+    table tr { position: relative; height: 36px; vertical-align: middle; }
+    tbody tr:hover { background-color: #eee; }
+    table th, table td { padding: 0 16px; text-align: left; }
+    table td { position: relative; vertical-align: middle; height: 36px; border-top: 1px solid rgba(0, 0, 0, 0.12); border-bottom: 1px solid rgba(0, 0, 0, 0.12); box-sizing: border-box; color: rgba(0, 0, 0, 0.87); }
+  </style>
+<!--</div>-->
+
+
+  </div>
+
+</div>

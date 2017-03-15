@@ -26,7 +26,7 @@ export class EchartsMapDirective implements OnChanges, OnInit, OnDestroy {
   }
 
   ngOnChanges(changes) {
-    this.http.get('./assets/china.json').subscribe(res => {
+    this.http.get('../../assets/china.json').subscribe(res => {
       echarts.registerMap('china', res.json());
       this.chart = echarts.init(this.el.nativeElement, 'vintage');
       this.chart.setOption(this.options);

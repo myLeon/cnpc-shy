@@ -1,0 +1,210 @@
+//分析任务
+{
+    //一段时间内不同类型的样品分析量
+    "sampleTypeAmount": {
+        "success": true,
+        "data": [
+            {
+                "typeName": "渣油",
+                "total": 9774
+            },
+            {
+                "typeName": "催化剂",
+                "total": 7681
+            },
+            {
+                "typeName": "柴油",
+                "total": 7671
+            },
+            {
+                "typeName": "汽油",
+                "total": 7176
+            },
+            {
+                "typeName": "馏分油",
+                "total": 5566
+            },
+            {
+                "typeName": "气样",
+                "total": 5343
+            },
+            {
+                "typeName": "润滑油",
+                "total": 3883
+            }
+        ]
+    },
+    //一段时间内不同项目的分析次数
+    "analysisNameAmount": {
+        "success": true,
+        "data": [
+            {
+                "analysisName": "残炭",
+                "total": 3692
+            },
+            {
+                "analysisName": "IBP(初馏点)",
+                "total": 2735
+            },
+            {
+                "analysisName": "FBP(终馏点)",
+                "total": 2582
+            },
+            {
+                "analysisName": "芳烃",
+                "total": 1216
+            },
+            {
+                "analysisName": "C3-C13烃组成",
+                "total": 1102
+            }
+        ]
+    },
+    //一段时间内不同课题的样品分析次数
+    "sampleLocationAmount": {
+        "success": true,
+        "data": [
+            {
+                "subjectId": "14-02B-05-10",
+                "subjectName": "固定床渣油加氢催化剂（PHR系列）工业应用试验_14-02B-05-10",
+                "total": 5146
+            },
+            {
+                "subjectId": "10-01A-05-01-04",
+                "subjectName": "固定床渣油加氢处理催化剂研究开发-10-01A-05-01-04",
+                "total": 3993
+            },
+            {
+                "subjectId": "10-01A-02-01-02",
+                "subjectName": "国V标准清洁汽柴油加氢催化剂开发与工业应用_10-01A-02-01-02",
+                "total": 3769
+            },
+            {
+                "subjectId": "11-05-02-01",
+                "subjectName": "新型润滑油基础油异构脱蜡催化剂PIC-812的中试放大_11-05-02-01",
+                "total": 3043
+            },
+            {
+                "subjectId": "12-02B-02-01",
+                "subjectName": "加氢裂化催化剂(PHC-03)工业应用试验_12-02B-02-01",
+                "total": 2251
+            },
+            {
+                "subjectId": "11-01-01-10",
+                "subjectName": "C5/C6烷烃脱氢与混合C4芳构化组合技术的中试开发_11-01-01-10",
+                "total": 1989
+            }
+        ]
+    },
+    //一段时间内的不同单位的样品送检次数
+    "sampleSendInspectAmount": {
+        "success": true,
+        "data": [
+            {
+                "sendInspectId": "DQ_LYS105",
+                "sendInspectName": "大庆炼油所105组",
+                "total": 224
+            },
+            {
+                "sendInspectId": "LZ_CHS09",
+                "sendInspectName": "兰州中心催化所GARDES组",
+                "total": 80
+            },
+            {
+                "sendInspectId": "DQ_HGS_206",
+                "sendInspectName": "大庆化工所206组",
+                "total": 40
+            },
+            {
+                "sendInspectId": "DQ_LYS102",
+                "sendInspectName": "大庆炼油所102组",
+                "total": 31
+            },
+            {
+                "sendInspectId": "LZ_CHS02",
+                "sendInspectName": "兰州中心催化所焦油加氢组",
+                "total": 29
+            },
+            {
+                "sendInspectId": "LZ_JXT06",
+                "sendInspectName": "兰州聚烯烃所聚丙烯催化剂组",
+                "total": 26
+            },
+            {
+                "sendInspectId": "DQ_SZS803",
+                "sendInspectName": "大庆树脂所803组",
+                "total": 25
+            },
+            {
+                "sendInspectId": "DQ_LYS101",
+                "sendInspectName": "大庆炼油所101组",
+                "total": 21
+            }
+        ]
+    },
+    //样品列表
+    "sampleList": {
+        "success": true,
+        "data": [
+            {
+                "sampleName": "204F-63-3",
+                "sampleType": "润滑油",
+                "sampleHse": "高温易挥发",
+                "sampleId": "805",
+                "status": "A",
+                "testStatus": "A",
+                "authorisationNotes": " ",
+                "fxbz": "大庆炼油所106组",
+                "countTestC": 0,
+                "countTestA": 1,
+                "countTestAll": 1
+            },
+            {
+                "sampleName": "204F-64-2",
+                "sampleType": "润滑油",
+                "sampleHse": "高温易挥发",
+                "sampleId": "806",
+                "status": "A",
+                "testStatus": "A",
+                "authorisationNotes": " ",
+                "fxbz": "大庆炼油所106组",
+                "countTestC": 0,
+                "countTestA": 1,
+                "countTestAll": 1
+            },
+            {
+                "sampleName": "尖晶石品",
+                "sampleType": "催化剂",
+                "sampleHse": "有毒物质",
+                "sampleId": "841",
+                "status": "C",
+                "testStatus": " ",
+                "authorisationNotes": " ",
+                "fxbz": "大庆仪器所元素组(总氮 总硫 XRF)",
+                "countTestC": 1,
+                "countTestA": 0,
+                "countTestAll": 1
+            },
+            {
+                "sampleName": "混合癸烯总氯测定gx20131114-5",
+                "sampleType": "化工",
+                "sampleHse": "高温易挥发",
+                "sampleId": "2579",
+                "status": "A",
+                "testStatus": "A",
+                "authorisationNotes": " ",
+                "fxbz": "大庆仪器所液相组(重油族组成 核磁 物化吸附 微量水 红紫外 离子色谱)",
+                "countTestC": 0,
+                "countTestA": 1,
+                "countTestAll": 1
+            }
+        ]
+    },
+    //样品实体
+    "sampleModel": {
+        "success": true,
+        "data": [
+            
+        ]
+    }
+}

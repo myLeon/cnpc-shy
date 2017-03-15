@@ -13,19 +13,17 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: 'personnel', loadChildren: 'app/ldm/personnel/personnel.module#PersonnelModule' },
        { path: 'group', loadChildren: 'app/ldm/group/group.module#GroupModule' },
-       { path: 'analyze', loadChildren: 'app/ldm/analyze/analyze.module#AnalyzeModule' },
-       { path: 'equipment', loadChildren: 'app/ldm/equipment/equipment.module#EquipmentModule' },
-       { path: 'evaluate', loadChildren: 'app/ldm/evaluate/evaluate.module#EvaluateModule' },
+       { path: 'sample', loadChildren: 'app/ldm/sample/sample.module#SampleModule' },
+       { path: 'instrument', loadChildren: 'app/ldm/instrument/instrument.module#InstrumentModule' },
+       { path: 'task', loadChildren: 'app/ldm/task/task.module#TaskModule' },
        { path: 'device', loadChildren: 'app/ldm/device/device.module#DeviceModule' },
        { path: 'statistics', loadChildren: 'app/ldm/statistics/statistics.module#StatisticsModule' },
        { path: 'everyday', loadChildren: 'app/ldm/everyday/everyday.module#EverydayModule' },
-      //  { path: 'method', loadChildren: 'app/ldm/method/method.module#MethodModule' },
+       { path: 'method', loadChildren: 'app/ldm/method/method.module#MethodModule' },
        { path: 'scientific', loadChildren: 'app/ldm/scientific/scientific.module#ScientificModule' },
        { path: 'charges', loadChildren: 'app/ldm/charges/charges.module#ChargesModule' },
       //  { path: 'list', loadChildren: 'app/ldm/organization/list/list.module#ListModule' }
     ]
   },
-
 ];
-
 export const Routing = RouterModule.forChild(routes);

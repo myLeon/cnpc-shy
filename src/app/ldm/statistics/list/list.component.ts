@@ -22,8 +22,8 @@ import { GroupDescriptor, process } from '@progress/kendo-data-query';
 import { ResponseEntity } from '../../../_entities/response-entity';
 // import { PersonnelService } from './personnel.service'
 import { ActivatedRoute, Router } from "@angular/router";
-import { GridModule } from '@progress/kendo-angular-grid';
-import { Md2Module } from 'md2';
+// import { GridModule } from '@progress/kendo-angular-grid';
+// import { Md2Module } from 'md2';
 
 @Component({
   selector: 'app-list',

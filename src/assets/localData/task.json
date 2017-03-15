@@ -1,0 +1,2997 @@
+//评价数据
+{
+    //一段时间内的科研课题申请次数统计
+    "taskSubjectApplyAmount": {
+        "success": true,
+        "data": [
+            {
+                "subjectId": "09-07-05-21",
+                "subjectName": "聚丙烯催化剂Pcat-1在华北石化的工业应用试验-09-07-05-21",
+                "total": 10
+            },
+            {
+                "subjectId": "09-02-01-09",
+                "subjectName": "催化轻汽油醚化催化精馏新技术中试研究_09-02-01-09",
+                "total": 7
+            },
+            {
+                "subjectId": "10-02-02-01",
+                "subjectName": "非负载型柴油加氢精制催化剂中试放大研究-10-02-02-01",
+                "total": 5
+            },
+            {
+                "subjectId": "10-03-01-01",
+                "subjectName": "镍基汽油加氢催化剂工业试验-10-03-01-01",
+                "total": 2
+            }
+        ]
+    },
+    //一段时间内的不同单位的申请次数统计
+    "taskGroupApplyAmount": {
+        "success": true,
+        "data": [
+            {
+                "groupId": "LZ_BJS02",
+                "groupName": "兰州标检所分析检测组",
+                "total": 20
+            },
+            {
+                "groupId": "DQ_JXS03",
+                "groupName": "大庆精细所509组",
+                "total": 18
+            },
+            {
+                "groupId": "LZ_JXT05",
+                "groupName": "兰州聚烯烃所聚乙烯组",
+                "total": 15
+            },
+            {
+                "groupId": "DQ_LYS106",
+                "groupName": "大庆炼油所106组",
+                "total": 9
+            },
+            {
+                "groupId": "LZ_XJS03",
+                "groupName": "兰州橡胶所丁腈组",
+                "total": 2
+            }
+        ]
+    },
+    //一段时间内每天的任务申请次数统计
+    "taskEveryDayApplyAmount": {
+        "success": true,
+        "data": [
+            {
+                "dayTime": "2017-02-27",
+                "total": 30
+            },
+            {
+                "dayTime": "2017-02-28",
+                "total": 10
+            },
+            {
+                "dayTime": "2017-03-01",
+                "total": 5
+            },
+            {
+                "dayTime": "2017-03-02",
+                "total": 2
+            },
+            {
+                "dayTime": "2017-03-03",
+                "total": 5
+            },
+            {
+                "dayTime": "2017-03-04",
+                "total": 0
+            },
+            {
+                "dayTime": "2017-03-05",
+                "total": 0
+            }
+        ]
+    },
+    //申请的任务台账列表
+    "taskApplyList": {
+        "Success": true,
+        "Total": 12.0,
+        "Data": [
+            {
+                "identity": "9DB0189B-9784-4739-9451-2AFFF13567BC",
+                "categoryId": "HYD_SIBLING",
+                "categoryText": "加氢-院部及兰州中心申请",
+                "codeNumber": "HYD·SI·20170216·1",
+                "oldStatus": "HYD_SIBLING_S010",
+                "oldStatusText": "试验结束",
+                "action": "HYD_SIBLING_A011",
+                "actionText": "填写结论",
+                "status": "HYD_SIBLING_S011",
+                "statusText": "完成",
+                "statusIndex": 11.0,
+                "statusTotal": 11.0,
+                "modifiedBy": "ZHW",
+                "modifiedByText": "张汉文",
+                "modifiedOn": "2017-02-16 11:10:45",
+                "modifiedNote": "TEST<br />TEST<br />TEST",
+                "label": "加氢法生产生物柴油技术小试研究开发",
+                "queryContent": "U216",
+                "queryGroup": "DQ_JXS03",
+                "targetGroup": "DQ_LYS107",
+                "createBy": "ZHW",
+                "createByText": "张汉文",
+                "createOn": "2017-02-16 11:01:43",
+                "isBack": "F",
+                "taskId": "46D114CE-01E9-4366-9152-D6ED49432122",
+                "locationId": "14-01-02-10-1",
+                "locationName": "加氢法生产生物柴油技术小试研究开发",
+                "applyGroup": "DQ_JXS03",
+                "applyGroupName": "大庆精细所509组",
+                "acceptGroup": "DQ_LYS107",
+                "acceptGroupName": "大庆炼油所107组",
+                "customer": null,
+                "taskStatus": "停止",
+                "deviceId": "U216",
+                "taskProblem": "TEST",
+                "taskProgress": "TEST",
+                "taskConclusion": "TEST",
+                "RN": 1.0
+            },
+            {
+                "identity": "BA4DD1B4-AB3A-4315-B6C3-17C1EC610800",
+                "categoryId": "HYD_INTERNAL",
+                "categoryText": "加氢-大庆中心内部申请",
+                "codeNumber": "HYD·IN·20170111·2",
+                "oldStatus": "HYD_INTERNAL_S001",
+                "oldStatusText": "待提交",
+                "action": "HYD_INTERNAL_A002",
+                "actionText": "保存并提交",
+                "status": "HYD_INTERNAL_S002",
+                "statusText": "待课题组审核",
+                "statusIndex": 2.0,
+                "statusTotal": 8.0,
+                "modifiedBy": "ZHW",
+                "modifiedByText": "张汉文",
+                "modifiedOn": "2017-01-11 14:29:02",
+                "modifiedNote": null,
+                "label": "加氢法生产生物柴油技术小试研究开发",
+                "queryContent": "U219",
+                "queryGroup": "DQ_JXS03",
+                "targetGroup": "DQ_LYS107",
+                "createBy": "ZHW",
+                "createByText": "张汉文",
+                "createOn": "2017-01-11 14:29:02",
+                "isBack": "F",
+                "taskId": "C97016DE-5D77-4E7E-ADCE-D6C70EAD8711",
+                "locationId": "14-01-02-10-1",
+                "locationName": "加氢法生产生物柴油技术小试研究开发",
+                "applyGroup": "DQ_JXS03",
+                "applyGroupName": "大庆精细所509组",
+                "acceptGroup": "DQ_LYS107",
+                "acceptGroupName": "大庆炼油所107组",
+                "customer": null,
+                "taskStatus": "               ",
+                "deviceId": "U219",
+                "taskProblem": " ",
+                "taskProgress": " ",
+                "taskConclusion": " ",
+                "RN": 2.0
+            },
+            {
+                "identity": "EAEE4E38-6422-4E42-AB84-236616783478",
+                "categoryId": "HYD_INTERNAL",
+                "categoryText": "加氢-大庆中心内部申请",
+                "codeNumber": "HYD·IN·20170111·1",
+                "oldStatus": "HYD_INTERNAL_S001",
+                "oldStatusText": "待提交",
+                "action": "HYD_INTERNAL_A001",
+                "actionText": "保存",
+                "status": "HYD_INTERNAL_S001",
+                "statusText": "待提交",
+                "statusIndex": 1.0,
+                "statusTotal": 8.0,
+                "modifiedBy": "ZHW",
+                "modifiedByText": "张汉文",
+                "modifiedOn": "2017-01-11 14:06:10",
+                "modifiedNote": null,
+                "label": "加氢法生产生物柴油技术小试研究开发",
+                "queryContent": "U218",
+                "queryGroup": "DQ_JXS03",
+                "targetGroup": "DQ_LYS107",
+                "createBy": "ZHW",
+                "createByText": "张汉文",
+                "createOn": "2017-01-11 14:06:10",
+                "isBack": "F",
+                "taskId": "4A0F39D1-CF32-4FCC-92FE-179607AF1C9E",
+                "locationId": "14-01-02-10-1",
+                "locationName": "加氢法生产生物柴油技术小试研究开发",
+                "applyGroup": "DQ_JXS03",
+                "applyGroupName": "大庆精细所509组",
+                "acceptGroup": "DQ_LYS107",
+                "acceptGroupName": "大庆炼油所107组",
+                "customer": null,
+                "taskStatus": "               ",
+                "deviceId": "U218",
+                "taskProblem": " ",
+                "taskProgress": " ",
+                "taskConclusion": " ",
+                "RN": 3.0
+            },
+            {
+                "identity": "217947B5-A9A7-419A-85A1-F004B3349D13",
+                "categoryId": "HYD_INTERNAL",
+                "categoryText": "加氢-大庆中心内部申请",
+                "codeNumber": "HYD·IN·20161227·2",
+                "oldStatus": "HYD_INTERNAL_S002",
+                "oldStatusText": "待课题组审核",
+                "action": "HYD_INTERNAL_A003",
+                "actionText": "课题组审核",
+                "status": "HYD_INTERNAL_S003",
+                "statusText": "待炼油所审核",
+                "statusIndex": 3.0,
+                "statusTotal": 8.0,
+                "modifiedBy": "KTZZ2",
+                "modifiedByText": "课题组长代表(二)",
+                "modifiedOn": "2016-12-27 14:11:17",
+                "modifiedNote": null,
+                "label": "航空生物燃料原料加氢处理催化剂及工艺技术开发_L-12-KJ-05-4",
+                "queryContent": "U210",
+                "queryGroup": "DQ_JXS03",
+                "targetGroup": "DQ_LYS107",
+                "createBy": "ZHW",
+                "createByText": "张汉文",
+                "createOn": "2016-12-27 14:06:12",
+                "isBack": "F",
+                "taskId": "5BB055A8-D7EB-4478-93E3-B0A9A5042B22",
+                "locationId": "L-12-KJ-05-4",
+                "locationName": "航空生物燃料原料加氢处理催化剂及工艺技术开发_L-12-KJ-05-4",
+                "applyGroup": "DQ_JXS03",
+                "applyGroupName": "大庆精细所509组",
+                "acceptGroup": "DQ_LYS107",
+                "acceptGroupName": "大庆炼油所107组",
+                "customer": null,
+                "taskStatus": "               ",
+                "deviceId": "U210",
+                "taskProblem": " ",
+                "taskProgress": " ",
+                "taskConclusion": " ",
+                "RN": 4.0
+            },
+            {
+                "identity": "DF6A5466-109F-47C7-AE5D-0384C74F3D02",
+                "categoryId": "HYD_INTERNAL",
+                "categoryText": "加氢-大庆中心内部申请",
+                "codeNumber": "HYD·IN·20161227·1",
+                "oldStatus": "HYD_INTERNAL_S005",
+                "oldStatusText": "准备中",
+                "action": "HYD_INTERNAL_A006",
+                "actionText": "开始",
+                "status": "HYD_INTERNAL_S006",
+                "statusText": "试验中",
+                "statusIndex": 6.0,
+                "statusTotal": 8.0,
+                "modifiedBy": "JQZZYXZ",
+                "modifiedByText": "加氢装置运行者",
+                "modifiedOn": "2016-12-27 14:03:04",
+                "modifiedNote": null,
+                "label": "加氢法生产生物柴油技术小试研究开发",
+                "queryContent": "U215",
+                "queryGroup": "DQ_JXS03",
+                "targetGroup": "DQ_LYS107",
+                "createBy": "ZHW",
+                "createByText": "张汉文",
+                "createOn": "2016-12-27 09:44:37",
+                "isBack": "F",
+                "taskId": "32E322A7-F73B-462A-B605-D7BD344DAE86",
+                "locationId": "14-01-02-10-1",
+                "locationName": "加氢法生产生物柴油技术小试研究开发",
+                "applyGroup": "DQ_JXS03",
+                "applyGroupName": "大庆精细所509组",
+                "acceptGroup": "DQ_LYS107",
+                "acceptGroupName": "大庆炼油所107组",
+                "customer": null,
+                "taskStatus": "运行中",
+                "deviceId": "U215",
+                "taskProblem": " ",
+                "taskProgress": " ",
+                "taskConclusion": " ",
+                "RN": 5.0
+            },
+            {
+                "identity": "1CEC7082-E2C7-4305-9B48-316DA7F1763A",
+                "categoryId": "HYD_INTERNAL",
+                "categoryText": "加氢-大庆中心内部申请",
+                "codeNumber": "HYD·IN·20161221·2",
+                "oldStatus": "HYD_INTERNAL_S007",
+                "oldStatusText": "试验结束",
+                "action": "HYD_INTERNAL_A008",
+                "actionText": "填写结论",
+                "status": "HYD_INTERNAL_S008",
+                "statusText": "完成",
+                "statusIndex": 8.0,
+                "statusTotal": 8.0,
+                "modifiedBy": "ZHW",
+                "modifiedByText": "张汉文",
+                "modifiedOn": "2016-12-21 11:50:05",
+                "modifiedNote": "test<br />test<br />test",
+                "label": "加氢法生产生物柴油技术小试研究开发",
+                "queryContent": "U116",
+                "queryGroup": "DQ_JXS03",
+                "targetGroup": "DQ_LYS107",
+                "createBy": "ZHW",
+                "createByText": "张汉文",
+                "createOn": "2016-12-21 11:43:45",
+                "isBack": "F",
+                "taskId": "C0675219-6DDB-47BE-B5B1-5B6C79496E47",
+                "locationId": "14-01-02-10-1",
+                "locationName": "加氢法生产生物柴油技术小试研究开发",
+                "applyGroup": "DQ_JXS03",
+                "applyGroupName": "大庆精细所509组",
+                "acceptGroup": "DQ_LYS107",
+                "acceptGroupName": "大庆炼油所107组",
+                "customer": null,
+                "taskStatus": "停止",
+                "deviceId": "U116",
+                "taskProblem": "test",
+                "taskProgress": "test",
+                "taskConclusion": "test",
+                "RN": 6.0
+            },
+            {
+                "identity": "797A9186-220D-4B51-A132-778FC1BB1C46",
+                "categoryId": "HYD_INTERNAL",
+                "categoryText": "加氢-大庆中心内部申请",
+                "codeNumber": "HYD·IN·20161221·1",
+                "oldStatus": "HYD_INTERNAL_S007",
+                "oldStatusText": "试验结束",
+                "action": "HYD_INTERNAL_A008",
+                "actionText": "填写结论",
+                "status": "HYD_INTERNAL_S008",
+                "statusText": "完成",
+                "statusIndex": 8.0,
+                "statusTotal": 8.0,
+                "modifiedBy": "ZHW",
+                "modifiedByText": "张汉文",
+                "modifiedOn": "2016-12-21 09:17:15",
+                "modifiedNote": "测试<br />测试<br />测试",
+                "label": "加氢法生产生物柴油技术小试研究开发",
+                "queryContent": "U210",
+                "queryGroup": "DQ_JXS03",
+                "targetGroup": "DQ_LYS107",
+                "createBy": "ZHW",
+                "createByText": "张汉文",
+                "createOn": "2016-12-21 09:08:09",
+                "isBack": "F",
+                "taskId": "BF8E81D8-8071-43F7-BB30-7413D92905A2",
+                "locationId": "14-01-02-10-1",
+                "locationName": "加氢法生产生物柴油技术小试研究开发",
+                "applyGroup": "DQ_JXS03",
+                "applyGroupName": "大庆精细所509组",
+                "acceptGroup": "DQ_LYS107",
+                "acceptGroupName": "大庆炼油所107组",
+                "customer": null,
+                "taskStatus": "停止",
+                "deviceId": "U210",
+                "taskProblem": "测试",
+                "taskProgress": "测试",
+                "taskConclusion": "测试",
+                "RN": 7.0
+            },
+            {
+                "identity": "F8D0EC56-BD06-41C8-9755-8B9CBBEDA1E5",
+                "categoryId": "HYD_SIBLING",
+                "categoryText": "加氢-院部及兰州中心申请",
+                "codeNumber": "HYD·SI·20161220·1",
+                "oldStatus": "HYD_SIBLING_S010",
+                "oldStatusText": "试验结束",
+                "action": "HYD_SIBLING_A011",
+                "actionText": "填写结论",
+                "status": "HYD_SIBLING_S011",
+                "statusText": "完成",
+                "statusIndex": 11.0,
+                "statusTotal": 11.0,
+                "modifiedBy": "ZHW",
+                "modifiedByText": "张汉文",
+                "modifiedOn": "2016-12-20 21:48:06",
+                "modifiedNote": "teset<br />test<br />test",
+                "label": "航空生物燃料原料加氢处理催化剂及工艺技术开发_L-12-KJ-05-4",
+                "queryContent": "U107",
+                "queryGroup": "DQ_JXS03",
+                "targetGroup": "DQ_LYS107",
+                "createBy": "ZHW",
+                "createByText": "张汉文",
+                "createOn": "2016-12-20 21:35:55",
+                "isBack": "F",
+                "taskId": "C80AC026-D056-4A91-BB05-62EF8D160CC6",
+                "locationId": "L-12-KJ-05-4",
+                "locationName": "航空生物燃料原料加氢处理催化剂及工艺技术开发_L-12-KJ-05-4",
+                "applyGroup": "DQ_JXS03",
+                "applyGroupName": "大庆精细所509组",
+                "acceptGroup": "DQ_LYS107",
+                "acceptGroupName": "大庆炼油所107组",
+                "customer": null,
+                "taskStatus": "停止",
+                "deviceId": "U107",
+                "taskProblem": "teset",
+                "taskProgress": "test",
+                "taskConclusion": "test",
+                "RN": 8.0
+            },
+            {
+                "identity": "62474482-9130-43D7-A995-C36D09764D4F",
+                "categoryId": "HYD_EXTERNAL",
+                "categoryText": "加氢-院外申请",
+                "codeNumber": "HYD·EX·20161220·1",
+                "oldStatus": "HYD_EXTERNAL_S007",
+                "oldStatusText": "试验结束",
+                "action": "HYD_EXTERNAL_A008",
+                "actionText": "填写结论",
+                "status": "HYD_EXTERNAL_S008",
+                "statusText": "完成",
+                "statusIndex": 8.0,
+                "statusTotal": 8.0,
+                "modifiedBy": "KTZZ",
+                "modifiedByText": "课题组长代表",
+                "modifiedOn": "2016-12-20 21:13:10",
+                "modifiedNote": "test<br />test<br />test",
+                "label": "北京华创",
+                "queryContent": "U411",
+                "queryGroup": "DQ_JXS03",
+                "targetGroup": "DQ_LYS107",
+                "createBy": "ZHW",
+                "createByText": "张汉文",
+                "createOn": "2016-12-20 20:57:39",
+                "isBack": "F",
+                "taskId": "726891B6-15B0-4354-838E-FCEE5E741457",
+                "locationId": null,
+                "locationName": null,
+                "applyGroup": "DQ_JXS03",
+                "applyGroupName": "大庆精细所509组",
+                "acceptGroup": "DQ_LYS107",
+                "acceptGroupName": "大庆炼油所107组",
+                "customer": "北京华创",
+                "taskStatus": "停止",
+                "deviceId": "U411",
+                "taskProblem": "test",
+                "taskProgress": "test",
+                "taskConclusion": "test",
+                "RN": 9.0
+            },
+            {
+                "identity": "E2B988BA-485D-40F1-B5FA-FC3DFD7FA1C5",
+                "categoryId": "HYD_INTERNAL",
+                "categoryText": "加氢-大庆中心内部申请",
+                "codeNumber": "HYD·IN·20161220·3",
+                "oldStatus": "HYD_INTERNAL_S007",
+                "oldStatusText": "试验结束",
+                "action": "HYD_INTERNAL_A008",
+                "actionText": "填写结论",
+                "status": "HYD_INTERNAL_S008",
+                "statusText": "完成",
+                "statusIndex": 8.0,
+                "statusTotal": 8.0,
+                "modifiedBy": "ZHW",
+                "modifiedByText": "张汉文",
+                "modifiedOn": "2016-12-20 21:32:42",
+                "modifiedNote": "test<br />test<br />test",
+                "label": "加氢法生产生物柴油技术小试研究开发",
+                "queryContent": "U219",
+                "queryGroup": "DQ_JXS03",
+                "targetGroup": "DQ_LYS107",
+                "createBy": "ZHW",
+                "createByText": "张汉文",
+                "createOn": "2016-12-20 20:49:15",
+                "isBack": "F",
+                "taskId": "C2519C91-9944-40DF-8744-765AB6519810",
+                "locationId": "14-01-02-10-1",
+                "locationName": "加氢法生产生物柴油技术小试研究开发",
+                "applyGroup": "DQ_JXS03",
+                "applyGroupName": "大庆精细所509组",
+                "acceptGroup": "DQ_LYS107",
+                "acceptGroupName": "大庆炼油所107组",
+                "customer": null,
+                "taskStatus": "停止",
+                "deviceId": "U219",
+                "taskProblem": "test",
+                "taskProgress": "test",
+                "taskConclusion": "test",
+                "RN": 10.0
+            },
+            {
+                "identity": "8A702014-9E55-436B-A911-9BA733CCDDCF",
+                "categoryId": "HYD_INTERNAL",
+                "categoryText": "加氢-大庆中心内部申请",
+                "codeNumber": "HYD·IN·20161220·2",
+                "oldStatus": "HYD_INTERNAL_S007",
+                "oldStatusText": "试验结束",
+                "action": "HYD_INTERNAL_A008",
+                "actionText": "填写结论",
+                "status": "HYD_INTERNAL_S008",
+                "statusText": "完成",
+                "statusIndex": 8.0,
+                "statusTotal": 8.0,
+                "modifiedBy": "ZHW",
+                "modifiedByText": "张汉文",
+                "modifiedOn": "2016-12-20 20:45:41",
+                "modifiedNote": "TEST<br />TEST<br />TEST",
+                "label": "加氢法生产生物柴油技术小试研究开发",
+                "queryContent": "U211",
+                "queryGroup": "DQ_JXS03",
+                "targetGroup": "DQ_LYS107",
+                "createBy": "ZHW",
+                "createByText": "张汉文",
+                "createOn": "2016-12-20 20:36:30",
+                "isBack": "F",
+                "taskId": "106BC445-4839-4FDA-891A-6F8F7553A8E3",
+                "locationId": "14-01-02-10-1",
+                "locationName": "加氢法生产生物柴油技术小试研究开发",
+                "applyGroup": "DQ_JXS03",
+                "applyGroupName": "大庆精细所509组",
+                "acceptGroup": "DQ_LYS107",
+                "acceptGroupName": "大庆炼油所107组",
+                "customer": null,
+                "taskStatus": "停止",
+                "deviceId": "U211",
+                "taskProblem": "TEST",
+                "taskProgress": "TEST",
+                "taskConclusion": "TEST",
+                "RN": 11.0
+            },
+            {
+                "identity": "2BDDA6C2-4AE6-4A0C-96D8-5D1ADE5B4D75",
+                "categoryId": "HYD_INTERNAL",
+                "categoryText": "加氢-大庆中心内部申请",
+                "codeNumber": "HYD·IN·20161220·1",
+                "oldStatus": "HYD_INTERNAL_S007",
+                "oldStatusText": "试验结束",
+                "action": "HYD_INTERNAL_A008",
+                "actionText": "填写结论",
+                "status": "HYD_INTERNAL_S008",
+                "statusText": "完成",
+                "statusIndex": 8.0,
+                "statusTotal": 8.0,
+                "modifiedBy": "ZHW",
+                "modifiedByText": "张汉文",
+                "modifiedOn": "2016-12-20 20:47:45",
+                "modifiedNote": "test<br />test<br />test",
+                "label": "航空生物燃料原料加氢处理催化剂及工艺技术开发_L-12-KJ-05-4",
+                "queryContent": "U210",
+                "queryGroup": "DQ_JXS03",
+                "targetGroup": "DQ_LYS107",
+                "createBy": "ZHW",
+                "createByText": "张汉文",
+                "createOn": "2016-12-20 20:01:57",
+                "isBack": "F",
+                "taskId": "68107039-1FF0-45D3-8861-86399C44B475",
+                "locationId": "L-12-KJ-05-4",
+                "locationName": "航空生物燃料原料加氢处理催化剂及工艺技术开发_L-12-KJ-05-4",
+                "applyGroup": "DQ_JXS03",
+                "applyGroupName": "大庆精细所509组",
+                "acceptGroup": "DQ_LYS107",
+                "acceptGroupName": "大庆炼油所107组",
+                "customer": null,
+                "taskStatus": "停止",
+                "deviceId": "U210",
+                "taskProblem": "test",
+                "taskProgress": "test",
+                "taskConclusion": "test",
+                "RN": 12.0
+            }
+        ]
+    },
+    //任务明细
+    "taskModel": {
+        "success": true,
+        "data": [
+            {
+                "identity": "9DB0189B-9784-4739-9451-2AFFF13567BC",
+                "categoryId": "HYD_SIBLING",
+                "categoryText": "加氢-院部及兰州中心申请",
+                "codeNumber": "HYD·SI·20170216·1",
+                "oldStatus": "HYD_SIBLING_S010",
+                "oldStatusText": "试验结束",
+                "action": "HYD_SIBLING_A011",
+                "actionText": "填写结论",
+                "status": "HYD_SIBLING_S011",
+                "statusText": "完成",
+                "statusIndex": 11.0,
+                "statusTotal": 11.0,
+                "modifiedBy": "ZHW",
+                "modifiedByText": "张汉文",
+                "modifiedOn": "2017-02-16 11:10:45",
+                "modifiedNote": "TEST<br />TEST<br />TEST",
+                "label": "加氢法生产生物柴油技术小试研究开发",
+                "queryContent": "U216",
+                "queryGroup": "DQ_JXS03",
+                "targetGroup": "DQ_LYS107",
+                "createBy": "ZHW",
+                "createByText": "张汉文",
+                "createOn": "2017-02-16 11:01:43",
+                "isBack": "F",
+                "taskId": "46D114CE-01E9-4366-9152-D6ED49432122",
+                "locationId": "14-01-02-10-1",
+                "locationName": "加氢法生产生物柴油技术小试研究开发",
+                "applyGroup": "DQ_JXS03",
+                "applyGroupName": "大庆精细所509组",
+                "acceptGroup": "DQ_LYS107",
+                "acceptGroupName": "大庆炼油所107组",
+                "customer": null,
+                "taskStatus": "停止",
+                "deviceId": "U216",
+                "taskProblem": "TEST",
+                "taskProgress": "TEST",
+                "taskConclusion": "TEST",
+                "RN": 1.0
+            }
+        ]
+    },
+    //运行数据(可形成趋势图)
+    "taskRunData": {
+        "Success": true,
+        "Message": null,
+        "Data": [
+            {
+                "Key": "U220_FQI6417PV",
+                "title":"FQI6417",
+                "Items": [
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417PV",
+                        "TagId": null,
+                        "NValue": "0.0175",
+                        "ATime": "2017-03-13T00:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417PV",
+                        "TagId": null,
+                        "NValue": "0.0175",
+                        "ATime": "2017-03-13T01:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417PV",
+                        "TagId": null,
+                        "NValue": "0.0175",
+                        "ATime": "2017-03-13T02:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417PV",
+                        "TagId": null,
+                        "NValue": "0.0175",
+                        "ATime": "2017-03-13T03:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417PV",
+                        "TagId": null,
+                        "NValue": "0.0175",
+                        "ATime": "2017-03-13T04:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417PV",
+                        "TagId": null,
+                        "NValue": "0.0175",
+                        "ATime": "2017-03-13T05:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417PV",
+                        "TagId": null,
+                        "NValue": "0.0175",
+                        "ATime": "2017-03-13T06:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417PV",
+                        "TagId": null,
+                        "NValue": "0.0175",
+                        "ATime": "2017-03-13T08:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417PV",
+                        "TagId": null,
+                        "NValue": "0.0175",
+                        "ATime": "2017-03-13T07:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417PV",
+                        "TagId": null,
+                        "NValue": "0.0175",
+                        "ATime": "2017-03-13T09:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417PV",
+                        "TagId": null,
+                        "NValue": "0.0175",
+                        "ATime": "2017-03-13T10:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417PV",
+                        "TagId": null,
+                        "NValue": "0.0175",
+                        "ATime": "2017-03-13T11:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417PV",
+                        "TagId": null,
+                        "NValue": "0.0175",
+                        "ATime": "2017-03-13T12:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417PV",
+                        "TagId": null,
+                        "NValue": "0.0175",
+                        "ATime": "2017-03-13T13:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417PV",
+                        "TagId": null,
+                        "NValue": "0.0175",
+                        "ATime": "2017-03-13T14:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417PV",
+                        "TagId": null,
+                        "NValue": "0.0175",
+                        "ATime": "2017-03-13T15:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417PV",
+                        "TagId": null,
+                        "NValue": "0.0175",
+                        "ATime": "2017-03-13T16:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417PV",
+                        "TagId": null,
+                        "NValue": "0.0175",
+                        "ATime": "2017-03-13T17:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417PV",
+                        "TagId": null,
+                        "NValue": "0.0175",
+                        "ATime": "2017-03-13T18:00:00"
+                    }
+                ]
+            },
+            {
+                "Key": "U216_PIC2520",
+                "title":"PIC2520",
+                "Items": [
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PIC2520",
+                        "TagId": null,
+                        "NValue": "-0.00345",
+                        "ATime": "2017-03-13T00:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PIC2520",
+                        "TagId": null,
+                        "NValue": "-0.00345",
+                        "ATime": "2017-03-13T01:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PIC2520",
+                        "TagId": null,
+                        "NValue": "-0.00345",
+                        "ATime": "2017-03-13T02:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PIC2520",
+                        "TagId": null,
+                        "NValue": "-0.00345",
+                        "ATime": "2017-03-13T03:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PIC2520",
+                        "TagId": null,
+                        "NValue": "-0.00345",
+                        "ATime": "2017-03-13T04:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PIC2520",
+                        "TagId": null,
+                        "NValue": "-0.00345",
+                        "ATime": "2017-03-13T05:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PIC2520",
+                        "TagId": null,
+                        "NValue": "-0.00345",
+                        "ATime": "2017-03-13T06:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PIC2520",
+                        "TagId": null,
+                        "NValue": "-0.00345",
+                        "ATime": "2017-03-13T08:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PIC2520",
+                        "TagId": null,
+                        "NValue": "-0.00345",
+                        "ATime": "2017-03-13T07:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PIC2520",
+                        "TagId": null,
+                        "NValue": "-0.00345",
+                        "ATime": "2017-03-13T09:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PIC2520",
+                        "TagId": null,
+                        "NValue": "-0.00345",
+                        "ATime": "2017-03-13T10:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PIC2520",
+                        "TagId": null,
+                        "NValue": "-0.00345",
+                        "ATime": "2017-03-13T11:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PIC2520",
+                        "TagId": null,
+                        "NValue": "-0.00345",
+                        "ATime": "2017-03-13T12:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PIC2520",
+                        "TagId": null,
+                        "NValue": "-0.00345",
+                        "ATime": "2017-03-13T13:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PIC2520",
+                        "TagId": null,
+                        "NValue": "-0.00345",
+                        "ATime": "2017-03-13T14:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PIC2520",
+                        "TagId": null,
+                        "NValue": "-0.00345",
+                        "ATime": "2017-03-13T15:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PIC2520",
+                        "TagId": null,
+                        "NValue": "-0.00345",
+                        "ATime": "2017-03-13T16:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PIC2520",
+                        "TagId": null,
+                        "NValue": "-0.0069",
+                        "ATime": "2017-03-13T17:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PIC2520",
+                        "TagId": null,
+                        "NValue": "-0.00345",
+                        "ATime": "2017-03-13T18:00:00"
+                    }
+                ]
+            },
+            {
+                "Key": "U216_LIC2520",
+                "title":"LIC2520",
+                "Items": [
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_LIC2520",
+                        "TagId": null,
+                        "NValue": "61.975002",
+                        "ATime": "2017-03-13T00:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_LIC2520",
+                        "TagId": null,
+                        "NValue": "61.962498",
+                        "ATime": "2017-03-13T01:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_LIC2520",
+                        "TagId": null,
+                        "NValue": "61.962498",
+                        "ATime": "2017-03-13T02:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_LIC2520",
+                        "TagId": null,
+                        "NValue": "61.912502",
+                        "ATime": "2017-03-13T03:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_LIC2520",
+                        "TagId": null,
+                        "NValue": "61.849998",
+                        "ATime": "2017-03-13T04:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_LIC2520",
+                        "TagId": null,
+                        "NValue": "61.912502",
+                        "ATime": "2017-03-13T05:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_LIC2520",
+                        "TagId": null,
+                        "NValue": "61.849998",
+                        "ATime": "2017-03-13T06:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_LIC2520",
+                        "TagId": null,
+                        "NValue": "61.900002",
+                        "ATime": "2017-03-13T08:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_LIC2520",
+                        "TagId": null,
+                        "NValue": "61.887505",
+                        "ATime": "2017-03-13T07:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_LIC2520",
+                        "TagId": null,
+                        "NValue": "61.787498",
+                        "ATime": "2017-03-13T09:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_LIC2520",
+                        "TagId": null,
+                        "NValue": "61.612499",
+                        "ATime": "2017-03-13T10:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_LIC2520",
+                        "TagId": null,
+                        "NValue": "61.674999",
+                        "ATime": "2017-03-13T11:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_LIC2520",
+                        "TagId": null,
+                        "NValue": "61.737503",
+                        "ATime": "2017-03-13T12:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_LIC2520",
+                        "TagId": null,
+                        "NValue": "61.787498",
+                        "ATime": "2017-03-13T13:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_LIC2520",
+                        "TagId": null,
+                        "NValue": "61.975002",
+                        "ATime": "2017-03-13T14:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_LIC2520",
+                        "TagId": null,
+                        "NValue": "62.050003",
+                        "ATime": "2017-03-13T15:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_LIC2520",
+                        "TagId": null,
+                        "NValue": "62.087502",
+                        "ATime": "2017-03-13T16:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_LIC2520",
+                        "TagId": null,
+                        "NValue": "62.099998",
+                        "ATime": "2017-03-13T17:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_LIC2520",
+                        "TagId": null,
+                        "NValue": "62.024998",
+                        "ATime": "2017-03-13T18:00:00"
+                    }
+                ]
+            },
+            {
+                "Key": "U216_PI2310",
+                "title":"PI2310",
+                "Items": [
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PI2310",
+                        "TagId": null,
+                        "NValue": "-0.01035",
+                        "ATime": "2017-03-13T00:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PI2310",
+                        "TagId": null,
+                        "NValue": "-0.01035",
+                        "ATime": "2017-03-13T01:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PI2310",
+                        "TagId": null,
+                        "NValue": "-0.01035",
+                        "ATime": "2017-03-13T02:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PI2310",
+                        "TagId": null,
+                        "NValue": "-0.01035",
+                        "ATime": "2017-03-13T03:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PI2310",
+                        "TagId": null,
+                        "NValue": "-0.01035",
+                        "ATime": "2017-03-13T04:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PI2310",
+                        "TagId": null,
+                        "NValue": "-0.01035",
+                        "ATime": "2017-03-13T05:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PI2310",
+                        "TagId": null,
+                        "NValue": "-0.01035",
+                        "ATime": "2017-03-13T06:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PI2310",
+                        "TagId": null,
+                        "NValue": "-0.01035",
+                        "ATime": "2017-03-13T08:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PI2310",
+                        "TagId": null,
+                        "NValue": "-0.0138",
+                        "ATime": "2017-03-13T07:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PI2310",
+                        "TagId": null,
+                        "NValue": "-0.01035",
+                        "ATime": "2017-03-13T09:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PI2310",
+                        "TagId": null,
+                        "NValue": "-0.01035",
+                        "ATime": "2017-03-13T10:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PI2310",
+                        "TagId": null,
+                        "NValue": "-0.01035",
+                        "ATime": "2017-03-13T11:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PI2310",
+                        "TagId": null,
+                        "NValue": "-0.01035",
+                        "ATime": "2017-03-13T12:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PI2310",
+                        "TagId": null,
+                        "NValue": "-0.0138",
+                        "ATime": "2017-03-13T13:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PI2310",
+                        "TagId": null,
+                        "NValue": "-0.01035",
+                        "ATime": "2017-03-13T14:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PI2310",
+                        "TagId": null,
+                        "NValue": "-0.0138",
+                        "ATime": "2017-03-13T15:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PI2310",
+                        "TagId": null,
+                        "NValue": "-0.01035",
+                        "ATime": "2017-03-13T16:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PI2310",
+                        "TagId": null,
+                        "NValue": "-0.01035",
+                        "ATime": "2017-03-13T17:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_PI2310",
+                        "TagId": null,
+                        "NValue": "-0.0138",
+                        "ATime": "2017-03-13T18:00:00"
+                    }
+                ]
+            },
+            {
+                "Key": "U216_TI2314",
+                "title":"TI2314",
+                "Items": [
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2314",
+                        "TagId": null,
+                        "NValue": "24.020184",
+                        "ATime": "2017-03-13T00:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2314",
+                        "TagId": null,
+                        "NValue": "23.94286",
+                        "ATime": "2017-03-13T01:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2314",
+                        "TagId": null,
+                        "NValue": "23.793139",
+                        "ATime": "2017-03-13T02:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2314",
+                        "TagId": null,
+                        "NValue": "23.717335",
+                        "ATime": "2017-03-13T03:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2314",
+                        "TagId": null,
+                        "NValue": "23.627424",
+                        "ATime": "2017-03-13T04:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2314",
+                        "TagId": null,
+                        "NValue": "23.504189",
+                        "ATime": "2017-03-13T05:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2314",
+                        "TagId": null,
+                        "NValue": "23.354229",
+                        "ATime": "2017-03-13T06:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2314",
+                        "TagId": null,
+                        "NValue": "23.144386",
+                        "ATime": "2017-03-13T08:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2314",
+                        "TagId": null,
+                        "NValue": "23.281477",
+                        "ATime": "2017-03-13T07:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2314",
+                        "TagId": null,
+                        "NValue": "23.072094",
+                        "ATime": "2017-03-13T09:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2314",
+                        "TagId": null,
+                        "NValue": "22.775667",
+                        "ATime": "2017-03-13T10:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2314",
+                        "TagId": null,
+                        "NValue": "22.38784",
+                        "ATime": "2017-03-13T11:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2314",
+                        "TagId": null,
+                        "NValue": "22.254444",
+                        "ATime": "2017-03-13T12:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2314",
+                        "TagId": null,
+                        "NValue": "22.286331",
+                        "ATime": "2017-03-13T13:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2314",
+                        "TagId": null,
+                        "NValue": "22.403206",
+                        "ATime": "2017-03-13T14:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2314",
+                        "TagId": null,
+                        "NValue": "22.6252",
+                        "ATime": "2017-03-13T15:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2314",
+                        "TagId": null,
+                        "NValue": "22.942778",
+                        "ATime": "2017-03-13T16:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2314",
+                        "TagId": null,
+                        "NValue": "23.308378",
+                        "ATime": "2017-03-13T17:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2314",
+                        "TagId": null,
+                        "NValue": "23.533493",
+                        "ATime": "2017-03-13T18:00:00"
+                    }
+                ]
+            },
+            {
+                "Key": "U216_TI2313",
+                "title":"TI2313",
+                "Items": [
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2313",
+                        "TagId": null,
+                        "NValue": "23.863043",
+                        "ATime": "2017-03-13T00:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2313",
+                        "TagId": null,
+                        "NValue": "23.782574",
+                        "ATime": "2017-03-13T01:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2313",
+                        "TagId": null,
+                        "NValue": "23.672199",
+                        "ATime": "2017-03-13T02:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2313",
+                        "TagId": null,
+                        "NValue": "23.590109",
+                        "ATime": "2017-03-13T03:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2313",
+                        "TagId": null,
+                        "NValue": "23.50017",
+                        "ATime": "2017-03-13T04:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2313",
+                        "TagId": null,
+                        "NValue": "23.38168",
+                        "ATime": "2017-03-13T05:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2313",
+                        "TagId": null,
+                        "NValue": "23.267925",
+                        "ATime": "2017-03-13T06:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2313",
+                        "TagId": null,
+                        "NValue": "23.047047",
+                        "ATime": "2017-03-13T08:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2313",
+                        "TagId": null,
+                        "NValue": "23.155811",
+                        "ATime": "2017-03-13T07:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2313",
+                        "TagId": null,
+                        "NValue": "22.940092",
+                        "ATime": "2017-03-13T09:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2313",
+                        "TagId": null,
+                        "NValue": "22.903624",
+                        "ATime": "2017-03-13T10:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2313",
+                        "TagId": null,
+                        "NValue": "22.619879",
+                        "ATime": "2017-03-13T11:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2313",
+                        "TagId": null,
+                        "NValue": "22.445507",
+                        "ATime": "2017-03-13T12:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2313",
+                        "TagId": null,
+                        "NValue": "22.259865",
+                        "ATime": "2017-03-13T13:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2313",
+                        "TagId": null,
+                        "NValue": "22.244335",
+                        "ATime": "2017-03-13T14:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2313",
+                        "TagId": null,
+                        "NValue": "22.31975",
+                        "ATime": "2017-03-13T15:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2313",
+                        "TagId": null,
+                        "NValue": "22.464052",
+                        "ATime": "2017-03-13T16:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2313",
+                        "TagId": null,
+                        "NValue": "22.695921",
+                        "ATime": "2017-03-13T17:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2313",
+                        "TagId": null,
+                        "NValue": "22.932201",
+                        "ATime": "2017-03-13T18:00:00"
+                    }
+                ]
+            },
+            {
+                "Key": "U216_TI2324",
+                "title":"TI2324",
+                "Items": [
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2324",
+                        "TagId": null,
+                        "NValue": "23.921982",
+                        "ATime": "2017-03-13T00:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2324",
+                        "TagId": null,
+                        "NValue": "23.857197",
+                        "ATime": "2017-03-13T01:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2324",
+                        "TagId": null,
+                        "NValue": "23.735706",
+                        "ATime": "2017-03-13T02:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2324",
+                        "TagId": null,
+                        "NValue": "23.64883",
+                        "ATime": "2017-03-13T03:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2324",
+                        "TagId": null,
+                        "NValue": "23.582516",
+                        "ATime": "2017-03-13T04:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2324",
+                        "TagId": null,
+                        "NValue": "23.47488",
+                        "ATime": "2017-03-13T05:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2324",
+                        "TagId": null,
+                        "NValue": "23.331154",
+                        "ATime": "2017-03-13T06:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2324",
+                        "TagId": null,
+                        "NValue": "23.129133",
+                        "ATime": "2017-03-13T08:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2324",
+                        "TagId": null,
+                        "NValue": "23.253695",
+                        "ATime": "2017-03-13T07:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2324",
+                        "TagId": null,
+                        "NValue": "23.011234",
+                        "ATime": "2017-03-13T09:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2324",
+                        "TagId": null,
+                        "NValue": "22.770954",
+                        "ATime": "2017-03-13T10:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2324",
+                        "TagId": null,
+                        "NValue": "22.430201",
+                        "ATime": "2017-03-13T11:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2324",
+                        "TagId": null,
+                        "NValue": "22.229128",
+                        "ATime": "2017-03-13T12:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2324",
+                        "TagId": null,
+                        "NValue": "22.218916",
+                        "ATime": "2017-03-13T13:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2324",
+                        "TagId": null,
+                        "NValue": "22.32345",
+                        "ATime": "2017-03-13T14:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2324",
+                        "TagId": null,
+                        "NValue": "22.529995",
+                        "ATime": "2017-03-13T15:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2324",
+                        "TagId": null,
+                        "NValue": "22.860542",
+                        "ATime": "2017-03-13T16:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2324",
+                        "TagId": null,
+                        "NValue": "23.125515",
+                        "ATime": "2017-03-13T17:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2324",
+                        "TagId": null,
+                        "NValue": "23.353838",
+                        "ATime": "2017-03-13T18:00:00"
+                    }
+                ]
+            },
+            {
+                "Key": "U216_TI2312",
+                "title":"TI2312",
+                "Items": [
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2312",
+                        "TagId": null,
+                        "NValue": "24.190432",
+                        "ATime": "2017-03-13T00:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2312",
+                        "TagId": null,
+                        "NValue": "24.106848",
+                        "ATime": "2017-03-13T01:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2312",
+                        "TagId": null,
+                        "NValue": "23.960337",
+                        "ATime": "2017-03-13T02:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2312",
+                        "TagId": null,
+                        "NValue": "23.883015",
+                        "ATime": "2017-03-13T03:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2312",
+                        "TagId": null,
+                        "NValue": "23.78838",
+                        "ATime": "2017-03-13T04:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2312",
+                        "TagId": null,
+                        "NValue": "23.674677",
+                        "ATime": "2017-03-13T05:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2312",
+                        "TagId": null,
+                        "NValue": "23.557819",
+                        "ATime": "2017-03-13T06:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2312",
+                        "TagId": null,
+                        "NValue": "23.337015",
+                        "ATime": "2017-03-13T08:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2312",
+                        "TagId": null,
+                        "NValue": "23.439434",
+                        "ATime": "2017-03-13T07:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2312",
+                        "TagId": null,
+                        "NValue": "23.258406",
+                        "ATime": "2017-03-13T09:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2312",
+                        "TagId": null,
+                        "NValue": "23.207926",
+                        "ATime": "2017-03-13T10:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2312",
+                        "TagId": null,
+                        "NValue": "22.990446",
+                        "ATime": "2017-03-13T11:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2312",
+                        "TagId": null,
+                        "NValue": "22.850767",
+                        "ATime": "2017-03-13T12:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2312",
+                        "TagId": null,
+                        "NValue": "22.753286",
+                        "ATime": "2017-03-13T13:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2312",
+                        "TagId": null,
+                        "NValue": "22.703037",
+                        "ATime": "2017-03-13T14:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2312",
+                        "TagId": null,
+                        "NValue": "22.742128",
+                        "ATime": "2017-03-13T15:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2312",
+                        "TagId": null,
+                        "NValue": "22.881561",
+                        "ATime": "2017-03-13T16:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2312",
+                        "TagId": null,
+                        "NValue": "23.122761",
+                        "ATime": "2017-03-13T17:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2312",
+                        "TagId": null,
+                        "NValue": "23.363663",
+                        "ATime": "2017-03-13T18:00:00"
+                    }
+                ]
+            },
+            {
+                "Key": "U216_TI2323",
+                "title":"TI2323",
+                "Items": [
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2323",
+                        "TagId": null,
+                        "NValue": "23.626331",
+                        "ATime": "2017-03-13T00:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2323",
+                        "TagId": null,
+                        "NValue": "23.558388",
+                        "ATime": "2017-03-13T01:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2323",
+                        "TagId": null,
+                        "NValue": "23.438457",
+                        "ATime": "2017-03-13T02:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2323",
+                        "TagId": null,
+                        "NValue": "23.353148",
+                        "ATime": "2017-03-13T03:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2323",
+                        "TagId": null,
+                        "NValue": "23.282089",
+                        "ATime": "2017-03-13T04:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2323",
+                        "TagId": null,
+                        "NValue": "23.187103",
+                        "ATime": "2017-03-13T05:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2323",
+                        "TagId": null,
+                        "NValue": "23.033848",
+                        "ATime": "2017-03-13T06:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2323",
+                        "TagId": null,
+                        "NValue": "22.863285",
+                        "ATime": "2017-03-13T08:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2323",
+                        "TagId": null,
+                        "NValue": "22.975248",
+                        "ATime": "2017-03-13T07:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2323",
+                        "TagId": null,
+                        "NValue": "22.775263",
+                        "ATime": "2017-03-13T09:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2323",
+                        "TagId": null,
+                        "NValue": "22.520882",
+                        "ATime": "2017-03-13T10:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2323",
+                        "TagId": null,
+                        "NValue": "22.280947",
+                        "ATime": "2017-03-13T11:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2323",
+                        "TagId": null,
+                        "NValue": "22.157074",
+                        "ATime": "2017-03-13T12:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2323",
+                        "TagId": null,
+                        "NValue": "22.123085",
+                        "ATime": "2017-03-13T13:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2323",
+                        "TagId": null,
+                        "NValue": "22.205542",
+                        "ATime": "2017-03-13T14:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2323",
+                        "TagId": null,
+                        "NValue": "22.328495",
+                        "ATime": "2017-03-13T15:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2323",
+                        "TagId": null,
+                        "NValue": "22.517248",
+                        "ATime": "2017-03-13T16:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2323",
+                        "TagId": null,
+                        "NValue": "22.75551",
+                        "ATime": "2017-03-13T17:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2323",
+                        "TagId": null,
+                        "NValue": "22.922489",
+                        "ATime": "2017-03-13T18:00:00"
+                    }
+                ]
+            },
+            {
+                "Key": "U216_TI2311",
+                "title":"TI2311",
+                "Items": [
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2311",
+                        "TagId": null,
+                        "NValue": "24.967319",
+                        "ATime": "2017-03-13T00:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2311",
+                        "TagId": null,
+                        "NValue": "24.880661",
+                        "ATime": "2017-03-13T01:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2311",
+                        "TagId": null,
+                        "NValue": "24.735849",
+                        "ATime": "2017-03-13T02:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2311",
+                        "TagId": null,
+                        "NValue": "24.590998",
+                        "ATime": "2017-03-13T03:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2311",
+                        "TagId": null,
+                        "NValue": "24.526297",
+                        "ATime": "2017-03-13T04:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2311",
+                        "TagId": null,
+                        "NValue": "24.382833",
+                        "ATime": "2017-03-13T05:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2311",
+                        "TagId": null,
+                        "NValue": "24.228323",
+                        "ATime": "2017-03-13T06:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2311",
+                        "TagId": null,
+                        "NValue": "24.004519",
+                        "ATime": "2017-03-13T08:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2311",
+                        "TagId": null,
+                        "NValue": "24.141466",
+                        "ATime": "2017-03-13T07:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2311",
+                        "TagId": null,
+                        "NValue": "23.99202",
+                        "ATime": "2017-03-13T09:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2311",
+                        "TagId": null,
+                        "NValue": "23.96534",
+                        "ATime": "2017-03-13T10:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2311",
+                        "TagId": null,
+                        "NValue": "23.741755",
+                        "ATime": "2017-03-13T11:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2311",
+                        "TagId": null,
+                        "NValue": "23.633619",
+                        "ATime": "2017-03-13T12:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2311",
+                        "TagId": null,
+                        "NValue": "23.696619",
+                        "ATime": "2017-03-13T13:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2311",
+                        "TagId": null,
+                        "NValue": "23.753349",
+                        "ATime": "2017-03-13T14:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2311",
+                        "TagId": null,
+                        "NValue": "23.960676",
+                        "ATime": "2017-03-13T15:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2311",
+                        "TagId": null,
+                        "NValue": "24.233557",
+                        "ATime": "2017-03-13T16:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2311",
+                        "TagId": null,
+                        "NValue": "24.55304",
+                        "ATime": "2017-03-13T17:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2311",
+                        "TagId": null,
+                        "NValue": "24.801464",
+                        "ATime": "2017-03-13T18:00:00"
+                    }
+                ]
+            },
+            {
+                "Key": "U216_TI2322",
+                "title":"TI2322",
+                "Items": [
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2322",
+                        "TagId": null,
+                        "NValue": "23.71147",
+                        "ATime": "2017-03-13T00:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2322",
+                        "TagId": null,
+                        "NValue": "23.640396",
+                        "ATime": "2017-03-13T01:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2322",
+                        "TagId": null,
+                        "NValue": "23.487444",
+                        "ATime": "2017-03-13T02:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2322",
+                        "TagId": null,
+                        "NValue": "23.403728",
+                        "ATime": "2017-03-13T03:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2322",
+                        "TagId": null,
+                        "NValue": "23.324795",
+                        "ATime": "2017-03-13T04:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2322",
+                        "TagId": null,
+                        "NValue": "23.160528",
+                        "ATime": "2017-03-13T05:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2322",
+                        "TagId": null,
+                        "NValue": "23.08292",
+                        "ATime": "2017-03-13T06:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2322",
+                        "TagId": null,
+                        "NValue": "22.88246",
+                        "ATime": "2017-03-13T08:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2322",
+                        "TagId": null,
+                        "NValue": "22.9582",
+                        "ATime": "2017-03-13T07:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2322",
+                        "TagId": null,
+                        "NValue": "22.747166",
+                        "ATime": "2017-03-13T09:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2322",
+                        "TagId": null,
+                        "NValue": "22.582705",
+                        "ATime": "2017-03-13T10:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2322",
+                        "TagId": null,
+                        "NValue": "22.409008",
+                        "ATime": "2017-03-13T11:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2322",
+                        "TagId": null,
+                        "NValue": "22.308731",
+                        "ATime": "2017-03-13T12:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2322",
+                        "TagId": null,
+                        "NValue": "22.331385",
+                        "ATime": "2017-03-13T13:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2322",
+                        "TagId": null,
+                        "NValue": "22.38065",
+                        "ATime": "2017-03-13T14:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2322",
+                        "TagId": null,
+                        "NValue": "22.542931",
+                        "ATime": "2017-03-13T15:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2322",
+                        "TagId": null,
+                        "NValue": "22.728415",
+                        "ATime": "2017-03-13T16:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2322",
+                        "TagId": null,
+                        "NValue": "22.90518",
+                        "ATime": "2017-03-13T17:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2322",
+                        "TagId": null,
+                        "NValue": "23.087898",
+                        "ATime": "2017-03-13T18:00:00"
+                    }
+                ]
+            },
+            {
+                "Key": "U216_TI2321",
+                "title":"TI2321",
+                "Items": [
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2321",
+                        "TagId": null,
+                        "NValue": "24.043598",
+                        "ATime": "2017-03-13T00:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2321",
+                        "TagId": null,
+                        "NValue": "23.958387",
+                        "ATime": "2017-03-13T01:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2321",
+                        "TagId": null,
+                        "NValue": "23.778772",
+                        "ATime": "2017-03-13T02:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2321",
+                        "TagId": null,
+                        "NValue": "23.696672",
+                        "ATime": "2017-03-13T03:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2321",
+                        "TagId": null,
+                        "NValue": "23.646072",
+                        "ATime": "2017-03-13T04:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2321",
+                        "TagId": null,
+                        "NValue": "23.483477",
+                        "ATime": "2017-03-13T05:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2321",
+                        "TagId": null,
+                        "NValue": "23.374422",
+                        "ATime": "2017-03-13T06:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2321",
+                        "TagId": null,
+                        "NValue": "23.134666",
+                        "ATime": "2017-03-13T08:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2321",
+                        "TagId": null,
+                        "NValue": "23.278072",
+                        "ATime": "2017-03-13T07:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2321",
+                        "TagId": null,
+                        "NValue": "23.065529",
+                        "ATime": "2017-03-13T09:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2321",
+                        "TagId": null,
+                        "NValue": "22.921728",
+                        "ATime": "2017-03-13T10:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2321",
+                        "TagId": null,
+                        "NValue": "22.744982",
+                        "ATime": "2017-03-13T11:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2321",
+                        "TagId": null,
+                        "NValue": "22.643143",
+                        "ATime": "2017-03-13T12:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2321",
+                        "TagId": null,
+                        "NValue": "22.728699",
+                        "ATime": "2017-03-13T13:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2321",
+                        "TagId": null,
+                        "NValue": "22.842438",
+                        "ATime": "2017-03-13T14:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2321",
+                        "TagId": null,
+                        "NValue": "23.062809",
+                        "ATime": "2017-03-13T15:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2321",
+                        "TagId": null,
+                        "NValue": "23.326847",
+                        "ATime": "2017-03-13T16:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2321",
+                        "TagId": null,
+                        "NValue": "23.604227",
+                        "ATime": "2017-03-13T17:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_TI2321",
+                        "TagId": null,
+                        "NValue": "23.791502",
+                        "ATime": "2017-03-13T18:00:00"
+                    }
+                ]
+            },
+            {
+                "Key": "U216_WI2210",
+                "title":"WI2210",
+                "Items": [
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_WI2210",
+                        "TagId": null,
+                        "NValue": "1702.5",
+                        "ATime": "2017-03-13T00:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_WI2210",
+                        "TagId": null,
+                        "NValue": "1702",
+                        "ATime": "2017-03-13T01:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_WI2210",
+                        "TagId": null,
+                        "NValue": "1702",
+                        "ATime": "2017-03-13T02:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_WI2210",
+                        "TagId": null,
+                        "NValue": "1701.5",
+                        "ATime": "2017-03-13T03:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_WI2210",
+                        "TagId": null,
+                        "NValue": "1701.5",
+                        "ATime": "2017-03-13T04:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_WI2210",
+                        "TagId": null,
+                        "NValue": "1701.5",
+                        "ATime": "2017-03-13T05:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_WI2210",
+                        "TagId": null,
+                        "NValue": "1703.5",
+                        "ATime": "2017-03-13T06:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_WI2210",
+                        "TagId": null,
+                        "NValue": "1702",
+                        "ATime": "2017-03-13T08:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_WI2210",
+                        "TagId": null,
+                        "NValue": "1703.5",
+                        "ATime": "2017-03-13T07:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_WI2210",
+                        "TagId": null,
+                        "NValue": "1704",
+                        "ATime": "2017-03-13T09:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_WI2210",
+                        "TagId": null,
+                        "NValue": "1705",
+                        "ATime": "2017-03-13T10:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_WI2210",
+                        "TagId": null,
+                        "NValue": "1704.5",
+                        "ATime": "2017-03-13T11:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_WI2210",
+                        "TagId": null,
+                        "NValue": "1704.5",
+                        "ATime": "2017-03-13T12:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_WI2210",
+                        "TagId": null,
+                        "NValue": "1705",
+                        "ATime": "2017-03-13T13:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_WI2210",
+                        "TagId": null,
+                        "NValue": "1705.5",
+                        "ATime": "2017-03-13T14:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_WI2210",
+                        "TagId": null,
+                        "NValue": "1705.5",
+                        "ATime": "2017-03-13T15:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_WI2210",
+                        "TagId": null,
+                        "NValue": "1706",
+                        "ATime": "2017-03-13T16:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_WI2210",
+                        "TagId": null,
+                        "NValue": "1705.5",
+                        "ATime": "2017-03-13T17:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_WI2210",
+                        "TagId": null,
+                        "NValue": "1705.5",
+                        "ATime": "2017-03-13T18:00:00"
+                    }
+                ]
+            },
+            {
+                "Key": "U216_FC2120",
+                "title":"FC2120",
+                "Items": [
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2120",
+                        "TagId": null,
+                        "NValue": "-0.03125",
+                        "ATime": "2017-03-13T00:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2120",
+                        "TagId": null,
+                        "NValue": "-0.05625",
+                        "ATime": "2017-03-13T01:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2120",
+                        "TagId": null,
+                        "NValue": "-0.03125",
+                        "ATime": "2017-03-13T02:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2120",
+                        "TagId": null,
+                        "NValue": "-0.05625",
+                        "ATime": "2017-03-13T03:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2120",
+                        "TagId": null,
+                        "NValue": "-0.05625",
+                        "ATime": "2017-03-13T04:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2120",
+                        "TagId": null,
+                        "NValue": "-0.08125",
+                        "ATime": "2017-03-13T05:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2120",
+                        "TagId": null,
+                        "NValue": "-0.075",
+                        "ATime": "2017-03-13T06:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2120",
+                        "TagId": null,
+                        "NValue": "-0.08125",
+                        "ATime": "2017-03-13T08:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2120",
+                        "TagId": null,
+                        "NValue": "-0.06875",
+                        "ATime": "2017-03-13T07:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2120",
+                        "TagId": null,
+                        "NValue": "-0.08125",
+                        "ATime": "2017-03-13T09:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2120",
+                        "TagId": null,
+                        "NValue": "-0.15",
+                        "ATime": "2017-03-13T10:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2120",
+                        "TagId": null,
+                        "NValue": "-0.10625",
+                        "ATime": "2017-03-13T11:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2120",
+                        "TagId": null,
+                        "NValue": "-0.1",
+                        "ATime": "2017-03-13T12:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2120",
+                        "TagId": null,
+                        "NValue": "-0.08125",
+                        "ATime": "2017-03-13T13:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2120",
+                        "TagId": null,
+                        "NValue": "-0.03125",
+                        "ATime": "2017-03-13T14:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2120",
+                        "TagId": null,
+                        "NValue": "0.01875",
+                        "ATime": "2017-03-13T15:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2120",
+                        "TagId": null,
+                        "NValue": "0.01875",
+                        "ATime": "2017-03-13T16:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2120",
+                        "TagId": null,
+                        "NValue": "0",
+                        "ATime": "2017-03-13T17:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2120",
+                        "TagId": null,
+                        "NValue": "0.01875",
+                        "ATime": "2017-03-13T18:00:00"
+                    }
+                ]
+            },
+            {
+                "Key": "U216_FC2110",
+                "title":"FC2110",
+                "Items": [
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2110",
+                        "TagId": null,
+                        "NValue": "-0.00585",
+                        "ATime": "2017-03-13T00:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2110",
+                        "TagId": null,
+                        "NValue": "-0.00585",
+                        "ATime": "2017-03-13T01:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2110",
+                        "TagId": null,
+                        "NValue": "-0.0063",
+                        "ATime": "2017-03-13T02:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2110",
+                        "TagId": null,
+                        "NValue": "-0.00585",
+                        "ATime": "2017-03-13T03:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2110",
+                        "TagId": null,
+                        "NValue": "-0.0063",
+                        "ATime": "2017-03-13T04:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2110",
+                        "TagId": null,
+                        "NValue": "-0.00645",
+                        "ATime": "2017-03-13T05:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2110",
+                        "TagId": null,
+                        "NValue": "-0.00645",
+                        "ATime": "2017-03-13T06:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2110",
+                        "TagId": null,
+                        "NValue": "-0.00675",
+                        "ATime": "2017-03-13T08:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2110",
+                        "TagId": null,
+                        "NValue": "-0.0069",
+                        "ATime": "2017-03-13T07:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2110",
+                        "TagId": null,
+                        "NValue": "-0.0069",
+                        "ATime": "2017-03-13T09:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2110",
+                        "TagId": null,
+                        "NValue": "-0.0087",
+                        "ATime": "2017-03-13T10:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2110",
+                        "TagId": null,
+                        "NValue": "-0.0081",
+                        "ATime": "2017-03-13T11:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2110",
+                        "TagId": null,
+                        "NValue": "-0.0072",
+                        "ATime": "2017-03-13T12:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2110",
+                        "TagId": null,
+                        "NValue": "-0.0063",
+                        "ATime": "2017-03-13T13:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2110",
+                        "TagId": null,
+                        "NValue": "-0.00525",
+                        "ATime": "2017-03-13T14:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2110",
+                        "TagId": null,
+                        "NValue": "-0.00465",
+                        "ATime": "2017-03-13T15:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2110",
+                        "TagId": null,
+                        "NValue": "-0.00465",
+                        "ATime": "2017-03-13T16:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2110",
+                        "TagId": null,
+                        "NValue": "-0.00465",
+                        "ATime": "2017-03-13T17:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U216_FC2110",
+                        "TagId": null,
+                        "NValue": "-0.00465",
+                        "ATime": "2017-03-13T18:00:00"
+                    }
+                ]
+            },
+            {
+                "Key": "U220_FQI6417TM",
+                "title":"FQI6417",
+                "Items": [
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417TM",
+                        "TagId": null,
+                        "NValue": "14505.049805",
+                        "ATime": "2017-03-13T00:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417TM",
+                        "TagId": null,
+                        "NValue": "14565.041016",
+                        "ATime": "2017-03-13T01:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417TM",
+                        "TagId": null,
+                        "NValue": "14625.049805",
+                        "ATime": "2017-03-13T02:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417TM",
+                        "TagId": null,
+                        "NValue": "14685.049805",
+                        "ATime": "2017-03-13T03:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417TM",
+                        "TagId": null,
+                        "NValue": "14742.338867",
+                        "ATime": "2017-03-13T04:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417TM",
+                        "TagId": null,
+                        "NValue": "14804.383789",
+                        "ATime": "2017-03-13T05:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417TM",
+                        "TagId": null,
+                        "NValue": "14865.041016",
+                        "ATime": "2017-03-13T06:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417TM",
+                        "TagId": null,
+                        "NValue": "14985.041016",
+                        "ATime": "2017-03-13T08:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417TM",
+                        "TagId": null,
+                        "NValue": "14921.823242",
+                        "ATime": "2017-03-13T07:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417TM",
+                        "TagId": null,
+                        "NValue": "15045.041016",
+                        "ATime": "2017-03-13T09:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417TM",
+                        "TagId": null,
+                        "NValue": "15102.978516",
+                        "ATime": "2017-03-13T10:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417TM",
+                        "TagId": null,
+                        "NValue": "15165.058594",
+                        "ATime": "2017-03-13T11:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417TM",
+                        "TagId": null,
+                        "NValue": "15220.240234",
+                        "ATime": "2017-03-13T12:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417TM",
+                        "TagId": null,
+                        "NValue": "15285.032227",
+                        "ATime": "2017-03-13T13:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417TM",
+                        "TagId": null,
+                        "NValue": "15345.049805",
+                        "ATime": "2017-03-13T14:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417TM",
+                        "TagId": null,
+                        "NValue": "15402.000977",
+                        "ATime": "2017-03-13T15:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417TM",
+                        "TagId": null,
+                        "NValue": "15465.041016",
+                        "ATime": "2017-03-13T16:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417TM",
+                        "TagId": null,
+                        "NValue": "15525.032227",
+                        "ATime": "2017-03-13T17:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "U220_FQI6417TM",
+                        "TagId": null,
+                        "NValue": "15585.041016",
+                        "ATime": "2017-03-13T18:00:00"
+                    }
+                ]
+            },
+            {
+                "Key": "DI0",
+                "title":"DI0",
+                "Items": [
+                    {
+                        "SwitchName": null,
+                        "TagName": "DI0",
+                        "TagId": null,
+                        "NValue": "1",
+                        "ATime": "2017-03-13T00:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "DI0",
+                        "TagId": null,
+                        "NValue": "1",
+                        "ATime": "2017-03-13T01:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "DI0",
+                        "TagId": null,
+                        "NValue": "1",
+                        "ATime": "2017-03-13T02:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "DI0",
+                        "TagId": null,
+                        "NValue": "1",
+                        "ATime": "2017-03-13T03:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "DI0",
+                        "TagId": null,
+                        "NValue": "1",
+                        "ATime": "2017-03-13T04:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "DI0",
+                        "TagId": null,
+                        "NValue": "1",
+                        "ATime": "2017-03-13T05:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "DI0",
+                        "TagId": null,
+                        "NValue": "1",
+                        "ATime": "2017-03-13T06:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "DI0",
+                        "TagId": null,
+                        "NValue": "1",
+                        "ATime": "2017-03-13T08:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "DI0",
+                        "TagId": null,
+                        "NValue": "1",
+                        "ATime": "2017-03-13T07:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "DI0",
+                        "TagId": null,
+                        "NValue": "1",
+                        "ATime": "2017-03-13T09:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "DI0",
+                        "TagId": null,
+                        "NValue": "1",
+                        "ATime": "2017-03-13T10:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "DI0",
+                        "TagId": null,
+                        "NValue": "1",
+                        "ATime": "2017-03-13T11:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "DI0",
+                        "TagId": null,
+                        "NValue": "1",
+                        "ATime": "2017-03-13T12:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "DI0",
+                        "TagId": null,
+                        "NValue": "1",
+                        "ATime": "2017-03-13T13:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "DI0",
+                        "TagId": null,
+                        "NValue": "1",
+                        "ATime": "2017-03-13T14:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "DI0",
+                        "TagId": null,
+                        "NValue": "1",
+                        "ATime": "2017-03-13T15:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "DI0",
+                        "TagId": null,
+                        "NValue": "1",
+                        "ATime": "2017-03-13T16:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "DI0",
+                        "TagId": null,
+                        "NValue": "1",
+                        "ATime": "2017-03-13T17:00:00"
+                    },
+                    {
+                        "SwitchName": null,
+                        "TagName": "DI0",
+                        "TagId": null,
+                        "NValue": "1",
+                        "ATime": "2017-03-13T18:00:00"
+                    }
+                ]
+            }
+        ]
+    }
+}

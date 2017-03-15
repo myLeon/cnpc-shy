@@ -1,28 +1,41 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { PersonnelComponent } from './personnel.component'
-const routes: Routes = [
-  { path: "", component: PersonnelComponent }
-];
+// import { NgModule } from '@angular/core';
+// import { Routes, RouterModule } from '@angular/router';
+// import { DeviceComponent } from './device.component'
 
-export const Routing = RouterModule.forChild(routes);
+// const routes: Routes = [
+//     { path: "", component: DeviceComponent }
+
+// ];
+
+// export const Routing = RouterModule.forChild(routes);
 
 
 // import { NgModule } from '@angular/core';
 // import { Routes, RouterModule } from '@angular/router';
-// import { PersonnelComponent } from './personnel.component';
-// import { ListComponent } from './list/list.component';
+// import { EquipmentComponent }  from './equipment.component'
 // const routes: Routes = [
-//   {
-//     path:'',
-//     component:PersonnelComponent,
-//     children:[
-//       {path:'',redirectTo:'list',pathMatch:'full'},
-//       {path:'list',component:ListComponent},
-//       {path:'detailed',loadChildren:'app/ldm/personnel/detailed/detailed.module#DetailedModule'}
-//     ]
-
-// }
+//   { path: "", component: EquipmentComponent }
 // ];
 
-// export const Routing= RouterModule.forChild(routes);
+// export const Routing = RouterModule.forChild(routes);
+
+
+
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { PersonnelComponent } from './personnel.component';
+// import { DetailComponent } from './detail/detail.component';
+import { ListComponent} from './list/list.component'
+const routes: Routes = [
+  {
+    path:'',
+    component:PersonnelComponent,
+    children:[
+      {path:'',redirectTo:'list',pathMatch:'full'},
+      {path:'list',component:ListComponent},
+      {path:'detail',loadChildren:'app/ldm/personnel/detail/detail.module#DetailModule'}
+    ]
+}
+];
+
+export const Routing= RouterModule.forChild(routes);

@@ -1,0 +1,2084 @@
+//仪器设备
+{
+    //仪器设备分类统计
+    "instrumentTypeCount": {
+        "success": true,
+        "data": [
+            {
+                "instrumentType": "气相色谱",
+                "total": 34
+            },
+            {
+                "instrumentType": "油品分析",
+                "total": 17
+            },
+            {
+                "instrumentType": "光谱",
+                "total": 7
+            },
+            {
+                "instrumentType": "物理吸附",
+                "total": 6
+            },
+            {
+                "instrumentType": "热学性能",
+                "total": 6
+            },
+            {
+                "instrumentType": "密度分析",
+                "total": 6
+            },
+            {
+                "instrumentType": "力学性能",
+                "total": 6
+            },
+            {
+                "instrumentType": "硫分析",
+                "total": 5
+            }
+        ]
+    },
+    //各单位仪器设备统计
+    "instrumentGroupAmount": {
+        "success": true,
+        "data": [
+            {
+                "groupName": "大庆中心",
+                "total": 106
+            },
+            {
+                "groupName": "兰州中心",
+                "total": 89
+            },
+            {
+                "groupName": "北京院部",
+                "total": 0
+            }
+        ]
+    },
+    //一段时间内的仪器利用率
+    "instrumentUseRatio": {
+        "success": true,
+        "data": [
+            {
+                "instrName": "气相色谱",
+                "ratio": "80%"
+            },
+            {
+                "instrName": "光谱",
+                "ratio": "65%"
+            },
+            {
+                "instrName": "硫分析",
+                "ratio": "55%"
+            },
+            {
+                "instrName": "密度分析",
+                "ratio": "20%"
+            },
+            {
+                "instrName": "油品分析",
+                "ratio": "40%"
+            }
+        ]
+    },
+    //仪器设备列表
+    "instrumentList": {
+        "success": true,
+        "data": [
+            {
+                "identity":"AC7890MNZL",
+                "name": "模拟蒸馏分析仪",
+                "description": "用于分析汽油柴油等模拟馏程数据",
+                "dateInstalled": "2011-05-13 00:00:00",
+                "operatorByName": "常桂祖",
+                "manufacturer": "荷兰AC分析控制有限公司",
+                "status": "可用",
+                "groupName": "兰州炼化所分析组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "烃类分析仪",
+                "description": "用于分析碳四极其脱氢实验中烃类组分含量",
+                "dateInstalled": "2012-05-13 00:00:00",
+                "operatorByName": "常桂祖",
+                "manufacturer": "安捷伦科技有限公司",
+                "status": "可用",
+                "groupName": "兰州炼化所分析组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "多维族组成分析仪",
+                "description": "用于分析石脑油、汽油、轻烃等族组成数据",
+                "dateInstalled": "2005-05-12 00:00:00",
+                "operatorByName": "常桂祖",
+                "manufacturer": "荷兰AC分析控制有限公司",
+                "status": "可用",
+                "groupName": "兰州炼化所分析组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "详细烃分析仪",
+                "description": "用于分析汽油详细烃组分含量",
+                "dateInstalled": "2008-05-13 00:00:00",
+                "operatorByName": "任海鸥",
+                "manufacturer": "荷兰AC分析控制有限公司",
+                "status": "可用",
+                "groupName": "兰州炼化所分析组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "含氧化合物分析仪",
+                "description": "用于分析汽油中的醇醚类常量、微量含氧化合物",
+                "dateInstalled": "2008-05-13 00:00:00",
+                "operatorByName": "常桂祖",
+                "manufacturer": "荷兰AC分析控制有限公司",
+                "status": "可用",
+                "groupName": "兰州炼化所分析组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "四阀五柱炼厂气分析仪",
+                "description": "用于分析炼厂气中氢气、氧气、氮气、二氧化碳及各类烃含量",
+                "dateInstalled": "2008-05-13 00:00:00",
+                "operatorByName": "任海鸥",
+                "manufacturer": "安捷伦科技有限公司",
+                "status": "可用",
+                "groupName": "兰州炼化所分析组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "三苯分析仪",
+                "description": "用于分析油品中三苯含量和水含量",
+                "dateInstalled": "2012-05-13 00:00:00",
+                "operatorByName": "唐迎春",
+                "manufacturer": "安捷伦科技有限公司",
+                "status": "可用",
+                "groupName": "兰州炼化所分析组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "高速炼厂气分析仪",
+                "description": "用于分析炼厂气、裂解气中各种气体组分含量",
+                "dateInstalled": "2006-05-12 00:00:00",
+                "operatorByName": "张敦花",
+                "manufacturer": "荷兰AC分析控制有限公司",
+                "status": "可用",
+                "groupName": "兰州炼化所分析组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "轻烃氢气分析仪",
+                "description": "用于分析碳六以前轻烃和氢气含量分析",
+                "dateInstalled": "2007-05-13 00:00:00",
+                "operatorByName": "程亮亮",
+                "manufacturer": "安捷伦科技有限公司",
+                "status": "可用",
+                "groupName": "兰州炼化所分析组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "便携炼厂气分析仪3000",
+                "description": "用于分析炼厂气、裂解气中各种气体组分含量",
+                "dateInstalled": "2009-05-13 00:00:00",
+                "operatorByName": "张敦花",
+                "manufacturer": "安捷伦科技有限公司",
+                "status": "可用",
+                "groupName": "兰州炼化所分析组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "便携炼厂气分析仪490",
+                "description": "用于分析炼厂气、裂解气中各种气体组分含量",
+                "dateInstalled": "2011-05-13 00:00:00",
+                "operatorByName": "程亮亮",
+                "manufacturer": "安捷伦科技有限公司",
+                "status": "可用",
+                "groupName": "兰州炼化所分析组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "总硫分析仪",
+                "description": "用于分析油品或气体中常量总硫含量",
+                "dateInstalled": "2008-05-13 00:00:00",
+                "operatorByName": "常桂祖",
+                "manufacturer": "加拿大PHOTON CONTROL公司",
+                "status": "可用",
+                "groupName": "兰州炼化所分析组",
+                "category": "总硫分析"
+            },
+            {
+                "name": "汽油分析仪",
+                "description": "用于分析汽油的辛烷值、族组成、氧化物含量等基本数据",
+                "dateInstalled": "2013-05-13 00:00:00",
+                "operatorByName": "唐迎春",
+                "manufacturer": "Grabner公司",
+                "status": "可用",
+                "groupName": "兰州炼化所分析组",
+                "category": "红外"
+            },
+            {
+                "name": "馏程分析仪",
+                "description": "用于分析符合ASTM D86标准的油品馏程数据",
+                "dateInstalled": "2008-05-13 00:00:00",
+                "operatorByName": "张敦花",
+                "manufacturer": "法国Normalab Analis",
+                "status": "可用",
+                "groupName": "兰州炼化所分析组",
+                "category": "馏程"
+            },
+            {
+                "name": "密度分析仪",
+                "description": "用于分析油品的密度",
+                "dateInstalled": "2008-05-13 00:00:00",
+                "operatorByName": "任海鸥",
+                "manufacturer": "奥地利安东帕有限公司",
+                "status": "可用",
+                "groupName": "兰州炼化所分析组",
+                "category": "密度分析"
+            },
+            {
+                "name": "气相色谱仪6890GC-FID-TCD",
+                "description": "用于汽油等挥发性有机样品中组成的定性定量分析。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所仪器分析组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "介电常数仪",
+                "description": "采用介电常数仪测试绝缘材料的介电常数和介质损耗角正切值等电学性能",
+                "dateInstalled": "1990-08-10 00:00:00",
+                "operatorByName": "严金荣",
+                "manufacturer": "瑞士Tettex公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "介电常数"
+            },
+            {
+                "name": "熔体流动速率仪",
+                "description": "采用熔体流动速率仪测试塑料的熔体流动速率、熔流比等加工性能",
+                "dateInstalled": "1990-07-10 00:00:00",
+                "operatorByName": "侯雅丽",
+                "manufacturer": "意大利西斯特公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "熔体流动速率"
+            },
+            {
+                "name": "热变形/维卡软化点测试仪",
+                "description": "采用热变形/维卡软化点测试仪测试塑料的热变形温度、维卡软化点温度等",
+                "dateInstalled": "2007-06-08 00:00:00",
+                "operatorByName": "侯雅丽",
+                "manufacturer": "英国RAY/RAN公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "热学性能"
+            },
+            {
+                "name": "密度仪",
+                "description": "采用密度仪测试塑料的密度",
+                "dateInstalled": "1990-07-10 09:00:00",
+                "operatorByName": "侯雅丽",
+                "manufacturer": "意大利西斯特公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "密度分析"
+            },
+            {
+                "name": "透湿杯",
+                "description": "采用透湿杯测试塑料薄膜透水蒸汽性",
+                "dateInstalled": "1990-07-10 00:00:00",
+                "operatorByName": "严金荣",
+                "manufacturer": "意大利西斯特公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "透湿性"
+            },
+            {
+                "name": "耐环境应力开裂仪",
+                "description": "采用耐环境应力开裂仪测试塑料在规定环境下发生开裂破坏时间",
+                "dateInstalled": "1990-05-05 00:00:00",
+                "operatorByName": "侯雅丽",
+                "manufacturer": "意大利西斯特公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "开裂仪"
+            },
+            {
+                "name": "快速开裂仪",
+                "description": "采用快慢速开裂仪在规定条件下测试管材的开裂时间等",
+                "dateInstalled": "2013-06-10 00:00:00",
+                "operatorByName": "严金荣",
+                "manufacturer": "德国IPT公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "开裂仪"
+            },
+            {
+                "name": "油品烃组成分析仪",
+                "description": "用于测定沸点低于350℃石油馏分中烃类的分析，方法荧光指示剂吸附法。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所液相组(重油族组成 核磁 物化吸附 微量水 红紫外 离子色谱)",
+                "category": "液相色谱"
+            },
+            {
+                "name": "气相色谱仪",
+                "description": "分析C1~C6烃类",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆化工所208组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "气相色谱仪",
+                "description": "分析C1~C6烃类",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆化工所208组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "气相色谱",
+                "description": "测试仪器数据",
+                "dateInstalled": "2007-04-23 00:00:00",
+                "operatorByName": "葛汉青",
+                "manufacturer": "日本岛津",
+                "status": "可用",
+                "groupName": "兰州中心催化所分析检测组",
+                "category": "色谱"
+            },
+            {
+                "name": "毛细管流变仪",
+                "description": "采用毛细管试验仪单、双料筒测定塑料的流变性能",
+                "dateInstalled": "2007-02-03 00:00:00",
+                "operatorByName": "李波",
+                "manufacturer": "英国马尔文公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "流变性能"
+            },
+            {
+                "name": "旋转流变仪",
+                "description": "采用旋转流变仪的平板夹具、拉伸夹具、扭摆夹具等测定塑料的流变性能",
+                "dateInstalled": "2013-10-10 00:00:00",
+                "operatorByName": "李波",
+                "manufacturer": "美国TA公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "流变性能"
+            },
+            {
+                "name": "压片机",
+                "description": "采用压片机将塑料按类别使用不同温度、不同压力模塑成型",
+                "dateInstalled": "1998-12-22 00:00:00",
+                "operatorByName": "于军",
+                "manufacturer": "美国四面体公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "压片机"
+            },
+            {
+                "name": "压片机",
+                "description": "采用压片机将塑料按类别使用不同温度、不同压力模塑成型",
+                "dateInstalled": "2013-12-01 00:00:00",
+                "operatorByName": "于军",
+                "manufacturer": "德国SERVITEC公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "压片机"
+            },
+            {
+                "name": "运动粘度测定器",
+                "description": "适用于石油产品20℃粘度的测定",
+                "dateInstalled": "1996-04-21 00:00:00",
+                "operatorByName": "佟淑秋",
+                "manufacturer": "大连离合",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "油品分析"
+            },
+            {
+                "name": "汽油辛烷值测定仪",
+                "description": "适用ASTMD2699",
+                "dateInstalled": "2010-07-21 00:00:00",
+                "operatorByName": "丛丽茹",
+                "manufacturer": "Waukesha",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "油品分析"
+            },
+            {
+                "name": "自动粘度测定仪",
+                "description": "适用于石油产品20℃、40℃和80℃粘度的测定",
+                "dateInstalled": "2008-11-21 00:00:00",
+                "operatorByName": "佟淑秋",
+                "manufacturer": "美国凯能",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "油品分析"
+            },
+            {
+                "name": "液体化工产品折光率测定仪",
+                "description": "适用GB/T6488",
+                "dateInstalled": "2012-12-21 00:00:00",
+                "operatorByName": "洪梅",
+                "manufacturer": "安东帕",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "油品分析"
+            },
+            {
+                "name": "石油产品减压馏程测定仪",
+                "description": "适用于重石油馏分ASTMD1160",
+                "dateInstalled": "2012-07-21 00:00:00",
+                "operatorByName": "刘莉",
+                "manufacturer": "Ifischer",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "油品分析"
+            },
+            {
+                "name": "石油产品手动蒸馏测定仪",
+                "description": "适用GD/T6536",
+                "dateInstalled": "2005-10-21 00:00:00",
+                "operatorByName": "林雁南",
+                "manufacturer": "大连离合",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "油品分析"
+            },
+            {
+                "name": "石油产品自动馏程测定仪",
+                "description": "适用于ASTMD86",
+                "dateInstalled": "2012-12-21 00:00:00",
+                "operatorByName": "林雁南",
+                "manufacturer": "德国海尔潮",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "油品分析"
+            },
+            {
+                "name": "冷滤点电动吸滤装置",
+                "description": "适用SH/T0248",
+                "dateInstalled": "2012-10-21 00:00:00",
+                "operatorByName": "揭宏",
+                "manufacturer": "大连北方",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "油品分析"
+            },
+            {
+                "name": "多功能低温测定器",
+                "description": "适用于石油产品凝点的测定",
+                "dateInstalled": "2012-10-21 00:00:00",
+                "operatorByName": "揭宏",
+                "manufacturer": "大连北方",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "油品分析"
+            },
+            {
+                "name": "石油产品闭口闪点测定仪",
+                "description": "适用于闪点高于40℃的石油产品",
+                "dateInstalled": "2012-07-24 00:00:00",
+                "operatorByName": "韩耀辉",
+                "manufacturer": "德国海尔潮",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "油品分析"
+            },
+            {
+                "name": "石油产品开口闪点测定仪",
+                "description": "不适用于测定燃料油和开口闪点低于79℃的石油产品",
+                "dateInstalled": null,
+                "operatorByName": "韩耀辉",
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "油品分析"
+            },
+            {
+                "name": "916电位滴定仪",
+                "description": "适用于测定汽、煤、柴油中硫醇硫含量",
+                "dateInstalled": "2012-04-11 00:00:00",
+                "operatorByName": "史亚娟",
+                "manufacturer": "瑞士万通",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "容量分析"
+            },
+            {
+                "name": "柴油十六烷值机",
+                "description": "测定柴油的十六烷值",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": null,
+                "category": "油品分析"
+            },
+            {
+                "name": "柴油十六烷值机",
+                "description": "用于测定柴油的十六烷值",
+                "dateInstalled": "2014-04-08 00:00:00",
+                "operatorByName": "李淑杰",
+                "manufacturer": "Waukesha",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "油品分析"
+            },
+            {
+                "name": "快速炼厂气分析仪",
+                "description": "用于分析乙酸仲丁酯合成实验气相产物",
+                "dateInstalled": "2014-05-20 00:00:00",
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州炼化所分析组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "注塑机",
+                "description": "采用注塑机将塑料按类别使用不同温度、不同压力注塑成型",
+                "dateInstalled": "2005-07-10 00:00:00",
+                "operatorByName": "于军",
+                "manufacturer": "广东东华塑料机械公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "注塑机"
+            },
+            {
+                "name": "吹膜机",
+                "description": "采用吹膜机将塑料按种类使用不同温度吹塑成型",
+                "dateInstalled": "2007-03-01 00:00:00",
+                "operatorByName": "侯雅丽",
+                "manufacturer": "德国GOTTFERT公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "吹膜机"
+            },
+            {
+                "name": "多功能试验机",
+                "description": "采用多功能试验机可以测试塑料的扭矩、流变、挤片等加工流变性能",
+                "dateInstalled": "2006-01-03 00:00:00",
+                "operatorByName": "严金荣",
+                "manufacturer": "德国HAAKE公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "扭矩"
+            },
+            {
+                "name": "管材液压试验机",
+                "description": "采用管材静液压仪可以测试塑料管材的耐内压性能",
+                "dateInstalled": "2008-09-26 00:00:00",
+                "operatorByName": "严金荣",
+                "manufacturer": "丹麦SCITEQ公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "静液压"
+            },
+            {
+                "name": "万能试验机",
+                "description": "采用多功能试验机可测试塑料的拉伸、弯曲、压缩等力学性能",
+                "dateInstalled": "2013-07-10 00:00:00",
+                "operatorByName": "严金荣",
+                "manufacturer": "美国INSTRON公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "力i学性能"
+            },
+            {
+                "name": "万能试验机",
+                "description": "采用万能试验机可测试塑料的拉伸、弯曲、压缩等力学性能",
+                "dateInstalled": "2008-06-05 00:00:00",
+                "operatorByName": "严金荣",
+                "manufacturer": "德国ZWICK公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "力i学性能"
+            },
+            {
+                "name": "摆锤冲击仪",
+                "description": "采用摆锤冲击仪测试塑料的冲击性能",
+                "dateInstalled": "2003-10-01 00:00:00",
+                "operatorByName": "严金荣",
+                "manufacturer": "美国DYNISCO公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "冲击性能"
+            },
+            {
+                "name": "落镖冲击仪",
+                "description": "采用落镖冲击仪测试塑料薄膜的落镖冲击强度等力学性能",
+                "dateInstalled": "1987-02-01 00:00:00",
+                "operatorByName": "严金荣",
+                "manufacturer": "德国SERVITEC公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "冲击性能"
+            },
+            {
+                "name": "摩擦系数仪",
+                "description": "采用摩擦系数仪测试塑料的静摩擦系数、动摩擦系数等性能",
+                "dateInstalled": "2008-07-10 00:00:00",
+                "operatorByName": "严金荣",
+                "manufacturer": "德国THWING ALBERT 仪器公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "摩擦系数"
+            },
+            {
+                "name": "硬度计",
+                "description": "采用硬度计测试塑料的邵氏硬度等力学性能",
+                "dateInstalled": "1990-05-10 00:00:00",
+                "operatorByName": "严金荣",
+                "manufacturer": "意大利西斯特公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "硬度"
+            },
+            {
+                "name": "升温分级淋洗检测仪",
+                "description": "根据聚烯烃中组分结晶度不同，采用TREF升温分级淋洗检测仪将聚烯烃中的组分分级",
+                "dateInstalled": "2013-12-10 00:00:00",
+                "operatorByName": "马丽",
+                "manufacturer": "西班牙 POL YMER CHAR公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "淋洗仪"
+            },
+            {
+                "name": "石蜡光安定性比色仪",
+                "description": "适用SH/T0404-2008",
+                "dateInstalled": "2011-10-21 00:00:00",
+                "operatorByName": "李淑杰",
+                "manufacturer": "大连远东兴",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "石蜡分析"
+            },
+            {
+                "name": "石蜡热安定性测定器",
+                "description": "适用SH/T0639-1996",
+                "dateInstalled": "2004-04-21 00:00:00",
+                "operatorByName": "李淑杰",
+                "manufacturer": "大连远东兴",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "石蜡分析"
+            },
+            {
+                "name": "石油产品赛波特颜色测定仪",
+                "description": "适用GB/T3555",
+                "dateInstalled": "2012-08-21 00:00:00",
+                "operatorByName": "李淑杰",
+                "manufacturer": "科勒",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "石蜡分析"
+            },
+            {
+                "name": "自动石蜡熔点测定器",
+                "description": "适用GB/T2539",
+                "dateInstalled": "2012-11-21 00:00:00",
+                "operatorByName": "李淑杰",
+                "manufacturer": "大连远东兴",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "石蜡分析"
+            },
+            {
+                "name": "石油产品残炭测定仪",
+                "description": "适用于ASTMD4530和GB/T17144",
+                "dateInstalled": "2011-12-21 00:00:00",
+                "operatorByName": "洪梅",
+                "manufacturer": "Alcor",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "油品分析"
+            },
+            {
+                "name": "实沸点蒸馏仪",
+                "description": "适用ASTMD2892、5236",
+                "dateInstalled": "2009-06-21 00:00:00",
+                "operatorByName": "丛丽茹",
+                "manufacturer": "Ifischer",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "油品分析"
+            },
+            {
+                "name": "国产实沸点蒸馏仪",
+                "description": "适用GBT17280、17475",
+                "dateInstalled": "2012-10-27 00:00:00",
+                "operatorByName": "关旭",
+                "manufacturer": "抚顺石油化工研究院",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "油品分析"
+            },
+            {
+                "name": "905碱氮电位滴定仪",
+                "description": "适用于测定石油产品的碱性氮",
+                "dateInstalled": "2012-04-10 00:00:00",
+                "operatorByName": "史亚娟",
+                "manufacturer": "瑞士万通",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "容量分析"
+            },
+            {
+                "name": "905溴价电位滴定仪",
+                "description": "适用于测定石油产品的溴价",
+                "dateInstalled": "2012-04-10 00:00:00",
+                "operatorByName": "史亚娟",
+                "manufacturer": "瑞士万通",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "容量分析"
+            },
+            {
+                "name": "密度计",
+                "description": "适用于测定石油产品的密度",
+                "dateInstalled": "2010-12-21 00:00:00",
+                "operatorByName": "李淑杰",
+                "manufacturer": "鲁道夫",
+                "status": "可用",
+                "groupName": "大庆炼油所106组",
+                "category": "油品分析"
+            },
+            {
+                "name": "电热鼓风干燥箱",
+                "description": "采用电热鼓风干燥箱测定材料的尺寸变化率等",
+                "dateInstalled": "2007-01-10 00:00:00",
+                "operatorByName": "侯雅丽",
+                "manufacturer": "荷泽市鑫源仪器仪表有限公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "烘箱"
+            },
+            {
+                "name": "智能型箱式电阻炉",
+                "description": "采用智能型箱式电阻炉测定塑料的灰分等",
+                "dateInstalled": "2006-06-10 00:00:00",
+                "operatorByName": "侯雅丽",
+                "manufacturer": "荷泽市鑫源仪器仪表有限公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "马福炉"
+            },
+            {
+                "name": "蠕变仪",
+                "description": "采用蠕变仪测定材料拉伸、弯曲、蠕变等性能",
+                "dateInstalled": "1990-05-10 00:00:00",
+                "operatorByName": "严金荣",
+                "manufacturer": "意大利西斯特公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "力i学性能"
+            },
+            {
+                "name": "差示扫描量热仪",
+                "description": "采用差示扫描量热法（DSC）测定塑料的熔融和结晶温度及热焓",
+                "dateInstalled": "2013-10-10 00:00:00",
+                "operatorByName": "马丽",
+                "manufacturer": "美国TA公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "差热"
+            },
+            {
+                "name": "X-射线衍射仪",
+                "description": "用于测定催化剂及结晶性高聚物结构分析，定量测定样品中各物相含量以及高聚物结晶度和晶粒尺寸。\r\n",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所仪器分析组",
+                "category": "衍射"
+            },
+            {
+                "name": "全自动程序升温化学吸附分析仪",
+                "description": "催化剂化学吸附的表征",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州中心催化所分析检测组",
+                "category": "化学吸附"
+            },
+            {
+                "name": "摆锤冲击仪",
+                "description": "用于塑料悬臂梁或简支梁冲击的测定",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州聚烯烃所分析组",
+                "category": "冲击性能"
+            },
+            {
+                "name": "电动洛氏硬度计",
+                "description": "用于塑料洛氏硬度的测定",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州聚烯烃所分析组",
+                "category": "力i学性能"
+            },
+            {
+                "name": "落镖冲击仪",
+                "description": "用于塑料薄膜或薄片落镖冲击性能的测试",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州聚烯烃所分析组",
+                "category": "冲击性能"
+            },
+            {
+                "name": "总有机碳分析仪",
+                "description": "测定水中总碳、总无机碳、总有机碳等的含量",
+                "dateInstalled": null,
+                "operatorByName": "丁雪红",
+                "manufacturer": null,
+                "status": "报废",
+                "groupName": "兰州环化所分析检测组",
+                "category": "环境监测"
+            },
+            {
+                "name": "离子色谱仪",
+                "description": "测定水中阴离子（F-、Cl-、NO2-、Br-、NO3-、PO43-、SO42-）和阳离子（Na+、K+、NH4-N+、Mg2+、Ca2+）各浓度",
+                "dateInstalled": "2002-12-31 00:00:00",
+                "operatorByName": "丁雪红",
+                "manufacturer": null,
+                "status": "报废",
+                "groupName": "兰州环化所分析检测组",
+                "category": "离子色谱"
+            },
+            {
+                "name": "PONA单柱分析仪",
+                "description": "用于分析全馏分汽油pona数据",
+                "dateInstalled": "2006-05-13 00:00:00",
+                "operatorByName": "唐迎春",
+                "manufacturer": "安捷伦科技有限公司",
+                "status": "可用",
+                "groupName": "兰州炼化所分析组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "棒状薄层色谱",
+                "description": "可检测有机物族组成，特别针对重油分析效果理想。示踪有机合成的过程。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所液相组(重油族组成 核磁 物化吸附 微量水 红紫外 离子色谱)",
+                "category": "薄层色谱"
+            },
+            {
+                "name": "超高效液相色谱仪",
+                "description": "分子量大、沸点高、稳定性差的有机物定性、定量分析",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所液相组(重油族组成 核磁 物化吸附 微量水 红紫外 离子色谱)",
+                "category": "液相色谱"
+            },
+            {
+                "name": "X射线衍射仪",
+                "description": "测定晶体数据",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所表征组(电镜 BET 热分析 XRD)",
+                "category": "衍射"
+            },
+            {
+                "name": "X射线荧光光谱仪",
+                "description": "催化剂中元素定性和定量分析，分析范围B-U，工业生产装置废渣元素定性定量分析",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所元素组(总氮 总硫 XRF)",
+                "category": "荧光分析"
+            },
+            {
+                "name": "X射线荧光光谱仪",
+                "description": "催化剂中元素定性和定量分析，分析范围B-U，工业生产装置废渣元素定性定量分析",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所元素组(总氮 总硫 XRF)",
+                "category": "荧光分析"
+            },
+            {
+                "name": "气相色谱仪",
+                "description": "仪器配有FID检测器，用于C1-C5气态烃组成分析",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所气相组(气相 质谱 凝胶)",
+                "category": "气相色谱"
+            },
+            {
+                "name": "气相色谱仪",
+                "description": "仪器配有TCD检测器，用于永久气体组成分析",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所气相组(气相 质谱 凝胶)",
+                "category": "气相色谱"
+            },
+            {
+                "name": "气相色谱仪",
+                "description": "仪器配有石科院模拟蒸馏分析软件，用于沸点范围为55℃-700℃的馏分油的模拟蒸馏分析",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所气相组(气相 质谱 凝胶)",
+                "category": "气相色谱"
+            },
+            {
+                "name": "气相色谱仪",
+                "description": "仪器配有FID检测器，用于沸点低于300℃油品、己烯-1及生物柴油分析",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所气相组(气相 质谱 凝胶)",
+                "category": "气相色谱"
+            },
+            {
+                "name": "气相色谱仪",
+                "description": "仪器配有四阀六柱，专用于炼厂气、烟气组成分析",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所气相组(气相 质谱 凝胶)",
+                "category": "气相色谱"
+            },
+            {
+                "name": "气相色谱仪",
+                "description": "仪器配有SCD检测器，用于催化裂化汽油、柴油中硫化物类型分布的测定",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所气相组(气相 质谱 凝胶)",
+                "category": "气相色谱"
+            },
+            {
+                "name": "气相色谱仪",
+                "description": "仪器配有石科院PONA分析软件，用于石脑油、催化汽油的PONA分析",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所气相组(气相 质谱 凝胶)",
+                "category": "气相色谱"
+            },
+            {
+                "name": "气相色谱仪",
+                "description": "仪器为AC公司具有预切割功能的汽油分析仪，专用于200℃以下汽油族组成分析",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所气相组(气相 质谱 凝胶)",
+                "category": "气相色谱"
+            },
+            {
+                "name": "汽油组成和辛烷值分析色谱仪",
+                "description": "用于分析催化裂化汽油的组成和辛烷值",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州炼制所和FCC中试所-色谱分析岗位",
+                "category": "气相色谱"
+            },
+            {
+                "name": "汽油组成和辛烷值分析多维气相色谱仪",
+                "description": "用于分析催化裂化汽油、直馏汽油的组成和辛烷值",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州炼制所和FCC中试所-色谱分析岗位",
+                "category": "气相色谱"
+            },
+            {
+                "name": "傅立叶红外光谱仪",
+                "description": "用于表征催化剂固体表面羟基、表面酸性及骨架结构与性能",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州炼制所和FCC中试所-红外和氨-TPD岗位",
+                "category": "红外"
+            },
+            {
+                "name": "全自动程序升温化学吸附仪",
+                "description": "用于表征催化剂的酸强度以及各种酸位的酸量",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州炼制所和FCC中试所-红外和氨-TPD岗位",
+                "category": "化学吸附"
+            },
+            {
+                "name": "磨损指数分析仪",
+                "description": "用于测定裂化催化剂的磨损指数",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州炼制所和FCC中试所-强度和粒度岗位",
+                "category": "磨损指数"
+            },
+            {
+                "name": "激光粒度仪",
+                "description": "用于测试各种土源、催化剂的粒径分布",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州炼制所和FCC中试所-强度和粒度岗位",
+                "category": "粒度"
+            },
+            {
+                "name": "火焰光度计",
+                "description": "用于测定催化剂及其原料中的氧化钠及氧化钾含量",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州炼制所和FCC中试所-元素分析岗位",
+                "category": "元素分析"
+            },
+            {
+                "name": "分光光度计",
+                "description": "用于测定催化裂化催化剂中的氧化铁及稀土含量",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州炼制所和FCC中试所-元素分析岗位",
+                "category": "元素分析"
+            },
+            {
+                "name": "微反装置",
+                "description": "用于表征催化剂的微反活性",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州炼制所和FCC中试所-微反活性岗位",
+                "category": "微反"
+            },
+            {
+                "name": "熔体流动速率仪",
+                "description": "用于测试高聚物的熔融状态下的熔体流动速率，它是表征高聚物分子量及分布、加工性能等的重要仪器。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州聚丙烯中试所测试组",
+                "category": "熔体流动速率"
+            },
+            {
+                "name": "总硫总氮分析仪",
+                "description": "用于分析油品或气体中总硫、总氮含量",
+                "dateInstalled": "2013-05-13 00:00:00",
+                "operatorByName": "常桂祖",
+                "manufacturer": "加拿大PHOTON CONTROL公司",
+                "status": "可用",
+                "groupName": "兰州炼化所分析组",
+                "category": "总硫总氮分析"
+            },
+            {
+                "name": "常温凝胶渗透色谱仪",
+                "description": "可检测合成橡胶、天然橡胶等样品分子量、分子量分布、各级分的分子量、各级分重量分数、特性粘度和K、α值；绘制微分图和积分图；测定丁-苯共聚物分子量及分布、偶合效率；测定低分子添加剂的分子量及分子量分布和各级分重量分数；测定支化聚合物的支化度。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所仪器分析组",
+                "category": "凝胶色谱"
+            },
+            {
+                "name": "雾度仪",
+                "description": "采用雾度仪测试塑料的雾度、透光率等光学性能",
+                "dateInstalled": "2008-09-01 00:00:00",
+                "operatorByName": "严金荣",
+                "manufacturer": "德国BYK公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "光学性能"
+            },
+            {
+                "name": "色差计",
+                "description": "采用色差计测试塑料的白度、黄色指数等光学性能",
+                "dateInstalled": "2009-10-10 00:00:00",
+                "operatorByName": "严金荣",
+                "manufacturer": "美国爱色丽公司",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "色差"
+            },
+            {
+                "name": "超高阻仪",
+                "description": "采用超高阻仪测试绝缘材料的表面电阻、体积电阻、表面电阻率、体积电阻率等电学性能",
+                "dateInstalled": "1991-02-10 00:00:00",
+                "operatorByName": "严金荣",
+                "manufacturer": "上海第六电表厂",
+                "status": "可用",
+                "groupName": "大庆树脂所804组",
+                "category": "电学性能"
+            },
+            {
+                "name": "气相色谱仪7890GC-FID",
+                "description": "用于汽油等挥发性有机样品中组成的定性定量分析。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所仪器分析组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "气相色谱仪7890GC-SCD-FID",
+                "description": "用于汽油等挥发性有机样品中硫形态分布的分析。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所仪器分析组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "气相色谱仪7890GC-SCD-TCD",
+                "description": "用于汽油等挥发性有机样品中硫形态分布的分析。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所仪器分析组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "高效液相色谱仪",
+                "description": "用于水处理剂、化肥、聚合物助剂等不挥发样品中组成的定性定量分析。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所仪器分析组",
+                "category": "液相色谱"
+            },
+            {
+                "name": "全自动电位滴定仪",
+                "description": "pH测定、滴定分析",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所分析检测组",
+                "category": "滴定类"
+            },
+            {
+                "name": "门尼粘度计-201",
+                "description": "门尼粘度测定",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所分析检测组",
+                "category": "材料试验"
+            },
+            {
+                "name": "门尼粘度计-300RT",
+                "description": "门尼粘度测定",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所分析检测组",
+                "category": "材料试验"
+            },
+            {
+                "name": "水分测定仪",
+                "description": "固体及有机原料中微量水分含量的测定",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所分析检测组",
+                "category": "水分析"
+            },
+            {
+                "name": "万用材料试验机",
+                "description": "橡胶拉伸性能测定",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所分析检测组",
+                "category": "力i学性能"
+            },
+            {
+                "name": "全自动表面张力仪",
+                "description": "测定液体表面张力",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所分析检测组",
+                "category": "材料试验"
+            },
+            {
+                "name": "紫外可见分光光度计",
+                "description": "测定液体的浓度",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所分析检测组",
+                "category": "光谱"
+            },
+            {
+                "name": "全自动比表面空隙度分析仪",
+                "description": "用于表征多孔材料的比表面、孔容、平均孔径及孔径分布",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州炼制所和FCC中试所-孔结构表征岗位",
+                "category": "物理吸附"
+            },
+            {
+                "name": "X荧光光谱仪",
+                "description": "用于分析催化裂化催化剂中的元素含量",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州炼制所和FCC中试所-X荧光岗位",
+                "category": "荧光分析"
+            },
+            {
+                "name": "透射电子显微镜",
+                "description": "可观察高聚物大分子的形状和聚集态的结构；高聚物微粒填充复合体系的结构，粒子形态及大小（分布）测定；高聚物合金的织构形态；胶乳粒子形态及大小（分布）测定；催化剂微观形态、孔结构、粒子（或晶粒）大小（分布）测定；负载型催化剂载体晶型的形态，活性组分在载体上的",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所仪器分析组",
+                "category": "电镜"
+            },
+            {
+                "name": "扫描电子显微镜",
+                "description": "可进行样品的表面（断面）形态；高聚物复合材料的元素定性、定量分析；各种有机、无机材料的表面（断面）的微观形态；未知物的元素定性、定量分析。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所仪器分析组",
+                "category": "电镜"
+            },
+            {
+                "name": "X射线衍射仪",
+                "description": "用于表征催化剂研制用的原料、中间产品和成品的性能指标的测定，如：结晶度、硅铝比、晶胞参数、物相等",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州炼制所和FCC中试所-X衍射岗位",
+                "category": "衍射"
+            },
+            {
+                "name": "全谱电感耦合等离子发射光谱仪",
+                "description": "用于高分子材料或催化剂中金属元素定性分析， 使用标样可定量分析高分子材料或催化剂中金属元素。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所仪器分析组",
+                "category": "光谱"
+            },
+            {
+                "name": "高温凝胶渗透色谱仪PL220",
+                "description": "可检测普通塑料、合成橡胶、天然橡胶等样品分子量、分子量分布、各级分的分子量、各级分重量分数、特性粘度和K、α值；高温测定聚乙烯、聚丙烯、乙丙橡胶等样的分子量、分子量分布、特性粘度和K、α值，绘制微分图和积分图；各种热塑弹性体、共聚或共混物的分子量及分子量分",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所仪器分析组",
+                "category": "凝胶色谱"
+            },
+            {
+                "name": "高温凝胶渗透色谱仪GPCV2000\r\n",
+                "description": "可检测普通塑料等样品分子量、分子量分布、各级分的分子量、各级分重量分数、特性粘度和K、α值；高温测定聚乙烯、聚丙烯、乙丙橡胶等样的分子量、分子量分布、特性粘度和K、α值，绘制微分图和积分图；各种热塑弹性体、共聚或共混物的分子量及分子量分布和相关参数的测定；",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所仪器分析组",
+                "category": "凝胶色谱"
+            },
+            {
+                "name": "气相色谱—傅立叶变换红外光谱联用",
+                "description": "用于有机物的定性定量分析；无机物的定性分析；未知物的剖析；高分子化合物的结构分析；化学组成的分析：根据光谱中吸收峰的位置和形状来推断未知物结构，依照特征吸收峰的强度测定混合物中各组份的含量。评价合成橡胶、合成纤维、合成塑料单体的纯度及其聚合效果。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所仪器分析组",
+                "category": "红外"
+            },
+            {
+                "name": "元素分析仪",
+                "description": "测定样品中可高温分解的C、H、O、N、S元素含量。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所仪器分析组",
+                "category": "元素分析"
+            },
+            {
+                "name": "差示扫描量热仪",
+                "description": "测定物质的玻璃化转变温度；测定氧化诱导期，可以选择抗氧剂的种类和用量；结晶聚合物的熔融和结晶行为、熔融焓，鉴别加工条件对材料性能的影响。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所仪器分析组",
+                "category": "热学性能"
+            },
+            {
+                "name": "热失重分析仪",
+                "description": "测定材料的热分解温度及分解速率，研究材料的耐热性、考察物质的氧化反应；测定水分和可挥发性物质含量；测定材料中不同物质的质量百分含量。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所仪器分析组",
+                "category": "热学性能"
+            },
+            {
+                "name": "动态热机械分析仪",
+                "description": "测定聚合物的玻璃化转变温度和模量变化；表征共聚或共混材料的相分离；了解复合材料中填料的增强效果；观察材料的固化反应、交联反应等。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所仪器分析组",
+                "category": "热学性能"
+            },
+            {
+                "name": "气相色谱仪(3800)",
+                "description": "用于汽油等挥发性有机样品中组成的定性定量分析。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所仪器分析组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "亚硝基化合物分析仪",
+                "description": "用于丁苯橡胶中N-亚硝基类化合物的的定性定量分析。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州标检所仪器分析组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "颗粒强度测定仪",
+                "description": "颗粒强度的测定",
+                "dateInstalled": "2007-04-10 00:00:00",
+                "operatorByName": "尹玲玲",
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州中心催化所分析检测组",
+                "category": "强度测定"
+            },
+            {
+                "name": "色谱仪",
+                "description": "测试仪器数据",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州中心催化所分析检测组",
+                "category": "气相色谱"
+            },
+            {
+                "name": "气体吸附仪",
+                "description": "测定固体物质比表面和孔分布",
+                "dateInstalled": "2013-04-23 09:00:00",
+                "operatorByName": "尹玲玲",
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州中心催化所分析检测组",
+                "category": "物理吸附"
+            },
+            {
+                "name": "高速氮吸附比表面/孔隙度分析仪",
+                "description": "测定材料比表面积、孔隙度",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州聚烯烃所分析组",
+                "category": "物理吸附"
+            },
+            {
+                "name": "激光粒度分析仪",
+                "description": "测定材料粒度及分布",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州聚烯烃所分析组",
+                "category": "粒度"
+            },
+            {
+                "name": "气相色谱仪",
+                "description": "催化剂中有机组分的定性定量",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州聚烯烃所分析组",
+                "category": "色谱"
+            },
+            {
+                "name": "便携式气相色谱仪",
+                "description": "测定反应气中氢气含量",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州聚烯烃所分析组",
+                "category": "色谱"
+            },
+            {
+                "name": "紫外可见分光光度计",
+                "description": "测定催化剂中钛、锆含量",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州聚烯烃所分析组",
+                "category": "紫外"
+            },
+            {
+                "name": "微量水测定仪",
+                "description": "测试水含量",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州聚烯烃所分析组",
+                "category": "水分析"
+            },
+            {
+                "name": "万能材料试验机",
+                "description": "用于拉伸、弯曲等力学性能的测试",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州聚烯烃所分析组",
+                "category": "力i学性能"
+            },
+            {
+                "name": "热变形维卡测定仪",
+                "description": "测试塑料维卡软化点温度及热变形温度",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州聚烯烃所分析组",
+                "category": "热学性能"
+            },
+            {
+                "name": "热变形维卡测定仪",
+                "description": "测试塑料维卡软化点温度及热变形温度",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州聚烯烃所分析组",
+                "category": "热学性能"
+            },
+            {
+                "name": "色差仪",
+                "description": "测量塑料黄色指数",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州聚烯烃所分析组",
+                "category": "光学性能"
+            },
+            {
+                "name": "透光率雾度测试仪",
+                "description": "测量塑料薄膜或薄片的透光率或雾度",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州聚烯烃所分析组",
+                "category": "光学性能"
+            },
+            {
+                "name": "熔融指数仪",
+                "description": "用于塑料熔融指数的测定",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州聚烯烃所分析组",
+                "category": "熔体流动速率"
+            },
+            {
+                "name": "密度梯度柱",
+                "description": "梯度柱法测量塑料密度",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州聚烯烃所分析组",
+                "category": "密度分析"
+            },
+            {
+                "name": "气相色谱仪",
+                "description": "仪器为AC公司高温模拟蒸馏分析仪，用于沸点范围为174℃-720℃的渣油的模拟蒸馏分析",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所气相组(气相 质谱 凝胶)",
+                "category": "气相色谱"
+            },
+            {
+                "name": "气相色谱仪",
+                "description": "仪器配有FID检测器，用于沸点低于300℃的极性有机物定性、定量分析",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所气相组(气相 质谱 凝胶)",
+                "category": "气相色谱"
+            },
+            {
+                "name": "总氯分析仪（国产）",
+                "description": "有机化合物中总氯含量测定",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所液相组(重油族组成 核磁 物化吸附 微量水 红紫外 离子色谱)",
+                "category": "氯分析"
+            },
+            {
+                "name": "总氯分析仪（进口）",
+                "description": "有机化合物中总氯含量测定",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所液相组(重油族组成 核磁 物化吸附 微量水 红紫外 离子色谱)",
+                "category": "氯分析"
+            },
+            {
+                "name": "紫外分光光度计",
+                "description": "有紫外吸收的有机官能团定性、定量分析",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所液相组(重油族组成 核磁 物化吸附 微量水 红紫外 离子色谱)",
+                "category": "紫外"
+            },
+            {
+                "name": "滴定仪",
+                "description": "油品中硫醇硫的测定",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州中心催化所分析检测组",
+                "category": "硫醇硫分析"
+            },
+            {
+                "name": "真密度仪",
+                "description": "粉体真密度测定",
+                "dateInstalled": "2007-07-23 10:00:00",
+                "operatorByName": " 顾青",
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州中心催化所分析检测组",
+                "category": "密度分析"
+            },
+            {
+                "name": "堆密度仪",
+                "description": "粉体堆积密度测定",
+                "dateInstalled": "2007-07-23 09:00:00",
+                "operatorByName": "尹玲玲",
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州中心催化所分析检测组",
+                "category": "密度分析"
+            },
+            {
+                "name": "原子吸收光谱仪",
+                "description": "金属元素测定",
+                "dateInstalled": "2006-10-10 00:00:00",
+                "operatorByName": " 顾青",
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州中心催化所分析检测组",
+                "category": "光谱"
+            },
+            {
+                "name": "双道原子荧光光度计",
+                "description": "油品中砷含量测定",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州中心催化所分析检测组",
+                "category": "荧光分析"
+            },
+            {
+                "name": "密度仪",
+                "description": "油品密度测定",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州中心催化所分析检测组",
+                "category": "密度分析"
+            },
+            {
+                "name": "气体吸附仪",
+                "description": "测定固体物质比表面和孔分布",
+                "dateInstalled": "2007-07-09 09:00:00",
+                "operatorByName": "尹玲玲",
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州中心催化所分析检测组",
+                "category": "物理吸附"
+            },
+            {
+                "name": "硫氮分析仪",
+                "description": "样品中硫、氮的含量",
+                "dateInstalled": "2012-04-10 00:00:00",
+                "operatorByName": "蒋彩兰",
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州中心催化所分析检测组",
+                "category": "硫分析"
+            },
+            {
+                "name": "堆积强度测定仪",
+                "description": "堆积抗压强度的测定",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "兰州中心催化所分析检测组",
+                "category": "强度测定"
+            },
+            {
+                "name": "原子吸收光谱仪",
+                "description": "测定油品、催化剂及其他有机和无机样品中微量和痕量元素",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所光谱组(等离子光谱 原子吸收 原子荧光 等离子质谱)",
+                "category": "光谱"
+            },
+            {
+                "name": "原子荧光光谱仪",
+                "description": "测定油品、催化剂中的砷",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所光谱组(等离子光谱 原子吸收 原子荧光 等离子质谱)",
+                "category": "光谱"
+            },
+            {
+                "name": "全自动比表面测定仪（Tristar3000）",
+                "description": "主要用于介孔材料比表面、总孔体积及平均孔径分析",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所表征组(电镜 BET 热分析 XRD)",
+                "category": "物理吸附"
+            },
+            {
+                "name": "全自动比表面及孔径分析仪(Tristar3020)",
+                "description": "主要用于介孔材料比表面、总孔体积及平均孔径分析",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所表征组(电镜 BET 热分析 XRD)",
+                "category": "物理吸附"
+            },
+            {
+                "name": "动态热机械分析仪",
+                "description": "测试样品的弹性模量和储能模量",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所表征组(电镜 BET 热分析 XRD)",
+                "category": "差热"
+            },
+            {
+                "name": "差示扫描量热仪",
+                "description": "测试熔融及结晶温度和热焓数据，氧化诱导时间",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所表征组(电镜 BET 热分析 XRD)",
+                "category": "差热"
+            },
+            {
+                "name": "同步热分析仪",
+                "description": "测试样品的分解温度、质量损失和热量变化。晶型转变",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所表征组(电镜 BET 热分析 XRD)",
+                "category": "差热"
+            },
+            {
+                "name": "元素分析仪",
+                "description": "合成材料、油等、样品中C、H、O元素含量的测定。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所元素组(总氮 总硫 XRF)",
+                "category": "元素分析"
+            },
+            {
+                "name": "芳烃测定仪",
+                "description": "315℃以下馏分油烃组成测定",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所液相组(重油族组成 核磁 物化吸附 微量水 红紫外 离子色谱)",
+                "category": "色谱"
+            },
+            {
+                "name": "色质联用仪",
+                "description": "仪器配有石科院重油烃组成分析软件，采用质谱法分析重油族组成",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所气相组(气相 质谱 凝胶)",
+                "category": "色质联用"
+            },
+            {
+                "name": "色质联用仪",
+                "description": "仪器用于沸点低于300℃的未知物定性分析",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所气相组(气相 质谱 凝胶)",
+                "category": "色质联用"
+            },
+            {
+                "name": "色质联用仪",
+                "description": "仪器配有石科院柴油烃组成分析软件，采用质谱法分析柴油族组成",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所气相组(气相 质谱 凝胶)",
+                "category": "色质联用"
+            },
+            {
+                "name": "高温凝胶色谱仪",
+                "description": "仪器用于聚烯烃类高分子聚合物平均分子量及分布测定",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所气相组(气相 质谱 凝胶)",
+                "category": "凝胶色谱"
+            },
+            {
+                "name": "物理化学吸附仪",
+                "description": "测定活性碳、分子筛、硅胶、各类加氢催化剂的比表面积、孔容积、平均孔半径、孔径分布、微孔表面积和微孔容积等物理性质；催化剂程序升温还原、程序升温氧化、程序升温脱附等化学性质。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所液相组(重油族组成 核磁 物化吸附 微量水 红紫外 离子色谱)",
+                "category": "化学吸附"
+            },
+            {
+                "name": "全自动程序升温化学吸附仪",
+                "description": "催化剂结构、催化剂表面状况、酸性中心、氢在金属表面的吸附、氧在金属表面的吸附、氮在金属表面的吸附、金属分散度等化学性质测定。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所液相组(重油族组成 核磁 物化吸附 微量水 红紫外 离子色谱)",
+                "category": "化学吸附"
+            },
+            {
+                "name": "等离子发射光谱仪",
+                "description": "测定油品、催化剂及其他有机和无机样品中微量元素",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所光谱组(等离子光谱 原子吸收 原子荧光 等离子质谱)",
+                "category": "光谱"
+            },
+            {
+                "name": "等离子质谱仪",
+                "description": "测定油品、催化剂及其他有机和无机样品中痕量元素",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所光谱组(等离子光谱 原子吸收 原子荧光 等离子质谱)",
+                "category": "光谱"
+            },
+            {
+                "name": "离子色谱仪",
+                "description": "常见阴、阳离子分析（F、Cl、NO3、 NO2、SO4、 PO4 Na、K、Ca、Mg等离子）",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所液相组(重油族组成 核磁 物化吸附 微量水 红紫外 离子色谱)",
+                "category": "离子色谱"
+            },
+            {
+                "name": "红外光谱仪",
+                "description": "有机物官能团定性分析；建立试验装置分析催化剂的B酸、L酸。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所液相组(重油族组成 核磁 物化吸附 微量水 红紫外 离子色谱)",
+                "category": "红外"
+            },
+            {
+                "name": "激光粒度仪",
+                "description": "催化剂及载体的粒度分析",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所液相组(重油族组成 核磁 物化吸附 微量水 红紫外 离子色谱)",
+                "category": "粒度"
+            },
+            {
+                "name": "卡尔菲休水份测定仪",
+                "description": "液体样品中水含量测定",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所液相组(重油族组成 核磁 物化吸附 微量水 红紫外 离子色谱)",
+                "category": "水分析"
+            },
+            {
+                "name": "氮分析仪",
+                "description": "油品中N含量分析包括重油、轻油等",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所元素组(总氮 总硫 XRF)",
+                "category": "氮分析"
+            },
+            {
+                "name": "氮分析仪",
+                "description": "油品中N含量分析包括重油、轻油等",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所元素组(总氮 总硫 XRF)",
+                "category": "氮分析"
+            },
+            {
+                "name": "氮分析仪",
+                "description": "油品中N含量分析包括重油、轻油等",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所元素组(总氮 总硫 XRF)",
+                "category": "氮分析"
+            },
+            {
+                "name": "氮分析仪",
+                "description": "油品中N含量分析包括重油、轻油等",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所元素组(总氮 总硫 XRF)",
+                "category": "氮分析"
+            },
+            {
+                "name": "氮分析仪",
+                "description": "油品中N含量分析包括重油、轻油等",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所元素组(总氮 总硫 XRF)",
+                "category": "氮分析"
+            },
+            {
+                "name": "核磁共振波谱仪",
+                "description": "聚烯烃物质1H谱、13C谱的测定，鉴定聚合物的种类及共聚单体的含量、支化度等，化合物的结构鉴定。",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所液相组(重油族组成 核磁 物化吸附 微量水 红紫外 离子色谱)",
+                "category": "核磁"
+            },
+            {
+                "name": "硫分析仪",
+                "description": "油品中S含量分析包括重油、轻油等",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所元素组(总氮 总硫 XRF)",
+                "category": "硫分析"
+            },
+            {
+                "name": "硫分析仪",
+                "description": "油品中S含量分析包括重油、轻油等",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所元素组(总氮 总硫 XRF)",
+                "category": "硫分析"
+            },
+            {
+                "name": "硫分析仪",
+                "description": "油品中S含量分析包括重油、轻油等",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所元素组(总氮 总硫 XRF)",
+                "category": "硫分析"
+            },
+            {
+                "name": "硫分析仪",
+                "description": "油品中S含量分析包括重油、轻油等",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所元素组(总氮 总硫 XRF)",
+                "category": "硫分析"
+            },
+            {
+                "name": "X射线荧光分析仪",
+                "description": "重质油品中S分析仪",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所元素组(总氮 总硫 XRF)",
+                "category": "荧光分析"
+            },
+            {
+                "name": "扫描电镜－能谱联用仪",
+                "description": "测试固体样品表面微观形貌及微区成份",
+                "dateInstalled": null,
+                "operatorByName": null,
+                "manufacturer": null,
+                "status": "可用",
+                "groupName": "大庆仪器所表征组(电镜 BET 热分析 XRD)",
+                "category": "电镜"
+            }
+        ]
+    },
+    //仪器设备实体
+    "instrumentModel":{
+        "success":true,
+        "data":[
+            {
+                "identity":"AC7890MNZL",
+                "name": "模拟蒸馏分析仪",
+                "description": "用于分析汽油柴油等模拟馏程数据",
+                "dateInstalled": "2011-05-13 00:00:00",
+                "operatorByName": "常桂祖",
+                "manufacturer": "荷兰AC分析控制有限公司",
+                "status": "可用",
+                "groupName": "兰州炼化所分析组",
+                "category": "气相色谱"
+            }
+        ]
+    },
+    //一段时间内分析的样品数、项目数
+    "instrumentAnalysisAmount":{
+        "success":true,
+        "data":[
+            {
+                "analysisName":"样品量",
+                "total":30
+            },
+            {
+                "analysisName":"项目量",
+                "total":100
+            }
+        ]
+    }
+    
+}
