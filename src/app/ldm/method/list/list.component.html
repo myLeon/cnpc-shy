@@ -25,13 +25,8 @@
             <div *ngSwitchCase="'message'" style="padding: 10px;">{{deviceRunInfo.message}}</div>
           </div>
         </div>
-
-
-
     </div>
-
     <div class="col-md-8 px-0">
-
       <div class="card" style="border-radius:0px; width: 100%;">
         <div class="card-header">
           各单位装置数量统计
@@ -45,19 +40,14 @@
         </div>
       </div>
     </div>
-
   </div>
-
-
-
   <div class="row my-3" style="clear: both;">
-    <table [md2Data]="jqTask.rows | methodFilter : search" #md2="md2DataTable" [rowsPerPage]="10" >
+    <table [md2Data]="jqTask.rows | methodFilter : search " #md2="md2DataTable" [rowsPerPage]="10" >
       <thead>
         <tr>
           <td colspan="4">
-            <input placeholder="Filter By Name" class="md2-input"  />
+            <mdl-textfield type="text" label="名称关键字" [(ngModel)]="search" floating-label></mdl-textfield>
           </td>
-          
         </tr>
         <tr>
           <th style="width: 20%" md2SortBy="name">装置编号</th>

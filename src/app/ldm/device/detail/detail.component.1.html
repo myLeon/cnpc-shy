@@ -1,0 +1,154 @@
+<div class="container">
+  <div class="row my-3" style="clear: both;">
+    <mdl-chip mdl-label="列表A" style="margin-top: 50px" >
+      <span mdl-chip-contact class="mdl-color--blue mdl-color-text--white">A</span>
+    </mdl-chip>
+
+    <table [md2Data]="jqTask.rows" #md2="md2DataTable" [rowsPerPage]="10" style="margin-top: 50px">
+      <thead>
+        <tr>
+          <th style="width: 10%" md2SortBy="name">装置编号</th>
+          <th style="width: 10%" md2SortBy="email">装置名称</th>
+          <th style="width: 10%" md2SortBy="age">装置详情</th>
+          <th style="width: 10%" md2SortBy="name">装置编号</th>
+          <th style="width: 10%" md2SortBy="email">装置名称</th>
+          <th style="width: 10%" md2SortBy="age">装置详情</th>
+          <th style="width: 10%" md2SortBy="name">装置编号</th>
+          <th style="width: 10%" md2SortBy="email">装置名称</th>
+          <!--<th style="width: 50%" md2SortBy="age">装置详情</th>-->
+          <th style="width: 10%; border-right: 1px solid #bbc" md2SortBy="city">装置类型</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of jqTask.rows">
+          <td><a routerLink="../detail" style="text-decoration: none">{{i.deviceId}}</a></td>
+          <td>{{i.deviceName}}</td>
+          <td>{{i.deviceType}}</td>
+          <td>{{i.deviceGroupId}}</td>
+          <td>{{i.deviceGroupName}}</td>
+          <td>{{i.deviceStatus}}</td>
+          <td>{{i.contactId}}</td>
+          <td>{{i.contactName}}</td>
+          <td style="border-right: 1px solid #bbc">{{i.contactPhone}}</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="100">
+            <md2-pagination [rowsPerPageSet]="[5,10,15]"></md2-pagination>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+    <mdl-chip mdl-label="列表B" style="margin-top: 50px">
+      <span mdl-chip-contact class="mdl-color--blue mdl-color-text--white">B</span>
+    </mdl-chip>
+
+    <table [md2Data]="analysisTask.rows" #md2="md2DataTable" [rowsPerPage]="10" style="margin-top: 50px">
+      <thead>
+        <tr>
+          <th style="width: 10%" md2SortBy="name">装置编号</th>
+          <th style="width: 10%" md2SortBy="email">装置名称</th>
+          <th style="width: 30%" md2SortBy="age">装置详情</th>
+          <th style="width: 10%" md2SortBy="name">装置编号</th>
+          <th style="width: 10%" md2SortBy="email">装置名称</th>
+          <th style="width: 20%" md2SortBy="age">装置详情</th>
+          <!--<th style="width: 50%" md2SortBy="age">装置详情</th>-->
+          <th style="width: 10%; border-right: 1px solid #bbc" md2SortBy="city">装置类型</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of md2.data">
+          <td>
+            <a routerLink="../detail" style="text-decoration: none"></a>{{i.taskId}}</td>
+          <td>{{i.taskName}}</td>
+          <td>{{i.subjectId}}</td>
+          <td>{{i.subjectName}}</td>
+          <td>{{i.deviceId}}</td>
+          <!--<td>{{i.contactId}}</td>-->
+          <td>{{i.deviceName}}</td>
+          <td style="border-right: 1px solid #bbc">{{i.taskProgress}}</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th style="width: 10%" md2SortBy="name">装置编号</th>
+          <th style="width: 10%" md2SortBy="email">装置名称</th>
+          <th style="width: 30%" md2SortBy="age">装置详情</th>
+          <th style="width: 10%" md2SortBy="name">装置编号</th>
+          <th style="width: 10%" md2SortBy="email">装置名称</th>
+          <th style="width: 20%" md2SortBy="age">装置详情</th>
+          <!--<th style="width: 50%" md2SortBy="age">装置详情</th>-->
+          <th style="width: 10%; border-right: 1px solid #bbc" md2SortBy="city">装置类型</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of md2.data">
+          <td>
+            <a routerLink="../detail" style="text-decoration: none"></a>{{i.taskId}}</td>
+          <td>{{i.taskName}}</td>
+          <td>{{i.subjectId}}</td>
+          <td>{{i.subjectName}}</td>
+          <td>{{i.deviceId}}</td>
+          <!--<td>{{i.contactId}}</td>-->
+          <td>{{i.deviceName}}</td>
+          <td style="border-right: 1px solid #bbc">{{i.taskProgress}}</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="100">
+            <md2-pagination [rowsPerPageSet]="[5,10,15]"></md2-pagination>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+
+
+    <style>
+      table {
+        display: table;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        border-spacing: 0;
+        border-collapse: collapse;
+        font-size: 14px;
+        box-sizing: border-box;
+        width: 100%;
+      }
+
+
+      table tr {
+        position: relative;
+        height: 36px;
+        vertical-align: middle;
+      }
+
+
+      tbody tr:hover {
+        background-color: #eee;
+      }
+
+
+      table th,
+      table td {
+        padding: 0 16px;
+        text-align: left;
+      }
+
+
+      table td {
+        position: relative;
+        vertical-align: middle;
+        height: 36px;
+        border-top: 1px solid rgba(0, 0, 0, 0.12);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        color: rgba(0, 0, 0, 0.87);
+      }
+    </style>
+    <!--</div>-->
+
+
+  </div>
+
+</div>

@@ -13,6 +13,7 @@ import { EChartModule } from 'ng2-echarts-d3';
 import { MomentModule } from 'angular2-moment';
 import { Md2Module } from 'md2';
 import { MdlModule } from 'angular2-mdl';
+// import { ListComponent} from '../list/list.component'
 
 @NgModule({
   imports: [

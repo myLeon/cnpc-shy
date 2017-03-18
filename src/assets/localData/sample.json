@@ -1,6 +1,4 @@
-//分析任务
 {
-    //一段时间内不同类型的样品分析量
     "sampleTypeAmount": {
         "success": true,
         "data": [
@@ -34,7 +32,6 @@
             }
         ]
     },
-    //一段时间内不同项目的分析次数
     "analysisNameAmount": {
         "success": true,
         "data": [
@@ -60,7 +57,6 @@
             }
         ]
     },
-    //一段时间内不同课题的样品分析次数
     "sampleLocationAmount": {
         "success": true,
         "data": [
@@ -96,7 +92,6 @@
             }
         ]
     },
-    //一段时间内的不同单位的样品送检次数
     "sampleSendInspectAmount": {
         "success": true,
         "data": [
@@ -142,7 +137,6 @@
             }
         ]
     },
-    //样品列表
     "sampleList": {
         "success": true,
         "data": [
@@ -200,7 +194,6 @@
             }
         ]
     },
-    //样品实体
     "sampleModel": {
         "success": true,
         "data": [

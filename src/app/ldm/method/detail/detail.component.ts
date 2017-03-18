@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { PersonnelService } from '../personnel.service';
+// import { PersonnelService } from '../method.service';
 import { ResponseEntity } from '../../../_entities/response-entity';
 // import * as $ from 'jquery';
 import {DetailService} from './detail.service'

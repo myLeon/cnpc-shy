@@ -13,6 +13,9 @@ import { MomentModule } from 'angular2-moment';
 import { Md2Module } from 'md2';
 import { MdlModule } from 'angular2-mdl';
 import {SampleFilterPipe} from './_pipe/task-filter.pipe'
+import { FormsModule } from '@angular/forms';
+import { GridModule } from '@progress/kendo-angular-grid';
+
 
 @NgModule({
   imports: [
@@ -24,7 +27,9 @@ import {SampleFilterPipe} from './_pipe/task-filter.pipe'
     EChartModule,
     MomentModule,
     Md2Module,
-    MdlModule
+    MdlModule,
+    FormsModule,
+    GridModule
   ],
   declarations: [TaskComponent, ListComponent,SampleFilterPipe],
     providers: [{ provide: 'TaskService', useClass: TaskService },UserService],

@@ -1,6 +1,4 @@
-//评价数据
 {
-    //一段时间内的科研课题申请次数统计
     "taskSubjectApplyAmount": {
         "success": true,
         "data": [
@@ -26,7 +24,7 @@
             }
         ]
     },
-    //一段时间内的不同单位的申请次数统计
+    
     "taskGroupApplyAmount": {
         "success": true,
         "data": [
@@ -57,7 +55,6 @@
             }
         ]
     },
-    //一段时间内每天的任务申请次数统计
     "taskEveryDayApplyAmount": {
         "success": true,
         "data": [
@@ -91,11 +88,10 @@
             }
         ]
     },
-    //申请的任务台账列表
     "taskApplyList": {
-        "Success": true,
+        "success": true,
         "Total": 12.0,
-        "Data": [
+        "data": [
             {
                 "identity": "9DB0189B-9784-4739-9451-2AFFF13567BC",
                 "categoryId": "HYD_SIBLING",
@@ -578,7 +574,6 @@
             }
         ]
     },
-    //任务明细
     "taskModel": {
         "success": true,
         "data": [
@@ -624,11 +619,10 @@
             }
         ]
     },
-    //运行数据(可形成趋势图)
     "taskRunData": {
-        "Success": true,
-        "Message": null,
-        "Data": [
+        "success": true,
+        "message": null,
+        "data": [
             {
                 "Key": "U220_FQI6417PV",
                 "title":"FQI6417",

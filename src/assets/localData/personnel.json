@@ -1,6 +1,4 @@
-//分析任务
-{
-    //个人分析样品量排名(（根据排版看能否做成根据时间查询）前10或20)
+{   
     "staffAnalysisCount": {
         "success": true,
         "data": [
@@ -36,7 +34,7 @@
             }
         ]
     },
-    //个人分析项目量排名(（根据排版看能否做成根据时间查询）前10或前20)
+    
     "staffTestCount": {
         "success": true,
         "data": [
@@ -72,14 +70,14 @@
             }
         ]
     },
-    //分析人员占比
+   
     "analysisStaffRatio":{
         "success":true,
         "data":[
             {
                 "unitName":"大庆中心",
-                "analysis":120,     //分析人员
-                "total":266         //总人数
+                "analysis":120,    
+                "total":266         
             },
             {
                 "unitName":"兰州中心",
@@ -93,7 +91,7 @@
             }
         ]
     },
-    //系统使用次数排名(（根据排版看能否做成根据时间查询）前10或前20)
+
     "staffUseLims":{
         "success":true,
         "data":[
@@ -129,14 +127,14 @@
             }
         ]
     },
-    //各单位LIMS系统有效使用率排名
+
     "limsValidUse":{
         "success":true,
         "data":[
             {
                 "unitName":"大庆中心",
-                "total":266,    //总人数
-                "useCount":120  //有效登录人数
+                "total":266,    
+                "useCount":120  
             },
             {
                 "unitName":"兰州中心",
@@ -150,7 +148,7 @@
             }
         ]
     },
-    //人员列表台账
+
     "staffList": {
         "success": true,
         "data": [
@@ -1638,7 +1636,7 @@
             }
         ]
     },
-    //人员详情
+
     "staffModel":{
         "success":true,
         "data":[
@@ -1649,9 +1647,9 @@
             }
         ]
     },
-    //一段时间内分析的样品、项目量
+
     "analysisAmount":{
-        "suceescc":true,
+        "success":true,
         "data":[
             {
                 "sampleAmount":50,
@@ -1659,7 +1657,7 @@
             }
         ]
     },
-    //课题授权
+
     "subjectRole":{
         "success":true,
         "data":[
@@ -1695,7 +1693,7 @@
             }
         ]
     },
-    //所申请评价任务
+
     "applyTask":{
         "success":true,
         "data":[

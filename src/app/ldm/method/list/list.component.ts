@@ -1,9 +1,11 @@
-
 import { Component, OnInit, Inject } from '@angular/core';
 import { MethodService } from '../method.service';
 import { ResponseEntity } from '../../../_entities/response-entity';
+// import { CommonModule } from '@angular/common';
 // import * as $ from 'jquery';
 import { ActivatedRoute, Router } from "@angular/router";
+
+
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
@@ -276,4 +278,4 @@ export class ListComponent implements OnInit {
     }
   }
 }
-
+  

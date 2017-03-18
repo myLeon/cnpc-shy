@@ -13,13 +13,13 @@ import { UserService } from '../../_core/user.service';
 export class PersonnelService {
 
   // private api_url = 'http://localhost:3000';
-  private api_url = "assets/localData/device.json";
+  private api_url = "assets/localData/personnel.json";
   private headers = new Headers({ 'Content-Type': 'application/json' });
   // data: any = null;
   constructor(private http: Http, private user: UserService) {
 
     console.log(this.user.getCurrentUser());
-    
+
 
   }
   getLast15DaysAnalysisTask(): Observable<any> {
@@ -93,42 +93,50 @@ export class PersonnelService {
     };
     let bs = new BehaviorSubject<any>(chartData);
     return bs.asObservable();
-    //return Observable.of(chartData);
   }
-
+  //人员列表台账
   getJqTask(): Observable<ResponseEntity> {
-    //let url = `${this.api_url}/home_JqTask`;
     let url = `${this.api_url}`;
     let ret = this.http.get(url)
-      .map((response: Response) => response.json().deviceHYDList as ResponseEntity)
-      // .map((response: Response) => response.json() as ResponseEntity)
+      .map((response: Response) => response.json().staffList as ResponseEntity)
       .catch(this.handleError);
     return ret;
   }
-  getSubjectProgressInfo(): Observable<ResponseEntity> {
+  //个人分析项目量排名
+  getStaffTestCountInfo(): Observable<ResponseEntity> {
     //let url=`${this.api_url}/Subject`;
     let url = `${this.api_url}`;
     let ret = this.http.get(url)
-      .map((response: Response) => response.json().deviceTypeCount as ResponseEntity)
+      .map((response: Response) => response.json().staffTestCount as ResponseEntity)
       .catch(this.handleError);
     return ret;
   }
-
-  getDeviceRunInfo(): Observable<ResponseEntity> {
+  //分析人员占比
+  getAnalysisStaffRatioInfo(): Observable<ResponseEntity> {
     //let url=`${this.api_url}/device`;
     let url = `${this.api_url}`;
     let ret = this.http.get(url)
-      .map((response: Response) => response.json().devicestatusCount as ResponseEntity)
+      .map((response: Response) => response.json().analysisStaffRatio as ResponseEntity)
       .catch(this.handleError);
     return ret;
     // console.log(ret)
   }
-
-  getDeviceBaseRunInfo(): Observable<ResponseEntity> {
+  //系统使用次数排名(（根据排版看能否做成根据时间查询）前10或前20)
+  getStaffUseLimsRunInfo(): Observable<ResponseEntity> {
     //let url=`${this.api_url}/deviceBase`;
     let url = `${this.api_url}`;
     let ret = this.http.get(url)
-      .map((response: Response) => response.json().deviceDepartmentAmount as ResponseEntity)
+      .map((response: Response) => response.json().staffUseLims as ResponseEntity)
+      .catch(this.handleError);
+    return ret;
+
+  }
+  //各单位LIMS系统有效使用率排名
+  getlimsValidUseInfo(): Observable<ResponseEntity> {
+    //let url=`${this.api_url}/deviceBase`;
+    let url = `${this.api_url}`;
+    let ret = this.http.get(url)
+      .map((response: Response) => response.json().limsValidUse as ResponseEntity)
       .catch(this.handleError);
     return ret;
 

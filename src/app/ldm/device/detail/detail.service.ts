@@ -17,36 +17,36 @@ export class DetailService {
   private headers = new Headers({ 'Content-Type': 'application/json' });
   // data: any = null;
   constructor(private http: Http, private user: UserService) {
-
-    
-
   }
 
-  getJqTask(): Observable<ResponseEntity> {
-    //let url = `${this.api_url}/home_JqTask`;
-    let url = `${this.api_url}`;
+
+  //获取装置基本信息
+  getDeviceModelInfo():Observable<ResponseEntity>{
+     let url = `${this.api_url}`;
     let ret = this.http.get(url)
       .map((response: Response) => response.json().deviceModel as ResponseEntity)
-      // .map((response: Response) => response.json() as ResponseEntity)
       .catch(this.handleError);
     return ret;
   }
-  getAnalysisTask(): Observable<ResponseEntity> {
-    //let url=`${this.api_url}/Subject`;
-    let url = `${this.api_url}`;
+
+  //装置的检查点
+  getDeviceKeyPoint():Observable<ResponseEntity>{
+     let url = `${this.api_url}`;
     let ret = this.http.get(url)
-      .map((response: Response) => response.json().analysisTask as ResponseEntity)
+      .map((response: Response) => response.json().deviceKeyPoint as ResponseEntity)
       .catch(this.handleError);
     return ret;
   }
-  getDeviceRunRecord(): Observable<ResponseEntity> {
-    //let url=`${this.api_url}/Subject`;
+
+  //装置的运行记录
+  getDeviceRunRecord():Observable<ResponseEntity>{
     let url = `${this.api_url}`;
     let ret = this.http.get(url)
       .map((response: Response) => response.json().deviceRunRecord as ResponseEntity)
       .catch(this.handleError);
     return ret;
   }
+
   private handleError(error: Response) {
     console.error(error);
     return Observable.throw(error.json().error || 'Server error');

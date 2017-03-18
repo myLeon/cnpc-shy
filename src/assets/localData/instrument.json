@@ -1,9 +1,7 @@
-//仪器设备
-{
-    //仪器设备分类统计
+{  
     "instrumentTypeCount": {
         "success": true,
-        "data": [
+        "data": [ 
             {
                 "instrumentType": "气相色谱",
                 "total": 34
@@ -36,9 +34,10 @@
                 "instrumentType": "硫分析",
                 "total": 5
             }
-        ]
+        ],
+        "message" : ""
     },
-    //各单位仪器设备统计
+    
     "instrumentGroupAmount": {
         "success": true,
         "data": [
@@ -56,7 +55,7 @@
             }
         ]
     },
-    //一段时间内的仪器利用率
+    
     "instrumentUseRatio": {
         "success": true,
         "data": [
@@ -82,7 +81,7 @@
             }
         ]
     },
-    //仪器设备列表
+   
     "instrumentList": {
         "success": true,
         "data": [
@@ -2049,7 +2048,7 @@
             }
         ]
     },
-    //仪器设备实体
+  
     "instrumentModel":{
         "success":true,
         "data":[
@@ -2066,7 +2065,7 @@
             }
         ]
     },
-    //一段时间内分析的样品数、项目数
+    
     "instrumentAnalysisAmount":{
         "success":true,
         "data":[

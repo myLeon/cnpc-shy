@@ -13,7 +13,7 @@ import { UserService } from '../../_core/user.service';
 export class InstrumentService {
 
   // private api_url = 'http://localhost:3000';
-  private api_url = "assets/localData/device.json";
+  private api_url = "assets/localData/instrument.json";
   private headers = new Headers({ 'Content-Type': 'application/json' });
   // data: any = null;
   constructor(private http: Http, private user: UserService) {
@@ -95,40 +95,41 @@ export class InstrumentService {
     return bs.asObservable();
     //return Observable.of(chartData);
   }
-
+  //仪器设备列表
   getJqTask(): Observable<ResponseEntity> {
     //let url = `${this.api_url}/home_JqTask`;
     let url = `${this.api_url}`;
     let ret = this.http.get(url)
-      .map((response: Response) => response.json().deviceHYDList as ResponseEntity)
+      .map((response: Response) => response.json().instrumentList as ResponseEntity)
       // .map((response: Response) => response.json() as ResponseEntity)
       .catch(this.handleError);
     return ret;
   }
-  getSubjectProgressInfo(): Observable<ResponseEntity> {
+   //仪器设备分类统计
+  getClassificationInfo(): Observable<ResponseEntity> {
     //let url=`${this.api_url}/Subject`;
     let url = `${this.api_url}`;
     let ret = this.http.get(url)
-      .map((response: Response) => response.json().deviceTypeCount as ResponseEntity)
+      .map((response: Response) => response.json().instrumentTypeCount as ResponseEntity)
       .catch(this.handleError);
     return ret;
   }
-
-  getDeviceRunInfo(): Observable<ResponseEntity> {
+  //各单位仪器设备统计
+  getInstrumentStatisticsInfo(): Observable<ResponseEntity> {
     //let url=`${this.api_url}/device`;
     let url = `${this.api_url}`;
     let ret = this.http.get(url)
-      .map((response: Response) => response.json().devicestatusCount as ResponseEntity)
+      .map((response: Response) => response.json().instrumentGroupAmount as ResponseEntity)
       .catch(this.handleError);
     return ret;
     // console.log(ret)
   }
-
-  getDeviceBaseRunInfo(): Observable<ResponseEntity> {
+  //一段时间内的仪器利用率
+  getInstrumentUtilizationInfo(): Observable<ResponseEntity> {
     //let url=`${this.api_url}/deviceBase`;
     let url = `${this.api_url}`;
     let ret = this.http.get(url)
-      .map((response: Response) => response.json().deviceDepartmentAmount as ResponseEntity)
+      .map((response: Response) => response.json().instrumentUseRatio as ResponseEntity)
       .catch(this.handleError);
     return ret;
 

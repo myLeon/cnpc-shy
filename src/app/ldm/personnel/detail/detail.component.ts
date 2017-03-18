@@ -1,8 +1,8 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { PersonnelService } from '../personnel.service';
+// import {  } from '../personnel.service';
 import { ResponseEntity } from '../../../_entities/response-entity';
 // import * as $ from 'jquery';
-import {DetailService} from './detail.service'
+import { DetailService } from './detail.service'
 import { ActivatedRoute, Router } from "@angular/router";
 @Component({
   selector: 'app-detail',
@@ -11,147 +11,114 @@ import { ActivatedRoute, Router } from "@angular/router";
 })
 
 export class DetailComponent implements OnInit {
-    //最近15天分析数据 图表区域 配置
-  last15DaysAnalysisTaskOptinos;
+  //必须存在的
+  urlParas: any = { "id": "shy" };
 
-  userLoginCount: any = { rows: [], columns: [], status: "before", message: "" };
+  //人员详情
+  staffModel: any = {
+    status: "before",
+    message: "",
+    data: []
+  }
 
-  urlParas:any={"id":"shy"};
+  //一段时间内分析的样品、项目量
+  analysisAmount: any = {
+    status: "before",
+    message: "",
+    data: []
+  }
 
   
-
-  //装置列表
-  jqTask: any = {
-    rows: [],
-    columns: [
-      { title: '装置编号', name: 'identity', className: ['w80'] },
-      { title: '装置名称', name: 'name', className: [''] },
-      { title: '装置类型', name: 'locationType', className: ['text-success', ''] },
-      { title: '联系人', name: 'operatorId', className: ['text-warning', 'w80'] },
-      { title: '装置编号', name: 'identity', className: ['w80'] },
-      { title: '装置名称', name: 'name', className: [''] },
-      { title: '装置类型', name: 'locationType', className: ['text-success', ''] },
-      { title: '联系人', name: 'operatorId', className: ['text-warning', 'w80'] },
-      { title: '联系人', name: 'operatorId', className: ['text-warning', 'w80'] },
-    ],
-    config: {
-      paging: true,
-      filtering: { filterString: '' },
-      className: ['table-striped', 'table-bordered']
-    },
+  //所申请评价任务
+  subjectRole: any = {
     status: "before",
-    message: ""
-  };
-
-  //课题进展情况
-  analysisTask: any = {
-    rows: [],
-    columns: [
-      { title: '装置编号', name: 'identity', className: ['w80'] },
-      { title: '装置日期', name: 'name', className: [''] },
-      { title: '装置评价', name: 'locationType', className: ['text-success', ''] },
-      { title: '装置生产日期', name: 'operatorId', className: ['text-warning', 'w80'] },
-      { title: '装置状态', name: 'operatorId', className: ['text-warning', 'w80'] },
-      { title: '装置配置', name: 'operatorId', className: ['text-warning', 'w80'] },
-      { title: '装置规格', name: 'operatorId', className: ['text-warning', 'w80'] }
-    ],
-    config: {
-      paging: true,
-      filtering: { filterString: '' },
-      className: ['table-striped', 'table-bordered']
-    },
+    message: "",
+    data: []
+  }
+  //课题授权
+  applyTask: any = {
     status: "before",
-    message: ""
-  };
-  deviceRunRecordTask: any = {
-    rows: [],
-    columns: [
-      { title: '装置编号', name: 'identity', className: ['w80'] },
-      { title: '装置日期', name: 'name', className: [''] },
-      { title: '装置评价', name: 'locationType', className: ['text-success', ''] },
-      { title: '装置生产日期', name: 'operatorId', className: ['text-warning', 'w80'] },
-      { title: '装置状态', name: 'operatorId', className: ['text-warning', 'w80'] },
-      { title: '装置配置', name: 'operatorId', className: ['text-warning', 'w80'] },
-      { title: '装置规格', name: 'operatorId', className: ['text-warning', 'w80'] }
-    ],
-    config: {
-      paging: true,
-      filtering: { filterString: '' },
-      className: ['table-striped', 'table-bordered']
-    },
-    status: "before",
-    message: ""
-  };
+    message: "",
+    data: []
+  }
   //构造
   constructor(
     @Inject('DetailService') private service: DetailService,
     private route: ActivatedRoute,
     private router: Router
   ) {
-    this.service.getJqTask().subscribe(res => this.setJQTASK(res));
-    this.service.getAnalysisTask().subscribe(res => this.setAnalysisTask(res));
-    // this.service.getDeviceRunRecord().subscribe(res => this.setDeviceRunRecord(res));
-    // console.log(this.analysisTask)
-    // console.log(this.jqTask)
+    this.service.getStaffModel().subscribe(res => this.setStaffModel(res));
+    this.service.getAnalysisAmount().subscribe(res => this.setAnalysisAmount(res));
+    this.service.getSubjectRole().subscribe(res => this.setSubjectRole(res));
+    this.service.getApplyTask().subscribe(res => this.setApplyTask(res));
   }
-
   ngOnInit() {
     this.route.parent.params
-	    .map(params => params['id'] || 'None')
-	    .subscribe(res=>{
-            this.urlParas.id=res;
-	   });
+      .map(params => params['id'] || 'None')
+      .subscribe(res => {
+        this.urlParas.id = res;
+      });
   }
-  //设置加氢任务数据
-  setJQTASK(res: ResponseEntity) {
-    console.log(res);
+
+  //人员详情
+  setStaffModel(res: ResponseEntity) {
+    console.log(res)
+    console.log(res.success)
     if (!res.success) {
-      this.jqTask = { status: "message", message: res.message };
-      return;
+      this.staffModel = { status: "message", message: res.message };
     }
     if (res.data.length > 0) {
-
-
-      this.jqTask = Object.assign(this.jqTask, { status: "success", rows: res.data });
-      this.jqTask.status = "success";
+       this.analysisAmount = Object.assign(this.analysisAmount, { status: "success", data: res.data });
     }
     else {
-      this.jqTask = { status: "message", message: "无数据展示" };
+      this.staffModel = { status: "message", message: "无数据展示！" };
     }
   }
-  setAnalysisTask(res: ResponseEntity) {
-    console.log(res);
+
+  //一段时间内分析的样品、项目量
+  setAnalysisAmount(res: ResponseEntity) {
+    console.log(res.success)
+    console.log(res)
     if (!res.success) {
-      this.analysisTask = { status: "message", message: res.message };
-      return;
+      this.analysisAmount = { status: "message", message: res.message };
     }
-
     if (res.data.length > 0) {
-      this.analysisTask = Object.assign(this.analysisTask, { status: "success", rows: res.data });
-      this.analysisTask.status = "success";
-      // this.subjectProgressInfo.option.series[0].data = series;
+      this.analysisAmount = Object.assign(this.analysisAmount, { status: "success", data: res.data });
+      console.log(this.analysisAmount)
     }
     else {
-      this.analysisTask = { status: "message", message: "无数据展示！" };
+      this.analysisAmount = { status: "message", message: "无数据展示！" };
+      console.log(this.analysisAmount)
     }
   }
-  setDeviceRunRecord(res: ResponseEntity) {
-    console.log(res);
+
+  //所申请评价任务 
+  setSubjectRole(res: ResponseEntity) {
+    console.log(res.data)
     if (!res.success) {
-      this.deviceRunRecordTask = { status: "message", message: res.message };
-      return;
+      this.subjectRole = { status: "message", message: res.message };
     }
-
     if (res.data.length > 0) {
-      this.deviceRunRecordTask = Object.assign(this.analysisTask, { status: "success", rows: res.data });
-      this.deviceRunRecordTask.status = "success";
-      // this.subjectProgressInfo.option.series[0].data = series;
-
-
+      this.subjectRole = Object.assign(this.subjectRole, { status: "success", data: res.data });
     }
     else {
-      this.deviceRunRecordTask = { status: "message", message: "无数据展示！" };
+      this.subjectRole = { status: "message", message: "无数据展示！" };
     }
   }
+  
+  //课题授权
+  setApplyTask(res: ResponseEntity) {
+    console.log(res)
+    if (!res.success) {
+      this.applyTask = { status: "message", message: res.message };
+    }
+    if (res.data.length > 0) {
+      this.applyTask = Object.assign(this.applyTask, { status: "success", data: res.data });
+    }
+    else {
+      this.applyTask = { status: "message", message: "无数据展示！" };
+    }
+  }
+
 }
 

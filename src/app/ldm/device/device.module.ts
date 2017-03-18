@@ -51,14 +51,15 @@ import { ListComponent } from './list/list.component';
 import { TickerModule } from '../../_directives/ticker/ticker.module';
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { SimpleTableModule } from '../../_components/simple-table/simple-table.module';
-import {UserService } from '../../_core/user.service';
+import { UserService } from '../../_core/user.service';
 import { DeviceService } from './device.service'
 import { Ng2TableModule } from 'ng2-table';
 import { EChartModule } from 'ng2-echarts-d3';
 import { MomentModule } from 'angular2-moment';
 import { Md2Module } from 'md2';
 import { MdlModule } from 'angular2-mdl';
-import {DeviceFilterPipe} from './_pipe/device-filter.pipe'
+import { DeviceFilterPipe } from './_pipe/device-filter.pipe'
+import { GridModule } from '@progress/kendo-angular-grid';
 
 @NgModule({
   imports: [
@@ -71,10 +72,11 @@ import {DeviceFilterPipe} from './_pipe/device-filter.pipe'
     EChartModule,
     MomentModule,
     Md2Module,
-    MdlModule
+    MdlModule,
+    GridModule
   ],
-  declarations: [DeviceComponent, ListComponent,DeviceFilterPipe],
-    providers: [{ provide: 'DeviceService', useClass: DeviceService },UserService],
+  declarations: [DeviceComponent, ListComponent, DeviceFilterPipe],
+  providers: [{ provide: 'DeviceService', useClass: DeviceService }, UserService],
 
 })
 export class DeviceModule { }

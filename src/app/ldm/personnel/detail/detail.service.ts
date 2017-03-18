@@ -13,37 +13,44 @@ import { UserService } from '../../../_core/user.service';
 export class DetailService {
 
   // private api_url = 'http://localhost:3000';
-  private api_url = "assets/localData/device.json";
+  private api_url = "assets/localData/personnel.json";
   private headers = new Headers({ 'Content-Type': 'application/json' });
   // data: any = null;
   constructor(private http: Http, private user: UserService) {
-
-    
-
   }
 
-  getJqTask(): Observable<ResponseEntity> {
-    //let url = `${this.api_url}/home_JqTask`;
-    let url = `${this.api_url}`;
+
+  //人员详情
+  getStaffModel():Observable<ResponseEntity>{
+     let url = `${this.api_url}`;
     let ret = this.http.get(url)
-      .map((response: Response) => response.json().deviceModel as ResponseEntity)
-      // .map((response: Response) => response.json() as ResponseEntity)
+      .map((response: Response) => response.json().staffModel as ResponseEntity)
       .catch(this.handleError);
     return ret;
   }
-  getAnalysisTask(): Observable<ResponseEntity> {
-    //let url=`${this.api_url}/Subject`;
-    let url = `${this.api_url}`;
+
+   //一段时间内分析的样品、项目量
+  getAnalysisAmount():Observable<ResponseEntity>{
+     let url = `${this.api_url}`;
     let ret = this.http.get(url)
-      .map((response: Response) => response.json().analysisTask as ResponseEntity)
+      .map((response: Response) => response.json().analysisAmount as ResponseEntity)
       .catch(this.handleError);
     return ret;
   }
-  getDeviceRunRecord(): Observable<ResponseEntity> {
-    //let url=`${this.api_url}/Subject`;
+
+   //课题授权
+  getSubjectRole():Observable<ResponseEntity>{
     let url = `${this.api_url}`;
     let ret = this.http.get(url)
-      .map((response: Response) => response.json().deviceRunRecord as ResponseEntity)
+      .map((response: Response) => response.json().subjectRole as ResponseEntity)
+      .catch(this.handleError);
+    return ret;
+  }
+   //所申请评价任务 
+   getApplyTask():Observable<ResponseEntity>{
+    let url = `${this.api_url}`;
+    let ret = this.http.get(url)
+      .map((response: Response) => response.json().applyTask as ResponseEntity)
       .catch(this.handleError);
     return ret;
   }

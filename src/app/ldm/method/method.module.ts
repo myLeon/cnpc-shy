@@ -13,6 +13,8 @@ import { MomentModule } from 'angular2-moment';
 import { Md2Module } from 'md2';
 import { MdlModule } from 'angular2-mdl';
 import { MethodFilterPipe } from './_pipe/method-filter.pipe'
+import { FormsModule } from '@angular/forms';
+// import * as $ from 'jquery';
 
 @NgModule({
   imports: [
@@ -24,7 +26,8 @@ import { MethodFilterPipe } from './_pipe/method-filter.pipe'
     EChartModule,
     MomentModule,
     Md2Module,
-    MdlModule
+    MdlModule,
+    FormsModule
   ],
   declarations: [MethodComponent, ListComponent,MethodFilterPipe],
     providers: [{ provide: 'MethodService', useClass: MethodService },UserService],
