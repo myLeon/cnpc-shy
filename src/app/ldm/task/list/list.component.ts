@@ -172,7 +172,26 @@ export class ListComponent implements OnInit {
       ]
     }
   }
-
+  taskEveryDayApplyAmount: any = {
+    status: "before",
+    message: "",
+    option: {
+      tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+      },
+      calculable: true,
+      series: [
+        {
+          name: '状态',
+          type: 'pie',
+          radius: '50%',
+          center: ['50%', '50%'],
+          data: []
+        }
+      ]
+    }
+  }
   // deviceRunInfo={
   //   ...
   //   this.subjectProgressInfo
@@ -259,7 +278,7 @@ export class ListComponent implements OnInit {
     this.service.getJqTask().subscribe(res => this.setJQTASK(res));
     this.service.getClassificationInfo().subscribe(res => this.SetClassificationInfo(res));
     this.service.getInstrumentStatisticsInfo().subscribe(res => this.SetInstrumentStatisticsInfo(res));
-    this.service.getInstrumentUtilizationInfo().subscribe(res => this.SetInstrumentUtilizationInfo(res));
+    this.service.getTaskEveryDayApplyAmountInfo().subscribe(res => this.SetTaskEveryDayApplyAmountInfo(res));
     this.service.getLast15DaysAnalysisTask().subscribe(res => this.SetLast15DaysAnalysisTask(res));
 
   }
@@ -340,7 +359,6 @@ export class ListComponent implements OnInit {
         }
         series.push(model);
       });
-
       this.deviceRunInfo.status = "success";
       this.deviceRunInfo.option.series[0].data = series;
     }
@@ -349,10 +367,10 @@ export class ListComponent implements OnInit {
     }
   }
   //一段时间内每天的任务申请次数统计
-  SetInstrumentUtilizationInfo(res: ResponseEntity) {
+  SetTaskEveryDayApplyAmountInfo(res: ResponseEntity) {
     console.log(res)
     if (!res.success) {
-      this.deviceBaseRunInfo = { status: "message", message: "服务器忙..." };
+      this.taskEveryDayApplyAmount = { status: "message", message: "服务器忙..." };
       return;
     }
     if (res.data.length > 0) {
@@ -360,16 +378,15 @@ export class ListComponent implements OnInit {
       res.data.forEach(element => {
         let model = {
           value: element.total,
-          name: element.baseName
+          name: element.dayTime
         }
         series.push(model);
       });
-
-      this.deviceBaseRunInfo.status = "success";
-      // this.deviceBaseRunInfo.option.series[0].data = series;
+      this.taskEveryDayApplyAmount.status = "success";
+      this.taskEveryDayApplyAmount.option.series[0].data = series;
     }
     else {
-      this.deviceBaseRunInfo = { status: "message", message: "无数据展示！" };
+      this.taskEveryDayApplyAmount = { status: "message", message: "无数据展示！" };
     }
   }
 

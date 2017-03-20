@@ -1,164 +1,110 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { MapService } from './map.service';
 import { Ng2Echarts } from 'ng2-echarts';
+import { Http, Headers, Response } from '@angular/http';
+import { ActivatedRoute, Router } from "@angular/router";
+import { ResponseEntity } from '../../../_entities/response-entity';
 
 
 @Component({
-  selector: 'app-map',
-  templateUrl: './map.component.html',
-  styleUrls: ['./map.component.scss']
+    selector: 'app-map',
+    templateUrl: './map.component.html',
+    styleUrls: ['./map.component.scss']
 })
 export class MapComponent implements OnInit {
-  chinaMap:any={};
-  constructor() { 
-    let randomData = function () {
-      return Math.round(Math.random() * 1000);
-    };
-    this.chinaMap = {
-    title: {
-        text: 'iphone销量',
-        subtext: '纯属虚构',
-        left: 'center'
-    },
-    tooltip: {
-        trigger: 'item'
-    },
-    legend: {
-        orient: 'vertical',
-        left: 'left',
-        data:['iphone3','iphone4','iphone5']
-    },
-    visualMap: {
-        min: 0,
-        max: 2500,
-        left: 'left',
-        top: 'bottom',
-        text: ['高','低'],           // 文本，默认为数值文本
-        calculable: true
-    },
-    toolbox: {
-        show: true,
-        orient: 'vertical',
-        left: 'right',
-        top: 'center',
-        feature: {
-            dataView: {readOnly: false},
-            restore: {},
-            saveAsImage: {}
-        }
-    },
-    series: [
-        {
-            name: 'iphone3',
-            type: 'map',
-            mapType: 'china',
-            roam: false,
-            label: {
-                normal: {
-                    show: true
-                },
-                emphasis: {
-                    show: true
-                }
-            },
-            data:[
-                {name: '北京',value: randomData() },
-                {name: '天津',value: randomData() },
-                {name: '上海',value: randomData() },
-                {name: '重庆',value: randomData() },
-                {name: '河北',value: randomData() },
-                {name: '河南',value: randomData() },
-                {name: '云南',value: randomData() },
-                {name: '辽宁',value: randomData() },
-                {name: '黑龙江',value: randomData() },
-                {name: '湖南',value: randomData() },
-                {name: '安徽',value: randomData() },
-                {name: '山东',value: randomData() },
-                {name: '新疆',value: randomData() },
-                {name: '江苏',value: randomData() },
-                {name: '浙江',value: randomData() },
-                {name: '江西',value: randomData() },
-                {name: '湖北',value: randomData() },
-                {name: '广西',value: randomData() },
-                {name: '甘肃',value: randomData() },
-                {name: '山西',value: randomData() },
-                {name: '内蒙古',value: randomData() },
-                {name: '陕西',value: randomData() },
-                {name: '吉林',value: randomData() },
-                {name: '福建',value: randomData() },
-                {name: '贵州',value: randomData() },
-                {name: '广东',value: randomData() },
-                {name: '青海',value: randomData() },
-                {name: '西藏',value: randomData() },
-                {name: '四川',value: randomData() },
-                {name: '宁夏',value: randomData() },
-                {name: '海南',value: randomData() },
-                {name: '台湾',value: randomData() },
-                {name: '香港',value: randomData() },
-                {name: '澳门',value: randomData() }
-            ]
-        },
-        {
-            name: 'iphone4',
-            type: 'map',
-            mapType: 'china',
-            label: {
-                normal: {
-                    show: true
-                },
-                emphasis: {
-                    show: true
-                }
-            },
-            data:[
-                {name: '北京',value: randomData() },
-                {name: '天津',value: randomData() },
-                {name: '上海',value: randomData() },
-                {name: '重庆',value: randomData() },
-                {name: '河北',value: randomData() },
-                {name: '安徽',value: randomData() },
-                {name: '新疆',value: randomData() },
-                {name: '浙江',value: randomData() },
-                {name: '江西',value: randomData() },
-                {name: '山西',value: randomData() },
-                {name: '内蒙古',value: randomData() },
-                {name: '吉林',value: randomData() },
-                {name: '福建',value: randomData() },
-                {name: '广东',value: randomData() },
-                {name: '西藏',value: randomData() },
-                {name: '四川',value: randomData() },
-                {name: '宁夏',value: randomData() },
-                {name: '香港',value: randomData() },
-                {name: '澳门',value: randomData() }
-            ]
-        },
-        {
-            name: 'iphone5',
-            type: 'map',
-            mapType: 'china',
-            label: {
-                normal: {
-                    show: true
-                },
-                emphasis: {
-                    show: true
-                }
-            },
-            data:[
-                {name: '北京',value: randomData() },
-                {name: '天津',value: randomData() },
-                {name: '上海',value: randomData() },
-                {name: '广东',value: randomData() },
-                {name: '台湾',value: randomData() },
-                {name: '香港',value: randomData() },
-                {name: '澳门',value: randomData() }
-            ]
-        }
-    ]
-};
-}
+    chinaMap: any = {};
 
-  ngOnInit() {
-  }
+    BJoption: any = {
+        series: [
+            {
+                name: '北京',
+                type: 'map',
+                mapType: 'beijing',
+                roam: false,
+                data: [
+                    {
+                        name: "昌平区",
+                        selected: true,
+                        itemStyle: {
+                            normal: {
+                                areaColor: "#cd2626"
+                            },
+                            emphasis: {
+                                areaColor: "#cd2626"
+                            }
+                        }
+                    }
+                ],
+                silent: true
+            }
+        ]
+    };
+    HLJoption: any = {
+        series: [
+            {
+                name: '黑龙江',
+                type: 'map',
+                mapType: 'heilongjiang',
+                roam: false,
+                data: [
+                    {
+                        name: "大庆市",
+                        selected: true,
+                        itemStyle: {
+                            normal: {
+                                areaColor: "#cd2626"
+                            },
+                            emphasis: {
+                                areaColor: "#cd2626"
+                            }
+                        }
+                    }
+                ],
+                silent: true
+            }
+        ]
+    };
+    GSoption: any = {
+        series: [
+            {
+                name: '甘肃',
+                type: 'map',
+                mapType: 'gansu',
+                roam: false,
+                data: [
+                    {
+                        name: "兰州市",
+                        selected: true,
+                        itemStyle: {
+                            normal: {
+                                areaColor: "#cd2626"
+                            },
+                            emphasis: {
+                                areaColor: "#cd2626"
+                            }
+                        }
+                    }
+                ],
+                silent: true
+            }
+        ]
+    };
+    constructor(
+        @Inject('MapService') private service: MapService,
+        private route: ActivatedRoute,
+        private router: Router
+    ) {
+
+    }
+
+    ngOnInit() {
+
+    }
+
+    BJClick(param:any){
+        console.log(param);
+    }
+
+
 
 }

@@ -125,7 +125,7 @@ export class TaskService {
     // console.log(ret)
   }
   //一段时间内每天的任务申请次数统计
-  getInstrumentUtilizationInfo(): Observable<ResponseEntity> {
+  getTaskEveryDayApplyAmountInfo(): Observable<ResponseEntity> {
     //let url=`${this.api_url}/deviceBase`;
     let url = `${this.api_url}`;
     let ret = this.http.get(url)

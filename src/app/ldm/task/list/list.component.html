@@ -6,47 +6,47 @@
       <li class="breadcrumb-item active">综合信息</li>
     </ol>
   </div>
-
   <div class="row mt-3">
-    <div class="col-md-6 pl-0">
+    <div class="col-md-4 pl-0">
       <div class="card " style="border-radius:0px;">
         <div class="card-header">
-          各装置类型统计
+          一段时间内的科研课题申请次数统计
         </div>
-        <div class="card-block p-0" style="height: 280px;" [ngSwitch]="subjectProgressInfo.status">
+        <div class="card-block p-0" style="height: 260px;" [ngSwitch]="subjectProgressInfo.status">
           <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
-          <div *ngSwitchCase="'success'" [echartOption]="subjectProgressInfo.option" style="height: 280px;"></div>
+          <div *ngSwitchCase="'success'" [echartOption]="subjectProgressInfo.option" style="height: 260px;"></div>
           <div *ngSwitchCase="'message'" style="padding: 10px;">{{subjectProgressInfo.message}}</div>
         </div>
       </div>
     </div>
-    <div class="col-md-6 pr-0">
+    <div class="col-md-4 pl-3">
       <div class="card" style="border-radius:0px;  ">
         <div class="card-header">
-          各装置状态统计
+          一段时间内的不同单位的申请次数统计
         </div>
-        <div class="card-block p-0" style="height: 280px;" [ngSwitch]="deviceRunInfo.status">
+        <div class="card-block p-0" style="height: 260px;" [ngSwitch]="deviceRunInfo.status">
           <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
-          <div *ngSwitchCase="'success'" [echartOption]="deviceRunInfo.option" style="height: 280px;"></div>
+          <div *ngSwitchCase="'success'" [echartOption]="deviceRunInfo.option" style="height: 260px;"></div>
           <div *ngSwitchCase="'message'" style="padding: 10px;">{{deviceRunInfo.message}}</div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="row mt-3">
-    <div class="card" style="border-radius:0px; width: 100%;">
-      <div class="card-header">
-        各单位装置数量统计
-      </div>
-      <div class="card-block p-0" style="height: 350px;" [ngSwitch]="deviceBaseRunInfo.status">
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active" style="height:350px;">
-            <div [echartOption]="last15DaysAnalysisTaskOptinos" style=" height:350px; width: 100%;"></div>
-          </div>
+     <div class="col-md-4 pr-0 pl-3">
+      <div class="card" style="border-radius:0px;  ">
+        <div class="card-header">
+          一段时间内每天的任务申请次数统计
+        </div>
+        <div class="card-block p-0" style="height: 260px;" [ngSwitch]="taskEveryDayApplyAmount.status">
+          <!--<div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>-->
+          <div *ngSwitchCase="'success'" [echartOption]="taskEveryDayApplyAmount.option" style="height: 260px;"></div>
+          <!--<div *ngSwitchCase="'message'" style="padding: 10px;">{{taskEveryDayApplyAmount.message}}</div>-->
         </div>
       </div>
     </div>
   </div>
+  <!--<div class="row mt-3">-->
+   
+  <!--</div>-->
 
   <div class="row my-3" style="border-radius:0px;border: 1px solid #eee">
     <div class="card  card-inverse card-primary" style="border-radius:0px; width: 100%;">
@@ -55,17 +55,18 @@
       </div>
       <div class="card-block p-0">
         <div class="row px-3 my-0">
-          <input class="form-control mx-3 my-2" style="width: 300px"  type="text" placeholder="输入关键字查询" #inputText (change)="filterDataByKey(inputText.value)"/>
+          <input class="form-control mx-3 my-2" style="width: 300px" type="text" placeholder="输入关键字查询" #inputText (change)="filterDataByKey(inputText.value)"
+          />
           <!--{{inputText.value}}-->
         </div>
         <kendo-grid [kendoGridBinding]="gridData" [sortable]="true" [groupable]="true">
           <kendo-grid-column field="categoryId" title="装置编号" width="100" border="0">
           </kendo-grid-column>
           <kendo-grid-column field="name" title="装置名称" width="100">
-             <template kendoGridCellTemplate let-dataItem>
-            <a routerLink="../detail" style="text-decoration: none">{{dataItem.identity}}</a>
-          </template>
-          </kendo-grid-column>         
+            <template kendoGridCellTemplate let-dataItem>
+              <a routerLink="../detail" style="text-decoration: none">{{dataItem.identity}}</a>
+            </template>
+          </kendo-grid-column>
           <kendo-grid-column field="categoryText" title="生产日期" width="100">
           </kendo-grid-column>
           <kendo-grid-column field="codeNumber" title="所属单位" width="100">
@@ -81,10 +82,8 @@
           </kendo-grid-column>
           <kendo-grid-column field="status" title="颜色" width="100">
           </kendo-grid-column>
-          <kendo-grid-messages
-                groupPanelEmpty="拖拽列到此处分组"
-                noRecords="没有记录可显示。">
-            </kendo-grid-messages>
+          <kendo-grid-messages groupPanelEmpty="拖拽列到此处分组" noRecords="没有记录可显示。">
+          </kendo-grid-messages>
         </kendo-grid>
 
       </div>
@@ -100,23 +99,27 @@
         box-sizing: border-box;
         width: 100%;
       }
-      
+
+
       table tr {
         position: relative;
         height: 36px;
         vertical-align: middle;
       }
-      
+
+
       tbody tr:hover {
         background-color: #eee;
       }
-      
+
+
       table th,
       table td {
         padding: 0 16px;
         text-align: left;
       }
-      
+
+
       table td {
         position: relative;
         vertical-align: middle;

@@ -13,3 +13,11 @@ export class ResponseEntity{
   // 用于提示开发者的信息，报错信息等
   public error?:string;
 }
+
+export class MapEntity{
+  public type:string;
+
+  public features:any[];
+
+  public UTF8Encoding:boolean;
+}

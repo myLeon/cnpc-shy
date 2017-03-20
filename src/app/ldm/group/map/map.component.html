@@ -1,11 +1,15 @@
-<ul class="list-group  col-sm-1">
-  <li class="list-group-item"><a class="nav-link  courtyard " routerLink='../list'>院部</a>
-  </li>
-  <li class="list-group-item"><a class="nav-link  courtyard " routerLink='../list'>大庆</a>
-  </li>
-  <li class="list-group-item"><a class="nav-link  courtyard  " routerLink='../list'>兰州</a>
-  </li>
-</ul>
-<div [echarts-map]="chinaMap" style="width: 1300px; height: 769px; background : red" class="echart_map"></div>
 
-
+<div class="container">
+    <!--面包屑导航-->
+  <div class="row ">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="#">首页</a></li>
+      <li class="breadcrumb-item active">综合信息</li>
+    </ol>
+  </div>
+  <div class="row">
+    <div class="col-md-4 " [echarts-map]="BJoption" style=" height:400px;" (ngDoCheck)="BJClick(this)" ></div>
+    <div class="col-md-4" [echarts-map]="GSoption" style=" height: 400px;" ></div>
+    <div class="col-md-4" [echarts-map]="HLJoption" style=" height: 400px;" ></div>
+  </div>
+</div>

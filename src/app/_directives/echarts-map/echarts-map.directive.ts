@@ -26,8 +26,18 @@ export class EchartsMapDirective implements OnChanges, OnInit, OnDestroy {
   }
 
   ngOnChanges(changes) {
-    this.http.get('../../assets/china.json').subscribe(res => {
-      echarts.registerMap('china', res.json());
+    this.http.get('../../../assets/localData/beijing.json').subscribe(res => {
+      echarts.registerMap('beijing', res.json());
+      this.chart = echarts.init(this.el.nativeElement, 'vintage');
+      this.chart.setOption(this.options);
+    });
+    this.http.get('../../../assets/localData/heilongjiang.json').subscribe(res => {
+      echarts.registerMap('heilongjiang', res.json());
+      this.chart = echarts.init(this.el.nativeElement, 'vintage');
+      this.chart.setOption(this.options);
+    });
+    this.http.get('../../../assets/localData/gansu.json').subscribe(res => {
+      echarts.registerMap('gansu', res.json());
       this.chart = echarts.init(this.el.nativeElement, 'vintage');
       this.chart.setOption(this.options);
     });
@@ -40,11 +50,14 @@ export class EchartsMapDirective implements OnChanges, OnInit, OnDestroy {
     this.onResize = this.reSize$
       .distinctUntilChanged()
       .subscribe((_) => this.chart.resize());
-
     this.elHeight = this.el.nativeElement.offsetHeight;
     if (this.elHeight < 300) {
       this.elHeight = 300;
     }
+  }
+
+  ngDoCheck(){
+    
   }
 
 

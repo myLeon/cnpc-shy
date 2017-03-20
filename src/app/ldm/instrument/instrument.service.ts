@@ -17,7 +17,6 @@ export class InstrumentService {
   private headers = new Headers({ 'Content-Type': 'application/json' });
   // data: any = null;
   constructor(private http: Http, private user: UserService) {
-
     console.log(this.user.getCurrentUser());
     
 

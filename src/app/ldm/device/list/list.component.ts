@@ -1,89 +1,4 @@
-// import { Component, OnInit } from '@angular/core';
 
-// @Component({
-//   selector: 'app-list',
-//   templateUrl: './list.component.html',
-//   styleUrls: ['./list.component.scss']
-// })
-// export class ListComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit() {
-//   }
-
-// }
-
-// import { Component, OnInit } from '@angular/core';
-
-// @Component({
-//   selector: 'app-list',
-//   templateUrl: './list.component.html',
-//   styleUrls: ['./list.component.scss']
-// })
-// export class ListComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit() {
-//   }
-
-// }
-
-
-// import { Component, OnInit } from '@angular/core';
-
-// @Component({
-//   selector: 'app-list',
-//   templateUrl: './list.component.html',
-//   styleUrls: ['./list.component.scss']
-// })
-// export class ListComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit() {
-//   }
-
-// }
-
-
-
-// import { Component, OnInit, Inject } from '@angular/core';
-// import { products } from '../products';
-// import { GroupDescriptor, process } from '@progress/kendo-data-query';
-// import { ResponseEntity } from '../../../_entities/response-entity';
-// // import { PersonnelService } from './personnel.service'
-// import { DeviceServe } from '../device.service';
-// import { ActivatedRoute, Router } from "@angular/router";
-// import { GridModule } from '@progress/kendo-angular-grid';
-// import { Md2Module } from 'md2';
-
-// @Component({
-//   selector: 'app-list',
-//   templateUrl: './list.component.html',
-//   styleUrls: ['./list.component.scss']
-// })
-// export class ListComponent implements OnInit {
-//   //时间日期
-//   date = new Date();
-//   search: string = null;
-//   myText = 'A String from the Component';
-//   private groups: GroupDescriptor[] = [{ field: "Category.CategoryName" }];
-
-//   private gridView: any[] = [];
-//  //end 时间日期
-//   public ngOnInit(): void {
-//     this.loadProducts();
-//     console.log(products.length)
-//   }
-
-//   private loadProducts(): void {
-//     this.gridView = products;
-
-//   }
-
-// }
 import { Component, OnInit, Inject } from '@angular/core';
 import { DeviceService } from '../device.service';
 import { ResponseEntity } from '../../../_entities/response-entity';
@@ -102,7 +17,8 @@ export class ListComponent implements OnInit {
   gridData: any[];
 
   basicData: any[];
-
+  
+  
   //最近15天分析数据 图表区域 配置
   last15DaysAnalysisTaskOptinos;
 
@@ -249,12 +165,15 @@ export class ListComponent implements OnInit {
     ]
   }
   //构造
+
+  private nextDay: Date;
   constructor(
     @Inject('DeviceService') private service: DeviceService,
     private route: ActivatedRoute,
     private router: Router
   ) {
-
+    this.nextDay = new Date();
+    this.nextDay.setDate(this.nextDay.getDate() + 1);
     // let a = 123
     // console.log($.isNumeric(a));
     this.service.getJqTask().subscribe(res => this.setJQTASK(res));

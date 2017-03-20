@@ -60,6 +60,8 @@ import { Md2Module } from 'md2';
 import { MdlModule } from 'angular2-mdl';
 import { DeviceFilterPipe } from './_pipe/device-filter.pipe'
 import { GridModule } from '@progress/kendo-angular-grid';
+import { DateInputModule,DateInputsModule } from '@progress/kendo-angular-dateinputs';
+
 
 @NgModule({
   imports: [
@@ -73,7 +75,9 @@ import { GridModule } from '@progress/kendo-angular-grid';
     MomentModule,
     Md2Module,
     MdlModule,
-    GridModule
+    GridModule,
+    DateInputModule,
+    DateInputsModule
   ],
   declarations: [DeviceComponent, ListComponent, DeviceFilterPipe],
   providers: [{ provide: 'DeviceService', useClass: DeviceService }, UserService],
