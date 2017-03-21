@@ -2,9 +2,7 @@
 <p>
    <a routerLink="../detail" >list works!</a>
 </p>
-<!--<ng-table [config]="jqTask.config"  [rows]="jqTask.rows" [columns]="jqTask.columns"></ng-table>-->
 <mdl-textfield type="text" label="名称关键字" [(ngModel)]="search" floating-label></mdl-textfield>
-
 <kendo-grid [data]="gridView | chargesFilter : search">
   <kendo-grid-column field="ProductName" title="姓名" [width]="80"></kendo-grid-column>
   <kendo-grid-column field="ProductDate" title="生日" [width]="300"></kendo-grid-column>

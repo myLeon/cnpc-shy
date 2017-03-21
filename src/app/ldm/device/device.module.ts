@@ -61,6 +61,7 @@ import { MdlModule } from 'angular2-mdl';
 import { DeviceFilterPipe } from './_pipe/device-filter.pipe'
 import { GridModule } from '@progress/kendo-angular-grid';
 import { DateInputModule,DateInputsModule } from '@progress/kendo-angular-dateinputs';
+import { NomorModule } from "../../_components/nomorl/nomorl.module"
 
 
 @NgModule({
@@ -77,7 +78,8 @@ import { DateInputModule,DateInputsModule } from '@progress/kendo-angular-datein
     MdlModule,
     GridModule,
     DateInputModule,
-    DateInputsModule
+    DateInputsModule,
+    NomorModule
   ],
   declarations: [DeviceComponent, ListComponent, DeviceFilterPipe],
   providers: [{ provide: 'DeviceService', useClass: DeviceService }, UserService],

@@ -11,7 +11,6 @@ export class SimpleTableComponent implements OnInit {
   @Input("columns") columns: any;
   constructor() {
 
-
   }
 
   ngOnInit() {

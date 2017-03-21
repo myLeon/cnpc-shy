@@ -102,6 +102,15 @@ export class PersonnelService {
       .catch(this.handleError);
     return ret;
   }
+  //个人分析样品量排名
+  getStaffAnalysisCountInfo(): Observable<ResponseEntity> {
+    //let url=`${this.api_url}/Subject`;
+    let url = `${this.api_url}`;
+    let ret = this.http.get(url)
+      .map((response: Response) => response.json().staffAnalysisCount as ResponseEntity)
+      .catch(this.handleError);
+    return ret;
+  }
   //个人分析项目量排名
   getStaffTestCountInfo(): Observable<ResponseEntity> {
     //let url=`${this.api_url}/Subject`;

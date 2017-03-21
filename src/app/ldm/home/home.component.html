@@ -108,7 +108,7 @@
             <div [echartOption]="last15DaysAnalysisTaskOptinos" style="width: 920px; height: 369px"></div>
           </div>
           <div class="carousel-item" style="width: 920px; height: 380px">
-             <div [echartOption]="last15DaysAssessmentTaskOptions" style="width: 920px; height: 369px"></div>
+            <div [echartOption]="last15DaysAssessmentTaskOptions" style="width: 920px; height: 369px"></div>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -124,103 +124,101 @@
     </div>
     <!-- 图表 end -->
   </div>
-<div class="row mx-0 mt-3" >
-  <div class="col-md-9">
-    <div class="row" >
-      <div class="col-md-4 px-0">
-        <div class="card " style="border-radius:0px;">
-          <div class="card-header">
-            课题进展情况
-          </div>
-          <div class="card-block p-0" style="height: 231px;" [ngSwitch]="subjectProgressInfo.status">
-            <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
-            <div *ngSwitchCase="'success'" [echartOption]="subjectProgressInfo.option" style="height: 231px;"></div>
-            <div *ngSwitchCase="'message'" style="padding: 10px;">{{subjectProgressInfo.message}}</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 px-0">
-        <div class="card" style="border-radius:0px; border-left:0px; ">
-          <div class="card-header">
-            装置运行情况<i>(30天内)</i>
-          </div>
-          <div class="card-block p-0" style="height: 231px;" [ngSwitch]="deviceRunInfo.status">
-            <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
-            <div *ngSwitchCase="'success'" [echartOption]="deviceRunInfo.option" style="height: 231px;"></div>
-            <div *ngSwitchCase="'message'" style="padding: 10px;">{{deviceRunInfo.message}}</div>
+  <div class="row mx-0 mt-3">
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col-md-4 px-0">
+          <div class="card " style="border-radius:0px;">
+            <div class="card-header">
+              课题进展情况
+            </div>
+            <div class="card-block p-0" style="height: 231px;" [ngSwitch]="subjectProgressInfo.status">
+              <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
+              <div *ngSwitchCase="'success'" [echartOption]="subjectProgressInfo.option" style="height: 231px;"></div>
+              <div *ngSwitchCase="'message'" style="padding: 10px;">{{subjectProgressInfo.message}}</div>
+            </div>
           </div>
         </div>
+        <div class="col-md-4 px-0">
+          <div class="card" style="border-radius:0px; border-left:0px; ">
+            <div class="card-header">
+              装置运行情况<i>(30天内)</i>
+            </div>
+            <div class="card-block p-0" style="height: 231px;" [ngSwitch]="deviceRunInfo.status">
+              <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
+              <div *ngSwitchCase="'success'" [echartOption]="deviceRunInfo.option" style="height: 231px;"></div>
+              <div *ngSwitchCase="'message'" style="padding: 10px;">{{deviceRunInfo.message}}</div>
+            </div>
+          </div>
 
-      </div>
-      <div class="col-md-4 px-0" >
-        <div class="card" style="border-radius:0px; border-left:0px; ">
-          <div class="card-header">
-            设备应用情况<i>(30天内)</i>
+        </div>
+        <div class="col-md-4 px-0">
+          <div class="card" style="border-radius:0px; border-left:0px; ">
+            <div class="card-header">
+              设备应用情况<i>(30天内)</i>
+            </div>
+            <div class="card-block p-0" style="height: 231px;" [ngSwitch]="deviceBaseRunInfo.status">
+              <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
+              <div *ngSwitchCase="'success'" [echartOption]="deviceBaseRunInfo.option" style="height: 231px;"></div>
+              <div *ngSwitchCase="'message'" style="padding: 10px;">{{deviceBaseRunInfo.message}}</div>
+            </div>
           </div>
-          <div class="card-block p-0" style="height: 231px;" [ngSwitch]="deviceBaseRunInfo.status">
-            <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
-            <div *ngSwitchCase="'success'" [echartOption]="deviceBaseRunInfo.option" style="height: 231px;"></div>
-            <div *ngSwitchCase="'message'" style="padding: 10px;">{{deviceBaseRunInfo.message}}</div>
+
+        </div>
+      </div>
+
+      <div class="row my-3">
+        <div class="card  card-inverse card-primary" style="border-radius:0px; width: 100%;">
+          <div class="card-header">
+            加氢基地任务<i>(最近20个任务)</i>
+          </div>
+          <div class="card-block p-0" [ngSwitch]="jqTask.status">
+            <div *ngSwitchCase="'before'" style="padding: 20px;">loading....</div>
+            <ng-table *ngSwitchCase="'success'" [config]="jqTask.config" [rows]="jqTask.rows" [columns]="jqTask.columns"></ng-table>
+            <div *ngSwitchCase="'message'" style="padding: 20px;">{{userLoginCount.message}}</div>
           </div>
         </div>
 
       </div>
     </div>
 
-    <div class="row my-3">
-      <div class="card  card-inverse card-primary" style="border-radius:0px; width: 100%;">
+    <div class="col-md-3 pr-0 " style="overflow: hidden">
+      <div class="card  card-inverse card-primary" style="border-radius:0px; ">
         <div class="card-header">
-          加氢基地任务<i>(最近20个任务)</i>
+          便捷工具
         </div>
-        <div class="card-block p-0" [ngSwitch]="jqTask.status">
+        <div class="card-block p-1" style="background-color: #fff;">
+          <input type="text" class="form-control tools-key" id="txtSampleId" placeholder="样品号" />
+        </div>
+        <div class="btn-group tools" role="group">
+          <button type="button" class="btn btn-outline-secondary  form-control">原始记录</button>
+          <button type="button" class="btn btn-outline-secondary  form-control">报告单</button>
+          <button type="button" class="btn btn-outline-secondary  form-control">样品明细</button>
+        </div>
+      </div>
+
+      <div class="card card-inverse card-primary mt-3" style="border-radius:0px;margin-top: 1.12rem!important;">
+        <div class="card-header">
+          报告查询码
+        </div>
+        <div class="card-block p-1" style="background-color: #fff;">
+          <input type="text" class=" form-control tools-key" id="txtSampleId" placeholder="报告查询码" />
+        </div>
+        <div class="btn-group tools" role="group">
+          <button type="button" class="btn btn-outline-secondary  form-control">报告查询</button>
+        </div>
+      </div>
+
+      <div class="card card-inverse card-primary mt-3" style="border-radius:0px; margin-top: 30px">
+        <div class="card-header">
+          登录次数统计排名前十<i>(30天内)</i>
+        </div>
+        <div class="card-block p-0" style=" background-color: #fff;" [ngSwitch]="userLoginCount.status">
           <div *ngSwitchCase="'before'" style="padding: 20px;">loading....</div>
-          <ng-table *ngSwitchCase="'success'" [config]="jqTask.config" [rows]="jqTask.rows" [columns]="jqTask.columns"></ng-table>
-          <div *ngSwitchCase="'message'" style="padding: 20px;">{{userLoginCount.message}}</div>
+          <app-simple-table *ngSwitchCase="'success'" [rows]="userLoginCount.rows" [columns]="userLoginCount.columns"></app-simple-table>
+          <div *ngSwitchCase="'message'" style="padding: 20px;"> {{userLoginCount.message}} </div>
         </div>
       </div>
-
     </div>
   </div>
-
-  <div class="col-md-3 pr-0 " style="overflow: hidden">
-    <div class="card  card-inverse card-primary" style="border-radius:0px; ">
-      <div class="card-header">
-        便捷工具
-      </div>
-      <div class="card-block p-1" style="background-color: #fff;">
-        <input type="text" class="form-control tools-key" id="txtSampleId" placeholder="样品号" />
-      </div>
-      <div class="btn-group tools" role="group">
-        <button type="button" class="btn btn-outline-secondary  form-control">原始记录</button>
-        <button type="button" class="btn btn-outline-secondary  form-control">报告单</button>
-        <button type="button" class="btn btn-outline-secondary  form-control">样品明细</button>
-      </div>
-    </div>
-
-    <div class="card card-inverse card-primary mt-3" style="border-radius:0px;margin-top: 1.12rem!important;">
-      <div class="card-header">
-        报告查询码
-      </div>
-      <div class="card-block p-1" style="background-color: #fff;">
-        <input type="text" class=" form-control tools-key" id="txtSampleId" placeholder="报告查询码" />
-      </div>
-      <div class="btn-group tools" role="group">
-        <button type="button" class="btn btn-outline-secondary  form-control">报告查询</button>
-      </div>
-    </div>
-
-    <div class="card card-inverse card-primary mt-3" style="border-radius:0px; margin-top: 30px">
-      <div class="card-header">
-        登录次数统计排名前十<i>(30天内)</i>
-      </div>
-      <div class="card-block p-0" style=" background-color: #fff;" [ngSwitch]="userLoginCount.status">
-        <div *ngSwitchCase="'before'" style="padding: 20px;">loading....</div>
-        <app-simple-table *ngSwitchCase="'success'" [rows]="userLoginCount.rows" [columns]="userLoginCount.columns"></app-simple-table>
-        <div *ngSwitchCase="'message'" style="padding: 20px;"> {{userLoginCount.message}} </div>
-      </div>
-    </div>
-  </div>
-
-
-</div>
 </div>

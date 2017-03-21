@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+// import { BrowserModule } from '@angular/platform-browser';
+import { NomorlComponent } from './nomorl.component';
+import { MyDatePickerModule } from 'mydatepicker';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: []
+    imports:      [ MyDatePickerModule ],
+    declarations: [ NomorlComponent ],
+    bootstrap:    [ NomorlComponent ]
 })
-export class NomorlModule { }
+export class NomorModule {} 

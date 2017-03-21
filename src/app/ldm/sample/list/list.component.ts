@@ -88,11 +88,6 @@ export class ListComponent implements OnInit {
     }
   }
 
-  // deviceRunInfo={
-  //   ...
-  //   this.subjectProgressInfo
-  // }
-
   //一段时间内每天的任务申请次数统计
   deviceBaseRunInfo: any = {
     title: {
