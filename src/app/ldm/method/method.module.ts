@@ -12,9 +12,12 @@ import { EChartModule } from 'ng2-echarts-d3';
 import { MomentModule } from 'angular2-moment';
 import { Md2Module } from 'md2';
 import { MdlModule } from 'angular2-mdl';
-import { MethodFilterPipe } from './_pipe/method-filter.pipe'
+import { MethodFilterPipe} from './_pipe/method-filter.pipe'
 import { FormsModule } from '@angular/forms';
-// import * as $ from 'jquery';
+import { GridModule } from '@progress/kendo-angular-grid';
+import { NomorlFilterModule } from "../../_components/nomorl-filter/nomorl-filter.module"
+import { NomorModule } from "../../_components/nomorl/nomorl.module"
+
 
 @NgModule({
   imports: [
@@ -27,7 +30,10 @@ import { FormsModule } from '@angular/forms';
     MomentModule,
     Md2Module,
     MdlModule,
-    FormsModule
+    FormsModule,
+    GridModule,
+    NomorlFilterModule,
+    NomorModule
   ],
   declarations: [MethodComponent, ListComponent,MethodFilterPipe],
     providers: [{ provide: 'MethodService', useClass: MethodService },UserService],

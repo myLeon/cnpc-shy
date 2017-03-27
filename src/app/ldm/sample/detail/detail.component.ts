@@ -1,7 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-// import { DeviceService } from '../.service';
 import { ResponseEntity } from '../../../_entities/response-entity';
-// import * as $ from 'jquery';
 import { DetailService } from './detail.service'
 import { ActivatedRoute, Router } from "@angular/router";
 @Component({
@@ -47,7 +45,7 @@ export class DetailComponent implements OnInit {
       });
   }
 
- //仪器设备实体
+  //仪器设备实体
   SetInstrumentModelInfo(res: ResponseEntity) {
     console.log(res.data)
     if (!res.success) {
@@ -62,7 +60,7 @@ export class DetailComponent implements OnInit {
     }
   }
 
-   //一段时间内分析的样品数、项目数
+  //一段时间内分析的样品数、项目数
   SetStrumentAnalysisAmount(res: ResponseEntity) {
     console.log(res)
     if (!res.success) {

@@ -10,18 +10,17 @@ import { filterBy } from '@progress/kendo-data-query';
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss']
 })
-
 export class ListComponent implements OnInit {
   gridData: any[];
 
   basicData: any[];
 
   urlParas: any = { "id": "shy" };
-  
+
   //最近15天分析数据 图表区域 配置
-  last15DaysAnalysisTaskOptinos;
+  analysis;
   //装置列表
-  jqTask: any = {
+  staffList: any = {
     rows: [],
     columns: [
       { title: '装置编号', name: 'identity', className: ['w80'] },
@@ -38,34 +37,30 @@ export class ListComponent implements OnInit {
     message: ""
   };
   //个人分析样品量排名
-  deviceBaseRunInfo: any = {
+  staffAnalysisCount: any = {
     status: "before",
-    message: "",
-    data: []
+    message: ""
   }
   //个人分析项目量排名
-  subjectProgressInfo: any = {
+  staffTestCount: any = {
     status: "before",
-    message: "",
-    data: []
+    message: ""
   };
   //分析人员占比
-  deviceRunInfo: any = {
+  analysisStaffRatio: any = {
     status: "before",
-    message: "",
-    data: []
+    message: ""
   }
   //系统使用次数排名(（根据排版看能否做成根据时间查询）前10或前20)
   staffUseLims: any = {
     status: "before",
-    message: "",
-    data: []
+    message: ""
   }
   //各单位LIMS系统有效使用率排名
   limsValidUse: any = {
     status: "before",
-    message: "",
-    data: []
+    message: ""
+
   }
   //构造
   constructor(
@@ -74,18 +69,19 @@ export class ListComponent implements OnInit {
     private router: Router
   ) {
 
-    this.service.getJqTask().subscribe(res => this.setJQTASK(res));
+    this.service.getStaffList().subscribe(res => this.setStaffList(res));
     this.service.getStaffAnalysisCountInfo().subscribe(res => this.setStaffAnalysisCountInfo(res));
     this.service.getStaffTestCountInfo().subscribe(res => this.setStaffTestCountInfo(res));
     this.service.getAnalysisStaffRatioInfo().subscribe(res => this.setAnalysisStaffRatioInfo(res));
     this.service.getStaffUseLimsRunInfo().subscribe(res => this.setStaffUseLimsRunInfo(res));
     this.service.getlimsValidUseInfo().subscribe(res => this.setlimsValidUseInfo(res));
-    this.service.getLast15DaysAnalysisTask().subscribe(res => this.SetLast15DaysAnalysisTask(res));
+    this.service.getanalysisStaffRatio().subscribe(res => this.setanalysisStaffRatio(res));
 
   }
   //设置最近15天分析任务数据
-  SetLast15DaysAnalysisTask(res: any) {
-    this.last15DaysAnalysisTaskOptinos = res;
+  setanalysisStaffRatio(res: any) {
+    this.analysis = res;
+    console.log(this.analysis)
   }
   ngOnInit() {
     this.route.parent.params
@@ -96,63 +92,77 @@ export class ListComponent implements OnInit {
   }
 
   //人员列表台账
-  setJQTASK(res: ResponseEntity) {
+  setStaffList(res: ResponseEntity) {
     console.log(res);
     if (!res.success) {
-      this.jqTask = { status: "message", message: res.message };
+      this.staffList = { status: "message", message: res.message };
       return;
     }
     if (res.data.length > 0) {
       this.gridData = res.data;
       this.basicData = res.data;
-      this.jqTask = Object.assign(this.jqTask, { status: "success", rows: res.data });
+      this.staffList = Object.assign(this.staffList, { status: "success", rows: res.data });
 
     }
     else {
-      this.jqTask = { status: "message", message: "无数据展示" };
+      this.staffList = { status: "message", message: "无数据展示" };
     }
   }
   //个人分析项目量排名
   setStaffTestCountInfo(res: ResponseEntity) {
-    console.log(res);
+     console.log(res);
     if (!res.success) {
-      this.subjectProgressInfo = { status: "message", message: res.message };
+      this.staffTestCount = { status: "message", message: res.message };
       return;
     }
-
     if (res.data.length > 0) {
-      this.subjectProgressInfo = Object.assign(this.subjectProgressInfo, { status: "success", data: res.data });
+      this.staffTestCount = Object.assign(this.staffTestCount, { status: "success", data: res.data });
     }
     else {
-      this.subjectProgressInfo = { status: "message", message: "无数据展示！" };
+      this.staffTestCount = { status: "message", message: "无数据展示！" };
     }
   }
   //个人分析样品量排名(（根据排版看能否做成根据时间查询）前10或20)
   setStaffAnalysisCountInfo(res: ResponseEntity) {
     console.log(res);
     if (!res.success) {
-      this.deviceBaseRunInfo = { status: "message", message: res.message };
+      this.staffAnalysisCount = { status: "message", message: res.message };
       return;
     }
     if (res.data.length > 0) {
-      this.deviceBaseRunInfo = Object.assign(this.deviceBaseRunInfo, { status: "success", data: res.data });
+      this.staffAnalysisCount = Object.assign(this.staffAnalysisCount, { status: "success", data: res.data });
     }
     else {
-      this.deviceBaseRunInfo = { status: "message", message: "无数据展示！" };
+      this.staffAnalysisCount = { status: "message", message: "无数据展示！" };
     }
   }
   //分析人员占比
   setAnalysisStaffRatioInfo(res: ResponseEntity) {
-    console.log(res);
+      console.log(res);
     if (!res.success) {
-      this.deviceRunInfo = { status: "message", message: res.message };
+      this.analysisStaffRatio = { status: "message", message: res.message };
       return;
     }
     if (res.data.length > 0) {
-      this.deviceRunInfo = Object.assign(this.deviceRunInfo, { status: "success", data: res.data });
+      this.analysisStaffRatio = Object.assign(this.analysisStaffRatio, { status: "success", data: res.data });
     }
     else {
-      this.deviceRunInfo = { status: "message", message: "无数据展示！" };
+      this.analysisStaffRatio = { status: "message", message: "无数据展示！" };
+    }
+   
+  }
+  //各单位LIMS系统有效使用率排名
+  setlimsValidUseInfo(res: ResponseEntity) {
+    console.log(res);
+    if (!res.success) {
+      this.limsValidUse = { status: "message", message: res.message };
+      return;
+    }
+    if (res.data.length > 0) {
+      this.limsValidUse = Object.assign(this.limsValidUse, { status: "success", data: res.data });
+    }
+    else {
+      this.limsValidUse = { status: "message", message: "无数据展示！" };
     }
   }
   //系统使用次数排名(（根据排版看能否做成根据时间查询）前10或前20)
@@ -167,20 +177,6 @@ export class ListComponent implements OnInit {
     }
     else {
       this.staffUseLims = { status: "message", message: "无数据展示！" };
-    }
-  }
-  //各单位LIMS系统有效使用率排名
-  setlimsValidUseInfo(res: ResponseEntity) {
-    console.log(res);
-    if (!res.success) {
-      this.limsValidUse = { status: "message", message: res.message };
-      return;
-    }
-    if (res.data.length > 0) {
-      this.limsValidUse = Object.assign(this.limsValidUse, { status: "success", data: res.data });
-    }
-    else {
-      this.limsValidUse = { status: "message", message: "无数据展示！" };
     }
   }
   filterDataByKey(inputText: string) {

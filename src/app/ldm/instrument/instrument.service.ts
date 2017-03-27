@@ -21,7 +21,7 @@ export class InstrumentService {
     
 
   }
-  getLast15DaysAnalysisTask(): Observable<any> {
+  getinstrumentUseRatio(): Observable<any> {
     let chartData = {
       theme: "infographic",
       title: { top: '10px', left: '10px', text: '', subtext: '' },
@@ -42,39 +42,23 @@ export class InstrumentService {
       xAxis: [
         {
           type: 'category',
-          data: ['DQ_LYS107', 'LZ_CHS08', 'LZ_CHS04', 'LZ_LZS03_8', 'LZ_LHS05', 'LZ_CHS05', 'LZ_JXT07', 'LZ_LZS03_7', 'LZ_LZS03_4', 'LZ_LHS04', 'LZ_HHS02', 'LZ_JXT03', 'LZ_PP02', 'LZ_CHS09', 'LZ_JXT06', 'LZ_LHS03', 'DQ_SZS806']
+          data: ['气相色谱', '光谱', '硫分析', '密度分析', '油品分析']
         }
       ],
       yAxis: [
         {
           type: 'value',
           axisLabel: {
-            formatter: '{value}个'
+            formatter: '{value}%'
           }
 
         }
       ],
       series: [
         {
-          name: '大庆中心样品量',
+          name: '一段时间内的仪器利用率',
           type: 'bar',
-          data: [100, 90, 95, 56, 78, 76, 135, 162, 32, 110, 120, 109, 56, 76, 55],
-          markPoint: {
-            data: [
-              { type: 'max', name: '最大值' },
-              { type: 'min', name: '最小值' }
-            ]
-          },
-          markLine: {
-            data: [
-              { type: 'average', name: '平均值' }
-            ]
-          }
-        },
-        {
-          name: '兰州中心样品量',
-          type: 'bar',
-          data: [67, 88, 78, 98, 100, 110, 99, 95, 76, 84, 86, 120, 130, 170, 50,],
+          data: [67, 88, 78, 98, 100],
           markPoint: {
             data: [
               { type: 'max', name: '最大值' },

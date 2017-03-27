@@ -4,7 +4,6 @@ import { DeviceService } from '../device.service';
 import { ResponseEntity } from '../../../_entities/response-entity';
 // import * as $ from 'jquery';
 import { ActivatedRoute, Router } from "@angular/router";
-
 import { filterBy } from '@progress/kendo-data-query';
 
 @Component({
@@ -180,7 +179,7 @@ export class ListComponent implements OnInit {
     this.service.getSubjectProgressInfo().subscribe(res => this.setSubjectProgressInfo(res));
     this.service.getDeviceRunInfo().subscribe(res => this.setDeviceRunInfo(res));
     this.service.getDeviceBaseRunInfo().subscribe(res => this.setDeviceBaseRunInfo(res));
-    this.service.getLast15DaysAnalysisTask().subscribe(res => this.setLast15DaysAnalysisTask(res));
+    // this.service.getDeviceBaseRunInfo().subscribe(res => this.setDeviceBaseRunInfo(res));
 
   }
 
@@ -202,8 +201,8 @@ export class ListComponent implements OnInit {
 
 
 
-  //设置最近15天分析任务数据
-  setLast15DaysAnalysisTask(res: any) {
+  //各单位装置数量统计
+  setDeviceBaseRunInfo(res: any) {
     this.last15DaysAnalysisTaskOptinos = res;
   }
   //设置加氢任务数据
@@ -273,28 +272,7 @@ export class ListComponent implements OnInit {
     }
   }
 
-  setDeviceBaseRunInfo(res: ResponseEntity) {
-    if (!res.success) {
-      this.deviceBaseRunInfo = { status: "message", message: "服务器忙..." };
-      return;
-    }
-    if (res.data.length > 0) {
-      let series = [];
-      res.data.forEach(element => {
-        let model = {
-          value: element.total,
-          name: element.baseName
-        }
-        series.push(model);
-      });
-
-      this.deviceBaseRunInfo.status = "success";
-      // this.deviceBaseRunInfo.option.series[0].data = series;
-    }
-    else {
-      this.deviceBaseRunInfo = { status: "message", message: "无数据展示！" };
-    }
-  }
+  
 
   filterDataByKey(inputText: string) {
     console.log(inputText == "");

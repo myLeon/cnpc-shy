@@ -15,8 +15,8 @@ import { MdlModule } from 'angular2-mdl';
 import {SampleFilterPipe} from './_pipe/sample-filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { GridModule } from '@progress/kendo-angular-grid';
-
-
+import { NomorlFilterModule } from "../../_components/nomorl-filter/nomorl-filter.module"
+import { NomorModule } from "../../_components/nomorl/nomorl.module"
 
 
 @NgModule({
@@ -24,7 +24,6 @@ import { GridModule } from '@progress/kendo-angular-grid';
     CommonModule,
     Routing,
     TickerModule,
-    // EchartsModule,
     Ng2TableModule,
     SimpleTableModule,
     EChartModule,
@@ -32,10 +31,11 @@ import { GridModule } from '@progress/kendo-angular-grid';
     Md2Module,
     MdlModule,
     FormsModule,
-    GridModule
+    GridModule,
+    NomorlFilterModule,
+    NomorModule
   ],
   declarations: [SampleComponent, ListComponent,SampleFilterPipe],
     providers: [{ provide: 'SampleService', useClass: SampleService },UserService],
-
 })
 export class SampleModule { }

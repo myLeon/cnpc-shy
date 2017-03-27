@@ -1,3 +1,9 @@
-<!--<form *myForm="ngForm" novalidate>
-  <my-date-picker name="mydate" [options]="myDatePickerOptions" [(ngModel)]="model" required> </my-date-picker>
-</form>-->
+<form #myForm="ngForm" novalidate>
+  <div class="row mx-0 ml-3 mt-3">
+    <my-date-picker class="my-0 py-0 px-0 py-0 ml-1" name="mydate" [options]="BeginmyDatePickerOptions" [(ngModel)]="start" required style="padding: 0.1rem 0rem 0rem;"></my-date-picker>
+    <my-date-picker class="my-0 py-0 px-0 py-0 ml-1" name="mydate" [options]="EndmyDatePickerOptions" [(ngModel)]="end" required  style="padding: 0.1rem 0rem 0rem;"></my-date-picker>
+    <button type="button" class="btn btn-secondary ml-1" style="height: 25px;width: 50px;text-align: center;font-size: 12px; padding: 0.1rem 0rem 0rem;">
+      查询
+    </button>
+  </div>
+</form>

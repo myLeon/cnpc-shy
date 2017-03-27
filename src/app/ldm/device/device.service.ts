@@ -22,7 +22,7 @@ export class DeviceService {
     
 
   }
-  getLast15DaysAnalysisTask(): Observable<any> {
+  getDeviceBaseRunInfo(): Observable<any> {
     let chartData = {
       theme: "infographic",
       title: { top: '10px', left: '10px', text: '', subtext: '' },
@@ -33,7 +33,7 @@ export class DeviceService {
         top: '10px', right: '10px', show: true,
         feature: {
           mark: { show: true },
-          dataView: { show: true, readOnly: false },
+          dataView: { show: false, readOnly: false },
           magicType: { show: true, type: ['line', 'bar'] },
           restore: { show: true },
           saveAsImage: { show: true }
@@ -42,8 +42,8 @@ export class DeviceService {
       calculable: true,
       xAxis: [
         {
-          type: 'category',
-          data: ['DQ_LYS107', 'LZ_CHS08', 'LZ_CHS04', 'LZ_LZS03_8', 'LZ_LHS05', 'LZ_CHS05', 'LZ_JXT07', 'LZ_LZS03_7', 'LZ_LZS03_4', 'LZ_LHS04', 'LZ_HHS02', 'LZ_JXT03', 'LZ_PP02', 'LZ_CHS09', 'LZ_JXT06', 'LZ_LHS03', 'DQ_SZS806']
+          type: '',
+          data: ['大庆炼油所107组', '兰州中心催化所评价装置组', '兰州中心催化所乙苯脱氢组', '兰州炼制所和FCC中试所-固定流化床岗位', '兰州炼化所反应工程组', '兰州中心催化所丙烯酸组', '兰州聚烯烃所中试运行组', '兰州炼制所和FCC中试所-提升管和DCR岗位', '兰州炼制所和FCC中试所-ACE岗位', '兰州炼化所化工工艺组', '兰州环化所废水处理组', '兰州聚烯烃所硅胶组', '兰州聚丙烯中试所工艺组', '兰州中心催化所GARDES组', '兰州聚烯烃所聚丙烯催化剂组', '兰州炼化所乙烯评价组', '大庆树脂所806组']
         }
       ],
       yAxis: [
@@ -57,23 +57,7 @@ export class DeviceService {
       ],
       series: [
         {
-          name: '大庆中心样品量',
-          type: 'bar',
-          data: [100, 90, 95, 56, 78, 76, 135, 162, 32, 110, 120, 109, 56, 76, 55],
-          markPoint: {
-            data: [
-              { type: 'max', name: '最大值' },
-              { type: 'min', name: '最小值' }
-            ]
-          },
-          markLine: {
-            data: [
-              { type: 'average', name: '平均值' }
-            ]
-          }
-        },
-        {
-          name: '兰州中心样品量',
+          name: '装置数量统计',
           type: 'bar',
           data: [67, 88, 78, 98, 100, 110, 99, 95, 76, 84, 86, 120, 130, 170, 50,],
           markPoint: {
@@ -124,15 +108,15 @@ export class DeviceService {
     // console.log(ret)
   }
 
-  getDeviceBaseRunInfo(): Observable<ResponseEntity> {
-    //let url=`${this.api_url}/deviceBase`;
-    let url = `${this.api_url}`;
-    let ret = this.http.get(url)
-      .map((response: Response) => response.json().deviceDepartmentAmount as ResponseEntity)
-      .catch(this.handleError);
-    return ret;
+  // getDeviceBaseRunInfo(): Observable<ResponseEntity> {
+  //   //let url=`${this.api_url}/deviceBase`;
+  //   let url = `${this.api_url}`;
+  //   let ret = this.http.get(url)
+  //     .map((response: Response) => response.json().deviceDepartmentAmount as ResponseEntity)
+  //     .catch(this.handleError);
+  //   return ret;
 
-  }
+  // }
 
 
   private handleError(error: Response) {

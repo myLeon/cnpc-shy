@@ -1641,9 +1641,17 @@
         "success":true,
         "data":[
             {
-                "staffId":"YIXUEFEI",
-                "staffName":"衣学飞",
-                "staffSex":"女"
+                "limsId": "YIXUEFEI",
+                "limsName": "衣学飞",
+                "limsSex": "女",
+                "limsEducation": "本科",
+                "limsNational": "汉",
+                "limsBirthday": "1970/8/29 0:00:00",
+                "limsDeparment": "大庆中心\n仪器分析所气相色谱组",
+                "limsWorkDate": "1992/7/1 0:00:00",
+                "limsCertificateNo": "S116032187",
+                "limsJob": "色谱岗",
+                "limsTrainEndDate": "2013/10/17 0:00:00"
             }
         ]
     },

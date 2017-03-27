@@ -15,6 +15,7 @@ import { MdlModule } from 'angular2-mdl';
 import { InstrumentFilterPipe } from './_pipe/instrument-filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { GridModule } from '@progress/kendo-angular-grid';
+import { NomorlFilterModule } from "../../_components/nomorl-filter/nomorl-filter.module"
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { GridModule } from '@progress/kendo-angular-grid';
     MomentModule,
     Md2Module,
     MdlModule,
-    FormsModule
+    FormsModule,
+    NomorlFilterModule
   ],
   declarations: [InstrumentComponent, ListComponent,InstrumentFilterPipe],
     providers: [{ provide: 'InstrumentService', useClass: InstrumentService },UserService],

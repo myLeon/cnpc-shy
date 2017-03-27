@@ -22,7 +22,8 @@ export class SampleService {
     
 
   }
-  getLast15DaysAnalysisTask(): Observable<any> {
+  //一段时间内的不同单位的样品送检次数
+  getsampleSendInspectAmount(): Observable<any> {
     let chartData = {
       theme: "infographic",
       title: { top: '10px', left: '10px', text: '', subtext: '' },
@@ -43,7 +44,7 @@ export class SampleService {
       xAxis: [
         {
           type: 'category',
-          data: ['DQ_LYS107', 'LZ_CHS08', 'LZ_CHS04', 'LZ_LZS03_8', 'LZ_LHS05', 'LZ_CHS05', 'LZ_JXT07', 'LZ_LZS03_7', 'LZ_LZS03_4', 'LZ_LHS04', 'LZ_HHS02', 'LZ_JXT03', 'LZ_PP02', 'LZ_CHS09', 'LZ_JXT06', 'LZ_LHS03', 'DQ_SZS806']
+          data: ['固定床渣油加氢催化剂（PHR系列）工业应用试验', '固定床渣油加氢处理催化剂研究开发', '国V标准清洁汽柴油加氢催化剂开发与工业应用', '新型润滑油基础油异构脱蜡催化剂PIC-812的中试放大_11-05-02-01', '加氢裂化催化剂(PHC-03)工业应用试验_12-02B-02-01', 'C5/C6烷烃脱氢与混合C4芳构化组合技术的中试开发']
         }
       ],
       yAxis: [
@@ -57,25 +58,9 @@ export class SampleService {
       ],
       series: [
         {
-          name: '大庆中心样品量',
-          type: 'bar',
-          data: [100, 90, 95, 56, 78, 76, 135, 162, 32, 110, 120, 109, 56, 76, 55],
-          markPoint: {
-            data: [
-              { type: 'max', name: '最大值' },
-              { type: 'min', name: '最小值' }
-            ]
-          },
-          markLine: {
-            data: [
-              { type: 'average', name: '平均值' }
-            ]
-          }
-        },
-        {
           name: '兰州中心样品量',
           type: 'bar',
-          data: [67, 88, 78, 98, 100, 110, 99, 95, 76, 84, 86, 120, 130, 170, 50,],
+          data: [67, 88, 78, 98, 100, 110],
           markPoint: {
             data: [
               { type: 'max', name: '最大值' },
@@ -105,8 +90,8 @@ export class SampleService {
       .catch(this.handleError);
     return ret;
   }
-   //一段时间内的科研课题申请次数统计
-  getClassificationInfo(): Observable<ResponseEntity> {
+   //一段时间内不同类型的样品分析量
+  getsampleTypeAmount(): Observable<ResponseEntity> {
     //let url=`${this.api_url}/Subject`;
     let url = `${this.api_url}`;
     let ret = this.http.get(url)
@@ -114,8 +99,8 @@ export class SampleService {
       .catch(this.handleError);
     return ret;
   }
-  //一段时间内的不同单位的申请次数统计
-  getInstrumentStatisticsInfo(): Observable<ResponseEntity> {
+  //一段时间内不同项目的分析次数
+  getanalysisNameAmount(): Observable<ResponseEntity> {
     //let url=`${this.api_url}/device`;
     let url = `${this.api_url}`;
     let ret = this.http.get(url)
@@ -124,8 +109,8 @@ export class SampleService {
     return ret;
     // console.log(ret)
   }
-  //一段时间内每天的任务申请次数统计
-  getInstrumentUtilizationInfo(): Observable<ResponseEntity> {
+  //一段时间内不同课题的样品分析次数
+  getsampleLocationAmount(): Observable<ResponseEntity> {
     //let url=`${this.api_url}/deviceBase`;
     let url = `${this.api_url}`;
     let ret = this.http.get(url)

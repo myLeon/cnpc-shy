@@ -1,39 +1,42 @@
 import { CommonModule } from '@angular/common';
-import { EchartsMapDirective } from '../../_directives/echarts-map/echarts-map.directive';
 import { Routing } from './everyday-routing.module';
-import { EverydayComponent } from './everyday.component'
+import { EverydayComponent } from './everyday.component';
+import { ListComponent } from './list/list.component';
+import { TickerModule } from '../../_directives/ticker/ticker.module';
 import { NgModule, LOCALE_ID } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { SimpleTableModule } from '../../_components/simple-table/simple-table.module';
+import { UserService } from '../../_core/user.service';
+import { EverydayService } from './everyday.service'
+import { Ng2TableModule } from 'ng2-table';
+import { EChartModule } from 'ng2-echarts-d3';
 import { MomentModule } from 'angular2-moment';
 import { Md2Module } from 'md2';
-import { MdlModule } from 'angular2-mdl'
+import { MdlModule } from 'angular2-mdl';
+import {EverdayFilterPipe} from './_pipe/everyday-filter.pipe'
+import { FormsModule } from '@angular/forms';
 import { GridModule } from '@progress/kendo-angular-grid';
-import { TickerModule } from '../../_directives/ticker/ticker.module';
-import { EverdayFilterPipe } from './_pipe/everyday-filter.pipe';
-import { Ng2TableModule } from 'ng2-table';
-import { SimpleTableModule } from '../../_components/simple-table/simple-table.module';
-import { ListComponent } from './list/list.component';
+import { NomorlFilterModule } from "../../_components/nomorl-filter/nomorl-filter.module"
+import { NomorModule } from "../../_components/nomorl/nomorl.module"
+
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
-    MomentModule,
-    Md2Module.forRoot(),
-    MdlModule,
     Routing,
-    GridModule,
     TickerModule,
     Ng2TableModule,
-    SimpleTableModule
+    SimpleTableModule,
+    EChartModule,
+    MomentModule,
+    Md2Module,
+    MdlModule,
+    FormsModule,
+    GridModule,
+    NomorlFilterModule,
+    NomorModule
   ],
-  declarations: [EverydayComponent, EverdayFilterPipe, ListComponent],
-  providers: [
-    {
-      provide: LOCALE_ID,
-      useValue: "en-US"
-      //useValue: "zh-CN"
-    }
-  ]
+  declarations: [EverydayComponent, ListComponent,EverdayFilterPipe],
+    providers: [{ provide: 'EverydayService', useClass: EverydayService },UserService],
+
 })
 export class EverydayModule { }

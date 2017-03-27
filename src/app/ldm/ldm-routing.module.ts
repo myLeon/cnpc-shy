@@ -21,8 +21,7 @@ const routes: Routes = [
        { path: 'everyday', loadChildren: 'app/ldm/everyday/everyday.module#EverydayModule' },
        { path: 'method', loadChildren: 'app/ldm/method/method.module#MethodModule' },
        { path: 'scientific', loadChildren: 'app/ldm/scientific/scientific.module#ScientificModule' },
-       { path: 'charges', loadChildren: 'app/ldm/charges/charges.module#ChargesModule' },
-      //  { path: 'list', loadChildren: 'app/ldm/organization/list/list.module#ListModule' }
+       { path: 'charges', loadChildren: 'app/ldm/charges/charges.module#ChargesModule' }
     ]
   },
 ];

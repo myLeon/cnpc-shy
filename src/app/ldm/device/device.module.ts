@@ -1,49 +1,3 @@
-// import { Routing } from './device-routing.module';
-// import { ListComponent } from './list/list.component';
-// import { DeviceComponent } from './device.component';
-// import { DeviceFilterPipe } from './_pipe/device-filter.pipe';
-// import { CommonModule } from '@angular/common';
-// import { NgModule, LOCALE_ID } from '@angular/core';
-// import { FormsModule } from '@angular/forms';
-// import { MomentModule } from 'angular2-moment';
-// import { Md2Module } from 'md2';
-// import { MdlModule } from 'angular2-mdl'
-// import { GridModule } from '@progress/kendo-angular-grid';
-// import { TickerModule } from '../../_directives/ticker/ticker.module';
-// import { Ng2TableModule } from 'ng2-table';
-// import { SimpleTableModule } from '../../_components/simple-table/simple-table.module';
-// import { EchartsMapDirective } from '../../_directives/echarts-map/echarts-map.directive';
-// import {UserService } from '../../_core/user.service';
-
-// @NgModule({
-//   imports: [
-//     CommonModule,
-//     FormsModule,
-//     MomentModule,
-//     Md2Module.forRoot(),
-//     MdlModule,
-//     Routing,
-//     GridModule,
-//     TickerModule,
-//     Ng2TableModule,
-//     SimpleTableModule
-//   ],
-//   declarations: [DeviceComponent, DeviceFilterPipe, ListComponent],
-//   providers: [
-//     {
-//       provide: 'DeviceService', useClass: DeviceService
-//       //useValue: "zh-CN"
-//     },
-//       UserService
-//   ]
-// })
-// // export class EvaluatetModule { }
-// export class DeviceModule { }
-
-
-
-
-// import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routing } from './device-routing.module';
 import { DeviceComponent } from './device.component';
@@ -60,8 +14,10 @@ import { Md2Module } from 'md2';
 import { MdlModule } from 'angular2-mdl';
 import { DeviceFilterPipe } from './_pipe/device-filter.pipe'
 import { GridModule } from '@progress/kendo-angular-grid';
-import { DateInputModule,DateInputsModule } from '@progress/kendo-angular-dateinputs';
+import { DateInputModule, DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { NomorModule } from "../../_components/nomorl/nomorl.module"
+import { NomorlFilterModule } from "../../_components/nomorl-filter/nomorl-filter.module"
+
 
 
 @NgModule({
@@ -69,7 +25,6 @@ import { NomorModule } from "../../_components/nomorl/nomorl.module"
     CommonModule,
     Routing,
     TickerModule,
-    // EchartsModule,
     Ng2TableModule,
     SimpleTableModule,
     EChartModule,
@@ -79,10 +34,11 @@ import { NomorModule } from "../../_components/nomorl/nomorl.module"
     GridModule,
     DateInputModule,
     DateInputsModule,
-    NomorModule
+    NomorModule,
+    NomorlFilterModule
   ],
   declarations: [DeviceComponent, ListComponent, DeviceFilterPipe],
-  providers: [{ provide: 'DeviceService', useClass: DeviceService }, UserService],
+  providers: [{ provide: 'DeviceService', useClass: DeviceService }, UserService]
 
 })
 export class DeviceModule { }

@@ -13,7 +13,7 @@ import { UserService } from '../../_core/user.service';
 export class MethodService {
 
   // private api_url = 'http://localhost:3000';
-  private api_url = "assets/localData/device.json";
+  private api_url = "assets/localData/task.json";
   private headers = new Headers({ 'Content-Type': 'application/json' });
   // data: any = null;
   constructor(private http: Http, private user: UserService) {
@@ -95,40 +95,41 @@ export class MethodService {
     return bs.asObservable();
     //return Observable.of(chartData);
   }
-
+  //申请的任务台账列表
   getJqTask(): Observable<ResponseEntity> {
     //let url = `${this.api_url}/home_JqTask`;
     let url = `${this.api_url}`;
     let ret = this.http.get(url)
-      .map((response: Response) => response.json().deviceHYDList as ResponseEntity)
+      .map((response: Response) => response.json().taskApplyList as ResponseEntity)
       // .map((response: Response) => response.json() as ResponseEntity)
       .catch(this.handleError);
     return ret;
   }
-  getSubjectProgressInfo(): Observable<ResponseEntity> {
+   //一段时间内的科研课题申请次数统计
+  getClassificationInfo(): Observable<ResponseEntity> {
     //let url=`${this.api_url}/Subject`;
     let url = `${this.api_url}`;
     let ret = this.http.get(url)
-      .map((response: Response) => response.json().deviceTypeCount as ResponseEntity)
+      .map((response: Response) => response.json().taskSubjectApplyAmount as ResponseEntity)
       .catch(this.handleError);
     return ret;
   }
-
-  getDeviceRunInfo(): Observable<ResponseEntity> {
+  //一段时间内的不同单位的申请次数统计
+  getInstrumentStatisticsInfo(): Observable<ResponseEntity> {
     //let url=`${this.api_url}/device`;
     let url = `${this.api_url}`;
     let ret = this.http.get(url)
-      .map((response: Response) => response.json().devicestatusCount as ResponseEntity)
+      .map((response: Response) => response.json().taskGroupApplyAmount as ResponseEntity)
       .catch(this.handleError);
     return ret;
     // console.log(ret)
   }
-
-  getDeviceBaseRunInfo(): Observable<ResponseEntity> {
+  //一段时间内每天的任务申请次数统计
+  getTaskEveryDayApplyAmountInfo(): Observable<ResponseEntity> {
     //let url=`${this.api_url}/deviceBase`;
     let url = `${this.api_url}`;
     let ret = this.http.get(url)
-      .map((response: Response) => response.json().deviceDepartmentAmount as ResponseEntity)
+      .map((response: Response) => response.json().taskEveryDayApplyAmount as ResponseEntity)
       .catch(this.handleError);
     return ret;
 

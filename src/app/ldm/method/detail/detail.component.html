@@ -1,154 +1,222 @@
 <div class="container">
-  <div class="row my-3" style="clear: both;">
-    <mdl-chip mdl-label="列表A" style="margin-top: 50px" >
-      <span mdl-chip-contact class="mdl-color--blue mdl-color-text--white">A</span>
-    </mdl-chip>
-
-    <table [md2Data]="jqTask.rows" #md2="md2DataTable" [rowsPerPage]="10" style="margin-top: 50px">
-      <thead>
-        <tr>
-          <th style="width: 10%" md2SortBy="name">装置编号</th>
-          <th style="width: 10%" md2SortBy="email">装置名称</th>
-          <th style="width: 10%" md2SortBy="age">装置详情</th>
-          <th style="width: 10%" md2SortBy="name">装置编号</th>
-          <th style="width: 10%" md2SortBy="email">装置名称</th>
-          <th style="width: 10%" md2SortBy="age">装置详情</th>
-          <th style="width: 10%" md2SortBy="name">装置编号</th>
-          <th style="width: 10%" md2SortBy="email">装置名称</th>
-          <!--<th style="width: 50%" md2SortBy="age">装置详情</th>-->
-          <th style="width: 10%; border-right: 1px solid #bbc" md2SortBy="city">装置类型</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let i of jqTask.rows">
-          <td><a routerLink="../detail" style="text-decoration: none">{{i.deviceId}}</a></td>
-          <td>{{i.deviceName}}</td>
-          <td>{{i.deviceType}}</td>
-          <td>{{i.deviceGroupId}}</td>
-          <td>{{i.deviceGroupName}}</td>
-          <td>{{i.deviceStatus}}</td>
-          <td>{{i.contactId}}</td>
-          <td>{{i.contactName}}</td>
-          <td style="border-right: 1px solid #bbc">{{i.contactPhone}}</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="100">
-            <md2-pagination [rowsPerPageSet]="[5,10,15]"></md2-pagination>
-          </td>
-        </tr>
-      </tfoot>
-    </table>
-    <mdl-chip mdl-label="列表B" style="margin-top: 50px">
-      <span mdl-chip-contact class="mdl-color--blue mdl-color-text--white">B</span>
-    </mdl-chip>
-
-    <table [md2Data]="analysisTask.rows" #md2="md2DataTable" [rowsPerPage]="10" style="margin-top: 50px">
-      <thead>
-        <tr>
-          <th style="width: 10%" md2SortBy="name">装置编号</th>
-          <th style="width: 10%" md2SortBy="email">装置名称</th>
-          <th style="width: 30%" md2SortBy="age">装置详情</th>
-          <th style="width: 10%" md2SortBy="name">装置编号</th>
-          <th style="width: 10%" md2SortBy="email">装置名称</th>
-          <th style="width: 20%" md2SortBy="age">装置详情</th>
-          <!--<th style="width: 50%" md2SortBy="age">装置详情</th>-->
-          <th style="width: 10%; border-right: 1px solid #bbc" md2SortBy="city">装置类型</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let i of md2.data">
-          <td>
-            <a routerLink="../detail" style="text-decoration: none"></a>{{i.taskId}}</td>
-          <td>{{i.taskName}}</td>
-          <td>{{i.subjectId}}</td>
-          <td>{{i.subjectName}}</td>
-          <td>{{i.deviceId}}</td>
-          <!--<td>{{i.contactId}}</td>-->
-          <td>{{i.deviceName}}</td>
-          <td style="border-right: 1px solid #bbc">{{i.taskProgress}}</td>
-        </tr>
-      </tbody>
-      <thead>
-        <tr>
-          <th style="width: 10%" md2SortBy="name">装置编号</th>
-          <th style="width: 10%" md2SortBy="email">装置名称</th>
-          <th style="width: 30%" md2SortBy="age">装置详情</th>
-          <th style="width: 10%" md2SortBy="name">装置编号</th>
-          <th style="width: 10%" md2SortBy="email">装置名称</th>
-          <th style="width: 20%" md2SortBy="age">装置详情</th>
-          <!--<th style="width: 50%" md2SortBy="age">装置详情</th>-->
-          <th style="width: 10%; border-right: 1px solid #bbc" md2SortBy="city">装置类型</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let i of md2.data">
-          <td>
-            <a routerLink="../detail" style="text-decoration: none"></a>{{i.taskId}}</td>
-          <td>{{i.taskName}}</td>
-          <td>{{i.subjectId}}</td>
-          <td>{{i.subjectName}}</td>
-          <td>{{i.deviceId}}</td>
-          <!--<td>{{i.contactId}}</td>-->
-          <td>{{i.deviceName}}</td>
-          <td style="border-right: 1px solid #bbc">{{i.taskProgress}}</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="100">
-            <md2-pagination [rowsPerPageSet]="[5,10,15]"></md2-pagination>
-          </td>
-        </tr>
-      </tfoot>
-    </table>
-
-
-    <style>
-      table {
-        display: table;
-        border: 1px solid rgba(0, 0, 0, 0.12);
-        border-spacing: 0;
-        border-collapse: collapse;
-        font-size: 14px;
-        box-sizing: border-box;
-        width: 100%;
-      }
-
-
-      table tr {
-        position: relative;
-        height: 36px;
-        vertical-align: middle;
-      }
-
-
-      tbody tr:hover {
-        background-color: #eee;
-      }
-
-
-      table th,
-      table td {
-        padding: 0 16px;
-        text-align: left;
-      }
-
-
-      table td {
-        position: relative;
-        vertical-align: middle;
-        height: 36px;
-        border-top: 1px solid rgba(0, 0, 0, 0.12);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-        box-sizing: border-box;
-        color: rgba(0, 0, 0, 0.87);
-      }
-    </style>
-    <!--</div>-->
-
-
+  <!--面包屑导航-->
+  <div class="row" style="background: #eceeef">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="#">首页</a></li>
+      <li class="breadcrumb-item "><a style="text-decoration: none" routerLink="/ldm/shy/method/list">综合信息</a></li>
+      <li class="breadcrumb-item active">装置详情</li>
+    </ol>
   </div>
-
-</div>
+  <div class="row mt-3" style="border-radius:0px;">
+    <div class="col-md-8 py-0 px-0">
+      <table class="table table-reflow my-0">
+        <tbody *ngFor="let item of instument.data">
+          <tr>
+            <th>
+              装置编号
+            </th>
+            <td>
+              {{item.identity}}
+            </td>
+          </tr>
+          <tr>
+            <th>装置名称</th>
+            <td>{{item.categoryId}}</td>
+          </tr>
+          <tr>
+            <th>
+              装置类型
+            </th>
+            <td>{{item.categoryText}}</td>
+          </tr>
+          <tr>
+            <th>所在单位</th>
+            <td>{{item.codeNumber}}</td>
+          </tr>
+          <tr>
+            <th>装置状态</th>
+            <td>{{item.oldStatus}}</td>
+          </tr>
+          <tr>
+            <th>联系人</th>
+            <td>{{item.oldStatusText}}</td>
+          </tr>
+          <tr>
+            <th>联系方式</th>
+            <td>{{item.action}}</td>
+          </tr>
+          <tr>
+            <th>组织名称</th>
+            <td>{{item.actionText}}</td>
+          </tr>
+          <tr>
+            <th>色调</th>
+            <td>{{item.status}}</td>
+          </tr>
+          <tr>
+            <th>
+              装置编号
+            </th>
+            <td>
+              {{item.statusText}}
+            </td>
+          </tr>
+          <tr>
+            <th>装置名称</th>
+            <td>{{item.statusIndex}}</td>
+          </tr>
+          <tr>
+            <th>
+              装置类型
+            </th>
+            <td>{{item.statusTotal}}</td>
+          </tr>
+          <tr>
+            <th>所在单位</th>
+            <td>{{item.modifiedBy}}</td>
+          </tr>
+          <tr>
+            <th>装置状态</th>
+            <td>{{item.modifiedByText}}</td>
+          </tr>
+          <tr>
+            <th>联系人</th>
+            <td>{{item.modifiedOn}}</td>
+          </tr>
+          <tr>
+            <th>联系方式</th>
+            <td>{{item.modifiedNote}}</td>
+          </tr>
+          <tr>
+            <th>组织名称</th>
+            <td>{{item.label}}</td>
+          </tr>
+          <tr>
+            <th>色调</th>
+            <td>{{item.queryContent}}</td>
+          </tr>
+          <tr>
+            <th>
+              装置编号
+            </th>
+            <td>
+              {{item.queryGroup}}
+            </td>
+          </tr>
+          <tr>
+            <th>装置名称</th>
+            <td>{{item.targetGroup}}</td>
+          </tr>
+          <tr>
+            <th>
+              装置类型
+            </th>
+            <td>{{item.createBy}}</td>
+          </tr>
+          <tr>
+            <th>所在单位</th>
+            <td>{{item.createByText}}</td>
+          </tr>
+          <tr>
+            <th>装置状态</th>
+            <td>{{item.createOn}}</td>
+          </tr>
+          <tr>
+            <th>联系人</th>
+            <td>{{item.isBack}}</td>
+          </tr>
+          <tr>
+            <th>联系方式</th>
+            <td>{{item.taskId}}</td>
+          </tr>
+          <tr>
+            <th>组织名称</th>
+            <td>{{item.locationId}}</td>
+          </tr>
+          <tr>
+            <th>色调</th>
+            <td>{{item.locationName}}</td>
+          </tr>
+          <tr>
+            <th>
+              装置编号
+            </th>
+            <td>
+              {{item.applyGroup}}
+            </td>
+          </tr>
+          <tr>
+            <th>装置名称</th>
+            <td>{{item.applyGroupName}}</td>
+          </tr>
+          <tr>
+            <th>
+              装置类型
+            </th>
+            <td>{{item.acceptGroup}}</td>
+          </tr>
+          <tr>
+            <th>所在单位</th>
+            <td>{{item.customer}}</td>
+          </tr>
+          <tr>
+            <th>装置状态</th>
+            <td>{{item.taskStatus}}</td>
+          </tr>
+          <tr>
+            <th>联系人</th>
+            <td>{{item.deviceId}}</td>
+          </tr>
+          <tr>
+            <th>联系方式</th>
+            <td>{{item.taskProblem}}</td>
+          </tr>
+          <tr>
+            <th>组织名称</th>
+            <td>{{item.taskProgress}}</td>
+          </tr>
+          <tr>
+            <th>色调</th>
+            <td>{{item.taskConclusion}}</td>
+          </tr>
+          <tr>
+            <th>色调</th>
+            <td>{{item.RN}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+     <div class="col-md-4 py-0 px-0" style="border-radius:0px;">
+      <div class="card ml-3" [ngSwitch]="instument.status" style="border-radius:0px;">
+        <div class="card-header">
+          装置检查点
+        </div>
+        <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
+        <div *ngSwitchCase="'success'" style="border-radius:0px;">
+          <ul class="list-group mx-0" style="border: 0px;">
+            <li class="list-group-item justify-content-between" *ngFor="let item of instument.data">
+              {{item.identity}}
+              <span class="badge badge-info badge-pill">{{item.categoryId}}</span>
+            </li>
+            <li class="list-group-item justify-content-between" *ngFor="let item of instument.data">
+              {{item.identity}}
+              <span class="badge badge-info badge-pill">{{item.categoryId}}</span>
+            </li>
+            <li class="list-group-item justify-content-between" *ngFor="let item of instument.data">
+              {{item.identity}}
+              <span class="badge badge-info badge-pill">{{item.categoryId}}</span>
+            </li>
+            <li class="list-group-item justify-content-between" *ngFor="let item of instument.data">
+              {{item.identity}}
+              <span class="badge badge-info badge-pill">{{item.categoryId}}</span>
+            </li>
+            <li class="list-group-item justify-content-between" *ngFor="let item of instument.data">
+              {{item.identity}}
+              <span class="badge badge-info badge-pill">{{item.categoryId}}</span>
+            </li>
+          </ul>
+        </div>
+        <div *ngSwitchCase="'message'" style="padding: 10px;">{{instument.message}}</div>
+      </div>
+    </div>
+  </div>

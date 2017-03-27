@@ -2,11 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routing } from './detail-routing.module';
 import { DetailComponent } from './detail.component';
-// import { HomeComponent } from './home/home.component';
 import { TickerModule } from '../../../_directives/ticker/ticker.module';
-// import { EchartsModule } from '../_directives/echarts/echarts.module'
 import { SimpleTableModule } from '../../../_components/simple-table/simple-table.module';
-import {UserService } from '../../../_core/user.service';
+import { UserService } from '../../../_core/user.service';
 import { DetailService } from './detail.service'
 import { Ng2TableModule } from 'ng2-table';
 import { EChartModule } from 'ng2-echarts-d3';
@@ -27,7 +25,7 @@ import { MdlModule } from 'angular2-mdl';
     MdlModule
   ],
   declarations: [DetailComponent],
-    providers: [{ provide: 'DetailService', useClass: DetailService },UserService],
+  providers: [{ provide: 'DetailService', useClass: DetailService }, UserService],
 
 })
 export class DetailModule { }

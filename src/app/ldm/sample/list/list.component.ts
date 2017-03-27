@@ -1,8 +1,6 @@
-
 import { Component, OnInit, Inject } from '@angular/core';
 import { SampleService } from '../sample.service';
 import { ResponseEntity } from '../../../_entities/response-entity';
-// import * as $ from 'jquery';
 import { ActivatedRoute, Router } from "@angular/router";
 import { filterBy } from '@progress/kendo-data-query';
 
@@ -17,8 +15,8 @@ export class ListComponent implements OnInit {
 
   basicData: any[];
 
-  //最近15天分析数据 图表区域 配置
-  last15DaysAnalysisTaskOptinos;
+  //一段时间内的不同单位的样品送检次数
+  sampleSendInspectAmount;
 
   userLoginCount: any = { rows: [], columns: [], status: "before", message: "" };
 
@@ -44,8 +42,8 @@ export class ListComponent implements OnInit {
     message: ""
   };
 
-    //一段时间内的科研课题申请次数统计
-  subjectProgressInfo: any = {
+  //一段时间内不同项目的分析次数
+  analysisNameAmount: any = {
     status: "before",
     message: "",
     option: {
@@ -66,8 +64,8 @@ export class ListComponent implements OnInit {
     }
   };
 
-  //一段时间内的不同单位的申请次数统计
-  deviceRunInfo: any = {
+  //一段时间内不同类型的样品分析量
+  sampleTypeAmount: any = {
     status: "before",
     message: "",
     option: {
@@ -88,74 +86,26 @@ export class ListComponent implements OnInit {
     }
   }
 
-  //一段时间内每天的任务申请次数统计
-  deviceBaseRunInfo: any = {
-    title: {
-      text: '某地区蒸发量和降水量',
-      subtext: '纯属虚构'
-    },
-    tooltip: {
-      trigger: 'axis'
-    },
-    legend: {
-      data: ['蒸发量', '降水量']
-    },
-    toolbox: {
-      show: true,
-      feature: {
-        mark: { show: true },
-        dataView: { show: true, readOnly: false },
-        magicType: { show: true, type: ['line', 'bar'] },
-        restore: { show: true },
-        saveAsImage: { show: true }
-      }
-    },
-    calculable: true,
-    xAxis: [
-      {
-        type: 'category',
-        data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
-      }
-    ],
-    yAxis: [
-      {
-        type: 'value'
-      }
-    ],
-    series: [
-      {
-        name: '蒸发量',
-        type: 'bar',
-        data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
-        markPoint: {
-          data: [
-            { type: 'max', name: '最大值' },
-            { type: 'min', name: '最小值' }
-          ]
-        },
-        markLine: {
-          data: [
-            { type: 'average', name: '平均值' }
-          ]
-        }
+  //一段时间内不同课题的样品分析次数
+  sampleLocationAmount: any = {
+   status: "before",
+    message: "",
+    option: {
+      tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
       },
-      {
-        name: '降水量',
-        type: 'bar',
-        data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
-        markPoint: {
-          data: [
-            { name: '年最高', value: 182.2, xAxis: 7, yAxis: 183, symbolSize: 18 },
-            { name: '年最低', value: 2.3, xAxis: 11, yAxis: 3 }
-          ]
-        },
-        markLine: {
-          data: [
-            { type: 'average', name: '平均值' }
-          ]
+      calculable: true,
+      series: [
+        {
+          name: '状态',
+          type: 'pie',
+          radius: '50%',
+          center: ['50%', '50%'],
+          data: []
         }
-      }
-    ]
+      ]
+    }
   }
   //构造
   constructor(
@@ -167,10 +117,10 @@ export class ListComponent implements OnInit {
     // let a = 123
     // console.log($.isNumeric(a));
     this.service.getJqTask().subscribe(res => this.setJQTASK(res));
-    this.service.getClassificationInfo().subscribe(res => this.SetClassificationInfo(res));
-    this.service.getInstrumentStatisticsInfo().subscribe(res => this.SetInstrumentStatisticsInfo(res));
-    this.service.getInstrumentUtilizationInfo().subscribe(res => this.SetInstrumentUtilizationInfo(res));
-    this.service.getLast15DaysAnalysisTask().subscribe(res => this.SetLast15DaysAnalysisTask(res));
+    this.service.getsampleTypeAmount().subscribe(res => this.setsampleTypeAmount(res));
+    this.service.getanalysisNameAmount().subscribe(res => this.setanalysisNameAmount(res));
+    this.service.getsampleLocationAmount().subscribe(res => this.setsampleLocationAmount(res));
+    this.service.getsampleSendInspectAmount().subscribe(res => this.setsampleSendInspectAmount(res));
 
   }
 
@@ -183,13 +133,10 @@ export class ListComponent implements OnInit {
         this.urlParas.id = res;
 
       });
-    //  this.route.queryParams.subscribe(res=>{
-    //    ;
-    //  });
   }
-  //设置最近15天分析任务数据
-  SetLast15DaysAnalysisTask(res: any) {
-    this.last15DaysAnalysisTaskOptinos = res;
+  //一段时间内的不同单位的样品送检次数
+  setsampleSendInspectAmount(res: any) {
+    this.sampleSendInspectAmount = res;
   }
   //申请的任务台账列表
   setJQTASK(res: ResponseEntity) {
@@ -210,11 +157,11 @@ export class ListComponent implements OnInit {
       this.jqTask = { status: "message", message: "无数据展示" };
     }
   }
-  //一段时间内的科研课题申请次数统计
-  SetClassificationInfo(res: ResponseEntity) {
+  //一段时间内不同课题的样品分析次数
+  setsampleLocationAmount(res: ResponseEntity) {
     console.log(res)
     if (!res.success) {
-      this.subjectProgressInfo = { status: "message", message: res.message };
+      this.sampleLocationAmount = { status: "message", message: res.message };
       return;
     }
     if (res.data.length > 0) {
@@ -222,23 +169,22 @@ export class ListComponent implements OnInit {
       res.data.forEach(element => {
         let model = {
           value: element.total,
-          name: element.typeName
+          name: element.subjectName
         }
         series.push(model);
       });
-      this.subjectProgressInfo.status = "success";
-      this.subjectProgressInfo.option.series[0].data = series;
+       this.sampleLocationAmount.status = "success";
+      this.sampleLocationAmount.option.series[0].data = series;
     }
     else {
-      this.subjectProgressInfo = { status: "message", message: "无数据展示！" };
+      this.sampleLocationAmount = { status: "message", message: "无数据展示！" };
     }
   }
-   //一段时间内的不同单位的申请次数统计
-  SetInstrumentStatisticsInfo(res: ResponseEntity) {
-     console.log(res)
+  //一段时间内不同项目的分析次数
+  setanalysisNameAmount(res: ResponseEntity) {
     console.log(res)
     if (!res.success) {
-      this.deviceRunInfo = { status: "message", message: "服务器忙..." };
+      this.analysisNameAmount = { status: "message", message: "服务器忙..." };
       return;
     }
     if (res.data.length > 0) {
@@ -251,18 +197,18 @@ export class ListComponent implements OnInit {
         series.push(model);
       });
 
-      this.deviceRunInfo.status = "success";
-      this.deviceRunInfo.option.series[0].data = series;
+      this.analysisNameAmount.status = "success";
+      this.analysisNameAmount.option.series[0].data = series;
     }
     else {
-      this.deviceRunInfo = { status: "message", message: "无数据展示！" };
+      this.analysisNameAmount = { status: "message", message: "无数据展示！" };
     }
   }
-  //一段时间内每天的任务申请次数统计
-  SetInstrumentUtilizationInfo(res: ResponseEntity) {
+  //一段时间内不同类型的样品分析量
+  setsampleTypeAmount(res: ResponseEntity) {
     console.log(res)
     if (!res.success) {
-      this.deviceBaseRunInfo = { status: "message", message: "服务器忙..." };
+      this.sampleTypeAmount = { status: "message", message: "服务器忙..." };
       return;
     }
     if (res.data.length > 0) {
@@ -270,24 +216,24 @@ export class ListComponent implements OnInit {
       res.data.forEach(element => {
         let model = {
           value: element.total,
-          name: element.baseName
+          name: element.typeName
         }
         series.push(model);
       });
 
-      this.deviceBaseRunInfo.status = "success";
-      // this.deviceBaseRunInfo.option.series[0].data = series;
+      this.sampleTypeAmount.status = "success";
+      this.sampleTypeAmount.option.series[0].data = series;
     }
     else {
-      this.deviceBaseRunInfo = { status: "message", message: "无数据展示！" };
+      this.sampleTypeAmount = { status: "message", message: "无数据展示！" };
     }
   }
 
   filterDataByKey(inputText: string) {
     console.log(inputText);
     if (inputText != "") {
-      var dataArray=[...this.basicData];
-      
+      var dataArray = [...this.basicData];
+
       let result = filterBy(dataArray, {
         logic: 'or',
         filters: [

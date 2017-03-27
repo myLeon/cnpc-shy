@@ -43,7 +43,7 @@ export class ListComponent implements OnInit {
     message: ""
   };
 
-    //一段时间内的科研课题申请次数统计
+  //一段时间内的科研课题申请次数统计
   subjectProgressInfo: any = {
     status: "before",
     message: "",
@@ -202,13 +202,8 @@ export class ListComponent implements OnInit {
     this.route.parent.params
       .map(params => params['id'] || 'None')
       .subscribe(res => {
-
         this.urlParas.id = res;
-
       });
-    //  this.route.queryParams.subscribe(res=>{
-    //    ;
-    //  });
   }
   //设置最近15天分析任务数据
   SetLast15DaysAnalysisTask(res: any) {
@@ -256,9 +251,9 @@ export class ListComponent implements OnInit {
       this.subjectProgressInfo = { status: "message", message: "无数据展示！" };
     }
   }
-   //一段时间内的不同单位的申请次数统计
+  //一段时间内的不同单位的申请次数统计
   SetInstrumentStatisticsInfo(res: ResponseEntity) {
-     console.log(res)
+    console.log(res)
     console.log(res)
     if (!res.success) {
       this.deviceRunInfo = { status: "message", message: "服务器忙..." };
@@ -307,8 +302,8 @@ export class ListComponent implements OnInit {
   filterDataByKey(inputText: string) {
     console.log(inputText);
     if (inputText != "") {
-      var dataArray=[...this.basicData];
-      
+      var dataArray = [...this.basicData];
+
       let result = filterBy(dataArray, {
         logic: 'or',
         filters: [

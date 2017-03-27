@@ -1,6 +1,6 @@
 <div class="container">
   <!--面包屑导航-->
-  <div class="row ">
+  <div class="row" style="background: #eceeef">
     <ol class="breadcrumb mb-0">
       <li class="breadcrumb-item"><a href="#">首页</a></li>
       <li class="breadcrumb-item active">综合信息</li>
@@ -11,7 +11,7 @@
     <div class="col-md-6 pl-0">
       <div class="card " style="border-radius:0px;">
         <div class="card-header">
-          各装置类型统计
+          仪器设备分类统计
         </div>
         <div class="card-block p-0" style="height: 280px;" [ngSwitch]="subjectProgressInfo.status">
           <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
@@ -23,7 +23,7 @@
     <div class="col-md-6 pr-0">
       <div class="card" style="border-radius:0px;  ">
         <div class="card-header">
-          各装置状态统计
+          各单位仪器设备统计
         </div>
         <div class="card-block p-0" style="height: 280px;" [ngSwitch]="deviceRunInfo.status">
           <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
@@ -41,22 +41,22 @@
       <div class="card-block p-0" style="height: 350px;" [ngSwitch]="deviceBaseRunInfo.status">
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active" style="height:350px;">
-            <div [echartOption]="last15DaysAnalysisTaskOptinos" style=" height:350px; width: 100%;"></div>
+            <div [echartOption]="instrumentUseRatio" style=" height:350px; width: 100%;"></div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
   <div class="row my-3" style="border-radius:0px;border: 1px solid #eee">
     <div class="card  card-inverse card-primary" style="border-radius:0px; width: 100%;">
       <div class="card-header">
         符合条件【大庆加氢】的装置列表
       </div>
       <div class="card-block p-0">
+        
         <div class="row px-3 my-0">
           <input class="form-control mx-3 my-2" style="width: 300px"  type="text" placeholder="输入关键字查询" #inputText (change)="filterDataByKey(inputText.value)"/>
-          <!--{{inputText.value}}-->
+          <app-nomorl-filter> </app-nomorl-filter>
         </div>
         <kendo-grid [kendoGridBinding]="gridData" [sortable]="true" [groupable]="true">
           <kendo-grid-column field="identity" title="装置编号" width="100" border="0">
@@ -73,9 +73,6 @@
           <kendo-grid-column field="manufacturer" title="制造商" width="100">
           </kendo-grid-column>
           <kendo-grid-column field="status" title="状态" width="100">
-            <!--<template kendoGridCellTemplate let-dataItem>
-                    <input type="checkbox" [checked]="dataItem.Discontinued" disabled/>
-                </template>-->
           </kendo-grid-column>
           <kendo-grid-column field="groupName" title="组织名字" width="100">
           </kendo-grid-column>
@@ -86,46 +83,7 @@
                 noRecords="没有记录可显示。">
             </kendo-grid-messages>
         </kendo-grid>
-
       </div>
     </div>
-
-    <style>
-      table {
-        display: table;
-        border: 1px solid rgba(0, 0, 0, 0.12);
-        border-spacing: 0;
-        border-collapse: collapse;
-        font-size: 14px;
-        box-sizing: border-box;
-        width: 100%;
-      }
-      
-      table tr {
-        position: relative;
-        height: 36px;
-        vertical-align: middle;
-      }
-      
-      tbody tr:hover {
-        background-color: #eee;
-      }
-      
-      table th,
-      table td {
-        padding: 0 16px;
-        text-align: left;
-      }
-      
-      table td {
-        position: relative;
-        vertical-align: middle;
-        height: 36px;
-        border-top: 1px solid rgba(0, 0, 0, 0.12);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-        box-sizing: border-box;
-        color: rgba(0, 0, 0, 0.87);
-      }
-    </style>
   </div>
 </div>

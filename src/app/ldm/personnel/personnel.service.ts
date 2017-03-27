@@ -22,7 +22,7 @@ export class PersonnelService {
 
 
   }
-  getLast15DaysAnalysisTask(): Observable<any> {
+  getanalysisStaffRatio(): Observable<any> {
     let chartData = {
       theme: "infographic",
       title: { top: '10px', left: '10px', text: '', subtext: '' },
@@ -43,23 +43,23 @@ export class PersonnelService {
       xAxis: [
         {
           type: 'category',
-          data: ['DQ_LYS107', 'LZ_CHS08', 'LZ_CHS04', 'LZ_LZS03_8', 'LZ_LHS05', 'LZ_CHS05', 'LZ_JXT07', 'LZ_LZS03_7', 'LZ_LZS03_4', 'LZ_LHS04', 'LZ_HHS02', 'LZ_JXT03', 'LZ_PP02', 'LZ_CHS09', 'LZ_JXT06', 'LZ_LHS03', 'DQ_SZS806']
+          data: ['总人数266', '总人数263','总人数197']
         }
       ],
       yAxis: [
         {
           type: 'value',
           axisLabel: {
-            formatter: '{value}个'
+            formatter: '{value}'
           }
 
         }
       ],
       series: [
         {
-          name: '大庆中心样品量',
+          name: '分析人员占比',
           type: 'bar',
-          data: [100, 90, 95, 56, 78, 76, 135, 162, 32, 110, 120, 109, 56, 76, 55],
+          data: [120, 90, 50],
           markPoint: {
             data: [
               { type: 'max', name: '最大值' },
@@ -73,9 +73,9 @@ export class PersonnelService {
           }
         },
         {
-          name: '兰州中心样品量',
+          name: '各单位LIMS系统有效使用率排名',
           type: 'bar',
-          data: [67, 88, 78, 98, 100, 110, 99, 95, 76, 84, 86, 120, 130, 170, 50,],
+          data: [120, 50, 50],
           markPoint: {
             data: [
               { type: 'max', name: '最大值' },
@@ -95,7 +95,7 @@ export class PersonnelService {
     return bs.asObservable();
   }
   //人员列表台账
-  getJqTask(): Observable<ResponseEntity> {
+  getStaffList(): Observable<ResponseEntity> {
     let url = `${this.api_url}`;
     let ret = this.http.get(url)
       .map((response: Response) => response.json().staffList as ResponseEntity)

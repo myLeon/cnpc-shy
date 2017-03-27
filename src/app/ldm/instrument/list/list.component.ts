@@ -1,93 +1,6 @@
-// import { Component, OnInit } from '@angular/core';
-
-// @Component({
-//   selector: 'app-list',
-//   templateUrl: './list.component.html',
-//   styleUrls: ['./list.component.scss']
-// })
-// export class ListComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit() {
-//   }
-
-// }
-
-// import { Component, OnInit } from '@angular/core';
-
-// @Component({
-//   selector: 'app-list',
-//   templateUrl: './list.component.html',
-//   styleUrls: ['./list.component.scss']
-// })
-// export class ListComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit() {
-//   }
-
-// }
-
-
-// import { Component, OnInit } from '@angular/core';
-
-// @Component({
-//   selector: 'app-list',
-//   templateUrl: './list.component.html',
-//   styleUrls: ['./list.component.scss']
-// })
-// export class ListComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit() {
-//   }
-
-// }
-
-
-
-// import { Component, OnInit, Inject } from '@angular/core';
-// import { products } from '../products';
-// import { GroupDescriptor, process } from '@progress/kendo-data-query';
-// import { ResponseEntity } from '../../../_entities/response-entity';
-// // import { PersonnelService } from './personnel.service'
-// import { DeviceServe } from '../device.service';
-// import { ActivatedRoute, Router } from "@angular/router";
-// import { GridModule } from '@progress/kendo-angular-grid';
-// import { Md2Module } from 'md2';
-
-// @Component({
-//   selector: 'app-list',
-//   templateUrl: './list.component.html',
-//   styleUrls: ['./list.component.scss']
-// })
-// export class ListComponent implements OnInit {
-//   //时间日期
-//   date = new Date();
-//   search: string = null;
-//   myText = 'A String from the Component';
-//   private groups: GroupDescriptor[] = [{ field: "Category.CategoryName" }];
-
-//   private gridView: any[] = [];
-//  //end 时间日期
-//   public ngOnInit(): void {
-//     this.loadProducts();
-//     console.log(products.length)
-//   }
-
-//   private loadProducts(): void {
-//     this.gridView = products;
-
-//   }
-
-// }
 import { Component, OnInit, Inject } from '@angular/core';
 import { InstrumentService } from '../instrument.service';
 import { ResponseEntity } from '../../../_entities/response-entity';
-// import * as $ from 'jquery';
 import { ActivatedRoute, Router } from "@angular/router";
 import { filterBy } from '@progress/kendo-data-query';
 
@@ -103,7 +16,7 @@ export class ListComponent implements OnInit {
   basicData: any[];
 
   //最近15天分析数据 图表区域 配置
-  last15DaysAnalysisTaskOptinos;
+  instrumentUseRatio;
 
   userLoginCount: any = { rows: [], columns: [], status: "before", message: "" };
 
@@ -172,12 +85,6 @@ export class ListComponent implements OnInit {
       ]
     }
   }
-
-  // deviceRunInfo={
-  //   ...
-  //   this.subjectProgressInfo
-  // }
-
   //装置基地任务运行情况
   deviceBaseRunInfo: any = {
     title: {
@@ -260,12 +167,11 @@ export class ListComponent implements OnInit {
     this.service.getClassificationInfo().subscribe(res => this.SetClassificationInfo(res));
     this.service.getInstrumentStatisticsInfo().subscribe(res => this.SetInstrumentStatisticsInfo(res));
     this.service.getInstrumentUtilizationInfo().subscribe(res => this.SetInstrumentUtilizationInfo(res));
-    this.service.getLast15DaysAnalysisTask().subscribe(res => this.SetLast15DaysAnalysisTask(res));
+    this.service.getinstrumentUseRatio().subscribe(res => this.SetinstrumentUseRatio(res));
 
   }
 
   ngOnInit() {
-    //this.route.parent.parent.data.subscribe(x => { console.log(x) });
     this.route.parent.params
       .map(params => params['id'] || 'None')
       .subscribe(res => {
@@ -273,17 +179,13 @@ export class ListComponent implements OnInit {
         this.urlParas.id = res;
 
       });
-    //  this.route.queryParams.subscribe(res=>{
-    //    ;
-    //  });
   }
   //设置最近15天分析任务数据
-  SetLast15DaysAnalysisTask(res: any) {
-    this.last15DaysAnalysisTaskOptinos = res;
+  SetinstrumentUseRatio(res: any) {
+    this.instrumentUseRatio = res;
   }
   //设置加氢任务数据
   setJQTASK(res: ResponseEntity) {
-
     if (!res.success) {
       this.jqTask = { status: "message", message: res.message };
       return;
@@ -292,14 +194,12 @@ export class ListComponent implements OnInit {
       this.gridData = res.data;
       this.basicData = res.data;
       console.log(111)
-      // this.jqTask = Object.assign(this.jqTask, { status: "success", rows: res.data });
     }
     else {
       this.jqTask = { status: "message", message: "无数据展示" };
     }
   }
   SetClassificationInfo(res: ResponseEntity) {
-    console.log(res.data)
     if (!res.success) {
       this.subjectProgressInfo = { status: "message", message: res.message };
       return;
@@ -325,7 +225,6 @@ export class ListComponent implements OnInit {
   }
 
   SetInstrumentStatisticsInfo(res: ResponseEntity) {
-    console.log(res)
     if (!res.success) {
       this.deviceRunInfo = { status: "message", message: "服务器忙..." };
       return;
@@ -343,13 +242,12 @@ export class ListComponent implements OnInit {
       this.deviceRunInfo.status = "success";
       this.deviceRunInfo.option.series[0].data = series;
     }
-    else {
+      else {
       this.deviceRunInfo = { status: "message", message: "无数据展示！" };
     }
   }
 
   SetInstrumentUtilizationInfo(res: ResponseEntity) {
-    console.log(res)
     if (!res.success) {
       this.deviceBaseRunInfo = { status: "message", message: "服务器忙..." };
       return;
@@ -373,10 +271,8 @@ export class ListComponent implements OnInit {
   }
 
   filterDataByKey(inputText: string) {
-    console.log(inputText == "");
     if (inputText != "") {
-      var dataArray=[...this.basicData];
-      
+      var dataArray = [...this.basicData];
       let result = filterBy(dataArray, {
         logic: 'or',
         filters: [
@@ -386,22 +282,37 @@ export class ListComponent implements OnInit {
             value: inputText
           },
           {
-            field: "description",
+            field: "name",
             operator: "contains",
             value: inputText
           },
           {
-            field: "locationType",
+            field: "dateInstalled",
             operator: "contains",
             value: inputText
           },
           {
-            field: "locationDept",
+            field: "operatorByName",
             operator: "contains",
             value: inputText
           },
           {
-            field: "operatorId",
+            field: "manufacturer",
+            operator: "contains",
+            value: inputText
+          },
+          {
+            field: "status",
+            operator: "contains",
+            value: inputText
+          },
+          {
+            field: "groupName",
+            operator: "contains",
+            value: inputText
+          },
+          {
+            field: "category",
             operator: "contains",
             value: inputText
           }

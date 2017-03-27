@@ -1,12 +1,12 @@
 <div class="container">
   <!--面包屑导航-->
-  <div class="row ">
+  <div class="row" style="background: #eceeef">
     <ol class="breadcrumb mb-0">
       <li class="breadcrumb-item"><a href="#">首页</a></li>
       <li class="breadcrumb-item active">综合信息</li>
     </ol>
   </div>
-  <!--<app-nomorl></app-nomorl>-->
+  
   <div class="row mt-3">
     <div class="col-md-6 pl-0">
       <div class="card " style="border-radius:0px;">
@@ -14,6 +14,8 @@
           各装置类型统计
         </div>
         <div class="card-block p-0" style="height: 280px;" [ngSwitch]="subjectProgressInfo.status">
+          <app-nomorl ></app-nomorl>
+         <!--<my-date-picker></my-date-picker>-->
           <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
           <div *ngSwitchCase="'success'" [echartOption]="subjectProgressInfo.option" style="height: 280px;"></div>
           <div *ngSwitchCase="'message'" style="padding: 10px;">{{subjectProgressInfo.message}}</div>
@@ -26,6 +28,7 @@
           各装置状态统计
         </div>
         <div class="card-block p-0" style="height: 280px;" [ngSwitch]="deviceRunInfo.status">
+          <app-nomorl> </app-nomorl>
           <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
           <div *ngSwitchCase="'success'" [echartOption]="deviceRunInfo.option" style="height: 280px;"></div>
           <div *ngSwitchCase="'message'" style="padding: 10px;">{{deviceRunInfo.message}}</div>
@@ -52,13 +55,13 @@
       <div class="card-header">
         符合条件【大庆加氢】的装置列表
       </div>
+      
       <div class="card-block p-0">
+       
         <div class="row px-3 my-0">
           <input class="form-control mx-3 my-2" style="width: 300px"  type="text" placeholder="输入关键字查询" #inputText (change)="filterDataByKey(inputText.value)"/>
-          <!--{{inputText.value}}-->
+           <app-nomorl-filter> </app-nomorl-filter>
         </div>
-        
-
         <kendo-grid [kendoGridBinding]="gridData" [sortable]="true" [groupable]="true">
           <kendo-grid-column field="identity" title="装置编号" width="100" border="0">
           </kendo-grid-column>
@@ -74,9 +77,6 @@
           <kendo-grid-column field="modified_on" title="启用时间" width="100">
           </kendo-grid-column>
           <kendo-grid-column field="operatorId" title="负责人" width="100">
-            <!--<template kendoGridCellTemplate let-dataItem>
-                    <input type="checkbox" [checked]="dataItem.Discontinued" disabled/>
-                </template>-->
           </kendo-grid-column>
           <kendo-grid-messages
                 groupPanelEmpty="拖拽列到此处分组"

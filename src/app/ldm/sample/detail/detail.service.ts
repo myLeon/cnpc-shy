@@ -1,4 +1,3 @@
-// import { Injectable } from '@angular/core';
 import { Http, Headers, Response } from '@angular/http';
 import { ResponseEntity } from '../../../_entities/response-entity';
 import { Observable } from 'rxjs';
@@ -12,7 +11,6 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class DetailService {
 
-  // private api_url = 'http://localhost:3000';
   private api_url = "assets/localData/task.json";
   private headers = new Headers({ 'Content-Type': 'application/json' });
   // data: any = null;
@@ -20,9 +18,9 @@ export class DetailService {
   }
 
 
-   //仪器设备实体
-  getInstrumentModelInfo():Observable<ResponseEntity>{
-     let url = `${this.api_url}`;
+  //仪器设备实体
+  getInstrumentModelInfo(): Observable<ResponseEntity> {
+    let url = `${this.api_url}`;
     let ret = this.http.get(url)
       .map((response: Response) => response.json().taskModel as ResponseEntity)
       .catch(this.handleError);
@@ -30,8 +28,8 @@ export class DetailService {
   }
 
   //一段时间内分析的样品数、项目数
-  getStrumentAnalysisAmount():Observable<ResponseEntity>{
-     let url = `${this.api_url}`;
+  getStrumentAnalysisAmount(): Observable<ResponseEntity> {
+    let url = `${this.api_url}`;
     let ret = this.http.get(url)
       .map((response: Response) => response.json().taskRunData as ResponseEntity)
       .catch(this.handleError);

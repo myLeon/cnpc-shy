@@ -15,6 +15,7 @@ import { MdlModule } from 'angular2-mdl';
 import { PersonnelFilterPipe } from './_pipe/personnel-filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { GridModule } from '@progress/kendo-angular-grid';
+import { NomorlFilterModule } from "../../_components/nomorl-filter/nomorl-filter.module"
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { GridModule } from '@progress/kendo-angular-grid';
     MomentModule,
     Md2Module,
     MdlModule,
-    FormsModule
+    FormsModule,
+    NomorlFilterModule
   ],
   declarations: [PersonnelComponent, ListComponent, PersonnelFilterPipe],
   providers: [{ provide: 'PersonnelService', useClass: PersonnelService }, UserService],

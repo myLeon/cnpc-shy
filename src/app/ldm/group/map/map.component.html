@@ -1,15 +1,14 @@
-
 <div class="container">
-    <!--面包屑导航-->
-  <div class="row ">
+  <!--面包屑导航-->
+  <div class="row " style="background: #eceeef">
     <ol class="breadcrumb mb-0">
       <li class="breadcrumb-item"><a href="#">首页</a></li>
       <li class="breadcrumb-item active">综合信息</li>
     </ol>
   </div>
   <div class="row">
-    <div class="col-md-4 " [echarts-map]="BJoption" style=" height:400px;" (ngDoCheck)="BJClick(this)" ></div>
-    <div class="col-md-4" [echarts-map]="GSoption" style=" height: 400px;" ></div>
-    <div class="col-md-4" [echarts-map]="HLJoption" style=" height: 400px;" ></div>
+    <a routerLink="../list" class="col-md-4 " [echarts-map]="BJoption" style=" height:400px;"></a>
+    <a routerLink="../list" class="col-md-4" [echarts-map]="GSoption" style=" height: 400px;"></a>
+    <a routerLink="../list" class="col-md-4" [echarts-map]="HLJoption" style=" height: 400px;"></a>
   </div>
 </div>
