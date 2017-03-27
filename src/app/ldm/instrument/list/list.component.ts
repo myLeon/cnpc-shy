@@ -15,7 +15,6 @@ export class ListComponent implements OnInit {
 
   basicData: any[];
 
-  //最近15天分析数据 图表区域 配置
   instrumentUseRatio;
 
   userLoginCount: any = { rows: [], columns: [], status: "before", message: "" };

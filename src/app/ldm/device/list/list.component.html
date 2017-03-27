@@ -58,9 +58,9 @@
       
       <div class="card-block p-0">
        
-        <div class="row px-3 my-0 float-md-right">
+        <div class="row px-3 my-0">
           <input class="form-control mx-3 my-2" style="width: 300px"  type="text" placeholder="输入关键字查询" #inputText (change)="filterDataByKey(inputText.value)"/>
-           <app-nomorl-filter> </app-nomorl-filter>
+           <app-nomorl-filter></app-nomorl-filter>
         </div>
         <kendo-grid [kendoGridBinding]="gridData" [sortable]="true" [groupable]="true">
           <kendo-grid-column field="identity" title="装置编号" width="100" border="0">
