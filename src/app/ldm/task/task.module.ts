@@ -17,7 +17,6 @@ import { FormsModule } from '@angular/forms';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { NomorlFilterModule } from "../../_components/nomorl-filter/nomorl-filter.module"
 import { NomorModule } from "../../_components/nomorl/nomorl.module"
-import { NomorlLateFilterModule } from "../../_components/nomorl-late-filter/nomorl-late-filter.module"
 
 @NgModule({
   imports: [
@@ -33,8 +32,7 @@ import { NomorlLateFilterModule } from "../../_components/nomorl-late-filter/nom
     FormsModule,
     GridModule,
     NomorlFilterModule,
-    NomorModule,
-    NomorlLateFilterModule
+    NomorModule
   ],
   declarations: [TaskComponent, ListComponent,SampleFilterPipe],
     providers: [{ provide: 'TaskService', useClass: TaskService },UserService],

@@ -53,7 +53,6 @@
         符合条件【大庆加氢】的装置列表
       </div>
       <div class="card-block p-0">
-        
         <div class="row px-3 my-0">
           <input class="form-control mx-3 my-2" style="width: 300px"  type="text" placeholder="输入关键字查询" #inputText (change)="filterDataByKey(inputText.value)"/>
           <app-nomorl-filter> </app-nomorl-filter>
@@ -63,12 +62,14 @@
           </kendo-grid-column>
           <kendo-grid-column field="name" title="装置名称" width="100">
              <template kendoGridCellTemplate let-dataItem>
-            <a routerLink="../detail" style="text-decoration: none">{{dataItem.description}}</a>
+            <a routerLink="../detail" style="text-decoration: none">{{dataItem.name}}</a>
           </template>
+          </kendo-grid-column>         
+          <kendo-grid-column field="description" title="装置详情" width="100">
           </kendo-grid-column>         
           <kendo-grid-column field="dateInstalled" title="生产日期" width="100">
           </kendo-grid-column>
-          <kendo-grid-column field="operatorByName" title="所属单位" width="100">
+          <kendo-grid-column field="operatorByName" title="操作人员" width="100">
           </kendo-grid-column>
           <kendo-grid-column field="manufacturer" title="制造商" width="100">
           </kendo-grid-column>

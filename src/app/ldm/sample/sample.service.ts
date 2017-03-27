@@ -11,16 +11,11 @@ import { UserService } from '../../_core/user.service';
 
 @Injectable()
 export class SampleService {
-
-  // private api_url = 'http://localhost:3000';
   private api_url = "assets/localData/sample.json";
   private headers = new Headers({ 'Content-Type': 'application/json' });
   // data: any = null;
   constructor(private http: Http, private user: UserService) {
-
     console.log(this.user.getCurrentUser());
-    
-
   }
   //一段时间内的不同单位的样品送检次数
   getsampleSendInspectAmount(): Observable<any> {
@@ -74,23 +69,19 @@ export class SampleService {
           }
         }
       ]
-
     };
     let bs = new BehaviorSubject<any>(chartData);
     return bs.asObservable();
-    //return Observable.of(chartData);
   }
   //申请的任务台账列表
   getJqTask(): Observable<ResponseEntity> {
-    //let url = `${this.api_url}/home_JqTask`;
     let url = `${this.api_url}`;
     let ret = this.http.get(url)
       .map((response: Response) => response.json().sampleList as ResponseEntity)
-      // .map((response: Response) => response.json() as ResponseEntity)
       .catch(this.handleError);
     return ret;
   }
-   //一段时间内不同类型的样品分析量
+  //一段时间内不同类型的样品分析量
   getsampleTypeAmount(): Observable<ResponseEntity> {
     //let url=`${this.api_url}/Subject`;
     let url = `${this.api_url}`;

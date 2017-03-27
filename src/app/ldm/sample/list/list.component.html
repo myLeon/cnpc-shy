@@ -12,11 +12,11 @@
         <div class="card-header">
           一段时间内不同项目的分析次数
         </div>
-        <div class="card-block p-0" style="height: 280px;" [ngSwitch]="analysisNameAmount.status">
+        <div class="card-block p-0" style="height: 350px;" [ngSwitch]="analysisNameAmount.status">
           <app-nomorl> </app-nomorl>
           <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
-          <div *ngSwitchCase="'success'" [echartOption]="analysisNameAmount.option" style="height: 280px;"></div>
-          <div *ngSwitchCase="'message'" style="padding: 10px;">{{analysisNameAmount.message}}</div>
+          <div *ngSwitchCase="'success'" [echartOption]="analysisNameAmount.option" style="height: 300px;"></div>
+          <div *ngSwitchCase="'message'" style="padding:10px;">{{analysisNameAmount.message}}</div>
         </div>
       </div>
     </div>
@@ -25,10 +25,10 @@
         <div class="card-header">
           一段时间内不同类型的样品分析量
         </div>
-        <div class="card-block p-0" style="height: 280px;" [ngSwitch]="sampleTypeAmount.status">
+        <div class="card-block p-0" style="height: 350px;" [ngSwitch]="sampleTypeAmount.status">
           <app-nomorl> </app-nomorl>
           <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
-          <div *ngSwitchCase="'success'" [echartOption]="sampleTypeAmount.option" style="height: 280px;"></div>
+          <div *ngSwitchCase="'success'" [echartOption]="sampleTypeAmount.option" style="height: 300px;"></div>
           <div *ngSwitchCase="'message'" style="padding: 10px;">{{sampleTypeAmount.message}}</div>
         </div>
       </div>
@@ -38,7 +38,7 @@
         <div class="card-header">
           一段时间内不同课题的样品分析次数
         </div>
-        <div class="card-block p-0" style="height: 280px;" [ngSwitch]="sampleLocationAmount.status">
+        <div class="card-block p-0" style="height: 350px;" [ngSwitch]="sampleLocationAmount.status">
           <app-nomorl> </app-nomorl>
           <div *ngSwitchCase="'before'" style="padding: 10px;">loading...</div>
           <div *ngSwitchCase="'success'" [echartOption]="sampleLocationAmount.option" style="height: 300px;"></div>
@@ -52,7 +52,7 @@
       <div class="card-header">
         一段时间内的不同单位的样品送检次数
       </div>
-      <div class="card-block p-0" style="height: 350px;" [ngSwitch]="sampleSendInspectAmount.status">
+      <div class="card-block p-0" style="height: 400px;" [ngSwitch]="sampleSendInspectAmount.status">
        <app-nomorl> </app-nomorl>
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active" style="height:350px;">
@@ -68,30 +68,33 @@
         样品列表
       </div>
       <div class="card-block p-0">
-        <app-nomorl-filter> </app-nomorl-filter>
         <div class="row px-3 my-0">
-          <input class="form-control mx-3 my-2" style="width: 300px" type="text" placeholder="输入关键字查询" #inputText (change)="filterDataByKey(inputText.value)" />
-          <app-nomorl-filter> </app-nomorl-filter>
+          <input class="form-control mx-3 my-2 clearfix" style="width: 300px" type="text" placeholder="输入关键字查询" #inputText (change)="filterDataByKey(inputText.value)"/>
+          <app-nomorl-filter style="margin-right: 0px"> </app-nomorl-filter>
         </div>
         <kendo-grid [kendoGridBinding]="gridData" [sortable]="true" [groupable]="true">
           <kendo-grid-column field="sampleName" title="装置编号" width="100" border="0">
           </kendo-grid-column>
           <kendo-grid-column field="sampleType" title="装置名称" width="100">
             <template kendoGridCellTemplate let-dataItem>
-              <a routerLink="../detail" style="text-decoration: none">{{dataItem.sampleHse}}</a>
+              <a routerLink="../detail" style="text-decoration: none">{{dataItem.sampleType}}</a>
             </template>
           </kendo-grid-column>
-          <kendo-grid-column field="sampleId" title="装置类型" width="100">
+          <kendo-grid-column field="sampleId" title="装置号码" width="100">
           </kendo-grid-column>
-          <kendo-grid-column field="sampleId" title="所属单位" width="100">
+          <kendo-grid-column field="status" title="装置状态" width="100">
           </kendo-grid-column>
-          <kendo-grid-column field="testStatus" title="启用时间" width="100">
+          <kendo-grid-column field="testStatus" title="测试状态" width="100">
           </kendo-grid-column>
-          <kendo-grid-column field="sampleId" title="所属单位" width="100">
+          <kendo-grid-column field="authorisationNotes" title="装置属性" width="100">
           </kendo-grid-column>
-          <kendo-grid-column field="testStatus" title="启用时间" width="100">
+          <kendo-grid-column field="fxbz" title="所属单位" width="100">
           </kendo-grid-column>
-          <kendo-grid-column field="fxbz" title="负责人" width="100">
+          <kendo-grid-column field="countTestC" title="装置类别" width="100">
+          </kendo-grid-column>
+          <kendo-grid-column field="countTestA" title="装置形态" width="100">
+          </kendo-grid-column>
+          <kendo-grid-column field="countTestAll" title="所有装置" width="100">
           </kendo-grid-column>
           <kendo-grid-messages groupPanelEmpty="拖拽列到此处分组" noRecords="没有记录可显示。">
           </kendo-grid-messages>

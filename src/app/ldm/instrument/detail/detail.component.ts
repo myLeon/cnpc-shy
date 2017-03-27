@@ -170,7 +170,6 @@ import { ActivatedRoute, Router } from "@angular/router";
 export class DetailComponent implements OnInit {
   //必须存在的
   urlParas: any = { "id": "shy" };
-
   //仪器设备实体
   instument: any = {
     status: "before",

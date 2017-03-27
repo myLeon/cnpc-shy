@@ -38,7 +38,6 @@
         <div class="card-header">
           一段时间内每天的任务申请次数统计
         </div>
-        
         <div class="card-block p-0" style="height: 280px;" [ngSwitch]="taskEveryDayApplyAmount.status">
           <app-nomorl ></app-nomorl>
           <div *ngSwitchCase="'success'" [echartOption]="taskEveryDayApplyAmount.option" style="height: 200px;"></div>s
@@ -54,7 +53,6 @@
       </div>
       <div class="card-block p-0">
         <div class="row px-3 my-0">
-          <!--<app-nomorl-late-filter></app-nomorl-late-filter>-->
           <input class="form-control mx-3 my-2" style="width: 300px" type="text" placeholder="输入关键字查询" #inputText (change)="filterDataByKey(inputText.value)"/>
           <app-nomorl-filter> </app-nomorl-filter>
         </div>
@@ -84,43 +82,5 @@
 
       </div>
     </div>
-
-    <style>
-      table {
-        display: table;
-        border: 1px solid rgba(0, 0, 0, 0.12);
-        border-spacing: 0;
-        border-collapse: collapse;
-        font-size: 14px;
-        box-sizing: border-box;
-        width: 100%;
-      }
-      
-      table tr {
-        position: relative;
-        height: 36px;
-        vertical-align: middle;
-      }
-      
-      tbody tr:hover {
-        background-color: #eee;
-      }
-      
-      table th,
-      table td {
-        padding: 0 16px;
-        text-align: left;
-      }
-      
-      table td {
-        position: relative;
-        vertical-align: middle;
-        height: 36px;
-        border-top: 1px solid rgba(0, 0, 0, 0.12);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-        box-sizing: border-box;
-        color: rgba(0, 0, 0, 0.87);
-      }
-    </style>
   </div>
 </div>

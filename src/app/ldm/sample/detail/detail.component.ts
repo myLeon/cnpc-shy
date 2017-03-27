@@ -33,7 +33,7 @@ export class DetailComponent implements OnInit {
   ) {
 
     this.service.getInstrumentModelInfo().subscribe(res => this.SetInstrumentModelInfo(res));
-    this.service.getStrumentAnalysisAmount().subscribe(res => this.SetStrumentAnalysisAmount(res));
+    
 
   }
 
@@ -45,7 +45,7 @@ export class DetailComponent implements OnInit {
       });
   }
 
-  //仪器设备实体
+  //样品实体
   SetInstrumentModelInfo(res: ResponseEntity) {
     console.log(res.data)
     if (!res.success) {
@@ -60,19 +60,6 @@ export class DetailComponent implements OnInit {
     }
   }
 
-  //一段时间内分析的样品数、项目数
-  SetStrumentAnalysisAmount(res: ResponseEntity) {
-    console.log(res)
-    if (!res.success) {
-      this.instrumentAnalysisAmount = { status: "message", message: res.message };
-    }
-    if (res.data.length > 0) {
-      this.instrumentAnalysisAmount = Object.assign(this.instrumentAnalysisAmount, { status: "success", data: res.data });
-    }
-    else {
-      this.instrumentAnalysisAmount = { status: "message", message: "无数据展示！" };
-    }
-  }
 }
 
 

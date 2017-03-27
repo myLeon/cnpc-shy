@@ -197,7 +197,19 @@
     "sampleModel": {
         "success": true,
         "data": [
-            
+            {
+                "sampleName": "混合癸烯总氯测定gx20131114-5",
+                "sampleType": "化工",
+                "sampleHse": "高温易挥发",
+                "sampleId": "2579",
+                "status": "A",
+                "testStatus": "A",
+                "authorisationNotes": " ",
+                "fxbz": "大庆仪器所液相组(重油族组成 核磁 物化吸附 微量水 红紫外 离子色谱)",
+                "countTestC": 0,
+                "countTestA": 1,
+                "countTestAll": 1
+            }
         ]
     }
 }
